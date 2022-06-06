@@ -1,0 +1,123 @@
+/* CSS Padrão */
+body, h1, h2, h3, h4, h5, h6, ul, form input, form, p{ margin:0px; padding:0px; }
+body{ padding-bottom:5px; background-color:#D2CFCF; font-weight:normal; font-size:11px; font-family:Arial, Helvetica, sans-serif; }
+html>body { padding-bottom:0px; }
+a { color:#000; text-decoration:none; }
+a:hover, a:hover span { text-decoration:underline; }
+.cima { float: left; }
+br.clear { clear:both; }
+a.rss { color:#00F; padding-left:15px; background:url(http://static.imasters.com.br/img/geral/rss.gif) no-repeat left; }
+.red { color:#F00; }
+.blue { color:#00F; }
+ul.nolist { list-style:none; }
+
+#msg_padrao { list-style:none; }
+
+#divSky { display:none;  padding:0px; width:120px; position:absolute; left:790px; top:5px; }
+
+#imShop { display:none;  padding-bottom:2px; background:url(http://static.imasters.com.br/img/geral/imshop.gif) top no-repeat #E1E6E6; padding-top:32px; border:1px solid #6C6D6D; width:141px; position:absolute; left:790px; top:5px; }
+#imShop p { margin:5px; color:#4A4545; }
+#imShop ul { list-style:none; }
+#imShop ul li { background-color:#FFF; margin:0px 5px 4px 5px; padding:5px; }
+#imShop img { border:0px; text-align:center; }
+#imShop ul li a { color:#55949B; font-weight:bold;  }
+#imShop ul li p { margin:0px; color:#333; }
+#imShop ul li span { color:#FF760F; }
+#geral { margin:6px 0px 6px 6px; width:760px; background-color:#FFF; border:5px solid #FFF; }
+
+#sbanner { background:url(http://static.imasters.com.br/img/geral/publicidade.gif) #F0F0F0 no-repeat; background-position:9px 37px; text-align:center; width:760px; height:116px; display:block; } 
+#sbanner img, #sbanner object { border: 0px; margin-left:14px; margin-top:12px; }
+#sbanner>object { margin-left:0px; }
+
+#fbanner { background:url(http://static.imasters.com.br/img/geral/publicidade.gif) #F0F0F0 no-repeat; background-position:139px 22px; text-align:center; width:760px; height:116px; } 
+#fbanner img, #fbanner object { border: 0px; margin-left:14px; margin-top:27px; }
+#fbanner>object { padding-top:30px; margin-top:30px; margin-left:5px; }
+
+#geral>#fbanner, #geral>#sbanner { margin-top:-3px; }
+
+#topo { width: 485px; background:url(http://static.imasters.com.br/img/secao/topo_1.jpg) #0F96AC no-repeat left top; height:45px;  }
+#topo h1 { padding:10px 0px 0px 10px; float: left; }
+#topo h1 a { width:96px; height:30px; background:url(http://static.imasters.com.br/img/secao/logo.gif); display:block; }
+#topo h1 a span { display:none; }
+#topo ul { padding-top:20px; }
+#topo ul li { margin-left:15px; display: inline; }
+#topo ul li a { text-decoration: none; color:#ABD3E7; }
+
+#canal { width: 485px; height:38px; background:url(http://static.imasters.com.br/img/secao/topo_2.gif) repeat-x; }
+#canal h2 { padding-top:4px; margin-left:15px; font:bold 28px sans-serif;  }
+#canal h2 { color:#9D9F9F; }
+#canal h2 a { color:#9D9F9F; text-decoration:none; }
+#canal span { background:url(http://static.imasters.com.br/img/secao/pipe.gif) no-repeat left; font-size:17px;  background-position: 0px 3px; margin-left:5px; padding-left:10px;  }
+#canal span a { font-weight:bold; text-transform:uppercase; color: #00577D; }
+
+
+#busca, #navrapida { padding:8px 0px 0px 8px; float:left; height:75px; }
+#busca h2, #navrapida h2 { font: bold 10px Arial; }
+#busca { width:126px;  background-color: #00557C; color:#FFFFFF; border-right:2px solid #FFF; }
+#navrapida { width:127px; background-color: #0089A3; border-left:3px solid #FA7B11; }
+
+input.text { color:#333; border-width:1px; line-height:16px; }
+select { color:#333;  line-height:20px; }
+
+#busca form select { margin-top:10px; width: 120px; line-height:20px; font: normal 10px Arial; margin-bottom:3px; }
+#busca form input.text, #barraLateral div.faqBox form input.text  { background:url(http://static.imasters.com.br/img/fundo_text.jpg) #FFF right no-repeat; width: 88px; padding:1px; height:14px; font: normal 10px Arial; }
+#navrapida form select { margin-top:10px; width: 120px; font: normal 10px Arial; margin-bottom:3px; }
+#navrapida form select.secoes {  margin:0px;}
+#busca form input.button { vertical-align:bottom; margin:1px 0px 0px 3px; }
+#busca form p>input.button { margin-top:2px; vertical-align:middle; }
+
+#secaoRelacionada { padding:3px 0px 3px 15px; height:22px; line-height:22px;  margin-bottom:10px; float:left; width:744px; border:1px solid #CCC; border-width:1px 0px 1px 0px; background-color:#F5F5F5; }
+#secaoRelacionada span { margin-top:4px; padding-right:10px;  font: bold 11px Arial, Helvetica, sans-serif;  float:left; }
+#secaoRelacionada ul { float:left; list-style: none; }
+#secaoRelacionada ul li { display:inline; }
+#secaoRelacionada a { font-weight:normal; text-decoration:underline; margin-left:5px; margin-right:5px; }
+
+#conteudo, #nav { margin-right: 10px; }
+
+#nav { width:148px; float:left; }
+#nav div { margin-bottom:10px; }
+#nav div h3, #esq div h3 { font: bold 11px Arial;  color:#00577D; padding-left:10px; line-height:26px; height:26px; background-color:#DBDADA; border-color:#696969; border-style:solid ; border-width: 0px 2px 2px 0px; }
+#nav div ul { list-style: none; }
+#nav div ul li { border-bottom: 1px solid #D1D1D1; border-top: 1px solid #FAFAF8; background-color:#F5F5F5; height:26px; line-height:26px; padding-left:10px;}
+#nav div ul li a { color:#333; text-decoration:none; }
+
+#nav #login { padding:8px; color:#555; background:url(http://static.imasters.com.br/img/secao/login_b.gif) no-repeat left top; height: 68px; }
+#nav #login form select { margin-top:3px; width: 120px; height:18px; font: normal 11px Arial; }
+
+#nav #secoes ul li a { font-weight: bold; }
+
+
+#newsletter { height:100px; background-color:#F5F5F5; }
+#newsletter form p { padding:10px; } 
+#newsletter input.text { width:90px; padding:1px; height:15px; font: normal 11px Arial; }
+#newsletter input.button { width: 20px; height:20px; font: normal 11px Arial; }
+#newsletter span { color:#555; font-size:10px; text-transform:uppercase; }
+
+#ultmaterias { float:right; width:601px; margin-bottom:20px;}
+#ultmaterias h3 { background:url(http://static.imasters.com.br/img/secao/fundo_h3_verdeescuro.gif) repeat-x; padding-left:10px; font: bold 11px Arial; line-height:26px; height:26px; }
+#ultmaterias h3 span.titulo { color:#FFF;  display:block; float:left; width: 500px; }
+#ultmaterias h3 span { color:#FFF;  width: 80px; }
+#ultmaterias ul { margin-top:5px; list-style:none; }
+#ultmaterias ul li.f, #ultmaterias ul li:first-child{ background:none; }  /* Pronto para o IE7/Firefox */
+#ultmaterias ul li { background:url(http://static.imasters.com.br/img/pontilhado.jpg) top left repeat-x; padding:4px 5px 3px 7px;  }
+#ultmaterias ul li a { color:#000; text-decoration: none; display:block; float:left; width: 500px; }
+#ultmaterias ul li a:hover { text-decoration:underline; }
+#ultmaterias ul li a span { color:#053D88; }
+#ultmaterias ul li img { height:11px; width: 59px; position:relative; right:0px; }
+
+#rodape { margin:10px 0px 0px 0px; width:759px; clear:both; background-color:#FFF; }
+#rodape br { clear:both; }
+#rodape ul { text-align:center; list-style:none; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+#rodape ul li { margin-left: 25px; display:inline; line-height:28px; }
+#rodape div { margin-top:15px; float:left; width: 600px; height:70px; background:url(http://static.imasters.com.br/img/geral/rodape.jpg) #FFF no-repeat; background-position: 30px 10px; } 
+#rodape div span { float:left; margin:37px 0px 0px 240px; }
+#rodape ul#selos { float:right; margin-top:10px; height:70px; border:0px; width:100px;  list-style:none; }
+#rodape ul#selos li { margin:0px; }
+
+#layerKeyword { width:266px; height:80px; position:absolute; border:1px solid #CCC; background-color:#FFF;  }
+#layerKeyword h3 { color:#086DC2; padding-left:10px; font-size:11px !important;  margin:0px !important;   height:26px; line-height:26px; border-width:0px; background:url(http://static.imasters.com.br/img/geral/keyword_f.gif) no-repeat #F4F4F4 185px 3px; border-bottom:1px solid #FFF;  }
+#layerKeyword p { font-weight:normal !important; margin:0px !important; background-color:#FFF !important; padding:5px; width:254px; height:41px; border:1px solid #F4F4F4; border-top-color:#CFD0D1; }
+#layerKeyword a, #layerKeyword p  { font-size:10px !important;  }
+#layerKeyword a{ color:#094EAE !important; }
+a.keyword { font-weight:bold !important; color:#555 !important; text-decoration:none !important; background:url(http://static.imasters.com.br/img/geral/sub_tracejado.gif) repeat-x bottom left; }
+a.keyword:hover { text-decoration:none !important; cursor:help; }

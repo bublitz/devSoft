@@ -1,0 +1,54 @@
+.iframe {
+	SCROLLBAR-FACE-COLOR: #717e4c; SCROLLBAR-HIGHLIGHT-COLOR: #717e4c; SCROLLBAR-SHADOW-COLOR: #717e4c; SCROLLBAR-ARROW-COLOR: #717e4c; SCROLLBAR-BASE-COLOR: #717e4c; scrollbar-3d-light-color: #717E4C; scrollbar-dark-shadow-color: #717E4C
+}
+.font2-verde {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #4d6509; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font2-branco {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A {
+	TEXT-DECORATION: none
+}
+.font2-preto {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font1-preto {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font1-vermelho {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font5-branco {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font1-branco {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font1-verde {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #4d6509; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font4-preto {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.font1-verde2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #728315; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.LabelFormulario {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: Verdana
+}
+.Erro {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: red; FONT-FAMILY: Verdana
+}
+.LabelItemFormulario {
+	FONT-SIZE: 9pt; FONT-FAMILY: Verdana
+}
+.LabelTitulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt; FONT-FAMILY: Verdana
+}
+.Botao {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid; FONT-FAMILY: Verdana
+}
+.CaixaTexto {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid; FONT-FAMILY: Verdana
+}

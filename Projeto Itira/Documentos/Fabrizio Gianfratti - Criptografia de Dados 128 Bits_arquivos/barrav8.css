@@ -1,0 +1,40 @@
+/* barra iG */
+.combo_barraigv8{
+		font-family:'microsoft sans serif',arial,helvetica; height:15px; background-color:#ffffff; color:#7F99B0; font-size:11px; font-weight:bold; width:158px; margin-right:2px;
+}
+
+.txt_barraigv8{
+		font-family:'microsoft sans serif',arial,helvetica; background-color:transparent; margin-bottom:1px; padding-left:5px; border:0; height:15px;width:221px;
+		font-weight:bold; font-size:11px; color:#7F99B0;
+}
+
+/* barra iG empresas */
+.txt_barraigv8_empr{
+		font-family:'microsoft sans serif',arial,helvetica; background-color:transparent; padding-left:5px; border:0; height:15px;width:150px;
+		font-weight:bold; font-size:11px; color:#7e7e7e; margin-top:3px;
+}
+.combo_barraigv8_empr{
+		font-family:'microsoft sans serif',arial,helvetica; height:15px; background-color:#ffffff; color:#7e7e7e; font-size:11px; font-weight:bold; width:158px; 
+		margin-right:2px;margin-left:12px; border:1px solid #545454; scrollbar-base-color: #FF6816;
+}
+
+/* BARRA PARCEIROS */
+.combo_barraigv8_parc {
+	margin:0 5px 0 5px;
+	width:130px;
+	height:15px;
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#8098B0;
+	background-color:#FFF;
+}
+
+.txt_barraigv8_parc {
+	margin-top:3px;
+	border:0;
+	width:140px;
+	height:15px;
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#8098B0;
+	background-color:transparent;
+}
+/* /BARRA PARCEIROS */

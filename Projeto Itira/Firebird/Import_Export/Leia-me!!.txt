@@ -1,0 +1,5 @@
+*******************************************
+Vídeo aulas
+*******************************************
+Antes de rodar o vídeo você deve instalar
+o Codec que se encontra em anexo (tscc.exe)

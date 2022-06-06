@@ -1,0 +1,1167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Fábio Camara - Segurança com SSL para WebServices</title>
+
+
+	
+	<meta name="resource-types" content="document">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="revisit-after" content="1">
+	<meta name="classification" content="Internet">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="Description" content="Como proteger suas informações disponibilizadas por WebServices que serão consumidas por outras aplicações na Web?">
+	<meta name="Keywords" content="ssl, webservices, ASP.NET, Servidores Windows, WebServices">
+	<meta name="robots" content="ALL">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="author" content="Fábio Camara">
+	<meta name="language" content="pt-br">
+	<meta name="doc-class" content="Completed">
+	<meta name="doc-rights" content="Public">
+	<link rel="shortcut icon" href="http://static.imasters.com.br/img/favicon.ico">
+	<!-- base href="http://www.imasters.com.br/" -->
+
+	<link href="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/padrao.css" rel="stylesheet" type="text/css">
+	<link href="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/conteudo.css" rel="stylesheet" type="text/css">
+	<link href="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/secao_azul.css" rel="stylesheet" type="text/css">
+	
+	<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/basico.js" type="text/javascript"></script>
+	<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/padrao.js" type="text/javascript"></script>
+	<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/conteudo.js" type="text/javascript"></script>
+	<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/keywords.js" type="text/javascript"></script>
+		
+	<link type="text/css" rel="stylesheet" href="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/barrav8.css"></head><body><script type="text/javascript" src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/detect.htm">
+</script><div id="geral">
+	<div style="display: block;" id="imShop">
+		<ul>
+		  <li>
+			  <a href="http://loja.imasters.com.br/">Acessórios
+			  iMasters </a>
+				<p><span>Linha exclusiva </span>		  </p>
+  		  </li>
+			<li> <a href="http://loja.imasters.com.br/">Camisas iMasters </a>
+                <p><span>Pólo e camisetas </span></p>
+		  </li>
+			<li>
+			  <a href="http://loja.imasters.com.br/">CD-ROMs
+			  iMasters</a>
+				<p><span>Cursos exclusivos </span>		  </p>
+		  </li>
+			<li> <a href="http://loja.imasters.com.br/">DVDs iMasters</a>
+              <p><span>Cursos em vídeo </span></p>
+			</li>
+			<li>
+				<a href="http://loja.imasters.com.br/">Livros
+				de TI/Web </a>
+				<p><span>Produtos indicados </span>			</p>
+		  </li>
+			<li> <a href="http://loja.imasters.com.br/">Guias de consulta </a>
+                <p><span>Série completa </span></p>
+		  </li>
+			<li>
+				<a href="http://loja.imasters.com.br/">Pocket
+				books </a>
+				<p><span>Leve-os no bolso </span>			</p>
+		  </li>
+		    <li>
+			  <a href="http://loja.imasters.com.br/">Pacotes/promoção </a>
+				<p><span>Preços incríveis!</span></p>
+	      </li>
+	    </ul>
+	<p><a href="http://loja.imasters.com.br/"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/loja.gif" alt="" height="104" width="130"></a></p>
+	<ul><li><a href="http://loja.imasters.com.br/detalhe_produto.php?produto=130">Destaque</a>
+    <p><strong>CD-ROM Dreamweaver + PHP + MySQL</strong>, curso completo com vídeo aulas,
+      projeto final e uma série de recursos.</p>
+    <span>Apenas R$ 39,50</span></li></ul>
+</div>	<script language="javascript" src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/igbarra.js"></script><script language="javascript" type="text/javascript">function _$getPortal() { if(self != top) { if(top.brturbo) { _$portal = 2; } else if(top.ibest) { _$portal = 3; } else { _$portal = 1; } } else { _$portal = 1; } return _$portal;}function abrePopGenericoIg(url, largura, altura) { window.open(url, "popgenericoiG", "scrollbars=0, width=" + largura + ", height=" + altura);}function buscaiG(frm1){ window.open("http://farejador-1.ig.com.br/farejador/search?q="+escape(frm1.q.value)+"&orig=ig_xml_br_web_search_int"); return false;}</script><table style="background: transparent url(http://image.ig.com.br/hotsites/sites_ig2006/bar_parc_mainbg.jpg) repeat-x scroll 0%; width: 100%; height: 31px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="__barra_do_iG__" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="barv8_ie"><table style="width: 720px; height: 31px;" class="barv8_fox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><a href="http://www.ig.com.br/" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_logo_ig.jpg" alt="" border="0" height="31" width="60"></a></td><form name="frm1" onsubmit="return buscaiG(this);" style="margin: 0pt; padding: 0pt;"></form><td style="width: 25px;"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_cxesq.gif" alt="" height="22" width="25"></td><td style="background: transparent url(http://image.ig.com.br/hotsites/sites_ig2006/bar_cxmeio.gif) repeat-x scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><input id="q" name="q" value="Faça sua busca" onfocus="this.value=''" class="txt_barraigv8_parc" type="text"></td><td style="width: 8px;"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_cxdir.gif" alt="" height="22" width="8"></td><td><input name="Image" src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_btnok.jpg" onclick="return buscaiG(this.form);" style="width: 34px; height: 21px;" type="image"></td><td><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_line.jpg" alt="" height="31" width="12"></td><td><a href="http://portal.ig.com.br/acesso_internet.html" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_btnacess.jpg" alt="" border="0" height="21" width="60"></a></td><td><a href="http://portal.ig.com.br/acesso_email.html" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_btnmail.jpg" alt="" border="0" height="21" width="56"></a></td><td><a href="http://portal.ig.com.br/acesso_cadastrese.html" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_btncadstr.jpg" alt="" border="0" height="21" width="86"></a></td><td><select name="select" onchange="parent.location=this.value" class="combo_barraigv8_parc"><option selected="selected">Canais</option><option value="http://www.voxcards.com.br">Cartões</option><option value="http://babado.ig.com.br">Celebridades</option><option value="http://igpapo.ig.com.br">Chat</option><option value="http://iguinho.ig.com.br">Crianças</option><option value="http://igentretenimento.ig.com.br">Diversão</option><option value="http://www.baixaki.com.br">Downloads</option><option value="http://www.ig.com.br/paginas/canais/educacao">Educação</option><option value="http://ultimosegundo.ig.com.br/esportes">Esportes</option><option value="http://arenaig.ig.com.br">Games</option><option value="http://delas.ig.com.br">Mulher</option><option value="http://megaplayer.ig.com.br">Multimídia</option><option value="http://igpop.ig.com.br">Música</option><option value="http://ultimosegundo.ig.com.br">Notícias</option><option value="http://poupaclique.ig.com.br">Serviços</option></select></td><td><a href="http://www.ibest.com.br/" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_logo_ibest.jpg" alt="" border="0" height="31" width="29"></a></td><td><a href="http://www.brturbo.com.br/" target="_parent"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/bar_parc_logo_brturbo.jpg" alt="" border="0" height="31" width="48"></a></td></tr></tbody></table></td></tr></tbody></table><script language="javascript" type="text/javascript">if(_$getPortal() == 1) {document.getElementById("__barra_do_iG__").style.display = "";}</script>
+<div id="sbanner"><div id="sbanner"><!-- begin ad tag -->
+<script language="JavaScript" type="text/javascript">
+ord=Math.random()*10000000000000000;
+document.write('<script language="JavaScript" src="http://ad.br.doubleclick.net/adj/imasters/ros;imasters=superbanner_lexmark;sz=728x90;ord=' + ord + '?" type="text/javascript"><\/script>');
+</script><script language="JavaScript" src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/ros.htm" type="text/javascript"></script><noscript><a
+href="http://ad.br.doubleclick.net/jump/imasters/ros;imasters=superbanner_lexmark;sz=728x90;ord=123456789?"
+target="_blank"><img
+src="http://ad.br.doubleclick.net/ad/imasters/ros;imasters=superbanner_lexmark;sz=728x90;ord=123456789?"
+width="728" height="90" border="0" alt=""></a></noscript>
+<!-- End ad tag --></div></div>
+	<div class="cima">
+		<div id="topo">
+			<h1><a href="http://www.imasters.com.br/"><span>iMasters - Fábio Camara - Segurança com SSL para WebServices</span></a></h1>
+			<ul>
+				<li><a href="http://www.imasters.com.br/sobre">Sobre o iMasters</a></li>
+				<li><a href="http://loja.imasters.com.br/">iMasters Shop</a></li>
+				<li><a href="http://www.imasters.com.br/intercon">iMasters InterCon</a></li>
+				<li><a href="http://www.imasters.com.br/feeds" class="rss">Feeds</a></li>
+			</ul>
+		</div>
+		<div id="canal"><h2><a href="http://www.imasters.com.br/canal/dotnet">Plataforma .Net</a> <span><a href="http://www.imasters.com.br/secao/aspnet">ASP.NET</a></span></h2></div>
+	</div>
+	<div id="busca">
+		<h2>Busca no site</h2>
+		<form action="/busca" method="post" enctype="multipart/form-data">
+			<p>
+			<select name="codSecaoBusca" id="codSecaoBusca" tabindex="1" title="Seção">
+				<option value="0">Buscar em:</option>
+				<option label="3ds max" value="48">3ds max</option>
+<option label="Access" value="17">Access</option>
+<option label="Acessibilidade" value="9">Acessibilidade</option>
+<option label="ActionScript" value="31">ActionScript</option>
+<option label="Ajax" value="6">Ajax</option>
+<option label="ASP" value="25">ASP</option>
+<option label="ASP.NET" value="70">ASP.NET</option>
+<option label="Banco de Dados" value="16">Banco de Dados</option>
+<option label="Business Intelligence" value="54">Business Intelligence</option>
+<option label="C#" value="72">C#</option>
+<option label="Carreira" value="63">Carreira</option>
+<option label="Certificações" value="64">Certificações</option>
+<option label="Cisco" value="13">Cisco</option>
+<option label="ColdFusion" value="28">ColdFusion</option>
+<option label="Computação Forense" value="93">Computação Forense</option>
+<option label="Comunicação" value="94">Comunicação</option>
+<option label="Criação" value="45">Criação</option>
+<option label="CSS" value="4">CSS</option>
+<option label="DB2" value="18">DB2</option>
+<option label="Delphi" value="29">Delphi</option>
+<option label="Des. de Software" value="75">Des. de Software</option>
+<option label="Desenvolvimento" value="33">Desenvolvimento</option>
+<option label="Direito e Web" value="90">Direito e Web</option>
+<option label="Dreamweaver" value="35">Dreamweaver</option>
+<option label="E-commerce" value="62">E-commerce</option>
+<option label="E-Gov" value="92">E-Gov</option>
+<option label="E-Learning" value="96">E-Learning</option>
+<option label="E-mail Marketing" value="59">E-mail Marketing</option>
+<option label="Fireworks" value="46">Fireworks</option>
+<option label="Flash" value="34">Flash</option>
+<option label="Flex" value="97">Flex</option>
+<option label="Gerência" value="53">Gerência</option>
+<option label="Governança de TI" value="89">Governança de TI</option>
+<option label="Interbase" value="22">Interbase</option>
+<option label="Intranets" value="57">Intranets</option>
+<option label="Java" value="27">Java</option>
+<option label="Javascript" value="7">Javascript</option>
+<option label="JDeveloper" value="37">JDeveloper</option>
+<option label="Lightwave 3D" value="51">Lightwave 3D</option>
+<option label="Linux" value="15">Linux</option>
+<option label="Mercado" value="56">Mercado</option>
+<option label="Mobile" value="66">Mobile</option>
+<option label="MySQL" value="21">MySQL</option>
+<option label="Oracle" value="23">Oracle</option>
+<option label="Outros" value="84">Outros</option>
+<option label="Pesquisas" value="61">Pesquisas</option>
+<option label="Photoshop" value="76">Photoshop</option>
+<option label="PHP" value="26">PHP</option>
+<option label="Plataforma .Net" value="69">Plataforma .Net</option>
+<option label="PostgreSQL" value="20">PostgreSQL</option>
+<option label="Programação" value="24">Programação</option>
+<option label="Publicidade Online" value="91">Publicidade Online</option>
+<option label="Redes" value="12">Redes</option>
+<option label="Ruby on Rails" value="98">Ruby on Rails</option>
+<option label="Segurança" value="1">Segurança</option>
+<option label="SEO" value="58">SEO</option>
+<option label="Servidores Windows" value="14">Servidores Windows</option>
+<option label="Sistemas Integrados" value="86">Sistemas Integrados</option>
+<option label="Software Livre" value="52">Software Livre</option>
+<option label="SQL Server" value="19">SQL Server</option>
+<option label="Suite Corel" value="47">Suite Corel</option>
+<option label="Tableless" value="5">Tableless</option>
+<option label="Tecnologia" value="65">Tecnologia</option>
+<option label="Tendências" value="60">Tendências</option>
+<option label="Teoria/Design" value="49">Teoria/Design</option>
+<option label="UML" value="30">UML</option>
+<option label="Usabilidade" value="11">Usabilidade</option>
+<option label="V. FoxPro" value="87">V. FoxPro</option>
+<option label="VB.NET" value="71">VB.NET</option>
+<option label="Vírus" value="2">Vírus</option>
+<option label="Visual Basic" value="32">Visual Basic</option>
+<option label="Visual Studio" value="39">Visual Studio</option>
+<option label="VoIP" value="68">VoIP</option>
+<option label="Web Marketing" value="55">Web Marketing</option>
+<option label="Web Standards" value="3">Web Standards</option>
+<option label="Web Writing" value="95">Web Writing</option>
+<option label="WebServices" value="67">WebServices</option>
+<option label="XHTML" value="8">XHTML</option>
+<option label="XML" value="10">XML</option>
+<option label="Zope" value="88">Zope</option>
+
+			</select>
+			<input name="strPalavra" class="text" id="strBusca" tabindex="2" title="digite uma palavra-chave" type="text">
+			<input src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/b_ok.gif" name="SubmitBusca" id="SubmitBusca" tabindex="6" value="ok" class="button" type="image">
+			</p>
+		</form>
+	</div>
+	<div id="navrapida">
+		<h2>Navegação Rápida</h2>
+		<form action="/navrapida">
+		  <p>
+			<select name="areasiMasters" id="areasiMasters" tabindex="4" title="selecione uma area"><option>Áreas iMasters</option><option label="Agenda de Eventos" value="http://www.imasters.com.br/evento">Agenda de Eventos</option>
+<option label="Códigos Livres" value="http://www.codigolivre.com.br/">Códigos Livres</option>
+<option label="CSS Interativo" value="http://www.imasters.com.br/cssinterativo">CSS Interativo</option>
+<option label="Cursos Online" value="/cursos">Cursos Online</option>
+<option label="Dicas iMasters" value="http://www.imasters.com.br/dicas">Dicas iMasters</option>
+<option label="Documentações" value="http://www.webdocs.com.br/">Documentações</option>
+<option label="Downloads" value="/download">Downloads</option>
+<option label="Entrevistas" value="/entrevistas">Entrevistas</option>
+<option label="FAQ" value="/faq">FAQ</option>
+<option label="Fórum iMasters" value="http://forum.imasters.com.br">Fórum iMasters</option>
+<option label="Guia de Users Groups" value="http://www.imasters.com.br/grupos">Guia de Users Groups</option>
+<option label="iMasters InterCon" value="http://www.imasters.com.br/intercon/">iMasters InterCon</option>
+<option label="iMasters Shop" value="http://loja.imasters.com.br">iMasters Shop</option>
+<option label="Mercado iMasters" value="http://mercado.imasters.com.br">Mercado iMasters</option>
+<option label="Modelos de Contrato" value="http://www.imasters.com.br/contrato">Modelos de Contrato</option>
+<option label="Tabela de Cores Web" value="/tabela_de_cores">Tabela de Cores Web</option>
+</select>
+			<select name="codSecao" id="secoesiMasters" class="secoes" tabindex="5" title="selecione uma secao"><option>Seções iMasters</option><optgroup label="Banco de Dados">
+<option label="Access" value="access">Access</option>
+<option label="DB2" value="db2">DB2</option>
+<option label="Interbase" value="interbase">Interbase</option>
+<option label="MySQL" value="mysql">MySQL</option>
+<option label="Oracle" value="oracle">Oracle</option>
+<option label="PostgreSQL" value="postgresql">PostgreSQL</option>
+<option label="SQL Server" value="sql_server">SQL Server</option>
+</optgroup>
+<optgroup label="Comunicação">
+<option label="E-Learning" value="elearning">E-Learning</option>
+<option label="Web Writing" value="webwriting">Web Writing</option>
+</optgroup>
+<optgroup label="Criação">
+<option label="3ds max" value="3dsmax">3ds max</option>
+<option label="Fireworks" value="fireworks">Fireworks</option>
+<option label="Lightwave 3D" value="lightwave3d">Lightwave 3D</option>
+<option label="Photoshop" value="photoshop">Photoshop</option>
+<option label="Suite Corel" value="suite_corel">Suite Corel</option>
+<option label="Teoria/Design" value="teoria">Teoria/Design</option>
+</optgroup>
+<optgroup label="Desenvolvimento">
+<option label="Des. de Software" value="des_de_software">Des. de Software</option>
+<option label="Dreamweaver" value="dreamweaver">Dreamweaver</option>
+<option label="Flash" value="flash">Flash</option>
+<option label="Flex" value="flex">Flex</option>
+<option label="JDeveloper" value="jdeveloper">JDeveloper</option>
+<option label="V. FoxPro" value="visual_foxpro">V. FoxPro</option>
+<option label="Zope" value="zope">Zope</option>
+</optgroup>
+<optgroup label="Gerência">
+<option label="Business Intelligence" value="bi">Business Intelligence</option>
+<option label="E-Gov" value="egov">E-Gov</option>
+<option label="Governança de TI" value="governanca">Governança de TI</option>
+<option label="Intranets" value="intranets">Intranets</option>
+</optgroup>
+<optgroup label="Mercado">
+<option label="Carreira" value="carreira">Carreira</option>
+<option label="Certificações" value="certificacoes">Certificações</option>
+<option label="E-commerce" value="ecommerce">E-commerce</option>
+<option label="Pesquisas" value="pesquisas">Pesquisas</option>
+<option label="Tendências" value="tendencias">Tendências</option>
+</optgroup>
+<optgroup label="Plataforma .Net">
+<option label="ASP.NET" value="aspnet">ASP.NET</option>
+<option label="C#" value="csharp">C#</option>
+<option label="VB.NET" value="vbnet">VB.NET</option>
+<option label="Visual Studio" value="visual_studio">Visual Studio</option>
+</optgroup>
+<optgroup label="Programação">
+<option label="ActionScript" value="actionscript">ActionScript</option>
+<option label="ASP" value="asp">ASP</option>
+<option label="ColdFusion" value="coldfusion">ColdFusion</option>
+<option label="Delphi" value="delphi">Delphi</option>
+<option label="Java" value="java">Java</option>
+<option label="PHP" value="php">PHP</option>
+<option label="Ruby on Rails" value="ruby">Ruby on Rails</option>
+<option label="UML" value="uml">UML</option>
+<option label="Visual Basic" value="visual_basic">Visual Basic</option>
+</optgroup>
+<optgroup label="Redes">
+<option label="Cisco" value="cisco">Cisco</option>
+<option label="Servidores Windows" value="servidores_windows">Servidores Windows</option>
+</optgroup>
+<optgroup label="Segurança">
+<option label="Computação Forense" value="forense">Computação Forense</option>
+<option label="Direito e Web" value="direito">Direito e Web</option>
+<option label="Vírus" value="virus">Vírus</option>
+</optgroup>
+<optgroup label="Software Livre">
+<option label="Linux" value="linux">Linux</option>
+</optgroup>
+<optgroup label="Tecnologia">
+<option label="Mobile" value="mobile">Mobile</option>
+<option label="VoIP" value="voip">VoIP</option>
+<option label="WebServices" value="webservices">WebServices</option>
+</optgroup>
+<optgroup label="Web Marketing">
+<option label="E-mail Marketing" value="email_marketing">E-mail Marketing</option>
+<option label="Publicidade Online" value="publicidade">Publicidade Online</option>
+<option label="SEO" value="seo">SEO</option>
+</optgroup>
+<optgroup label="Web Standards">
+<option label="Acessibilidade" value="acessibilidade">Acessibilidade</option>
+<option label="Ajax" value="ajax">Ajax</option>
+<option label="CSS" value="css">CSS</option>
+<option label="Javascript" value="javascript">Javascript</option>
+<option label="Tableless" value="tableless">Tableless</option>
+<option label="Usabilidade" value="usabilidade">Usabilidade</option>
+<option label="XHTML" value="xhtml">XHTML</option>
+<option label="XML" value="xml">XML</option>
+</optgroup>
+</select>
+		 </p>
+		</form>
+	</div>
+	<div id="secaoRelacionada">
+						<span>Seções deste canal:</span>
+				
+					<ul>
+							<li><a href="http://www.imasters.com.br/secao/aspnet">ASP.NET</a>
+				 | </li>
+							<li><a href="http://www.imasters.com.br/secao/csharp">C#</a>
+				 | </li>
+							<li><a href="http://www.imasters.com.br/secao/vbnet">VB.NET</a>
+				 | </li>
+							<li><a href="http://www.imasters.com.br/secao/visual_studio">Visual Studio</a>
+				 | </li>
+							<li><a href="http://www.imasters.com.br/secao/xml">XML</a>
+				</li>
+						</ul>
+			
+		</div>	<div id="secaoConteudo">
+		<div>
+			<span class="secoes">Esta matéria foi publicada nas seções: </span>
+				<ul>
+					<li><a href="http://www.imasters.com.br/secao/aspnet/">ASP.NET</a></li>
+					<li><a href="http://www.imasters.com.br/secao/servidores_windows/">Servidores Windows</a></li>
+					<li><a href="http://www.imasters.com.br/secao/webservices/">WebServices</a></li>
+									</ul>
+			<span class="aviso">Os textos aqui publicados são de responsabilidade de seus autores e podem não expressar a opinião do iMasters.</span>
+		</div>
+		<div id="imprimir"><a href="http://www.imasters.com.br/artigo/5074/aspnet/seguranca_com_ssl_para_webservices//imprimir/">Versão para impressão</a></div>
+	</div>
+	
+	
+	<div id="nav">
+				<div id="autor">
+			<h3>Conheça mais o autor</h3>
+			<div>
+				<img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/688.jpg" alt="Fábio">
+				<span class="nome">Fábio Camara</span>
+				É colunista desde outubro de 2003
+			</div>
+			<h4>Mais informações</h4>
+			<p>Fábio tem um total de 4 artigos publicados no iMasters, sendo que o mais lido deles é o: <a href="http://www.imasters.com.br/artigo/3475/dotnet/metodologia_ou_boas_praticas/">Metodologia ou boas práticas</a></p>
+			<p>Veja ao final da matéria a relação completa com todos os artigos publicados por Fábio Camara.</p>
+		</div>
+					
+							<div id="canais">
+			<h3>Canais iMasters</h3>
+			<ul>
+								<li><a href="http://www.imasters.com.br/canal/bancodedados">Banco de Dados</a></li>
+								<li><a href="http://www.imasters.com.br/canal/comunicacao">Comunicação</a></li>
+								<li><a href="http://www.imasters.com.br/canal/criacao">Criação</a></li>
+								<li><a href="http://www.imasters.com.br/canal/desenvolvimento">Desenvolvimento</a></li>
+								<li><a href="http://www.imasters.com.br/canal/gerencia">Gerência</a></li>
+								<li><a href="http://www.imasters.com.br/canal/mercado">Mercado</a></li>
+								<li><a href="http://www.imasters.com.br/canal/dotnet">Plataforma .Net</a></li>
+								<li><a href="http://www.imasters.com.br/canal/programacao">Programação</a></li>
+								<li><a href="http://www.imasters.com.br/canal/redes">Redes</a></li>
+								<li><a href="http://www.imasters.com.br/canal/seguranca">Segurança</a></li>
+								<li><a href="http://www.imasters.com.br/canal/livre">Software Livre</a></li>
+								<li><a href="http://www.imasters.com.br/canal/tecnologia">Tecnologia</a></li>
+								<li><a href="http://www.imasters.com.br/canal/webmarketing">Web Marketing</a></li>
+								<li><a href="http://www.imasters.com.br/canal/webstandards">Web Standards</a></li>
+							</ul>
+		</div>
+		<div id="arrAC">
+			<h3>Outros Articulistas</h3>
+			<p>Conheça todos os articulistas do site e acesse suas matérias</p>
+			<form action="" id="formAC" method="post" enctype="multipart/form-data">
+				<p>
+				<select name="articulistas" id="selectArticulista">
+					<option value="0">Selecione</option>
+					<option label="Admilson Nogueira" value="5360/admilson_nogueira">Admilson Nogueira</option>
+<option label="Adriane Pereira" value="16169/adriane_pereira">Adriane Pereira</option>
+<option label="Adriano Nântua " value="5300/adriano_nantua">Adriano Nântua </option>
+<option label="Adriano Serrano" value="5301/adriano_serrano">Adriano Serrano</option>
+<option label="Agrinei Souza" value="14158/agrinei_souza">Agrinei Souza</option>
+<option label="Alan Ricardo " value="5385/alan_ricardo">Alan Ricardo </option>
+<option label="Alessandro Moraes " value="5431/alessandro_moraes">Alessandro Moraes </option>
+<option label="Alex Dorr" value="5215/alex_dorr">Alex Dorr</option>
+<option label="Alex Falcão " value="451/alex_falcao">Alex Falcão </option>
+<option label="Alex Mello" value="5216/alex_mello">Alex Mello</option>
+<option label="Alex Prado" value="14856/alex_prado">Alex Prado</option>
+<option label="Alexandre Bartie" value="5412/alexandre_bartie">Alexandre Bartie</option>
+<option label="Alexandre Carbono" value="5963/alexandre_carbono">Alexandre Carbono</option>
+<option label="Alexandre Carlos" value="5678/alexandre_carlos">Alexandre Carlos</option>
+<option label="Alexandre Freire" value="5321/alexandre_freire">Alexandre Freire</option>
+<option label="Alexandre Lopes " value="5217/alexandre_lopes">Alexandre Lopes </option>
+<option label="Alexandre Mendes" value="4789/alexandre_mendes">Alexandre Mendes</option>
+<option label="Alfred Reinold Baudisch" value="3277/alfred_reinold_baudisch">Alfred Reinold Baudisch</option>
+<option label="Alfredo Lotar " value="5317/alfredo_lotar">Alfredo Lotar </option>
+<option label="Alisson Pissetti" value="5355/alisson_pissetti">Alisson Pissetti</option>
+<option label="Almedson Ferreira" value="5218/almedson_ferreira">Almedson Ferreira</option>
+<option label="Álvaro Gulliver" value="16478/alvaro_gulliver">Álvaro Gulliver</option>
+<option label="Ana Amélia Erthal" value="5441/ana_amelia_erthal">Ana Amélia Erthal</option>
+<option label="Anderson Brito" value="89030/anderson_brito">Anderson Brito</option>
+<option label="Anderson Patrício" value="5956/anderson_patricio">Anderson Patrício</option>
+<option label="Anderson Toshio" value="91318/anderson_toshio">Anderson Toshio</option>
+<option label="André Albuquerque" value="89466/andre_albuquerque">André Albuquerque</option>
+<option label="André Altieri " value="5345/andre_altieri">André Altieri </option>
+<option label="André Bittencourt" value="3088/andre_bittencourt">André Bittencourt</option>
+<option label="André Luis Bassi " value="5297/andre_luis_bassi">André Luis Bassi </option>
+<option label="André Luiz" value="5226/andre_luiz">André Luiz</option>
+<option label="Angel Nicolas Franco" value="11498/angel_nicolas_franco">Angel Nicolas Franco</option>
+<option label="Antonio Gemballa " value="5421/antonio_gemballa">Antonio Gemballa </option>
+<option label="Arthur Henrique" value="14921/arthur_henrique">Arthur Henrique</option>
+<option label="Bárbara Ribeiro" value="12101/barbara_ribeiro">Bárbara Ribeiro</option>
+<option label="Barbara Xavier" value="87951/barbara_xavier">Barbara Xavier</option>
+<option label="Belchior Palma" value="16523/belchior_palma">Belchior Palma</option>
+<option label="Bete Mello " value="5362/bete_mello">Bete Mello </option>
+<option label="Bráulio Lorenzo " value="5413/braulio_lorenzo">Bráulio Lorenzo </option>
+<option label="Bruno Ávila" value="5219/bruno_avila">Bruno Ávila</option>
+<option label="Bruno Costa Ferreira " value="5337/bruno_costa_ferreira">Bruno Costa Ferreira </option>
+<option label="Bruno do Val Benes" value="6058/bruno_do_val_benes">Bruno do Val Benes</option>
+<option label="Bruno Dulcetti" value="5415/bruno_dulcetti">Bruno Dulcetti</option>
+<option label="Bruno Fuster" value="1417/bruno_fuster">Bruno Fuster</option>
+<option label="Bruno Peres Orcajo" value="5367/bruno_peres_orcajo">Bruno Peres Orcajo</option>
+<option label="Bruno Portela" value="14646/bruno_portela">Bruno Portela</option>
+<option label="Bruno Silveira Cruz" value="90703/bruno_silveira_cruz">Bruno Silveira Cruz</option>
+<option label="Caio Azevedo" value="5220/caio_azevedo">Caio Azevedo</option>
+<option label="Caio Cunha" value="5287/caio_cunha">Caio Cunha</option>
+<option label="Caio Meriguetti" value="87904/caio_meriguetti">Caio Meriguetti</option>
+<option label="Caiuby Freitas" value="5388/caiuby_freitas">Caiuby Freitas</option>
+<option label="Carla Oliveira" value="6025/carla_oliveira">Carla Oliveira</option>
+<option label="Carlos Alberto" value="16482/carlos_alberto">Carlos Alberto</option>
+<option label="Carlos Cruz " value="5285/carlos_cruz">Carlos Cruz </option>
+<option label="Carlos Eduardo" value="3307/carlos_eduardo">Carlos Eduardo</option>
+<option label="Carlos Eduardo Gonser" value="5221/carlos_eduardo_gonser">Carlos Eduardo Gonser</option>
+<option label="Carlos Eduardo Mercante" value="889/carlos_eduardo_mercante">Carlos Eduardo Mercante</option>
+<option label="Carlos Gustavo" value="3196/carlos_gustavo">Carlos Gustavo</option>
+<option label="Carlos Nepomuceno" value="5288/carlos_nepomuceno">Carlos Nepomuceno</option>
+<option label="Carlos Perobelli" value="11900/carlos_perobelli">Carlos Perobelli</option>
+<option label="Carlos Rolim" value="87768/carlos_rolim">Carlos Rolim</option>
+<option label="Carlos Silva Jr." value="9791/carlos_silva_jr">Carlos Silva Jr.</option>
+<option label="Carolina Maia" value="5349/carolina_maia">Carolina Maia</option>
+<option label="Cassiano Roloff" value="10730/cassiano_roloff">Cassiano Roloff</option>
+<option label="Cesar Romani" value="90632/cesar_romani">Cesar Romani</option>
+<option label="Christian Barbosa" value="14280/christian_barbosa">Christian Barbosa</option>
+<option label="Christiano Cony" value="5272/christiano_cony">Christiano Cony</option>
+<option label="Christiano Pinheiro" value="5222/christiano_pinheiro">Christiano Pinheiro</option>
+<option label="Cícero Lopes" value="5674/cicero_lopes">Cícero Lopes</option>
+<option label="Cícero Monthiel" value="1663/cicero_monthiel">Cícero Monthiel</option>
+<option label="Ciro Feitosa " value="5382/ciro_feitosa">Ciro Feitosa </option>
+<option label="Claudenir Andrade" value="5280/claudenir_andrade">Claudenir Andrade</option>
+<option label="Cláudio Hickstein" value="5343/claudio_hickstein">Cláudio Hickstein</option>
+<option label="Claudio Lavacca " value="5302/claudio_lavacca">Claudio Lavacca </option>
+<option label="Clayton V. Fraga Filho " value="3433/clayton_v_fraga_filho">Clayton V. Fraga Filho </option>
+<option label="Cléber Dantas" value="5957/cleber_dantas">Cléber Dantas</option>
+<option label="Conrado Adolpho " value="5438/conrado_adolpho">Conrado Adolpho </option>
+<option label="Cristiano Trindade" value="5223/cristiano_trindade">Cristiano Trindade</option>
+<option label="Dailton Felipini" value="13884/dailton_felipini">Dailton Felipini</option>
+<option label="Dan Britto" value="5428/dan_britto">Dan Britto</option>
+<option label="Daniel Batista Fernandes" value="87936/daniel_batista_fernandes">Daniel Batista Fernandes</option>
+<option label="Daniel Domeneghetti" value="15860/daniel_domeneghetti">Daniel Domeneghetti</option>
+<option label="Daniel Fonseca" value="89988/daniel_fonseca">Daniel Fonseca</option>
+<option label="Daniel Nascimento" value="690/daniel_nascimento">Daniel Nascimento</option>
+<option label="Daniel Oslei" value="5224/daniel_oslei">Daniel Oslei</option>
+<option label="Daniel Schmitz" value="2686/daniel_schmitz">Daniel Schmitz</option>
+<option label="Danilo Bertholini " value="5299/danilo_bertholini">Danilo Bertholini </option>
+<option label="Danilo Buzar " value="1192/danilo_buzar">Danilo Buzar </option>
+<option label="Dauton Janota" value="1153/dauton_janota">Dauton Janota</option>
+<option label="Dener Patrick " value="5331/dener_patrick">Dener Patrick </option>
+<option label="Dennes Torres " value="5410/dennes_torres">Dennes Torres </option>
+<option label="Diego Casati" value="90322/diego_casati">Diego Casati</option>
+<option label="Diego Lima " value="5366/diego_lima">Diego Lima </option>
+<option label="Diogo " value="3065/diogo">Diogo </option>
+<option label="Eder Couto" value="10596/eder_couto">Eder Couto</option>
+<option label="Eder Nascimento" value="5958/eder_nascimento">Eder Nascimento</option>
+<option label="Ederson Melo" value="87901/ederson_melo">Ederson Melo</option>
+<option label="edson " value="2433/edson">edson </option>
+<option label="Edson Melo de Souza " value="2803/edson_melo_de_souza">Edson Melo de Souza </option>
+<option label="Eduardo Carrega" value="5225/eduardo_carrega">Eduardo Carrega</option>
+<option label="Eduardo Doria" value="11127/eduardo_doria">Eduardo Doria</option>
+<option label="Eduardo Favaretto " value="5440/eduardo_favaretto">Eduardo Favaretto </option>
+<option label="Eduardo Leonetti Pijuan" value="9873/eduardo_leonetti_pijuan">Eduardo Leonetti Pijuan</option>
+<option label="Eduardo Luis de Medeiros " value="5298/eduardo_luis_de_medeiros">Eduardo Luis de Medeiros </option>
+<option label="Eduardo Monteiro" value="91650/eduardo_monteiro">Eduardo Monteiro</option>
+<option label="Eduardo Moreira " value="4822/eduardo_moreira">Eduardo Moreira </option>
+<option label="Eduardo Nogueira" value="5227/eduardo_nogueira">Eduardo Nogueira</option>
+<option label="Eduardo Rocha" value="90088/eduardo_rocha">Eduardo Rocha</option>
+<option label="Eduardo Santana" value="5340/eduardo_santana">Eduardo Santana</option>
+<option label="Eduardo Santos " value="2421/eduardo_santos">Eduardo Santos </option>
+<option label="Eduardo Valentim " value="5348/eduardo_valentim">Eduardo Valentim </option>
+<option label="Elcio Ferreira" value="16428/elcio_ferreira">Elcio Ferreira</option>
+<option label="Elcio Silva " value="5424/elcio_silva">Elcio Silva </option>
+<option label="Eledio de Souza Jr. " value="5378/eledio_de_souza_jr">Eledio de Souza Jr. </option>
+<option label="Elias Albuquerque " value="5228/elias_albuquerque">Elias Albuquerque </option>
+<option label="Emanoel Castro" value="5409/emanoel_castro">Emanoel Castro</option>
+<option label="Emerson Luis Iten " value="5269/emerson_luis_iten">Emerson Luis Iten </option>
+<option label="Emerson Viegas " value="5312/emerson_viegas">Emerson Viegas </option>
+<option label="Endrigo Almada " value="3924/endrigo_almada">Endrigo Almada </option>
+<option label="Enrico Fonseca " value="5394/enrico_fonseca">Enrico Fonseca </option>
+<option label="Er Galvão Abbott" value="17023/er_galvao_abbott">Er Galvão Abbott</option>
+<option label="Erick da Rocha" value="5403/erick_da_rocha">Erick da Rocha</option>
+<option label="Erick Souza" value="4621/erick_souza">Erick Souza</option>
+<option label="Erika Pessanha" value="871/erika_pessanha">Erika Pessanha</option>
+<option label="Evandro Gobetti" value="88116/evandro_gobetti">Evandro Gobetti</option>
+<option label="Fabiano Costa" value="10756/fabiano_costa">Fabiano Costa</option>
+<option label="Fabiano Maciel" value="5325/fabiano_maciel">Fabiano Maciel</option>
+<option label="Fábio Anésio " value="5351/fabio_anesio">Fábio Anésio </option>
+<option label="Fábio Camara" value="5229/fabio_camara">Fábio Camara</option>
+<option label="Fábio Cavalcante" value="5673/fabio_cavalcante">Fábio Cavalcante</option>
+<option label="Fábio Collodo Gomes " value="5335/fabio_collodo_gomes">Fábio Collodo Gomes </option>
+<option label="Fabio Henrique" value="5427/fabio_henrique">Fabio Henrique</option>
+<option label="Fabio Lody" value="15/fabio_lody">Fabio Lody</option>
+<option label="Fabio Marques" value="90731/fabio_marques">Fabio Marques</option>
+<option label="Fábio Martinho Campos " value="5334/fabio_martinho_campos">Fábio Martinho Campos </option>
+<option label="Fábio Pena" value="5115/fabio_pena">Fábio Pena</option>
+<option label="Fábio Serratto" value="5426/fabio_serratto">Fábio Serratto</option>
+<option label="Fabrício Cidral" value="5230/fabricio_cidral">Fabrício Cidral</option>
+<option label="Fabrício Garcia" value="5350/fabricio_garcia">Fabrício Garcia</option>
+<option label="Fabrício Ribeiro" value="5231/fabricio_ribeiro">Fabrício Ribeiro</option>
+<option label="Fabrizio Gianfratti" value="5417/fabrizio_gianfratti">Fabrizio Gianfratti</option>
+<option label="Felipe Augusto Rodrigues " value="5393/felipe_augusto_rodrigues">Felipe Augusto Rodrigues </option>
+<option label="Felipe Caldas" value="5326/felipe_caldas">Felipe Caldas</option>
+<option label="Felipe Gomes " value="3676/felipe_gomes">Felipe Gomes </option>
+<option label="Felipe Macena " value="5273/felipe_macena">Felipe Macena </option>
+<option label="Felipe Maciel" value="5405/felipe_maciel">Felipe Maciel</option>
+<option label="Felipe Magalhães" value="15700/felipe_magalhaes">Felipe Magalhães</option>
+<option label="Felipe Matos" value="5237/felipe_matos">Felipe Matos</option>
+<option label="Fernando de Andrade" value="5232/fernando_de_andrade">Fernando de Andrade</option>
+<option label="Fernando D´Angelo " value="5303/fernando_dangelo">Fernando D´Angelo </option>
+<option label="Fernando Gomes " value="5358/fernando_gomes">Fernando Gomes </option>
+<option label="Fernando Incerti" value="89029/fernando_incerti">Fernando Incerti</option>
+<option label="Fernando Martin " value="5381/fernando_martin">Fernando Martin </option>
+<option label="Fernando Pavão" value="5318/fernando_pavao">Fernando Pavão</option>
+<option label="Fernando Ribeiro" value="5282/fernando_ribeiro">Fernando Ribeiro</option>
+<option label="Fernando Souza" value="5396/fernando_souza">Fernando Souza</option>
+<option label="Fernando Vasconcelos Mendes" value="5338/fernando_vasconcelos_mendes">Fernando Vasconcelos Mendes</option>
+<option label="Fernando Zanatta" value="89940/fernando_zanatta">Fernando Zanatta</option>
+<option label="Filipe Deschamps" value="5233/filipe_deschamps">Filipe Deschamps</option>
+<option label="Filipe Melo " value="5400/filipe_melo">Filipe Melo </option>
+<option label="Flávia Jobstraibizer" value="5315/flavia_jobstraibizer">Flávia Jobstraibizer</option>
+<option label="Flávio Cardoso" value="5294/flavio_cardoso">Flávio Cardoso</option>
+<option label="Flávio Duran" value="5333/flavio_duran">Flávio Duran</option>
+<option label="Flávio Silva" value="5234/flavio_silva">Flávio Silva</option>
+<option label="Francis Valadj " value="5401/francis_valadj">Francis Valadj </option>
+<option label="Francisco Camargo" value="89011/francisco_camargo">Francisco Camargo</option>
+<option label="Frederick van Amstel" value="5439/frederick_van_amstel">Frederick van Amstel</option>
+<option label="Frederico Frazão" value="89683/frederico_frazao">Frederico Frazão</option>
+<option label="Frederico Madeira" value="1783/frederico_madeira">Frederico Madeira</option>
+<option label="Frederico Tomazzeti" value="9546/frederico_tomazzeti">Frederico Tomazzeti</option>
+<option label="Gabriel Laet" value="5235/gabriel_laet">Gabriel Laet</option>
+<option label="George Alexandre" value="5365/george_alexandre">George Alexandre</option>
+<option label="Gilberto Sudré" value="5398/gilberto_sudre">Gilberto Sudré</option>
+<option label="Giovani Generali" value="5289/giovani_generali">Giovani Generali</option>
+<option label="Gisela Kassoy " value="5344/gisela_kassoy">Gisela Kassoy </option>
+<option label="Glauber Cavassani" value="38941/glauber_cavassani">Glauber Cavassani</option>
+<option label="Guilherme Pinheiro" value="1538/guilherme_pinheiro">Guilherme Pinheiro</option>
+<option label="Gustavo Faelli" value="5236/gustavo_faelli">Gustavo Faelli</option>
+<option label="Gustavo Rondina " value="5304/gustavo_rondina">Gustavo Rondina </option>
+<option label="Heitor Matos " value="5419/heitor_matos">Heitor Matos </option>
+<option label="Hélio Correia" value="661/helio_correia">Hélio Correia</option>
+<option label="Helton Falusi" value="5319/helton_falusi">Helton Falusi</option>
+<option label="Henrique Benak" value="88718/henrique_benak">Henrique Benak</option>
+<option label="Henrique Castro" value="91674/henrique_castro">Henrique Castro</option>
+<option label="Henrique Costa Pereira" value="14812/henrique_costa_pereira">Henrique Costa Pereira</option>
+<option label="Henrique Jacob " value="5275/henrique_jacob">Henrique Jacob </option>
+<option label="Herbert Araujo" value="15107/herbert_araujo">Herbert Araujo</option>
+<option label="Hugo Dias" value="5238/hugo_dias">Hugo Dias</option>
+<option label="Hugo Peixoto" value="5372/hugo_peixoto">Hugo Peixoto</option>
+<option label="Ian Liu" value="11351/ian_liu">Ian Liu</option>
+<option label="Igor Costa" value="5239/igor_costa">Igor Costa</option>
+<option label="Ismael Nobre" value="5314/ismael_nobre">Ismael Nobre</option>
+<option label="Ivan Luizio Magalhães" value="90715/ivan_luizio_magalhaes">Ivan Luizio Magalhães</option>
+<option label="Jaime Muller" value="5679/jaime_muller">Jaime Muller</option>
+<option label="Jarbas Teixeira" value="13897/jarbas_teixeira">Jarbas Teixeira</option>
+<option label="Jean Vargas" value="5377/jean_vargas">Jean Vargas</option>
+<option label="Jeferson Paulo" value="15855/jeferson_paulo">Jeferson Paulo</option>
+<option label="Jefferson Nascimento" value="89036/jefferson_nascimento">Jefferson Nascimento</option>
+<option label="Jefferson Ricardo" value="88570/jefferson_ricardo">Jefferson Ricardo</option>
+<option label="Joao " value="8/joao">Joao </option>
+<option label="João Batista Baêta " value="5286/joao_batista_baeta">João Batista Baêta </option>
+<option label="João Carlos" value="5357/joao_carlos">João Carlos</option>
+<option label="João Henrique Firmino " value="5369/joao_henrique_firmino">João Henrique Firmino </option>
+<option label="João Luís Machado" value="11573/joao_luis_machado">João Luís Machado</option>
+<option label="João Machado " value="5402/joao_machado">João Machado </option>
+<option label="João Machado Silva" value="89548/joao_machado_silva">João Machado Silva</option>
+<option label="João Paulo Gonçalves " value="5423/joao_paulo_goncalves">João Paulo Gonçalves </option>
+<option label="João Paulo Pinheiro Prado" value="5959/joao_paulo_pinheiro_prado">João Paulo Pinheiro Prado</option>
+<option label="João Rossi" value="5965/joao_rossi">João Rossi</option>
+<option label="Joni de Campos" value="5436/joni_de_campos">Joni de Campos</option>
+<option label="Jorge Elias Bachur Junior" value="4299/jorge_elias_bachur_junior">Jorge Elias Bachur Junior</option>
+<option label="Jorge Oliveira" value="7306/jorge_oliveira">Jorge Oliveira</option>
+<option label="José Carlos Macoratti " value="5323/jose_carlos_macoratti">José Carlos Macoratti </option>
+<option label="José Luis Amâncio " value="5353/jose_luis_amancio">José Luis Amâncio </option>
+<option label="José Luiz Aires Borrás" value="13488/jose_luiz_aires_borras">José Luiz Aires Borrás</option>
+<option label="José Milagre" value="89533/jose_milagre">José Milagre</option>
+<option label="José Pinto de Moura" value="10599/jose_pinto_de_moura">José Pinto de Moura</option>
+<option label="José Valney Melo Barbalho " value="5397/jose_valney_melo_barbalho">José Valney Melo Barbalho </option>
+<option label="Josue Vidal " value="5371/josue_vidal">Josue Vidal </option>
+<option label="Juca Duarte" value="9533/juca_duarte">Juca Duarte</option>
+<option label="Juliano Haussen" value="5240/juliano_haussen">Juliano Haussen</option>
+<option label="Juliano Ignácio" value="5274/juliano_ignacio">Juliano Ignácio</option>
+<option label="Juliano Luz" value="91670/juliano_luz">Juliano Luz</option>
+<option label="Juliano Mesquita" value="6061/juliano_mesquita">Juliano Mesquita</option>
+<option label="Júlio Battisti " value="5327/julio_battisti">Júlio Battisti </option>
+<option label="Júlio César Martini " value="28/julio_cesar_martini">Júlio César Martini </option>
+<option label="Karina Guimaraes" value="4151/karina_guimaraes">Karina Guimaraes</option>
+<option label="Katiúcia Freitas" value="5395/katiucia_freitas">Katiúcia Freitas</option>
+<option label="Kaui Aires Oliveira" value="12192/kaui_aires_oliveira">Kaui Aires Oliveira</option>
+<option label="Ken Awamura" value="5305/ken_awamura">Ken Awamura</option>
+<option label="Laura Pieruccetti" value="5268/laura_pieruccetti">Laura Pieruccetti</option>
+<option label="Lauro Santos" value="5267/lauro_santos">Lauro Santos</option>
+<option label="Lawrence Carvalho" value="1726/lawrence_carvalho">Lawrence Carvalho</option>
+<option label="Leandro Amano" value="5416/leandro_amano">Leandro Amano</option>
+<option label="Leandro Ramos" value="13750/leandro_ramos">Leandro Ramos</option>
+<option label="Leandro Ribeiro" value="5379/leandro_ribeiro">Leandro Ribeiro</option>
+<option label="Leandro Vieira" value="5386/leandro_vieira">Leandro Vieira</option>
+<option label="Lee Majors Monteiro " value="5406/lee_majors_monteiro">Lee Majors Monteiro </option>
+<option label="Leonardo Bustamante" value="13736/leonardo_bustamante">Leonardo Bustamante</option>
+<option label="Leonardo Calado" value="2400/leonardo_calado">Leonardo Calado</option>
+<option label="Leonardo César" value="5270/leonardo_cesar">Leonardo César</option>
+<option label="Leonardo Costa" value="88209/leonardo_costa">Leonardo Costa</option>
+<option label="Leonardo Fortunato" value="5387/leonardo_fortunato">Leonardo Fortunato</option>
+<option label="Leonardo Grandinetti" value="5341/leonardo_grandinetti">Leonardo Grandinetti</option>
+<option label="Leonardo Lima " value="5281/leonardo_lima">Leonardo Lima </option>
+<option label="Leonardo Pinho " value="5356/leonardo_pinho">Leonardo Pinho </option>
+<option label="Leonardo Raposo" value="11812/leonardo_raposo">Leonardo Raposo</option>
+<option label="Leonardo Ribeiro Almeida" value="89939/leonardo_ribeiro_almeida">Leonardo Ribeiro Almeida</option>
+<option label="Leonardo Rodrigues " value="5241/leonardo_rodrigues">Leonardo Rodrigues </option>
+<option label="Leonardo Souza" value="2362/leonardo_souza">Leonardo Souza</option>
+<option label="Letícia Banffy" value="5242/leticia_banffy">Letícia Banffy</option>
+<option label="Letícia Karasaukas " value="5284/leticia_karasaukas">Letícia Karasaukas </option>
+<option label="Lindomar Candido Bastos" value="14686/lindomar_candido_bastos">Lindomar Candido Bastos</option>
+<option label="Lucas Ferreira" value="3197/lucas_ferreira">Lucas Ferreira</option>
+<option label="Lucas Hamude" value="91300/lucas_hamude">Lucas Hamude</option>
+<option label="Lucas Varela Lopes " value="5313/lucas_varela_lopes">Lucas Varela Lopes </option>
+<option label="Luciana Costa" value="88907/luciana_costa">Luciana Costa</option>
+<option label="Luciano Correa" value="5243/luciano_correa">Luciano Correa</option>
+<option label="Luciano Lima" value="773/luciano_lima">Luciano Lima</option>
+<option label="Luigui Moterani" value="13097/luigui_moterani">Luigui Moterani</option>
+<option label="Luis Carlos " value="5373/luis_carlos">Luis Carlos </option>
+<option label="Luís Fernando Novo " value="5374/luis_fernando_novo">Luís Fernando Novo </option>
+<option label="Luis Fernando Tremonti " value="5359/luis_fernando_tremonti">Luis Fernando Tremonti </option>
+<option label="Luiz Rafael Fernandes " value="5404/luiz_rafael_fernandes">Luiz Rafael Fernandes </option>
+<option label="Maicon Martins" value="11818/maicon_martins">Maicon Martins</option>
+<option label="Marcel Bergerman " value="5384/marcel_bergerman">Marcel Bergerman </option>
+<option label="Marcel Vieira " value="5391/marcel_vieira">Marcel Vieira </option>
+<option label="Marcelo Barros" value="5964/marcelo_barros">Marcelo Barros</option>
+<option label="Marcelo Diniz" value="12522/marcelo_diniz">Marcelo Diniz</option>
+<option label="Marcelo Gallina" value="61766/marcelo_gallina">Marcelo Gallina</option>
+<option label="Marcelo Menezes Neves " value="5414/marcelo_menezes_neves">Marcelo Menezes Neves </option>
+<option label="Marcelo Oliveira" value="5244/marcelo_oliveira">Marcelo Oliveira</option>
+<option label="Marcelo Pereira Fonseca " value="5330/marcelo_pereira_fonseca">Marcelo Pereira Fonseca </option>
+<option label="Marcelo Varela" value="5245/marcelo_varela">Marcelo Varela</option>
+<option label="Márcio Almeida" value="5279/marcio_almeida">Márcio Almeida</option>
+<option label="Márcio Cots" value="10832/marcio_cots">Márcio Cots</option>
+<option label="Márcio Fábio Althmann " value="5363/marcio_fabio_althmann">Márcio Fábio Althmann </option>
+<option label="Márcio Lima " value="5246/marcio_lima">Márcio Lima </option>
+<option label="Márcio Novelli " value="5278/marcio_novelli">Márcio Novelli </option>
+<option label="Marco Bonito" value="5968/marco_bonito">Marco Bonito</option>
+<option label="Marcos Ethur" value="5249/marcos_ethur">Marcos Ethur</option>
+<option label="Marcos Lauro" value="5247/marcos_lauro">Marcos Lauro</option>
+<option label="Marcos Moreira" value="5291/marcos_moreira">Marcos Moreira</option>
+<option label="Marcos Placoná" value="5248/marcos_placona">Marcos Placoná</option>
+<option label="Marden Menezes" value="5250/marden_menezes">Marden Menezes</option>
+<option label="Maria Cecília Miquel " value="5342/maria_cecilia_miquel">Maria Cecília Miquel </option>
+<option label="Mariana Frioli" value="5251/mariana_frioli">Mariana Frioli</option>
+<option label="Marlon Carvalho" value="87790/marlon_carvalho">Marlon Carvalho</option>
+<option label="Marlos Carmo" value="5252/marlos_carmo">Marlos Carmo</option>
+<option label="Marlos Porto Ribeiro" value="12096/marlos_porto_ribeiro">Marlos Porto Ribeiro</option>
+<option label="Mateus Pimentel Brajão " value="5364/mateus_pimentel_brajao">Mateus Pimentel Brajão </option>
+<option label="Mauri Gonçalves" value="5375/mauri_goncalves">Mauri Gonçalves</option>
+<option label="Mauricio Aniche" value="2241/mauricio_aniche">Mauricio Aniche</option>
+<option label="Maurício Lins" value="5253/mauricio_lins">Maurício Lins</option>
+<option label="Mauricio Reckziegel" value="383/mauricio_reckziegel">Mauricio Reckziegel</option>
+<option label="Mauricio Samy" value="286/mauricio_samy">Mauricio Samy</option>
+<option label="Mauro Pichiliani" value="5271/mauro_pichiliani">Mauro Pichiliani</option>
+<option label="Mauro SantAnna" value="89282/mauro_santanna">Mauro SantAnna</option>
+<option label="Mauro Thiago da Silva " value="5346/mauro_thiago_da_silva">Mauro Thiago da Silva </option>
+<option label="Maxwell Dayvson" value="1853/maxwell_dayvson">Maxwell Dayvson</option>
+<option label="Maycon L. Ferreira " value="5429/maycon_l_ferreira">Maycon L. Ferreira </option>
+<option label="Michel de Souza" value="10/michel_de_souza">Michel de Souza</option>
+<option label="Michell Angelo" value="6132/michell_angelo">Michell Angelo</option>
+<option label="Miguel Ruiz" value="12022/miguel_ruiz">Miguel Ruiz</option>
+<option label="Milton Goya" value="5254/milton_goya">Milton Goya</option>
+<option label="Moacir Melo" value="92001/moacir_melo">Moacir Melo</option>
+<option label="Moisés Corrêa" value="7226/moises_correa">Moisés Corrêa</option>
+<option label="Monica Rodrigues" value="15101/monica_rodrigues">Monica Rodrigues</option>
+<option label="Mozart Petter " value="5411/mozart_petter">Mozart Petter </option>
+<option label="Nelson Tavares" value="5332/nelson_tavares">Nelson Tavares</option>
+<option label="Neto Leal" value="151/neto_leal">Neto Leal</option>
+<option label="Nicola Sanchez" value="16481/nicola_sanchez">Nicola Sanchez</option>
+<option label="Nilton Paulino" value="5255/nilton_paulino">Nilton Paulino</option>
+<option label="nosbielcs " value="232/nosbielcs">nosbielcs </option>
+<option label="Oscar Pires" value="5295/oscar_pires">Oscar Pires</option>
+<option label="Pablo Fernando" value="5437/pablo_fernando">Pablo Fernando</option>
+<option label="Pablo Sollar" value="5960/pablo_sollar">Pablo Sollar</option>
+<option label="Pablo Vanni " value="4214/pablo_vanni">Pablo Vanni </option>
+<option label="Paulino Michelazzo" value="5256/paulino_michelazzo">Paulino Michelazzo</option>
+<option label="Paulo Eugenio" value="15543/paulo_eugenio">Paulo Eugenio</option>
+<option label="Paulo Lomanto" value="7139/paulo_lomanto">Paulo Lomanto</option>
+<option label="Paulo Maciel" value="9213/paulo_maciel">Paulo Maciel</option>
+<option label="Paulo Neves" value="16460/paulo_neves">Paulo Neves</option>
+<option label="Paulo Pires " value="2154/paulo_pires">Paulo Pires </option>
+<option label="Paulo Quicoli" value="87959/paulo_quicoli">Paulo Quicoli</option>
+<option label="Paulo R. Cardoso" value="1706/paulo_r_cardoso">Paulo R. Cardoso</option>
+<option label="Paulo Ribeiro" value="88815/paulo_ribeiro">Paulo Ribeiro</option>
+<option label="Paulo Ricardo" value="15186/paulo_ricardo">Paulo Ricardo</option>
+<option label="Paulo Roberto Kendzerski " value="5368/paulo_roberto_kendzerski">Paulo Roberto Kendzerski </option>
+<option label="Paulo Rodrigo" value="1981/paulo_rodrigo">Paulo Rodrigo</option>
+<option label="Paulo Sérgio de Arruda Ignácio " value="5352/paulo_sergio_de_arruda_ignacio">Paulo Sérgio de Arruda Ignácio </option>
+<option label="Paulo Silva" value="5322/paulo_silva">Paulo Silva</option>
+<option label="Pedro Cabral " value="5407/pedro_cabral">Pedro Cabral </option>
+<option label="Pedro Castro" value="5347/pedro_castro">Pedro Castro</option>
+<option label="Pedro Felipe" value="5380/pedro_felipe">Pedro Felipe</option>
+<option label="Pedro Paulo Almeida" value="3886/pedro_paulo_almeida">Pedro Paulo Almeida</option>
+<option label="Persio Bazan " value="5425/persio_bazan">Persio Bazan </option>
+<option label="Peter Lau" value="5432/peter_lau">Peter Lau</option>
+<option label="Peterson Raydan" value="7215/peterson_raydan">Peterson Raydan</option>
+<option label="Pierre Schürmann" value="5967/pierre_schürmann">Pierre Schürmann</option>
+<option label="Plínio Ventura" value="5257/plinio_ventura">Plínio Ventura</option>
+<option label="Rafael Correa" value="5430/rafael_correa">Rafael Correa</option>
+<option label="Rafael Dal Zotto" value="89989/rafael_dal_zotto">Rafael Dal Zotto</option>
+<option label="Rafael Helm" value="5258/rafael_helm">Rafael Helm</option>
+<option label="Rafael Lima" value="88295/rafael_lima">Rafael Lima</option>
+<option label="Rafael Linhares" value="89880/rafael_linhares">Rafael Linhares</option>
+<option label="Rafael Martin" value="11561/rafael_martin">Rafael Martin</option>
+<option label="Rafael Martins de Ascenção " value="5306/rafael_martins_de_ascencao">Rafael Martins de Ascenção </option>
+<option label="Rafael Mello" value="11049/rafael_mello">Rafael Mello</option>
+<option label="Rafael Smorigo" value="5277/rafael_smorigo">Rafael Smorigo</option>
+<option label="Rafael Wally " value="5307/rafael_wally">Rafael Wally </option>
+<option label="Ramon D. Azevedo " value="5336/ramon_d_azevedo">Ramon D. Azevedo </option>
+<option label="Ramon Durães" value="5283/ramon_duraes">Ramon Durães</option>
+<option label="Raphael Simas" value="3242/raphael_simas">Raphael Simas</option>
+<option label="Raviel Carvalho" value="9527/raviel_carvalho">Raviel Carvalho</option>
+<option label="Renan Barbalho" value="3282/renan_barbalho">Renan Barbalho</option>
+<option label="Renan Fogaça " value="3063/renan_fogaca">Renan Fogaça </option>
+<option label="Renan Paulon " value="5442/renan_paulon">Renan Paulon </option>
+<option label="Renato Amadeu" value="142/renato_amadeu">Renato Amadeu</option>
+<option label="Renato Bonicio" value="13100/renato_bonicio">Renato Bonicio</option>
+<option label="Renato Guimarães" value="5259/renato_guimaraes">Renato Guimarães</option>
+<option label="Renato Habermann" value="15717/renato_habermann">Renato Habermann</option>
+<option label="Renato Murilo Langona " value="5308/renato_murilo_langona">Renato Murilo Langona </option>
+<option label="Renato Osterne" value="9473/renato_osterne">Renato Osterne</option>
+<option label="Renato Pacheco" value="12411/renato_pacheco">Renato Pacheco</option>
+<option label="Renato Sousa" value="89198/renato_sousa">Renato Sousa</option>
+<option label="Ribamar Ferreira de Sousa " value="5309/ribamar_ferreira_de_sousa">Ribamar Ferreira de Sousa </option>
+<option label="Ricardo Alexandre " value="4776/ricardo_alexandre">Ricardo Alexandre </option>
+<option label="Ricardo Batalhone" value="5260/ricardo_batalhone">Ricardo Batalhone</option>
+<option label="Ricardo Chrisostimo" value="5339/ricardo_chrisostimo">Ricardo Chrisostimo</option>
+<option label="Ricardo Gomes" value="90183/ricardo_gomes">Ricardo Gomes</option>
+<option label="Ricardo Luiz dos Santos " value="3365/ricardo_luiz_dos_santos">Ricardo Luiz dos Santos </option>
+<option label="Ricardo Macedo " value="1704/ricardo_macedo">Ricardo Macedo </option>
+<option label="Ricardo Perussi" value="88351/ricardo_perussi">Ricardo Perussi</option>
+<option label="Ricardo Pessoa" value="91817/ricardo_pessoa">Ricardo Pessoa</option>
+<option label="Ricardo Ramires" value="88354/ricardo_ramires">Ricardo Ramires</option>
+<option label="Robert Gaffo" value="4903/robert_gaffo">Robert Gaffo</option>
+<option label="Roberto Eckersdorff" value="5966/roberto_eckersdorff">Roberto Eckersdorff</option>
+<option label="Roberto Guarnieri" value="5433/roberto_guarnieri">Roberto Guarnieri</option>
+<option label="Robson Cavalcante" value="5261/robson_cavalcante">Robson Cavalcante</option>
+<option label="Robson Ferreira " value="5392/robson_ferreira">Robson Ferreira </option>
+<option label="Robson Luis Monteiro Júnior " value="523/robson_luis_monteiro_junior">Robson Luis Monteiro Júnior </option>
+<option label="Robstown Holanda" value="5962/robstown_holanda">Robstown Holanda</option>
+<option label="Rodrigo Almeida" value="5262/rodrigo_almeida">Rodrigo Almeida</option>
+<option label="Rodrigo Crespi" value="90711/rodrigo_crespi">Rodrigo Crespi</option>
+<option label="Rodrigo Donini" value="5961/rodrigo_donini">Rodrigo Donini</option>
+<option label="Rodrigo Glauser" value="407/rodrigo_glauser">Rodrigo Glauser</option>
+<option label="Rodrigo Lima " value="4552/rodrigo_lima">Rodrigo Lima </option>
+<option label="Rodrigo Meirelles " value="3418/rodrigo_meirelles">Rodrigo Meirelles </option>
+<option label="Rodrigo Mendes" value="11355/rodrigo_mendes">Rodrigo Mendes</option>
+<option label="Rodrigo Menegazzo " value="5316/rodrigo_menegazzo">Rodrigo Menegazzo </option>
+<option label="Rodrigo Nordi " value="5310/rodrigo_nordi">Rodrigo Nordi </option>
+<option label="Rogério de Oliveira " value="5390/rogerio_de_oliveira">Rogério de Oliveira </option>
+<option label="Rogério Perez" value="766/rogerio_perez">Rogério Perez</option>
+<option label="Rogério Rodrigues" value="16474/rogerio_rodrigues">Rogério Rodrigues</option>
+<option label="Ronildo Costa" value="68074/ronildo_costa">Ronildo Costa</option>
+<option label="Rubens Farias " value="5290/rubens_farias">Rubens Farias </option>
+<option label="Samur Felipe Cardoso " value="5296/samur_felipe_cardoso">Samur Felipe Cardoso </option>
+<option label="Sergio Abreu " value="5370/sergio_abreu">Sergio Abreu </option>
+<option label="Sérgio Monteiro" value="5434/sergio_monteiro">Sérgio Monteiro</option>
+<option label="Sérgio Sotero" value="5263/sergio_sotero">Sérgio Sotero</option>
+<option label="Sidney Filho" value="5264/sidney_filho">Sidney Filho</option>
+<option label="Tadeu Alvarenga" value="91667/tadeu_alvarenga">Tadeu Alvarenga</option>
+<option label="Taner Morôni" value="5324/taner_moroni">Taner Morôni</option>
+<option label="Tarcizio da Rocha" value="92147/tarcizio_da_rocha">Tarcizio da Rocha</option>
+<option label="Thiago Ananias Negreiros Silva" value="12957/thiago_ananias_negreiros_silva">Thiago Ananias Negreiros Silva</option>
+<option label="Thiago Burgos " value="5329/thiago_burgos">Thiago Burgos </option>
+<option label="Thiago dos Santos Prado" value="4196/thiago_dos_santos_prado">Thiago dos Santos Prado</option>
+<option label="Thiago Francisco Dias" value="277/thiago_francisco_dias">Thiago Francisco Dias</option>
+<option label="Thiago Porto " value="5418/thiago_porto">Thiago Porto </option>
+<option label="Thiago Prado" value="5265/thiago_prado">Thiago Prado</option>
+<option label="Tiago Adami" value="16507/tiago_adami">Tiago Adami</option>
+<option label="Tiago Alexandre Vailati" value="10280/tiago_alexandre_vailati">Tiago Alexandre Vailati</option>
+<option label="Tiago Colombo" value="5293/tiago_colombo">Tiago Colombo</option>
+<option label="Tiago Lacerda" value="88725/tiago_lacerda">Tiago Lacerda</option>
+<option label="Tiago Luiz de Campos " value="5422/tiago_luiz_de_campos">Tiago Luiz de Campos </option>
+<option label="Tiago Marcel Knipers " value="5399/tiago_marcel_knipers">Tiago Marcel Knipers </option>
+<option label="Tiago Soares" value="15962/tiago_soares">Tiago Soares</option>
+<option label="Tom Carvalho " value="5420/tom_carvalho">Tom Carvalho </option>
+<option label="Tulio Medina " value="5383/tulio_medina">Tulio Medina </option>
+<option label="Ubiratan Passos" value="12103/ubiratan_passos">Ubiratan Passos</option>
+<option label="Vagner Vilela" value="5389/vagner_vilela">Vagner Vilela</option>
+<option label="valdir brandao " value="2748/valdir_brandao">valdir brandao </option>
+<option label="Valéria Molina" value="91815/valeria_molina">Valéria Molina</option>
+<option label="Valério Moreira" value="5354/valerio_moreira">Valério Moreira</option>
+<option label="Valmir Cinquini " value="5292/valmir_cinquini">Valmir Cinquini </option>
+<option label="Vanberto Zuim" value="15379/vanberto_zuim">Vanberto Zuim</option>
+<option label="Vicente Boer " value="5408/vicente_boer">Vicente Boer </option>
+<option label="Vinicius Lenci" value="90585/vinicius_lenci">Vinicius Lenci</option>
+<option label="Vinícius Luiz" value="2735/vinicius_luiz">Vinícius Luiz</option>
+<option label="Vinícius Nascimento " value="5376/vinicius_nascimento">Vinícius Nascimento </option>
+<option label="Vitor F. Pamplona" value="5328/vitor_f_pamplona">Vitor F. Pamplona</option>
+<option label="Vitor Oliveira" value="5320/vitor_oliveira">Vitor Oliveira</option>
+<option label="Vítor Villas Bôas" value="88296/vitor_villas_boas">Vítor Villas Bôas</option>
+<option label="Wagner Pinheiro " value="2044/wagner_pinheiro">Wagner Pinheiro </option>
+<option label="Walter Amorim" value="10741/walter_amorim">Walter Amorim</option>
+<option label="Wellington Carrion " value="2398/wellington_carrion">Wellington Carrion </option>
+<option label="Wender Lima" value="5266/wender_lima">Wender Lima</option>
+<option label="Wenderson Lisardo" value="15618/wenderson_lisardo">Wenderson Lisardo</option>
+<option label="Wesley Martins da Silva " value="2399/wesley_martins_da_silva">Wesley Martins da Silva </option>
+<option label="Wesley Willians Ramos da Silva" value="952/wesley_willians_ramos_da_silva">Wesley Willians Ramos da Silva</option>
+<option label="William Duarte" value="14429/william_duarte">William Duarte</option>
+<option label="William Kenji " value="5435/william_kenji">William Kenji </option>
+<option label="William Souza" value="12523/william_souza">William Souza</option>
+<option label="Willian Corrêa" value="2987/willian_correa">Willian Corrêa</option>
+<option label="Willian Silva " value="5361/willian_silva">Willian Silva </option>
+
+				</select>
+				</p>
+			</form>
+		</div>
+	</div>
+	<div id="conteudo">
+		<span class="data">Segunda-feira, 13 de novembro de 2006</span>
+				<h2>Segurança com SSL para WebServices</h2>
+		<p class="resenha"><span>Fábio Camara (<a href="mailto:%66%61%62%69%6f.%63%61%6d%61%72%61@%63%73%68%61%72%70%62%72.%63%6f%6d.%62%72" class="emailautor">e-mail</a>)</span>
+é MCP, MCSA, MCAD Charter, MCDBA e MCSD.NET; Diretor de Operações da
+Architettura Soluções em Tecnologia e autor dos livros "Projetos com
+Windows DNA e .NET" e "Orientação a Objeto com .NET".</p>
+		<div id="strConteudo">
+		<p class="texto">Como
+proteger suas informações disponibilizadas por WebServices que serão
+consumidas por outras aplicações na Web? Esta é uma pergunta com
+incontáveis opções de respostas. Provavelmente, algumas mais simples ou
+mais complexas, mais fáceis ou mais difícies para &#8220;hackers&#8221;, enfim tem
+proposta para todos os paladares. Minha proposta, independente da
+classificação que possa obter, é utilizarmos SSL.</p>
+              <p class="texto">
+SSL que é a sigla de Secure Sockets Layer pode ser considerado o nome
+popular do TCP Layer Security. SSL foi inventado pela Netscape para
+prover uma camada de criptografia ao protocolo HTTP. Atualmente, é
+aceito até pelos técnicos especialistas mais exigentes como um
+mecanismo seguro para garantia de integridade em comunicações baseadas
+em HTTP.</p>
+              <p class="texto"> Como aditivo ao estudo que desejamos proporcionar,
+                a namespace que contém as classes de criptografia do .NET  Framework é a System.Security.Cryptography.</p>
+              <p class="texto"> Continuando com SSL, as 4 propriedades  seguintes definem sua proposta para prover uma conexão segura:</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Conexão cifrada privada e válida somente para a  sessão aberta;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Criptografia de chave simétrica para cifrar, como, por exemplo, o
+algoritmo DES.&nbsp; Entretanto, a chave é trocada utilizando &#8220;public
+key encryption&#8221;.</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Certificados
+              digitais são usados para verificar  cada nova &#8220;entidade&#8221; que deseja estabelecer a comunicação.</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Funções de segurança de HASH, como MD5 e SHA,  são usadas para MAC &#8211; Message Authentication Code.</p>
+              <p class="texto">Após
+esta demonstração de siglas e termos específicos de técnicas de
+criptografia, propomos ir para a prática, visando explicar visualmente
+o que precisaríamos de muitas frases. Alguns conceitos novos que forem
+surgindo pelo percurso serão tratados pontualmente.</p>
+              <p class="texto">
+Antes de escrever o código de seu WebServices, devemos resolver as
+questões relacionadas a colocar SSL em seu site. Precisamos criar uma
+requisição de certificado e também necessitamos de uma CA (Autoridade
+Certificadora) para autenticar esta requisição e nos fornecer nossa
+chave pública. </p>
+              <p class="texto"> Vamos separar
+nossos objetivos em partes para facilitar o passo a passo necessário.
+Nossa primeira meta é criar uma CA. Para isso precisamos de um servidor
+Windows 2000 Server ou Advanced Server, ou qualquer versão do Windows
+2003 obrigatoriamente.</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Em Control Panel, selecione Add/Remove  Programs;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Clique
+              em Add/Remove Windows Components (isso pode demorar um pouco);</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Marque
+              a opção Certificate Services e clique em  Next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Após a instalação automática do mesmo, clique em Finish. Você
+necessitará reiniciar seu servidor agora e após isso concluímos nossa
+primeira meta.</p>
+              <p class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image002.jpg" height="385" width="503"></p>
+              <p class="texto"> Para facilitar nossos controles, vamos  criar uma console para administrar os gerenciadores de serviços IIS e  Certificates.</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Inicialmente, crie um MMC Snap In. MMC é  Microsoft Managment Console. </p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Para esta finalidade, digite mmc na opção Run do menu Start de seu
+servidor. Clique no menu Console/Add Remove Snap In;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Conforme
+                sugere a imagem seguinte, adicione IIS (Internet Information
+                Services) e adicione também o Certification Authority;</p>
+              <p class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image004.jpg" height="578" width="489"></p>
+              <p class="texto">O
+nosso próximo objetivo em forma de passo a passo é criar nosso
+WebService. Para isso, precisamos criar antecipadamente um site no IIS.
+Caso contrário, o Visual Studio.NET utilizará por default a porta 80
+que é amplamente utilizada para todos os seus testes. Recomendamos
+fortemente utilizar uma porta exclusiva para o SSL.</p>
+              <p class="texto"> Antes disso, você sabe a diferença entre  site e directory? A imagem abaixo esclarece esta questão.</p>
+              <p class="texto">                <span class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image005.gif" height="541" width="307"></span></p>
+              <p class="texto">                Vamos ao passo a passo:</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Crie
+uma pasta para receber os arquivos do Visual Studio.NET. Sugiro que
+seja dentro do diretório InetPub e com o nome wwwrootssl.</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Clique com o botão direito do mouse na imagem da tree-view que é um
+computador, na imagem anterior seria em &#8220;notecamara&#8221; e selecione new /
+website. Isto ativará um &#8220;wizard&#8221;;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Os campos que devem ser preenchidos são bastante intuitivos. Atenção
+para definir uma outra porta em TCP port (guarde este valor) e em
+definir corretamente o path;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Inicie o Visual Studio.NET com um novo projeto do tipo ASP.NET
+WebService com o nome de SSLWebService. Logo após a palavra localhost e
+antes da palavra &#8220;/SSLWebService&#8221; coloque &#8220;:8081&#8221; considerando que 8081
+é o número da porta que você utilizou na definição de seu website no
+passo anterior;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Digite
+                o seguinte código para nosso WebServices:</p>
+              <p class="texto"><font color="#0066cc">using  System;<br>
+                using System.Collections;<br>
+                using System.ComponentModel;<br>
+                using System.Data;<br>
+                using System.Diagnostics;<br>
+                using System.Web;<br>
+                using System.Web.Services;</font></p>
+              <p class="texto"><font color="#0066cc">namespace SecureTest<br>
+                {</font></p>
+              <p class="texto"><font color="#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public class Service1 :  System.Web.Services.WebService<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public Service1()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+InitializeComponent();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></p>
+              <p class="texto"><font color="#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #region Component  Designer generated code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private IContainer  components = null;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private void  InitializeComponent()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></p>
+              <p class="texto"><font color="#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected override  void Dispose( bool disposing )<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if(disposing &amp;&amp; components != null)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+components.Dispose();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+base.Dispose(disposing);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #endregion</font></p>
+              <p>&nbsp;</p>
+              <p class="texto"><font color="#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [WebMethod]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public long Add(long  nr1, long nr2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return (nr1 + nr2);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                }</font></p>
+              <p class="texto"><strong><font size="3">. </font></strong> Compile seu programa e verifique se o Browser  funciona corretamente como sugerido da imagem seguinte;</p>
+              <p class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image006.gif" height="333" width="486"></p>
+              <p class="texto">Nosso segundo objetivo é criar uma  requisição de certificado para nosso site. Eis nosso próximo passo a passo:</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Clique com o botão direito do mouse em cima de  seu website e selecione properties;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Na opção Directory Security, clique em Server  Certificate..., isso iniciará um wizard para a requisição de um certificado;</p>
+              <p class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image008.jpg" height="453" width="461"></p>
+              <p class="texto"><strong><font size="3">. </font></strong> Selecione &#8220;Create a new certificate&#8221; e clique no  botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Selecione &#8220;Prepare to request now,  but send it later&#8221; e clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Certifique-se
+              do nome do site está correto e  selecione 1024 em Bit Lenght e clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Verifique
+                as strings que deseja colocar nos campos de nomes e continue
+              clicando no botão next até o form que solicitará.</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Informações
+                regionais como país, estado e cidade. Preencha-as e clique
+              no botão  next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Confirme
+              o nome do arquivo com a solicitação a  ser gerada e seu respectivo path;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Confira
+                algumas configurações e clique no botão  next até encontrar o botão finish.</p>
+              <p class="texto">Finalizamos
+praticamente a metade do trabalho. Resta-nos solicitar que alguma
+autoridade certificadora autentique nosso certificado e nos forneça um
+arquivo com extensão &#8220;.cer&#8221; que contenha nossa chave criptográfica
+pública.</p>
+              <p class="texto"> Você pode comprar um
+certificado na Internet ou pode utilizar a autoridade certificadora que
+criamos no início deste artigo. Para usar esta certificadora
+personalizada, digite em seu browser <a href="http://localhost/CertSrv/">http://localhost/CertSrv/</a>. Iniciaremos  um novo passo a passo:</p>
+              <p class="texto">                <span class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image010.jpg" border="0" height="431" width="530"></span></p>
+              <p class="texto"><strong><font size="3">. </font></strong> Conforme sugerido na imagem anterior, selecione  &#8220;Request a certificate&#8221; e clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Na página seguinte, selecione &#8220;Advanced request&#8221;  e clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Selecione a opção &#8220;Submit a certificate request using a base64 encoded
+PKCS #10 file or a renewal request using a base64 encoded PKCS #7
+file.&#8221; e clique novamente no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+Abra a requisição de certificado que fizemos no passo a passo anterior
+utilizando o notepad, selecione tudo e copie para o memo disponível na
+página da autoridade certificadora conforme sugere a imagem;</p>
+              <p class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image012.jpg" border="0" height="540" width="530"></p>
+              <p class="texto"><strong><font size="3">. </font></strong> Clique em submit e finalizamos a requisição.</p>
+              <p class="texto">Neste
+momento, precisamos validar a requisição submetida em nossa autoridade
+certificadora. Para fazer isso, necessitamos verificar a pasta Peding
+Requests encontrada no mmc que criamos no início do artigo.</p>
+              <p class="texto">              <span class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image014.jpg" border="0" height="297" width="530"></span></p>
+              <p class="texto"><strong><font size="3">. </font></strong> Selecione o certificado pendente e clique no  menu Action/All Tasks/Issue;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>
+O arquivo foi movido para a pasta Issued Certificates. Clique duas
+vezes neste arquivo para poder conferir. Na opção details, clique em
+copy to file selecionando Base-64 encoded X.509 certificate;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Defina
+                no wizard criado o path e o nome do arquivo e clique em finish.</p>
+              <p class="texto">Finalmente, estamos chegando ao fim. Restam apenas
+                três passos:  Primeiro instalar o certificado no website,
+                segundo configurar para o site requerer SSL e terceiro aprender
+                a consumir através de outro aplicativo um  WebServices
+                com SSL. Sem espaço para descansos, vamos ao  próximo
+                passo a passo, instalar o certificado no website:</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Através do IIS, selecione o website, clique com  o botão direto e marque o menu properties;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Em directory
+              security, clique no botão Server  Certificate... para iniciar o wizard;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Selecione &#8220;Process the pending  request and install a certificate&#8221; e clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Selecione
+              o certificado que criou e novamente clique no botão next;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Examine
+                as informações do certificado e  finalize.</p>
+              <p class="texto">Necessitamos
+agora informar ao IIS que ele deve requerer SSL para este site
+utilizando o certificado que instalamos. Siga os passos a seguir:</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Através do IIS, selecione o website, clique com  o botão direto e marque o menu properties;</p>
+              <p class="texto"><strong><font size="3">. </font></strong> Em directory
+              security, clique no botão Edit na  opção Secure Comunications;</p>
+              <p class="texto"><strong><font size="3">. </font></strong>Marque
+                o checkbox &#8220;Require secure channel&#8221; e  finalize clicando no botão Ok.</p>
+              <p class="texto">A
+partir desta ação será exigido https para se comunicar com este
+WebService. Inicie o browser e verifique conforme sugere a imagem.</p>
+              <p class="texto">                <span class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image015.gif" border="0" height="449" width="407"></span></p>
+              <p class="texto"> Como podes comprovar, somente iniciando  com
+                https:// conseguiremos verificar nosso aplicativo. &nbsp;Submeta
+                a URL com https:// + número ip de seu  servidor + &#8220;:
+                número da porta SSL&#8221; + path para seu arquivo asmx.
+                Ex.: <a href="https://localhost:8081/SSLWebService/Service1.asmx">https://localhost:8081/SSLWebService/Service1.asmx</a></p>
+              <p class="texto"><strong><font color="#cc3300">Atenção</font></strong>:
+                Uma solicitação de Security Alert  irá surgir
+                exigindo que você aprove a utilização do
+                certificado antes de utilizar o WebService, conforme presenciado
+                na imagem a seguir. Clique naturalmente no botão Yes e
+                verifique o funcionamento do método.</p>
+              <p class="texto">                <span class="texto"><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/Artigo_clip_image017.jpg" border="0" height="301" width="384"></span></p>
+              <p class="texto">Não foi difícil chegar até aqui. Deste  ponto em diante precisamos apenas consumir este WebServices. </p>
+              <p class="texto">Aposto como vocês  conseguirão fazer
+              isto sozinhos. Bom desafio!</p>
+		</div>
+		<div id="todosArtigos">
+		<h2>Todos os artigos de Fábio Camara</h2>
+		<select name="urlTodosArtigos" id="urlTodosArtigos">
+							<option value="/artigo/5074/aspnet/seguranca_com_ssl_para_webservices/" selected="selected" }="">13/11/2006 - Segurança com SSL para WebServices</option>
+							<option value="/artigo/3475/dotnet/metodologia_ou_boas_praticas/" }="">09/08/2005 - Metodologia ou boas práticas</option>
+							<option value="/artigo/1999/livre/portabilidade_a_la_net/" }="">28/04/2004 - Portabilidade a lá .Net</option>
+							<option value="/artigo/1424/dotnet/chamando_uma_funcao_vbnet_em_c#/" }="">07/10/2003 - Chamando uma função VB.Net em C#</option>
+					</select>
+		</div>
+		<div id="interacao">
+			<div id="ilinks">
+				<ul>
+					<li><a class="fale" href="#fale">Falar com o autor</a></li>
+					<li><a class="indique" href="#indique">Indicar para um amigo</a></li>
+					<li><a class="comente" href="#comente">Postar um comentário</a></li>
+				</ul>
+			</div>
+			<div id="barra">
+				<h3>Interação com a materia</h3>
+				<span>Área exclusiva e gratuita para os usuários logados</span>
+				<span class="expandir">(expandir)</span><a href="javascript:;" id="expandir"><span>expandir</span></a>
+			</div>
+			<div style="display: none;" id="int_painel">
+				<div class="topo"><a href="javascript:;" id="fechar"><span>fechar</span></a></div>
+				<span>Leitor: <strong id="strNome"></strong></span>
+				<div class="subtitulo">Seu painel de controle sobre cada matéria</div>
+				<ul>
+					<li class="avalie"><a href="#avalie">Avalie esta matéria</a></li>
+					<li class="indique"><a href="#indique">Indique a um amigo</a></li>
+					<li class="poste"><a href="#comente">Poste um comentário</a></li>
+					<li class="anotacoes"><a href="#anote">Grave suas anotações</a></li>
+					<li class="fale"><a href="#fale">Fale com o autor</a></li>
+				</ul>
+				<div class="meio">
+					<form method="post" id="formInteracao" enctype="multipart/form-data" action="">
+						<p>
+						<span id="int_h4">Conheça o painel "Meu iMasters"</span>
+						</p>
+						<div id="int_conteudo">
+							<span class="ti">Personalize o iMasters de acordo com sua opinião!</span>
+							<h5>O que você pode fazer:</h5>
+							<ul>
+								<li>Avaliar esta matéria entre 1 e 5 estrelas e poder gravar suas matérias preferidas</li>
+								<li>Indicar esta matéria a um amigo</li>
+								<li>Escrever um comentário, que ficará visível para todos os leitores</li>
+								<li>Gravar suas anotações particulares sobre esta matéria</li>
+								<li>Falar com o autor</li>
+							</ul>
+						</div>
+						<p>
+						<span id="int_rodape">&nbsp;</span>
+						<input name="codConteudo" value="5074" type="hidden">
+						<input id="numNota" name="numNota" value="" type="hidden">
+						<input name="codUsuario" value="" type="hidden">
+						<input name="codAutor" value="5229" type="hidden">
+						<input id="autorStrNome" name="strNome" value="Fábio Camara" type="hidden">
+						<input id="autorStrEmail" name="strEmail" value="fabio.camara@csharpbr.com.br" type="hidden">
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/interacao.js" type="text/javascript"></script>
+		<div id="comentarios">
+			<ul>
+				<li class="view_c"><a>Comentários desta matéria (0)</a></li>
+				<!-- <li class="view_m"><a href="">Mat&eacute;rias relacionadas</a></li> -->
+				<li class="aval"><a>Avaliação desta matéria:</a><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/n_0_0.gif" alt=""></li>
+			</ul>	
+			<div class="meio">
+							</div>
+		</div>
+	</div>
+	
+		
+		<div id="rodape">
+			<ul>
+				<li><a href="http://www.imasters.com.br/sobre">Sobre o iMasters</a></li>
+				<li><a href="http://www.imasters.com.br/politicadeprivacidade">Politica de Privacidade</a></li>
+				<li><a href="http://www.imasters.com.br/anuncie">Anuncie</a></li>
+				<li><a href="http://loja.imasters.com.br/">iMasters Shop</a></li>
+				<li><a href="http://www.imasters.com.br/intercon">iMasters Intercon</a></li>
+				<li><a href="http://www.imasters.com.br/faleconosco">Fale Conosco</a></li>
+			</ul>
+			<div>
+				<span>@2001 - iMasters FFPA Informática LTDA. Todos os direitos reservados.</span>
+			</div>
+			<ul id="selos">
+				<li><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/xhtml11.gif" alt="XHTML 1.1 Válido"></li>
+				<li><img src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/css.gif" alt="CSS 2.1 Válido"></li>
+			</ul>
+			<br>
+		</div>
+	</div>
+	<script src="F%E1bio%20Camara%20-%20Seguran%E7a%20com%20SSL%20para%20WebServices_arquivos/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-339422-2";
+	urchinTracker();
+	</script>
+</body></html>

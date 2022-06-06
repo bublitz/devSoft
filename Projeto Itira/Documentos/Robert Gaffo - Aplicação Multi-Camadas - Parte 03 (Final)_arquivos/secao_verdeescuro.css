@@ -1,0 +1,11 @@
+/* COR DA SUBSECAO */
+#canal span a { color: #00577D; } 
+
+/* COR DOS TITULOS DAS CAIXINHAS */
+#down_faq h3 a, #nav div h3, #esq div h3 { color:#00577D;  }
+
+/* COR DOS TITULOS DAS CAIXINHAS COM DEGRADE */
+#ultmaterias h3 span.titulo, #noticias h3, #maislida h3, #ultmaterias h3, #palavrachave h3 { color:#FFF; background:url(http://static.imasters.com.br/img/secao/fundo_h3_verdeescuro.gif) repeat-x; } /*  */
+
+/* COR DO NOME DO COLUISTA */
+#colunista h4 a { color:#00577D; }

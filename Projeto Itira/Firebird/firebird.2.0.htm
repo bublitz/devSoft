@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION" content="Firebird is a relational database offering many ANSI SQL-92 features that runs on Linux, Windows, and a variety of Unix platforms. Firebird offers excellent concurrency, high performance, and powerful language support for stored procedures and triggers. It has been used in production systems, under a variety of names since 1981. Firebird is a commercially independent project of C and C++ programmers, technical advisors and supporters developing and enhancing a multi-platform relational database management system based on the source code released by Inprise Corp (now known as Borland Software Corp) under the InterBase Public License v.1.0 on 25 July, 2000.">
+<meta name="KEYWORDS" content="Firebird, InterBase, ISC, interbase, Database, database, Relational, relational, Relational Database, PostgreSQL, MYSQL, Borland, IBPhoenix, BORLAND, INPRISE, Inprise Corporation, Client/Server, client server products, client/server solutions, Development Tools, Delphi, JBuilder, Linux, Open Source, Web Database Development, C++Builder, database tools, database development tools, database engines, database programming, SQL, SQL programming, SQL links, SQL databases"><title>Firebird - Relational Database for the New Millenium</title>
+
+
+<link rel="stylesheet" href="firebird.2.0_arquivos/default.css" type="text/css">
+<script language="JavaScript" type="text/javascript" src="firebird.2.0_arquivos/tf.js"></script>
+<link rel="icon" type="image/jpg" href="http://www.firebirdsql.org/images/favicon.jpg">
+<style type="text/css">
+<!--
+.fb_menu_menu {z-index:999;border-color:#000000;border-style:solid;border-width:2px 0px 2px 0px;background-color:#c5420a;position:absolute;left:0px;top:0px;visibility:hidden;}.fb_menu_plain, a.fb_menu_plain:link, a.fb_menu_plain:visited{text-align:left;background-color:#c5420a;color:#ffffff;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px 2px 0px 2px;padding:1px 0px 1px 0px;cursor:hand;display:block;font-size:10pt;font-family:Tahoma, Verdana, Arial, sans-serif;font-weight:bold;}a.fb_menu_plain:hover, a.fb_menu_plain:active{background-color:#ffffff;color:#000000;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px 2px 0px 2px;padding:1px 0px 1px 0px;cursor:hand;display:block;font-size:10pt;font-family:Tahoma, Verdana, Arial, sans-serif;font-weight:bold;}
+-->
+</style></head><body bgcolor="#ffffff">
+<!-- END OF HEADER CHUNK -->
+<!-- START TOPMENU CHUNK -->
+<table border="0" width="100%">
+<tbody><tr><td class="centre">
+
+<table border="0" width="900">
+<tbody><tr><td>
+
+<table border="0" width="100%">
+<tbody><tr>
+
+
+
+
+   <td align="center" width="200">
+    <table background="firebird.2.0_arquivos/flashback.gif" border="1" cellpadding="3">
+      <tbody><tr>
+        <td>
+<font color="red">
+<b>NEWSFLASH</b>
+</font>
+<br>
+   <br>&nbsp;<br><b>Firebird 2.0 is now the official latest release</b>
+<br>&nbsp;
+
+<br>&nbsp;
+        </td>
+      </tr>
+    </tbody></table>
+  </td>
+
+<td>
+
+<table border="0" width="100%">
+<tbody><tr>
+  <td align="left">
+  <img src="firebird.2.0_arquivos/new_header1.gif" alt="Firebird master head">
+           </td>
+        <td>
+<!--
+<script src="xaramenu.js"></script><script Webstyle4 src="images/fb_menu.js"></script>
+<script src="xaramenu.js"></script><script Webstyle4 src="../fb_menu.js"></script>
+-->
+      </td>
+    </tr>
+
+
+<tr><td valign="top">
+
+<script src="firebird.2.0_arquivos/xaramenu.js"></script><script webstyle4="" src="firebird.2.0_arquivos/fb_menu.htm"></script>
+<script src="firebird.2.0_arquivos/xaramenu.js"></script><script webstyle4="" src="firebird.2.0_arquivos/fb_menu.js"></script><table border="0" cellpadding="0" cellspacing="0"><tbody><tr style="line-height: 1px;"><td><img src="firebird.2.0_arquivos/fb_menu_left.png" border="0" height="18" width="20"></td><td><a href="http://www.firebirdsql.org/index.php" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b1',2,16777215,0);setGraphic(event, 'images/fb_menu_b1_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b1.png" alt="Home" border="0" height="18" width="70"></a></td><td><a href="http://www.firebirdsql.org/index.php?op=files" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b2',2,16777215,0);setGraphic(event, 'images/fb_menu_b2_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b2.png" alt="Download" border="0" height="18" width="99"></a></td><td><a href="javascript:;" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b3',2,16777215,0);setGraphic(event, 'images/fb_menu_b3_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b3.png" alt="Documentation" border="0" height="18" width="140"></a></td><td><a href="javascript:;" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b4',2,16777215,0);setGraphic(event, 'images/fb_menu_b4_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b4.png" alt="Resources" border="0" height="18" width="104"></a></td><td><a href="javascript:;" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b5',2,16777215,0);setGraphic(event, 'images/fb_menu_b5_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b5.png" alt="Development" border="0" height="18" width="124"></a></td><td><a href="http://www.firebirdsql.org/index.php?op=ffoundation" onmouseout="tidyMenu(event);" onmouseover="openMenu(event, 'fb_menu_b6',2,16777215,0);setGraphic(event, 'images/fb_menu_b6_over.png');return false;"><img src="firebird.2.0_arquivos/fb_menu_b6.png" alt="Foundation" border="0" height="18" width="110"></a></td><td><img src="firebird.2.0_arquivos/fb_menu_right.png" border="0" height="18" width="5"></td></tr></tbody></table><div id="fb_menu_b5" class="fb_menu_menu" style="z-index: 1003; width: 229px;"><a href="http://www.firebirdsql.org/index.php?op=devel" class="fb_menu_plain" style="width: 225px;">&nbsp;Subprojects&nbsp;</a><div class="fb_menu_plain" style="width: 225px;"><center><img src="firebird.2.0_arquivos/---.gif" border="0" height="8" width="215"></center></div><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=engine" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird Database Engine&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=doc" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird Documentation&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=jdbc" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird JDBC Driver&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=odbc" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird ODBC Driver&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=netprovider" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird .NET Data Provider&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=qa" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird QA&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=web" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird website&nbsp;</a><div class="fb_menu_plain" style="width: 225px;"><center><img src="firebird.2.0_arquivos/---.gif" border="0" height="8" width="215"></center></div><a href="http://www.firebirdsql.org/index.php?op=rabbits" class="fb_menu_plain" style="width: 225px;">&nbsp;Rabbit Holes&nbsp;</a><div class="fb_menu_plain" style="width: 225px;"><center><img src="firebird.2.0_arquivos/---.gif" border="0" height="8" width="215"></center></div><a href="http://sourceforge.net/projects/firebird" class="fb_menu_plain" style="width: 225px;">&nbsp;Firebird at SourceForge&nbsp;</a><a href="http://sourceforge.net/cvs/?group_id=9028" class="fb_menu_plain" style="width: 225px;">&nbsp;CVS Repository&nbsp;</a></div><div id="fb_menu_b4" class="fb_menu_menu" style="z-index: 1003; width: 416px;"><a href="http://www.firebirdsql.org/index.php?op=devel&amp;id=bugdb" class="fb_menu_plain" style="width: 412px;">&nbsp;Bugs and feature requests&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=lists" class="fb_menu_plain" style="width: 412px;">&nbsp;Lists and Newsgroups&nbsp;</a><a href="http://www.yahoogroups.com/groups/firebird-job-board" class="fb_menu_plain" style="width: 412px;">&nbsp;Firebird Job Board&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=newsportal" class="fb_menu_plain" style="width: 412px;">&nbsp;News Portal&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=umbrella" class="fb_menu_plain" style="width: 412px;">&nbsp;Under the Firebird Umbrella&nbsp;</a><a href="http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_member_sites" class="fb_menu_plain" style="width: 412px;">&nbsp;Other Firebird Community Sites (at IBPhoenix)&nbsp;</a><a href="http://www.ibphoenix.com/" class="fb_menu_plain" style="width: 412px;">&nbsp;Professional support services&nbsp;</a></div><div id="fb_menu_b3" class="fb_menu_menu" style="z-index: 1003; width: 228px;"><a href="http://www.firebirdsql.org/index.php?op=guide" class="fb_menu_plain" style="width: 224px;">&nbsp;Novice's Guide&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=history" class="fb_menu_plain" style="width: 224px;">&nbsp;History&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=faq" class="fb_menu_plain" style="width: 224px;">&nbsp;FAQ&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=doc" class="fb_menu_plain" style="width: 224px;">&nbsp;Knowledgebase&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=useful" class="fb_menu_plain" style="width: 224px;">&nbsp;Really Useful Articles&nbsp;</a><a href="http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_publications" class="fb_menu_plain" style="width: 224px;">&nbsp;Publications (at IBPhoenix)&nbsp;</a></div><div id="fb_menu_b2" class="fb_menu_menu" style="z-index: 1003; width: 368px;"><a href="http://sourceforge.net/projects/firebird" class="fb_menu_plain" style="width: 364px;">&nbsp;All released packages&nbsp;</a><div class="fb_menu_plain" style="width: 364px;"><center><img src="firebird.2.0_arquivos/---.gif" border="0" height="8" width="354"></center></div><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=engine" class="fb_menu_plain" style="width: 364px;">&nbsp;Firebird Relational Database&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=odbc" class="fb_menu_plain" style="width: 364px;">&nbsp;Firebird ODBC Driver&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=jaybird" class="fb_menu_plain" style="width: 364px;">&nbsp;Firebird class 4 JCA-JDBC Driver&nbsp;</a><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=netprovider" class="fb_menu_plain" style="width: 364px;">&nbsp;Firebird .NET Data Provider&nbsp;</a><div class="fb_menu_plain" style="width: 364px;"><center><img src="firebird.2.0_arquivos/---.gif" border="0" height="8" width="354"></center></div><a href="http://www.firebirdsql.org/pdfmanual/Firebird-1.5-QuickStart.pdf" class="fb_menu_plain" style="width: 364px;">&nbsp;Firebird Quick Start Guide&nbsp;</a><a href="http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_contrib_download" class="fb_menu_plain" style="width: 364px;">&nbsp;Third-party Tools and Libraries (at IBPhoenix)&nbsp;</a></div>
+<script src="firebird.2.0_arquivos/xaramenu.js"></script><script webstyle4="" src="firebird.2.0_arquivos/fb_menu.htm"></script>
+  
+</td></tr>
+  
+</tbody></table>
+</td></tr>
+</tbody></table>
+
+<table border="0" cellspacing="5" width="100%"><tbody><tr><td valign="top">
+<!-- END TOPMENU CHUNK -->
+
+<!-- START SIDEMENU CHUNK -->
+<table border="0" cellspacing="0" width="100%"><tbody><tr><td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>New visitors</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+<img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+<a href="http://www.firebirdsql.org/index.php?op=guide#facts">
+<img src="firebird.2.0_arquivos/fbg-facts.gif" border="0"></a>
+<br><br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=guide" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">Novice's Guide</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">  
+  <a href="http://www.firebirdsql.org/index.php?op=faq" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">Frequently Asked Questions</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">  
+  <a href="http://www.firebirdsql.org/pdfmanual/Firebird-2.0-QuickStart.pdf" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">Firebird 2.0 Quick Start Guide</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">  
+  <a href="http://www.firebirdsql.org/pdfmanual/Firebird-1.5-QuickStart.pdf" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">Firebird 1.5 Quick Start Guide</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.yahoogroups.com/groups/firebird-support" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Firebird-support email list</a>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Users</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+    <a href="http://www.firebirdsql.org/index.php?op=doc" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">More
+    Documentation</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+    <a href="http://www.firebirdsql.org/index.php?op=lists" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">More Lists &amp; Newsgroups</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=useful" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">Tips &amp;
+  Tricks</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=devel&amp;id=bugdb" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Report a Bug</a>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Downloads</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=files" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Firebird Released kits </a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/download/prerelease" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Pre-release kits (testing)</a>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Developers</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=devjournal" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+<img src="firebird.2.0_arquivos/devjournal_logo.gif" border="0" width="165">
+</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=devel" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Developers' Corner</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="https://lists.sourceforge.net/lists/listinfo/firebird-devel" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Firebird-devel email list</a>
+  <br><br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://tracker.firebirdsql.org/" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+<img src="firebird.2.0_arquivos/fbtracker.gif" border="0" width="165">
+</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.yahoogroups.com/groups/firebird-architect" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Firebird-Architect email list</a>
+    <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <span style="font-size: 8pt;">
+  No support questions <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  in these lists please!!</span>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Community</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=umbrella" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Under the Firebird Umbrella</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=newsportal" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  News Portal</a>
+<br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.yahoogroups.com/groups/firebird-job-board" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Firebird Job Board</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=ffoundation&amp;sub=connect" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  CONNECT!</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.firebirdsql.org/index.php?op=ffoundation" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  The Firebird Foundation</a>
+  <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.ibphoenix.com/" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  IBPhoenix Resource Site</a>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Admin Tools</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+    <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <a href="http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_admin_tools" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+  Catalogue of Admin Tools</a>
+  <br><center>. . . . . . . . . . . . . . . </center><br>
+  <a href="http://www.flamerobin.org/">
+<img src="firebird.2.0_arquivos/flamerobin3.gif" alt="FlameRobin Project" border="0" height="30" width="139"></a>
+<a href="http://www.flamerobin.org/" style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">
+is a project to build a cross-platform, lightweight GUI admin tool for Firebird completely</a>
+<span style="text-decoration: none; color: rgb(106, 90, 205); font-size: 8pt;">with open source components.
+Alpha builds for Linux, Mac OS X and FreeBSD are available.</span>
+  <br><br>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+<table border="0" cellpadding="0" cellspacing="0" width="200">
+<tbody><tr><td>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  <td align="left" bgcolor="#bbead7">
+  <font color="#000000"><b>Feedback</b></font>
+  </td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr>
+  </tbody></table>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr bgcolor="#000000">
+    <td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td>
+    </tr>
+  </tbody></table>
+  <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="200">
+  <tbody><tr><td class="normal" align="left" bgcolor="#bbead7">
+    <br>
+  <img src="firebird.2.0_arquivos/clearpixel.gif" width="15">
+  <span style="color: rgb(106, 90, 205); font-size: 8pt;">
+  Comments ? Suggestions ? 
+  <br><center><a href="http://sourceforge.net/sendmessage.php?touser=210526">Contact us</a> !</center>
+  <p class="centre">
+  <!-- a href="http://www.opensource.org/docs/definition.php">
+  <img src="images/opensource.gif" alt="Open Source Logo" border="0" width="75" height="65"></a -->
+  </p>
+  <br><br>
+  </span></td>
+<!--   <td valign=top bgcolor="#BBEAD7" width=2><img alt="" src=images/1x1.gif width=1></td> -->
+  </tr></tbody></table>
+</td>
+</tr></tbody></table>   
+
+</td><td valign="top" width="100%">
+
+<!-- END SIDEMENU CHUNK -->
+<table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="1" width="100%"><tbody><tr><td>
+
+<h4>About Firebird®</h4>
+Firebird is a relational database offering many <a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=engine&amp;id=SQL_conformance&amp;nosb=1">ANSI SQL standard features</a>
+that runs on Linux, Windows, and a variety of Unix platforms. Firebird
+offers excellent concurrency, high performance, and powerful language
+support for stored procedures and triggers. It has been used in
+production systems, under a variety of names since 1981.
+<p>Firebird is a commercially independent project of C and C++
+programmers, technical advisors and supporters developing and enhancing
+a multi-platform relational database management system based on the
+source code released by Inprise Corp (now known as Borland Software
+Corp) on 25 July, 2000 under the InterBase Public License v.1.0.
+<table colspecs="2" cellpadding="2" cellspacing="2">
+  <tbody><tr>
+    <td valign="middle" width="135">
+
+<a href="http://www.firebirdsql.org/index.php?op=ffoundation">
+<img src="firebird.2.0_arquivos/joinusnow.gif" alt="Join the Firebird Foundation" border="0" height="109" width="135"></a>
+
+    </td>
+    <td>Firebird
+is completely free of any registration, licensing or deployment fees.
+It may be deployed freely for use with any third-party software,
+whether commercial or not. <p>
+New code modules added to Firebird are licensed under the <a href="http://www.firebirdsql.org/index.php?op=doc&amp;id=idpl">Initial Developer's Public License</a>. (IDPL).  The original modules released by Inprise are licensed under the <a href="http://www.firebirdsql.org/index.php?op=doc&amp;id=ipl">InterBase Public License v.1.0</a>.  Both licences are modified versions of the <a href="http://www.opensource.org/licenses/mozilla1.1.php">Mozilla Public License v.1.1</a>.
+    </p></td>
+  </tr>
+</tbody></table>
+
+
+</p><hr size="1">
+<h4>Latest Release: Firebird v.2.0</h4>
+<table cellpadding="3">
+  <tbody><tr>
+    <td bgcolor="#2e8b57">
+<font color="white">
+<font size="small">Dateline Prague 12-NOV-2006 18:00 GMT</font>
+</font><p>
+<font color="white"><b>The Firebird Project today officially released
+the much-anticipated version 2.0 of its open source Firebird relational
+database software during the opening session of the fourth
+international Firebird Conference in Prague, Czech Republic. </b> </font>
+</p><p>
+    </p></td>
+  </tr>
+  <tr>
+    <td>
+<blockquote>
+<b>Firebird 2.0 is the happy culmination of more than two years'
+efforts from a broad-ranging, truly international community of
+dedicated developers and supporters. It brings with it a large
+collection of long-awaited enhancements that significantly improve
+performance, security and support for international languages and
+realise some desirable new SQL language features. Under the surface, it
+also provides a much more robust code platform from which the
+re-architecting planned for Firebird 3.0 is proceeding.</b>
+</blockquote>
+<h5>Features of the release include</h5>
+<ul>
+<li>A thorough reworking of indexing to ramp up performance and minimise bottlenecks in searching and matching
+
+</li><li>Several limitations inherited from the legacy code have now
+gone, such as the 252-byte limit on index size and the 30 Gb limit on
+table size.
+</li><li>A new interface for plugging in international character sets,
+including enhanced Unicode support, along with a number of new and
+corrected collations </li><li>64-bit platform support with released binaries available for
+AMD64 and Intel EM64T on Linux. Windows 64-bit builds are ready for
+testing and will follow in a sub-release
+</li><li>An intense makeover of server security, including beefed-up password encryption and inbuilt protection for brute-force attack
+
+</li><li>Support for SQL200x derived tables, including multi-level nesting and joining of subqueries
+
+</li><li>EXECUTE BLOCK syntax to enable blocks of procedural SQL (PSQL) to be executed in dynamic SQL statements
+
+</li><li>Explicit cursors in PSQL, also available inside EXECUTE BLOCK statements
+
+</li><li>Optional WAIT lock conflict timeout, available as both a SET TRANSACTION argument and as a transaction parameter in the API
+
+</li><li>All-new incremental backup capability
+
+</li><li>Complete re-architecting of "serverless" local connection
+protocol on Windows to eliminate the inherent instability of the legacy
+IPServer protocol
+</li><li>Fully completed implementation of the Services API on all platforms
+</li></ul>
+<a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=engine&amp;id=fb20_release" style="text-decoration: none; color: rgb(0, 100, 0); font-size: 10pt;"><b>More details...</b></a>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<hr size="1">
+<h4>Firebird Project Development News</h4>
+
+<table summary="Latest News" cellpadding="2" cellspacing="2" width="100%">
+
+  <tbody><tr><td class="news-head" valign="top" width="18%">
+  <i>November-2006</i></td>
+  <td class="news-head" width="80%"><b>CURRENTLY TESTING</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">No test releases currently on offer.  64-bit Firebird 2.0 Windows test kits available shortly
+<p>
+
+</p><hr size="1"> </td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>20-Nov-2006</i></td>
+  <td class="news-head" width="80%"><b>Planned Tracker Downtime</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">At 21:30 21/11/2006 GMT the Firebird Tracker service will be unavailable, for database upgrade.
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>13-Nov-2006</i></td>
+  <td class="news-head" width="80%"><b>Quick Start Guide for Firebird 2.0</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">The Firebird Docs sub-project has published the Firebird 2.0 version of the Quick Start Guide.  It is available on-line as a <a href="http://www.firebirdsql.org/manual/qsg2.html">web document</a> or you can download it from our FTP area as <a href="http://www.firebirdsql.org/pdfmanual/Firebird-2.0-QuickStart.pdf">a PDF file</a>.   Thanks to Paul Vinkenoog for his stupendous effort in getting this update ready for the release of Firebird 2.0.
+
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>12-Nov-2006</i></td>
+  <td class="news-head" width="80%"><b>Firebird 2.0 is Released</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">The
+Firebird Project proudly announces the release of Firebird 2.0 at the
+opening session of the fourth annual Firebird Conference in Prague,
+Czech Republic. <a href="http://www.firebirdsql.org/index.php?op=files&amp;id=engine_200">Binaries are available now</a> for 32-bit Windows, 32-bit Linux and 64-bit Linux (AMD64 and EM64T).
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>12-Nov-2006</i></td>
+  <td class="news-head" width="80%"><b>Firebird Conference Begins</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%"><a href="http://www.firebirdsql.org/index.php?op=konferenz">The fourth international Firebird Conference</a> begins today.  First papers at 12:30 p.m. GMT, opening session at about 6:00 p.m. GMT
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>08-Oct-2006</i></td>
+  <td class="news-head" width="80%"><b>Rebuilt Firebird 2.0 RC5 Windows Kits Now Available</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%"><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=fb2_rc5">Rebuilt Windows kits</a> are now available and are making their way to the mirrors.
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>05-Oct-2006</i></td>
+  <td class="news-head" width="80%"><b>Firebird 2.0 RC5 Windows Builds Pulled</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">After
+the release a serious error was discovered in the Windows builds for
+Release Candidate 5 - a library was built wrongly. The links have been
+temporarily removed until repaired builds are available. <a href="http://www.firebirdsql.org/index.php?op=devjournal">More details</a>...
+<br><br>
+</td></tr>
+  <tr><td class="news-head" valign="top" width="18%">
+  <i>04-Oct-2006</i></td>
+  <td class="news-head" width="80%"><b>Firebird 2.0 Release Candidate 5 is Out</b></td></tr>
+  <tr><td class="news-content" valign="top" width="18%"></td>
+  <td class="news-content" width="80%">The <a href="http://www.firebirdsql.org/index.php?op=files&amp;id=fb2_rc5">Firebird 2.0 RC5 kits</a>
+have been released and are making their way to the surface right now.
+It will take a day or two for all kits to percolate through to the
+mirrors so please be patient about any page errors!.
+<br><br>
+</td></tr>
+</tbody></table>
+<p>
+See the <a href="http://www.firebirdsql.org/index.php?id=newsarchive">news archive</a> for past news articles.
+
+</p></td></tr></tbody></table>
+<p>
+</p></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+
+<hr size="1">
+<center>
+This <a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;home">Firebird®/Interbase®
+ WebRing</a> site is owned by
+ <a href="http://sourceforge.net/sendmessage.php?touser=210526">Firebird Project</a>.<br>
+[ <a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;id=22;prev5">
+Previous 5 Sites</a> |<a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;id=22;prev">
+Previous</a> |<a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;id=22;next">
+Next</a> |<a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;id=22;next5">
+Next 5 Sites</a> |<a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;random">
+Random Site</a> |<a href="http://nav.webring.org/cgi-bin/navcgi?ring=interbase;list">
+List Sites</a> ]</center>
+<hr size="1">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr bgcolor="#bbead7"><td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td></tr>
+</tbody></table>
+
+<table border="0" cellspacing="5" width="100%"><tbody><tr><td align="left" width="10%">
+<a href="http://sourceforge.net/project/?group_id=9028">
+<img src="firebird.2.0_arquivos/sflogo.png" alt="Firebird at SourceForge" border="0" height="31" width="88"></a>
+</td><td align="left" width="90%"><font color="black" face="Lucida,Verdana,Helvetica,Arial">
+This site and the pages contained within are Copyright © 2000-2006, Firebird Project.<br>
+Firebird® is a registered trademark of Firebird Foundation Incorporated.
+</font></td></tr></tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr bgcolor="#bbead7"><td><img alt="" src="firebird.2.0_arquivos/1x1.gif" height="2" width="1"></td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+
+</td></tr></tbody></table>
+
+
+</body></html>

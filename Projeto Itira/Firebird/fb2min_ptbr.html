@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>Conheça o Firebird em 2 minutos</title>
+
+<style type="text/css">
+<!--
+.Text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: justify;
+}
+.Subtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head><body>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="780">
+  <tbody><tr>
+    <td><img src="fb2min_ptbr_arquivos/fb2min_logo.jpg" alt="Firebird Logo" height="112" width="112"></td>
+    <td valign="top" width="0%"><p><strong><font face="Verdana, Arial, Helvetica, sans-serif" size="+3">Conheça o Firebird em 2 minutos</font></strong></p>
+      <p align="center"><em>por <a href="http://www.firebirdnews.org/" target="_blank">Carlos H. Cantu</a> - revisão 1.1 - Novembro/2006</em><br>
+        <em>Outras traduções : <a href="http://www.firebirdnews.org/docs/fb2min_cz.html">Czech</a>, <a href="http://www.firebirdnews.org/docs/fb2min_ptbr.html">Português Brasil</a>, <a href="http://www.firebirdnews.org/docs/fb2min_pl.html">Polish</a>, <a href="http://www.firebirdnews.org/docs/fb2min_de.html">German</a>, <a href="http://www.firebirdnews.org/docs/fb2min_tk.html">Turkish</a>, <br>
+      <a href="http://www.firebirdnews.org/docs/fb2min_ptpt.html">Português Portugal</a>, <a href="http://www.firebirdnews.org/docs/fb2min_es.html">Spanish</a>, <a href="http://www.firebirdnews.org/docs/fb2min_sw.html">Swedish</a>, <a href="http://www.firebirdnews.org/docs/fb2min_fr.html">French</a>, <a href="http://www.firebirdnews.org/docs/fb2min_it.html">Italian</a>, <a href="http://www.firebirdnews.org/docs/fb2min_hu.html">Hungarian</a></em><a href="http://www.firebirdnews.org/docs/fb2min_hu.html"></a><em>, <a href="http://www.firebirdnews.org/docs/fb2min_bg.html">Bulgarian</a>, <a href="http://www.firebirdnews.org/docs/fb2min_ru.html">Russian</a></em></p>
+      <p align="center"><a href="http://www.firebirdnews.org/docs/fb2min.pdf">Esse documento também está disponível em formato PDF (em inglês)</a></p></td>
+  </tr>
+</tbody></table>
+<table align="center" border="0" cellpadding="0" cellspacing="10" width="780">
+  <tbody><tr>
+    <td valign="top" width="50%"><p class="Subtitle">Introdução</p>
+      <p class="Text" align="justify">Se estiver lendo esse documento, então provavelmente é o seu primeiro contato com o banco de dados <strong>Firebird</strong>.
+Esse documento apresentará as principais características do Firebird.
+No final, tenho certeza que estará ansioso para baixar o minúsculo
+instalador e testar você mesmo!</p>
+      <p class="Subtitle">História</p>
+      <p class="Text">O Firebird é derivado do código do Borland InterBase 6.0. Ele tem o <strong>código aberto</strong> e <strong>não</strong>
+possui licença dupla, portanto você pode utilizá-lo em qualquer tipo de
+aplicação, seja ela comercial ou não, sem pagar nada por isso - <strong>é totalmente GRATUITO</strong>!</p>
+      <p class="Text">A tecnologia usada no <strong>Firebird</strong> tem mais de 20 anos, fazendo com que ele seja um produto muito <strong>maduro</strong> e <strong>estável</strong>.</p>
+      <p class="Subtitle">Principais Recursos</p>
+      <p class="Text">Não
+se engane com o tamanho do instalador! O Firebird é um SGBD completo e
+poderoso. Ele pode gerenciar bancos de dados de alguns Kbytes até
+dezenas de Gigabytes com boa performance e praticamente sem necessidade
+de manutenção!</p>
+      <p class="Text">Abaixo segue uma lista dos principais recursos do Firebird: </p>
+      <ul class="Text" type="disc"><li>Suporte total a <strong>Stored Procedures e Triggers</strong></li>
+        <li><strong>Transações</strong> compatíveis com <strong>ACID</strong></li>
+        <li><strong>Integridade Referencial</strong></li>
+        <li><strong>Multi Generational Architecture</strong></li>
+        <li>          Consome poucos recursos de processamento</li>
+        <li> Linguagem nativa para Stored Procedures e Triggers (<strong>PSQL</strong>)</li>
+        <li> Suporte para <strong>Funções Externas</strong> (UDFs)</li>
+        <li> Praticamente <strong>não necessita de DBAs</strong> especializados</li>
+        <li>          <strong>Quase nenhuma configuração</strong> - instale e já comece a usar!</li>
+        <li>          <strong>Grande comunidade</strong> de usuários e vários lugares para se obter suporte gratuito</li>
+        <li>          <strong>Versão embedded do SGBD</strong> - perfeita para criação de catálogos em CDROM, aplicações "demo" ou standalone</li>
+        <li>Dezenas de <strong>ferramentas de terceiros</strong>, incluindo aplicações gráficas de administração, replicação, etc.</li>
+        <li><strong>Careful writes</strong> - recuperação rápida, dispensa o uso de log de transações!          </li>
+        <li><strong>Diversas formas de acesso ao banco de dados</strong>: nativo/API, dbExpress, ODBC, OLEDB, .Net provider, JDBC nativo tipo 4, Python module, PHP, Perl, etc.</li>
+        <li><strong>Suporte nativo para os maiores sistemas operacionais</strong>, incluindo o Windows, Linux, Solaris, MacOS.</li>
+        <li><strong>Backups incrementais</strong></li>
+        <li><strong>Builds de 64bits</strong> disponíveis </li>
+        <li>Total controle de <strong>cursores em PSQL</strong></li>
+      </ul>
+      <p class="Text">&nbsp;</p></td>
+    <td bgcolor="#000000" width="3">&nbsp;</td>
+    <td valign="top"><p class="Subtitle"><span class="Subtitle">Teste agora!</span></p>
+      <p class="Text">Testar o Firebird é uma tarefa muito fácil. O instalador <strong>não tem mais que 5 MB</strong> (dependendo do sistema operacional escolhido) e totalmente automatizado. Você pode baixá-lo do <a href="http://www.firebirdsql.org/index.php?op=files&amp;id=engine" target="_blank">Site oficial</a> do Firebird. A última versão estável é a 2.0.</p>
+      <p class="Text">Note que o servidor Firebird é disponibilizado em três variações: <strong>SuperServer</strong>, <strong>Classic</strong> e <strong>Embedded</strong>.
+Comece com a SuperServer. Atualmente, a versão Classic é indicada para
+máquinas com mais de um processador e em algumas situações específicas.
+O SuperServer compartilha o cache entre as conexões com o banco, e
+utiliza threads para gerenciar cada conexão. A versão Classic inicia um
+processo independente do servidor para cada conexão estabelecida. </p>
+      <p class="Text">A versão <strong>embedded</strong> é uma variação <strong>fantástica</strong> do servidor. Consiste em um <strong>servidor Firebird completo</strong> composto por apenas alguns arquivos. É muito fácil de distribuí-lo, pois <strong>não há necessidade de instalação</strong>. Torna-se ideal para o uso em catálogos em CDROM, versões de avaliação de utilitários ou aplicações standalone.</p>
+      <p class="Text">O
+Firebird vem com uma série de utilitários de linha de comando que
+permitem criar bancos de dados, recuperar estatísticas, executar
+comandos e scripts SQL, efetuar backups e restores, etc. Caso prefira
+uma ferramenta com interface gráfica, existem inúmeras opções para a
+sua escolha, incluindo opções gratuitas. Veja a lista no final desse
+documento para ter uma idéia por onde começar. </p>
+      <p class="Text">No <strong>Windows</strong>, o Firebird pode ser executado como um <strong>serviço</strong> ou no <strong>modo de aplicação</strong>. O instalador pode criar um ícone no Painel de Controle do Windows que permite a você iniciar ou parar o servidor.</p>
+      <p class="Subtitle">Documentação</p>
+      <p class="Text">Há
+um número enorme de documentos, FAQs e artigos disponíveis no site
+oficial do Firebird. Você também pode verificar se no seu país existe
+uma comunidade ou lista de discussão, a fim de obter suporte em sua
+língua nativa.</p>
+      <p class="Text">Todas essas informações podem ser encontradas nas diversas seções do site oficial do Firebird. Acesse periodicamente o site <a href="http://www.firebirdnews.org/" target="_blank">www.firebirdnews.org</a> para ficar atualizado quanto às notícias mais recentes do mundo Firebird.</p>
+      <p class="Subtitle">Para todos os tamanhos de BD </p>
+      <p class="Text">Algumas pessoas pensam que o Firebird é um SGBD para ser usado apenas com pequenos bancos de dados ou poucas conexões. <strong>Eles estão errados!</strong> O FB é usado com grandes bancos de dados e considerável número de conexões. Um bom exemplo foi mostrado na <a href="http://www.youtube.com/watch?v=XlF5ARsEZNw" target="_blank">Softool'06</a>, onde o Avarda (ERP russo)  estava rodando com um servidor Firebird 2.0 Classic e um número médio de <strong>100 conexões simultâneas</strong>, acessando um banco de dados de <strong>120GB</strong> com <strong>700 milhões de registros</strong>! O servidor era uma máquina bi-processada (2 CPUs - Dell PowerEdge 2950) com 6GB de RAM.</p></td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top"><hr></td>
+  </tr>
+  <tr>
+    <td valign="top"><p class="Subtitle">Ferramentas e Componentes</p>
+      <p class="Text">Abaixo segue uma lista com alguns links interessantes para obtenção de recursos como ferramentas, drivers, etc. Verifique o <a href="http://www.firebirdsql.org/" target="_blank">site oficial</a> do Firebird para uma lista mais completa e atualizada.</p>
+      <p class="Subtitle">Ferramentas de Administração</p>
+      <ul class="Text" type="disc">
+        <li><a href="http://www.ibexpert.com/">IBExpert (has personal FREE version) </a></li>
+        <li><a href="http://www.upscene.com/">DB Workbench </a></li>
+        <li><a href="http://www.flamerobin.org/">FlameRobin (Open Source, runs on Windows, Linux, MacOSX and FreeBSD) </a></li>
+        <li><a href="http://www.sqlly.com/">Firebird Development Studio</a> </li>
+      </ul>
+      <p class="Subtitle">Drivers e componentes de acesso </p>
+      <blockquote>
+        <h3 class="Text">Delphi components </h3>
+        <ul class="Text">
+          <li><a href="http://www.ibobjects.com/">IB Objects</a></li>
+          <li><a href="http://www.devrace.com/">FIBPlus</a></li>
+          <li><a href="http://www.progdigy.com/modules.php?name=UIB">UIB (Unified InterBase Components) </a></li>
+          <li><a href="http://zeos.firmos.at/portal.php">Zeos </a></li>
+          <li><a href="http://mdo.sf.net/">MDO </a></li>
+        </ul>
+        <h3 class="Text">ODBC </h3>
+        <ul class="Text">
+          <li><a href="http://www.ibdatabase.com/"> Gemini ODBC driver </a></li>
+          <li><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=odbc"> Firebird ODBC Driver </a></li>
+          <li><a href="http://www.easysoft.com/products/data_access/odbc_interbase_driver/index.html"> EasySoft </a></li>
+        </ul>
+        <h3 class="Text">OLEDB </h3>
+        <ul class="Text">
+          <li><a href="http://www.zstyle.dp.ua/eng/iboledb_prod.htm"> ZStyleGroup </a></li>
+          <li><a href="http://www.ibprovider.com/eng/index.html"> IBProvider</a></li>
+        </ul>
+        <h3 class="Text">Java </h3>
+        <ul class="Text">
+          <li><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=jaybird"> JayBird </a></li>
+        </ul>
+        <h3 class="Text">.Net Provider </h3>
+        <ul class="Text">
+          <li><a href="http://www.firebirdsql.org/index.php?op=files&amp;id=netprovider"> Firebird .Net Provider</a></li>
+        </ul>
+        <h3 class="Text">C++</h3>
+        <ul class="Text">
+          <li><a href="http://www.ibpp.org/" target="_blank"> IBPP</a></li>
+        </ul>
+        <h3 class="Text">Outras linguagens </h3>
+				<ul class="Text" type="disc">
+					<li><a href="http://www.php.net/manual/en/ref.ibase.php">PHP</a></li>
+					<li><a href="http://kinterbasdb.sourceforge.net/">Python</a> </li>
+				  <li><a href="http://sourceforge.net/projects/dbi-interbase/">Perl</a></li>
+				</ul>
+      </blockquote>
+		</td>
+    <td bgcolor="#000000">&nbsp;</td>
+    <td valign="top"><p class="Subtitle"><b>Replicação</b></p>
+      <ul class="Text" type="disc">
+        <li><a href="http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;s=1141149701:439782&amp;page=ibp_replicator">IBReplicator </a></li>
+        <li><a href="http://www.meta.com.au/index.php?option=content&amp;task=view&amp;id=23&amp;Itemid=33"> FBReplicator </a></li>
+        <li><a href="http://www.inin.hr/Software_Replication%20Manager_E.htm"> Replication Manager </a></li>
+      </ul>
+      <p class="Subtitle">Suporte e informações </p>
+      <ul class="Text" type="disc">
+        <li><a href="http://www.firebirdnews.org/"> Firebird related News</a></li>
+        <li><a href="http://www.firebase.com.br/"> FireBase (em português) </a></li>
+        <li><a href="http://www.ibphoenix.com/"> IBPhoenix </a></li>
+        <li><a href="http://www.comunidade-firebird.org/"> CFLP (</a><a href="http://www.firebase.com.br/">em português</a><a href="http://www.comunidade-firebird.org/">) </a></li>
+        <li><a href="http://www.firebirdsql.org/index.php?op=lists"> Supporting lists and groups </a></li>
+        <li><a href="http://www.ibase.ru/"> IBase (Russian) </a></li>
+        <li><a href="http://www.fbdeveloper.com/"> Firebird Developers Magazine </a></li>
+        <li><a href="http://www.fbtalk.net/"> FB Talk </a></li>
+      </ul>
+      <p class="Subtitle">Diversos</p>
+      <ul class="Text" type="disc">
+        <li><a href="http://www.janus-software.com/fb_fyracle.html"> Fyracle - Oracle mode Firebird</a></li>
+        <li><a href="http://www.firebirdsql.org/download/prerelease/rlsnotes20_0200_101.pdf"> Firebird 2.0 new features </a></li>
+        <li><a href="http://www.firebirdsql.org/devel/engine/roadmap2006.html"> Firebird 2006 RoadMap</a></li>
+      </ul>
+      <p class="Subtitle">Documentos e manuais </p>
+      <ul class="Text">
+        <li><a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=doc" target="_blank"> Firebird Official Documentation Project </a>(QuickStart and general guides) </li>
+        <li><a href="http://www.janus-software.com/fbmanual/" target="_blank"> FB Online Manual </a>(Admin, PHP, PSQL, etc.)  </li>
+      </ul>
+      <p class="Subtitle">Quer ajudar ?</p>
+      <p class="Text">Devido à natureza de um projeto de <strong>código aberto</strong>, <strong>qualquer pessoa</strong> pode <strong>contribuir</strong> desenvolvendo novos recursos ou corrigindo bugs. Se quiser se tornar membro do Time de Desenvolvedores do Firebird, baixe o <a href="http://sourceforge.net/projects/firebird" target="_blank">código fonte do Firebird</a> do site sourceforge e estude-o. Pode ser interessante se cadastrar na lista de discussão <a href="http://firebird.sourceforge.net/index.php?op=lists" target="_blank">fbdevel</a>
+para entrar em contato com os outros desenvolvedores do projeto (nota:
+a fbdevel não é uma lista geral de suporte, portanto não envie questões
+de suporte para ela. Ao invés disso, utilize a <a href="http://www.firebase.com.br/fb/lista.php" target="_blank">lista da FireBase</a> ou a <a href="http://www.yahoogroups.com/messages/firebird-support">lista internacional de suporte</a> para suporte gratuito da comunidade). </p>
+      <p class="Text">Não é necessário ser um programador para ajudar o projeto. Torne-se um <strong>membro</strong> da <a href="http://www.firebirdsql.org/ff/foundation/">Firebird Foundation</a> ou faça uma <a href="http://www.firebirdsql.org/index.php?op=ffoundation&amp;id=contributions#donation" target="_blank">doação</a> e estará <strong>ajudando a financiar os principais desenvolvedores</strong> para que eles possam dedicar mais tempo ao projeto.</p>
+      <p class="Text">Obrigado pelos seus dois minutos... </p>
+  </td></tr>
+  <tr>
+    <td colspan="3" valign="top"><table border="1" bordercolor="#0000ff" cellpadding="10" cellspacing="0" width="100%">
+      <tbody><tr>
+        <td><div align="center"><span class="Subtitle"><a href="http://www.firebirdsql.org/">www.firebirdsql.org</a><br>
+          <a href="http://www.firebirdnews.org/">www.firebirdnews.org</a></span></div></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<p align="center">Número de visualizações : <img src="fb2min_ptbr_arquivos/Count.gif" align="absmiddle"></p>
+
+</body></html>

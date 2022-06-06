@@ -1,0 +1,167 @@
+/* CSS Document */
+
+#geral { background-color:#F5F5F5; }
+#nav #login {  background-image:url(http://static.imasters.com.br/img/secao/login_c.gif); }
+#secaoRelacionada { margin:0px; }
+
+#secaoConteudo { margin-bottom:10px;  float:left; height:44px; width: 738px; padding-left:20px; background:url(http://static.imasters.com.br/img/conteudo/fundo_secao.gif) repeat-x; }
+#secaoConteudo div { height:30px; margin-top:8px; padding-left:30px; background: url(http://static.imasters.com.br/img/conteudo/ico_folha.gif) no-repeat; }
+#secaoConteudo div span {  height:14px; float:left; }
+#secaoConteudo div span.secoes, #secaoConteudo div ul li a { color:#024D8A; }
+#secaoConteudo div span.aviso { width: 600px; }
+#secaoConteudo div ul {   height:14px; float: left; list-style:none;  }
+#secaoConteudo div ul li { margin-left:5px; display:inline; }
+#secaoConteudo div ul li a { text-decoration:underline; }
+#secaoConteudo #imprimir { width: 80px; font-weight:bold; margin-top:-30px; float:right; background:url(http://static.imasters.com.br/img/conteudo/ico_print.gif) no-repeat; }
+
+#nav { float:right; margin:0px 0px 0px 10px; }
+#geral>#nav { margin-right:5px; }
+
+#msg { display:block; text-align:center; padding-top:10px;}
+
+#conteudo { float:left; padding:20px; background:url(http://static.imasters.com.br/img/conteudo/fundo_c.gif) repeat-x top; width: 533px; background-color: #FFF; margin:0px 0px 10px 5px; }
+#geral>#conteudo { width: 545px; margin-left:10px;  }
+
+#conteudo h2 { font: bold 18px Arial, Helvetica, sans-serif; margin: 25px 0px 10px 0px; }
+#conteudo p.resenha { font-size:11px; color:#555; padding-bottom:15px; margin-bottom:15px; border-bottom:1px solid #6CA1E3; }
+#conteudo p.resenha span { font-weight:bold; color:#074086; }
+#conteudo p.resenha span a.emailautor { text-decoration:underline; color:#074086; }
+#conteudo p, #conteudo h3 { font-size:12px; margin-bottom:20px; }
+#conteudo h3 { font-weight: bold; }
+
+#autor { width:153px; background-color:#E6E6E6; overflow:hidden; }
+#autor div { line-height:12px; margin-top:10px; padding:10px 8px 20px 8px; background: url(/img/conteudo/fundo_colunistas_artigos.gif) repeat #C4BFBF; border-bottom:2px solid #FFF; }
+#autor div img { margin-right:5px; width: 43px; height:54px; border:1px solid #FFF; float:left; }
+#autor div span { color:#084188; font-weight:bold; }
+#autor p { margin:0px 5px 10px 10px; }
+#autor h4 { margin:0px 0px 5px 10px; font-size:11px; color:#084195; font-weight:bold; } 
+#autor p a { display:block; text-decoration:underline; font-weight:bold; }
+#autor div span.nome { line-height:14px; padding-bottom:1px;  display:block; font-size: 14px; }
+
+#newsletter { background-color:#E6E6E6; }
+
+#nav div h3, #esq div h3, #down_faq h3 a {  color: #333 !important; }
+
+#nav #canais ul li {  background-color:#E6E6E6; }
+#nav #canais { width: 153px; }
+
+#strConteudo a { color:#00F; text-decoration:underline; }
+/*#strConteudo abbr { font-style:italic; }
+#strConteudo div.codigo  { padding-bottom:10px; background-color:#fafafa;  width:490px; border:1px solid #999;}
+#strConteudo div.codigo pre { position:relative; margin:-1px; width:18px; height:18px; background:url('http://conteudo.imasters.com.br/4042/canto.gif') 0 0 no-repeat; }
+#strConteudo code { font-weight:bold; font-size:11px; width: 468px; background:#fafae8; display:block; color:#333; border:1px solid #c30; padding:5px; margin:25px 10px 0px 10px; } 
+#strConteudo p { margin:5px 0px; }
+#strConteudo ul { list-style:none; }
+#strConteudo li { margin-bottom:15px;}
+#strConteudo li h3 { margin:0px;}
+#strConteudo ul li { font-size:12px; background:url(http://static.imasters.com.br/img/conteudo/ico_i_v.gif) 0 0 no-repeat; margin:10px 0px 10px 15px; }
+#strConteudo ul li:first-letter { margin-left:15px;  }
+#strConteudo dl { margin:5px 0px 5px 0px; font-size:12px; }
+#strConteudo dt {  background-color:#fafafa; height:18px;  border:1px solid #999; border-bottom-width:0px; margin-left:10px; padding:5px 5px 0px 10px; font-style: italic; }
+#strConteudo dd { background-color:#fafafa; margin-bottom:5px;  border:1px solid #999; border-top-width:0px;   margin-left:10px; padding:5px 5px 5px 20px; }*/
+
+#interacao { width:542px; float:left; margin-bottom:10px; }
+
+#ilinks { line-height:25px; height:25px; border:1px solid #6D809E; border-bottom-width:0px; }
+#ilinks ul { list-style:none; }
+#ilinks ul li { margin:0px 25px 0px 25px; display:inline; }
+#ilinks ul li a  { padding:3px 0px 3px 24px; font-size:11px; color:#FC6806; }
+#ilinks ul li a.fale { background:url(http://static.imasters.com.br/img/conteudo/ico_fale.gif) left no-repeat; }
+#ilinks ul li a.comente { background:url(http://static.imasters.com.br/img/conteudo/ico_comentario.gif) left no-repeat; }
+#ilinks ul li a.indique { background:url(http://static.imasters.com.br/img/conteudo/ico_indique.gif) left no-repeat; }
+
+
+#barra { line-height:25px; color:#FFF; border-bottom:1px solid #445C82; height:25px; background:url(http://static.imasters.com.br/img/conteudo/i_barra_fundo.jpg) #697D9E repeat-x; }
+#barra h3{ width:170px; float:left; background:url(http://static.imasters.com.br/img/conteudo/i_barra_seta.gif) no-repeat; background-position:150px 8px ; margin-left:10px; padding-right:0px; color:#AAB9D0; float:left; line-height: 25px;}
+#barra span { float:left;  }
+#barra span.expandir { margin-left: 25px; color:#C6D0E0; }
+#barra a { background:url(http://static.imasters.com.br/img/conteudo/i_barra_setab.gif) no-repeat; margin: 6px 4px; display:block; float:right; width:15px; height:13px; }
+#barra>a { margin-right:7px; }
+#barra a span { display:none; }
+
+#janelaLogin { padding:40px 20px 0px 15px; width:223px; height:140px; background: url(/img/conteudo/fundo_login.gif) #FFF no-repeat top; background-position:0px 0px; color:#000; border:1px solid #000; position:absolute; }
+#janelaLogin form { padding:10px; display:block; width:203px; background-color:#EDE9E9; margin:10px 0px 10px 0px; }
+#janelaLogin a { color:#0C3EFA; }
+#janelaLogin form input { display:block; margin:2px; }
+#janelaLogin form input.submit { width:72px; height:19px; display:block; padding:0px; border:0px; background-image:url(/img/conteudo/fundo_botao.gif); font-size:11px; }
+#janelaLogin a.fechar { background:url(http://static.imasters.com.br/img/conteudo/ico_fecha.gif) no-repeat; float:right; position:relative; top:-170px; left:15px; width:15px; height:13px; }
+
+
+#int_painel { display:none;  height:404px; background:url(http://static.imasters.com.br/img/conteudo/i_fundo.gif) repeat-x bottom; }
+#int_painel div.topo a { display:block; float:right; margin:5px 3px; width:15px; height:13px; }
+#int_painel div.topo a span { display:none; }
+#int_painel div.topo { height:59px; background:url(http://static.imasters.com.br/img/conteudo/interacao_topo.jpg) #445B84 no-repeat; }
+#int_painel span { margin: 10px 0px 0px 10px; }
+#int_painel div.subtitulo { background:url(http://static.imasters.com.br/img/conteudo/i_subtitulo.gif) no-repeat; text-align:center; width:230px; line-height:30px; position:relative; left:310px; margin-top:-14px;}
+
+
+#int_painel ul { float:left; list-style:none; width: 160px; margin:25px 10px 0px 5px;  }
+#int_painel ul li { background-repeat: no-repeat; background-position:0px 10px; padding:20px 0px 0px 35px; border-top: 1px solid #8995A6; height:21px; }
+#int_painel ul li a { color:#607697; font-weight:bold;  }
+#int_painel ul li.avalie { background-image:url(http://static.imasters.com.br/img/conteudo/ico_i_avalie.gif); border:0px; }
+#int_painel ul li.indique { background-image:url(http://static.imasters.com.br/img/conteudo/ico_i_indique.gif); }
+#int_painel ul li.poste { background-image:url(http://static.imasters.com.br/img/conteudo/ico_i_poste.gif); }
+#int_painel ul li.anotacoes { background-image:url(http://static.imasters.com.br/img/conteudo/ico_i_anotacoes.gif); }
+#int_painel ul li.fale { background-image:url(http://static.imasters.com.br/img/conteudo/ico_i_fale.gif); }
+
+#int_painel div.meio { margin-top:10px; float:left; width: 354px; }
+#int_painel div.meio p #int_h4 { margin:0px; padding-left:10px; font-weight:bold; color:#B30E0E; font-size:11px; margin-top:5px; background:url(http://static.imasters.com.br/img/conteudo/ico_i_h4.jpg) #F8A80B no-repeat; line-height:27px; display:block; }
+#int_painel div.meio div { background-color:#FFF; height:189px; width:352px; border:1px solid #98999B; border-width: 0px 1px 0px 1px; }
+#int_painel div.meio span.rodape { text-align:right; background:url(http://static.imasters.com.br/img/conteudo/ico_i_rodape.jpg) no-repeat; height:34px; margin:0px; padding:0px; display:block; width: 354px;  }
+#int_painel div.meio span.rodape input { width:72px; height:19px; display:block; padding:0px; border:0px; background-image:url(/img/conteudo/fundo_botao.gif); font-size:11px; margin:7px 10px 0px 0px; }
+#int_painel div.meio div h5 { font-size:11px; font-weight:normal; margin:10px 0px 0px 15px; }
+#int_painel div.meio div ul { height:160px; float:none; list-style-image:url(http://static.imasters.com.br/img/conteudo/ico_i_v.gif); width:340px; margin:0px 0px 0px 10px; } 
+#int_painel div.meio div ul li { font-weight:normal; color:#000;  padding:0px; border:0px; margin:7px 0px 0px 25px;}
+
+#formInteracao p {  margin:0px; padding:0px; }
+
+#int_conteudo { padding-bottom:10px; font-size:12px; }
+#int_conteudo input { margin-left:7px; }
+#int_conteudo span.n { font-size:11px; color:#6F82A0; }
+#int_conteudo span.ti { font-size:11px; color:#FFF; line-height:20px; margin:0px; padding:0px 0px 0px 10px; display:block; width:342px; border-top: 1px solid #FFF; border-bottom:1px solid #30425D; background-color:#607697; } 
+#int_conteudo p { padding:10px 10px 0px 10px; width:332px; }
+
+#int_conteudo input.text_Indique { border:1px solid #7F9DB9; width:146px; height:20px; line-height:20px; }
+#int_conteudo textarea.textarea_Indique { vertical-align:bottom; margin-left:34px; border:1px solid #7F9DB9; width:221px; height:63px; }
+
+#int_conteudo textarea.textarea_Anote { width:300px; height:100px; padding:5px; border:1px solid #7F9DB9; color:#666; }
+
+#int_conteudo input.text_Poste { margin-left:36px; border:1px solid #7F9DB9; width:146px; height:20px; line-height:20px; }
+#int_conteudo textarea.textarea_Poste { vertical-align:bottom; border:1px solid #7F9DB9; width:221px; height:63px; }
+
+#int_conteudo input.text_Fale { margin-left:34px; border:1px solid #7F9DB9; width:146px; height:20px; line-height:20px; }
+#int_conteudo textarea.textarea_Fale { vertical-align:bottom; border:1px solid #7F9DB9; width:221px; height:63px; }
+
+
+#int_painel div.meio #int_rodape { background:url(http://static.imasters.com.br/img/conteudo/ico_i_rodape.jpg) no-repeat; height:34px; margin:0px; padding:0px; display:block; width: 354px;  }
+#int_painel div.meio #int_rodape input { float:right; width:72px; height:19px; display:block; padding:0px; border:0px; background-image:url(/img/conteudo/fundo_botao.gif); font-size:11px; margin:7px 10px 0px 0px; }
+
+
+
+#comentarios ul { width:543px; list-style:none; }
+#comentarios ul li { margin:0px;  float:left; display:inline; text-align:center; padding:0px 10px 0px 10px; line-height:20px; }
+#comentarios ul li.view_c { width:155px; border: 1px solid #5B7292; border-width: 1px 0px 0px 1px; }
+/* #comentarios ul li.view_m { width:135px; background-color:#DCE3ED;  border: 1px solid #5B7292; border-width: 1px 0px 1px 1px; } */
+/* #comentarios ul li.aval -> width:190px; */
+#comentarios ul li.aval { width:346px; line-height:21px; text-decoration:none; border: 1px solid #5B7292; border-width: 0px 0px 1px 1px; }
+#comentarios ul li.aval a { text-decoration:none; float:left; }
+#comentarios ul li.aval img { margin-left:3px; float:left; vertical-align:middle; margin-top: 5px; }
+#comentarios ul li.aval>img {margin-top:4px; vertical-align:bottom; }
+
+#comentarios { margin:0px; height:50px; width:543px; }
+#comentarios div.meio { padding:5px; margin-top:-1px; float:left; width:532px; border:1px solid #5B7292; border-width:0px 1px 1px 1px; }
+#comentarios>div.meio { padding:0px 10px 0px 5px; width:527px; } 
+#comentarios div.meio ul { width: 522px; padding-top:10px;}
+#comentarios div.meio ul li { margin-bottom:10px; }
+#comentarios div.meio ul li span { padding-left:10px; text-align:left; border:1px solid #FFF; width: 500px; display:block; }
+#comentarios div.meio ul li span.titulo 	{ color:#5B7292; font-weight:bold; border:1px solid #E8E8E8; border-width:0px 1px 0px 1px; background-color:#E8E8E8; }
+#comentarios div.meio ul li span.nome 		{ border:1px solid #F0F0F0; border-top:1px solid #FFF; border-bottom:1px solid #FFF; background-color:#F0F0F0;}
+#comentarios div.meio ul li span.mensagem 	{ padding-top:3px; padding-bottom:3px; line-height:14px; color:#5B7292; border-width:0px 1px 1px 1px; border-color:#D6D6D6; background-color:#FFF;  }
+
+#nav #arrAC { background-color:#E6E6E6; }
+#nav #arrAC p, #nav #arrAC select { margin:5px 5px 10px 5px; }
+#selectArticulista { width:120px; line-height:20px; font: normal 10px Arial; } 
+
+#todosArtigos select { font:normal 11px Arial; width:100%; margin-top:5px; }
+#todosArtigos h2 { font:bold 11px Arial; color:#084188; margin:0px; }
+#todosArtigos { width:523px;  padding:10px; height: 40px; background-color:#F4F4F4; margin-bottom:10px;  }

@@ -1,0 +1,833 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Firebird Future Development : What to Expect in 2006</title>
+
+
+
+<meta http-equiv="Content and content and content.-Type" and="" content="">
+<style type="text/css">
+<!--
+body {
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 12px;
+	padding: 0;
+	color: black;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 16px;
+}
+h3 {
+	font-size: 14px;
+}
+h4 {
+	font-size: 12px;
+}
+.toc {
+	list-style-type: none;
+}
+.toc a:link,
+.toc a:visited,
+.toc a:active {
+	color: black;
+	text-decoration: none;
+}
+.toc a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+.comment {
+	color: gray;
+}
+.backlink {
+	color: blue;
+	font-size: 10px;
+	text-decoration: underline;
+}
+.term {
+	color: navy;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+}
+.code {
+	font-family: Courier;
+}
+.email,
+.email a:link,
+.email a:visited,
+.email a:active {
+	color: black;
+	text-decoration: none;
+}
+.email a:hover {
+	color: blue;
+	text-decoration: none;
+}
+-->
+</style></head><body>
+
+<table colspec="3" bgcolor="#ffa500" cellpadding="3" cellspacing="1">
+  <tbody><tr bgcolor="#ffe4b5">
+    <td colspan="3" bgcolor="#ffe4b5">
+<center>
+<h3>Review of Firebird 2.0</h3>
+<a href="http://www.firebirdsql.org/index.php">
+<img src="roadmap2006_arquivos/homebutton.gif" alt="To Firebird Home Page" border="0"></a>
+&nbsp;
+<a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=engine">
+<img src="roadmap2006_arquivos/develbutton.gif" alt="To Engine Development page" border="0"></a>
+</center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#ffe4b5">
+      <table> 
+        <tbody><tr bgcolor="#ffe4b5">
+          <td colspan="2">
+<blockquote>
+<b>Some time ago, many of our users were surprised by the number of
+features released in Firebird 1.5. Honestly, before preparing this
+paper, I didn't count new features in Firebird 2.0 and I don't have a
+clue whether it's superior to the version 1.5 in this aspect or not.
+But, in my opinion, the major benefit of the version 2.0 is not its
+feature set. </b>
+</blockquote>
+          </td>
+        </tr>
+        <tr bgcolor="#ffe4b5">
+          <td width="50%">
+"What then?", - you ask. I'd describe Firebird 2.0 as "the version
+which removes the annoying limits". Sounds not so modest, I know. Let
+me explain better. No doubt that Firebird has a nice multi-generational
+architecture and a rich SQL language, an embedded usage and a good
+performance. But I'm sure almost everyone stepped on some internal
+limitations that worried or even shocked you. To name a few (in no
+particular order):
+<ul>
+  <li> Undocumented table limit of about 35GB, an overflow may cause data corruption</li>
+  <li> Removing (garbage collecting) nodes from a non-selective index is extremely slow</li>
+  <li> Bigger page cache often means slower performance</li>
+  <li> Optimizer is not able to choose a good plan in many cases</li>
+  <li> International support is weak, a lot of bugs in the Unicode/MBCS handling</li>
+  <li> Lack of a fast backup/restore mechanism</li>
+  <li> Weak security and many known vulnerabilities</li>
+  <li> Requirement of exclusive database access for referential integrity declarations</li>
+  <li> Too few built-in functions</li>
+  <li> Unreliable database shutdown</li>
+</ul>
+        </td>
+        <td width="50%">
+<p>Some of them could be of critical priority for your business, others
+are just annoying. Anyway, I'm glad to report that Firebird 2.0
+eliminates most of the aforementioned issues and significantly reduces
+the impact of others. As for me, this is more important than declaring
+new language features. But considering also tons of bugfixes and enough
+new features, Firebird 2.0 definitely represents a major release of
+your favourite RDBMS. More robust, more feature complete, faster and
+much more friendly to non-ASCII users.</p>
+<p>Of course, there are limits that still exist and many features we
+don't support yet. But we should have some room for future
+improvements, shouldn't we? We'll talk about the future development a
+bit later.</p>
+<p>Well, for those who're interested in numbers, let's read the
+WhatsNew document or Release Notes and make a summary of total changes
+per version:</p>
+<ul>
+  <li>Version 1.0: 32 improvements, 55 bugfixes</li>
+  <li> Version 1.5: 58 improvements, 94 bugfixes</li>
+  <li> Version 2.0: 82 improvements, 140 bugfixes</li>
+</ul>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>   
+    <td bgcolor="#ffdab9" valign="top">
+<h3>Firebird Vulcan</h3> Our primary goal is to merge two codebases
+(Firebird 2.0 and Vulcan) in order to release Firebird version 3.0. It
+will be based on the Vulcan tree and will contain its modular
+architecture and new features, as well as all improvements made in
+Firebird 2.0. The key features of the Vulcan codebase are:
+<ul>
+  <li> Globally refactored code</li>
+  <li> Fine-grained multithreading</li>
+  <li> Unified provider based architecture</li>
+  <li> Flexible configuration mechanism</li>
+  <li> Database level authentication and enhanced security management</li>
+  <li> Internal DSQL implementation</li>
+</ul>
+    </td>
+    <td align="center" valign="top">
+
+
+      <table bgcolor="#ffa500" cellpadding="3" cellspacing="1" width="674">
+        <tbody><tr bgcolor="#ffffff">
+          <td>
+    <img src="roadmap2006_arquivos/roadmap2006_bnr.gif" alt="Roadmap Header 2006">
+          </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+          <td align="left">   
+<p>If you'd ask me to outline the generic development priorities, they would be:</p>
+<ol>
+  <li>Reliability and safety (bugfixing, guaranteed recovery, security improvements)</li>
+  <li>Administration and monitoring facilities</li>
+  <li>Compliance with the SQL specification</li>
+  <li>Performance (both algorithmical and optimizer decisions)</li>
+  <li>Language enhancements</li>
+</ol>
+<p>The timetable should look a lot like this:</p>
+
+<p>2005:</p>
+<ul>
+  <li>   Release 2.0 RC and fork the 2.0 HEAD to create the release branch</li>
+  <li> Port some changes from independent trees to HEAD</li>
+  <li> Fork the Vulcan HEAD to create the 3.0 development branch</li>
+</ul>
+<p>2006, 1st quarter:</p>
+<ul>
+  <li> Release Firebird 2.0 Final and Firebird Vulcan Final</li>
+</ul>
+<p>2006, 2nd quarter:</p>
+<ul>
+  <li>Release Firebird 3.0 Beta</li>
+  <li>Fork the 3.0 HEAD to create the 3.0+ development branch</li>
+</ul>
+<p>2006, 3rd quarter:</p>
+<ul>
+  <li> Release Firebird 3.0 Final</li>
+</ul>
+<p>  2006, 4th quarter:</p>
+<ul>
+  <li>Release Firebird 3.0+ Beta</li>
+</ul>
+
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table>
+        <tbody><tr>
+          <td align="left">
+<center><br>
+<h3>What's lurking in the trees?</h3>
+</center>
+<p>As you perhaps know, there are some improvements done by various
+Firebird developers that didn't go into the 2.0 release due to time
+constraints. Some of them are included and being tested in Fyracle,
+others are still in private trees. Also, we still have a few features
+in Yaffil that requires backporting into Firebird. Everything mentioned
+above is exactly the new stuff you'll see in version 3.0. Let's see
+what has been already done:</p>
+<ul>
+  <li> Common tables expressions and recursive queries (SQL-99 compliant)<br>
+    Developed by: Paul Ruizendaal<br>
+  Current state: Completed<br>
+  </li>
+  <li> Global temporary tables (SQL-99 compliant)<br>
+    Developed by: Vlad Horsun<br>
+  Current state: Completed<br>
+  </li>
+  <li>External procedures / functions (SQL-99 compliant)<br>
+    Developed by: Eugene Putilin, Roman Rokytskyy, Vlad Horsun<br>
+  Current state: Partially done, requires the callback API discussion<br>
+  </li>
+  <li>New built-in functions (string, math, binary, date/time)<br>
+    Developed by: Oleg Loa<br>
+    Current state: Completed, although requires some changes</li>
+</ul>
+          </td>
+        </tr>
+      </tbody></table>  
+    </td>
+
+    <td bgcolor="#ffdab9" valign="top"><h3>Firebird 3.0</h3>
+<p>As both Firebird 2.0 and Firebird Vulcan releases are going to
+co-exist in the next year, you may ask why version 3.0 is numbered as a
+major release and what else (except of features already done in both
+codebases) it will contain. A good question. As we want to shorten the
+3.0 release cycle as much as possible, no completely new development is
+expected to happen in that version. But we need to keep our users
+interested, so something new should be introduced.
+</p>
+<p><b><i>The solution is simple: the 3.0 release is going to incorporate all the work done inside independent branches.</i></b> 
+    </p></td>
+  </tr>
+</tbody></table>
+
+
+<table colspec="4" bgcolor="#ffa500" cellpadding="0" cellspacing="0">
+
+
+  <tbody><tr>
+    <td colspan="4">
+<center>
+<h2>What features to expect?</h2>
+</center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">    
+      <table colspec="2">
+       <tbody><tr>
+
+
+      </tr></tbody></table><table colspec="2" cellpadding="3" cellspacing="1">
+        <tbody><tr>
+          <td width="20%"> 
+          <b>PRIORITY</b><br><br><img src="roadmap2006_arquivos/high.gif">&nbsp;&nbsp;<img src="roadmap2006_arquivos/med.gif">&nbsp;&nbsp;<img src="roadmap2006_arquivos/low.gif">
+           &nbsp; shows how much our users want the feature.  It's set up after looking at various polls and 
+           forum/newsgroup discussions;  &nbsp;also influenced by our analysis of the competitors' feature offerings
+          <hr size="1">
+          </td>
+          <td>
+            <table colspec="5">
+              <tbody><tr>
+                <td colspan="5">
+<b>COMPLEXITY</b>, based on time/effort estimates made by the core team
+          <hr size="1">
+                </td>
+             </tr>
+             <tr>
+               <td bgcolor="#ffffff" width="20%"><center><b>NONE</b>
+<br>All required work is already done (in some code branch) and just needs to be backported and tested</center></td>        
+             <td bgcolor="#e7e7f7" width="20%"><center><b>Implementation</b>
+<br>Feature has already been discussed and agreed on, but still requires some minor discussions and actual coding</center></td>        
+  
+             <td bgcolor="#a7afd7" width="20%"><center><b>Design/Implementation</b>
+<br><br>&lt;-Between these two-&gt;</center></td>        
+
+             <td bgcolor="#6777af" width="20%"><font color="#ffffff">
+              <center><b>Design</b>
+<br>We have basic agreement and some vision of the thing, but the work
+hasn't been discussed in depth yet, hence we don't have an
+implementation plan for it</center></font></td>        
+
+             <td bgcolor="#483d8b" width="20%"><font color="#ffffff">
+              <center><b>Research</b>
+<br>The work requires serious analysis before discussing its design and implementation specifications</center></font></td>        
+           </tr>
+         </tbody></table>
+       </td>
+     </tr>
+    </tbody></table>
+  </td>
+</tr>  
+
+  <tr>
+    <td align="left" valign="top" width="25%">
+      <table cellpadding="3" width="100%">
+
+<!-- FIRST COLUMN - Admin/Tracing/Monitoring -->
+
+        <tbody><tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Admin/Tracing/Monitoring</b><br><br>
+          </td></tr>
+
+        <tr bgcolor="#e7e7f7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+          <b>Asynchronous statement cancellation / timeouts</b>
+    <br>
+Force any of the following actions: cancel a running statement,
+rollback a transaction, kill an attachment. Allow setting timeouts for
+SQL statements. Should be available at least at the API level. </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b>Monitoring via API and/or special tables</b>
+    <br>
+Perform a "snapshot" monitoring (i.e. at the given moment) of the
+internal activities inside the engine. Obvious objects of such a
+monitoring are: databases, attachments, transactions, active requests,
+resource (memory, CPU) usage, etc.. </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+          <b>Detailed SQL tracing/profiling</b>
+    <br>
+Show detailed access path (at the RSB tree level) for every retrieval,
+count rows (profile CPU time, etc) per every node. Available runtime
+statistics should be extended. </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+          <b>Detailed logging/audit</b>
+    <br>
+Allow to log some events happening on the server. These could be:
+successful/rejected authentification attempts (containing client host
+info), prepared/executed SQL statements, committed/rolled back
+transactions, etc. We need API to set up the required events and to
+retrieve the audit log.</font>
+          </td></tr>
+
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>DDL level and global triggers</b>
+    <br>
+Allow triggers ON CREATE/ALTER/DROP. Implement triggers attachment and
+transaction level triggers running in autonomous transactions.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/low.gif"><br><font color="#ffffff">
+            <b> PSQL debugging extensions/hooks</b>
+    <br>
+  Allow PSQL debugging via introducing: looper breakpoints, handler callbacks, retrieval of context data, etc.
+  priority = low<br>
+  complexity = research</font>
+          </td></tr>
+
+<!-- Group break - Maintenance / Recovery -->
+
+        <tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Maintenance / Recovery</b>
+          <br><br>
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b>Reliable logical backup</b>
+    <br>
+The only case of unrestorable backup should be a physically corrupted
+backup. Primitive objects (generators, UDFs, etc) must be restored in
+the beginning. Computed columns and validation constraints must be
+restored at the end. The engine should reject inconsistent data instead
+of transform them when reading (e.g. no value -&gt; NULL). GBAK should
+allow partial restore, driven by switches or interactively.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b>Point-in-time recovery</b>
+    <br>
+The engine must have an optional ability to maintain a redo log in
+order to roll it over the last logical backup. No data loss is
+acceptable.</font>
+          </td></tr>
+
+
+
+      </tbody></table>
+    </td> 
+
+<!-- SECOND COLUMN - Security -->
+
+    <td align="left" valign="top" width="25%">
+      <table cellpadding="3" width="100%">
+
+        <tbody><tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Security</b><br><br>
+          </td></tr>
+
+        <tr bgcolor="#ffffff">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+          <b>Embedded users / SQL users management</b>
+    <br>
+  Allow in-database users management. (Done in Vulcan)
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b>User permissions for metadata</b>
+    <br>
+Protect all metadata with security classes. Implement metadata-level
+permissions. Add database-level permissions like BACKUP, DROP, etc.</font>
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Pluggable authentication modules</b>
+    <br>
+  Enable using of custom authentication mechanisms (e.g. native OS ones).</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Security groups</b>
+    <br>
+  Design group-based security as an alternative to the existing role-based one.<br></font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b> Database encryption</b>
+    <br>
+  Allow optional encryption of database files. Keys management is an open question here.</font>
+          </td></tr>
+
+<!-- Group break - Performance / Optimizer -->
+
+        <tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Performance / Optimizer</b>
+          <br><br>
+          </td></tr>
+
+        <tr bgcolor="#e7e7f7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b>Faster outer joins</b>
+    <br>
+  Implement the merge algorithm for outer joins.
+          </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+            <b> Optimizer improvements</b>
+    <br>
+  Fix known bugs/limitations, better optimizer decisions, more data statistics
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>More effective sorting</b>
+    <br>
+  Implement partial sorting to spead up FIRST-limited retrievals. Consider sorting recno's instead of entire rows.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Optimized network protocol</b>
+    <br>
+Avoid sending a lot of unneeded data (buffer tails). Consider
+implementing protocol batches (e.g. prepare + info). Compress spaces
+more effectively.</font>
+          </td></tr>
+
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>More access paths</b>
+    <br>
+  Consider implementation of hash join / hash aggregate and other retrieval algorithms used in the competitor RDBMS.</font>
+          </td></tr>
+
+      </tbody></table>
+    </td>
+
+<!-- THIRD COLUMN - Language Extensions -->  
+
+    <td align="left" valign="top" width="25%">
+      <table cellpadding="3" width="100%">
+        <tbody><tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Language Extensions</b><br><br>
+          </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b> Temporary tables / transient datasets</b>
+    <br>
+Implement temporary schema objects and/or datasets. SQL-99 compliance
+is required, extensions are welcome. (Partly done in Fyracle.) </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b>More built-in functions</b>
+    <br>
+The SQL-99 (or later) ones (those of major importance for us) must be
+implemented first. Then we need users feedback about other ones. </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b> Schemas/namespaces</b>
+    <br>
+First, it significantly reduces a cost of the issue with short metadata
+names. Second, it simplifies administration as a number of different
+databases could be united into a single file. Third, it finally allows
+us to be fully SQL-92 (entry level) compliant.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b>Native long numeric data type</b>
+    <br>
+  Implement long exact numeric data type (with precision longer than 30 decimal digits) and appropriate BCD arithmetics.</font>
+          </td></tr>
+
+        <tr bgcolor="#ffffff">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+            <b>Recursive queries</b>
+    <br> 
+  Implement SQL for recursive retrievals. Make it consistent with the SQL specification.
+          </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+            <b>Regular expressions</b>
+    <br>
+  Allow usage of regular expressions in search conditions. Add some special syntax (a new predicate) for this purpose.
+          </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+            <b> TEXT BLOB compatible with [VAR]CHAR</b>
+    <br>
+  Allow BLOB SUB_TYPE TEXT to be compatible/interchangable with string data types. Allow text blobs in all built-in functions.
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b> Domains everywhere</b>
+    <br>
+  Allow usage of domains in PSQL parameters and variables, as well as in the CAST function.</font>
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b> Longer metadata names</b>
+    <br>
+  Up to 128 unicode characters.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#e7e7f7">
+            <b> SQL functions</b>
+    <br>
+  CREATE/ALTER/DROP FUNCTION as per SQL-99.</font>
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/low.gif"><br><font color="#ffffff">
+          <b>Deferred constraints</b>
+    <br>
+  Implement commit-time constraint checking as per SQL specification.</font>
+          </td></tr>
+
+      </tbody></table>
+    </td>  
+
+
+<!-- FOURTH COLUMN - Generic / Architecture -->
+
+    <td align="left" valign="top" width="25%">
+      <table cellpadding="3" width="100%">
+        <tbody><tr bgcolor="#ffa500">
+          <td align="center"><br>
+          <b>Generic / Architecture</b><br><br>
+          </td></tr>
+
+        <tr bgcolor="#ffffff">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b>SMP support in SS</b>
+    <br>
+  Support effective fine grained multi-threading in the SS architecture. (Done in Vulcan.)
+          </td></tr>
+
+        <tr bgcolor="#e7e7f7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+          
+            <b> Compiled statements cache</b>
+    <br>
+  Support caching/reusing of compiled statements. (Partly done in Vulcan)<br>
+          </td></tr>
+
+        <tr bgcolor="#a7afd7">
+          <td><img src="roadmap2006_arquivos/high.gif"><br>
+            <b>External functions/procedures</b>
+    <br>
+Allow to create procedures/functions written in non-PSQL languages.
+Provide a few drivers (cdecl, Java, .NET) in the distros. (Partly done
+in Fyracle.)<br>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b> External data sources / database links / cross-database SQL</b>
+    <br>
+Allow retrievals from external data sources. Provide a few drivers
+(native FB, JDBC, ODBC) in the distros. Add DDL to declare and DML to
+use such sources. Implement optimization of retrievals for native data
+sources.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/high.gif"><br><font color="#ffffff">
+            <b>Statement/transaction consistency</b>
+    <br>
+Solve the known inconsistencies in verbs/transactions. Mostly, this
+covers blr_for behaviour in INSERT/UPDATE/DELETE statements. Make
+read-committed transactions compliant with the SQL specification.</font>
+          </td></tr>
+
+        <tr bgcolor="#e7e7f7">
+          <td><img src="roadmap2006_arquivos/med.gif"><br>
+            <b>Bi-directional indices</b>
+    <br>
+  Allow reversed index navigation to use ASC-indices for DESC sorting and vice versa.
+          </td></tr>
+
+        <tr bgcolor="#6777af">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Bulk load/import</b>
+    <br>
+Implement effective mass data load ability. Provide utility/syntax to
+use different input formats (csv, xml schema, etc) for import.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Referential integrity without indices</b>
+    <br>
+Implement (optionally) foreign keys that are not enforced by indices.
+Also provide an ability to reuse the existing index for a constraint.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Full-text search</b>
+    <br>
+Implement FTS features inside the engine or add API to plug the
+external FTS engines in. FB seems to be the only RDBMS that don't have
+this feature yet.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/med.gif"><br><font color="#ffffff">
+            <b>Clustering</b>
+    <br>
+MySQL supports clusters (AFAIK, only shared-memory so far), PostgreSQL
+shared-disk implementation is in the way. More and more buzz about this
+feature around the world.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/low.gif"><br><font color="#ffffff">
+            <b>Bi-directional cursors</b>
+    <br>
+Consider implementation of scrollable cursors inside the engine or
+provide a thin layer at the top of the RSB hierarchy to implement the
+feature via the caching.</font>
+          </td></tr>
+
+        <tr bgcolor="#483d8b">
+          <td><img src="roadmap2006_arquivos/low.gif"><br><font color="#ffffff">
+            <b>XML integration</b>
+    <br>
+  Provide at least fetch to XML and insert from XML abilities. Consider having BLOB SUB_TYPE XML and implementing XPath queries.</font>
+          </td></tr>
+      </tbody></table>
+    </td>  
+  </tr>
+
+  <tr>
+    <td></td>
+    <td colspan="2">
+<p>
+</p><center>
+Obviously, the list is not complete: &nbsp;it includes only the changes that we consider most important.<br> <b><i>If this list misses your favourite wish, speak now!</i></b>
+</center>
+
+
+<p>Now let's envisage a matrix where the most preferred and
+easiest-to-do features are placed in the top-left corner and the harder
+and/or less wanted ones are toward the bottom-right corner. Moving from
+one of these corners to another reveals the most likely feature
+implementation roadmap. Recalling what has been said before, we could
+imagine a more detailed roadmap:</p>
+
+    </td>
+    <td>
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table colspec="3" bgcolor="#ffa500" cellpadding="3" cellspacing="1">
+  <tbody><tr bgcolor="#ffffff">
+    <td width="34%">
+<p><b>Firebird 3.0 (the merged version)</b></p>
+<ul>
+  <li>  Monitoring</li>
+  <li> Asynchronous statement cancellation</li>
+  <li>Embedded users / SQL users management</li>
+  <li>More built-in functions</li>
+  <li>Temporary tables</li>
+  <li>SQL functions</li>
+  <li>Recursive queries</li>
+  <li>Faster outer joins</li>
+  <li>SMP support in SS</li>
+  <li>Compiled statements cache</li>
+  <li>External functions/procedures</li>
+</ul>
+
+    </td>
+    <td width="33%"><p>As you can see (and as it
+has been stated earlier), version 3.0 is expected to include the work
+already done and a few features that are highly wanted and relatively
+easy to implement. Everything else tends to slow the development down
+and hence is excluded from the v.3.0 list.</p></td>
+    <td width="33%"></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td></td>
+    <td>
+
+<p><b>Firebird 3.0+ (the next major version)</b></p>
+<ul>
+  <li> Detailed logging/audit</li>
+  <li>SQL tracing/profilingUser permissions for metadata</li>
+  <li>Pluggable authentication modules</li>
+  <li> Security groups</li>
+  <li> Long exact numeric implementation</li>
+  <li> Domains everywhere</li>
+  <li> Regular expressions</li>
+  <li> TEXT BLOB compatible with [VAR]CHAR</li>
+  <li> Reliable logical backup</li>
+  <li> Optimizer improvements</li>
+  <li> Statement consistency/atomicy, read committed compliance</li>
+  <li> Optimized network protocol</li>
+  <li> Bi-directional indices</li>
+  <li> Referential integrity without indices</li>
+  <li> Bulk load/import</li>
+</ul>
+
+    </td>
+    <td><p>It would also be excellent to design
+schemas/namespaces and longer metadata names for 3.0+, but no promises
+here. The same for external data sources and deferred constraints.</p></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td colspan="2">
+<center>
+<p><b>Of course, some intermediate or minor releases may happen in the meantime, as we'll try to make the release cycles shorter.
+<br><br>
+This overview is not the last word!  A detailed "feature by feature" roadmap for version 3.0 will be published
+after the New Year.- D.Y.</b>
+</p></center>
+
+    </td>
+    <td>
+<p><b>Firebird 3.0++ (something we don't have a schedule for yet)</b></p>
+<ul>
+  <li>  PSQL debugging extensions/hooks</li>
+  <li>Database encryption</li>
+  <li>More access paths</li>
+  <li>Full-text search</li>
+  <li>Clustering</li>
+  <li>Bi-directional cursors</li>
+  <li>XML integration</li>
+</ul>
+    </td>
+  </tr>
+</tbody></table>
+<center>
+<a href="http://www.firebirdsql.org/index.php">
+<img src="roadmap2006_arquivos/homebutton.gif" alt="To Firebird Home Page" border="0"></a>
+&nbsp;
+<a href="http://www.firebirdsql.org/index.php?op=devel&amp;sub=engine">
+<img src="roadmap2006_arquivos/develbutton.gif" alt="To Engine Development page" border="0"></a><br>
+
+This site and the pages contained within are Copyright © 2000-2006, Firebird Project.<br>
+Firebird® is a registered trademark of Firebird Foundation Incorporated. 
+</center>
+<hr size="1">
+
+</body></html>
