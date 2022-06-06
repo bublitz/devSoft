@@ -1,0 +1,16 @@
+Conteúdo do arquivo devsoft.ini:
+================================
+
+[DBLocal]
+Path='caminho completo (sem nome) do devsoft.gdb'
+
+
+[DBRemoto]
+IP='endereco ip do servidor remoto'
+Path='caminho completo (sem nome) do devsoft.gdb'
+Alter='caminho completo (sem nome) do devsoft.gdb local alternativo'
+
+[Params]
+Logo='caminho completo (com nome) do arquivo de logo marca'
+
+

@@ -1,0 +1,24 @@
+LEIA ESTAS INFORMAÇÕES ANTES DE PROSSEGUIR!
+
+Drache Orçamentos 1.35
+
+- Configurações/Plataformas suportadas 
+
+O Drache Orçamentos é executado atualmente no 
+Windows 95/98, Windows NT 4.0 e Windows 2000.
+
+Obs.: Para instalar o software no Windows NT 4.0
+      e no Windows 2000, é necessário que o 
+      usuário tenha direitos de Administrador.
+
+O Drache Orçamentos requer a seguinte configuração 
+mínima: 
+- Um processador Pentium 100
+- 16 MB de RAM 
+- 50 MB de espaço livre em winchester
+
+Configuração Recomendada:
+- Um processador Pentium 200
+- 32 MB de RAM
+- 200 MB de espaço livre em winchester
+

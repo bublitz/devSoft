@@ -1,0 +1,149 @@
+object frmCadModelo: TfrmCadModelo
+  Left = 190
+  Top = 107
+  Width = 425
+  Height = 251
+  VertScrollBar.Range = 29
+  ActiveControl = DBGrid1
+  BorderIcons = [biSystemMenu]
+  Caption = 'Cadastro de Modelos'
+  Color = clBackground
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 425
+    Height = 29
+    ButtonHeight = 23
+    Caption = 'ToolBar1'
+    Images = dtMod.ImageList1
+    TabOrder = 0
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 4
+      Width = 8
+      Height = 23
+      Style = tbsSeparator
+      Caption = 'ToolButton1'
+    end
+    object btnIncluir: TToolButton
+      Left = 9
+      Top = 4
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Incluir'
+      Caption = 'btnIncluir'
+      ImageIndex = 0
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnIncluirClick
+    end
+    object btnAlterar: TToolButton
+      Left = 32
+      Top = 4
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Alterar'
+      Caption = 'btnAlterar'
+      ImageIndex = 1
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnAlterarClick
+    end
+    object ToolButton4: TToolButton
+      Left = 55
+      Top = 4
+      Width = 8
+      Height = 23
+      Style = tbsSeparator
+      Caption = 'ToolButton4'
+      ImageIndex = 2
+    end
+    object btnExcluir: TToolButton
+      Left = 63
+      Top = 4
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Excluir'
+      Caption = 'btnExcluir'
+      ImageIndex = 2
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnExcluirClick
+    end
+    object btnAtualizar: TToolButton
+      Left = 86
+      Top = 4
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Atualizar'
+      Caption = 'btnAtualizar'
+      ImageIndex = 3
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnAtualizarClick
+    end
+    object ToolButton7: TToolButton
+      Left = 109
+      Top = 4
+      Width = 40
+      Height = 23
+      Style = tbsSeparator
+      Caption = 'ToolButton7'
+      ImageIndex = 4
+    end
+    object Label1: TLabel
+      Left = 149
+      Top = 4
+      Width = 49
+      Height = 15
+      Align = alCustom
+      AutoSize = False
+      Caption = 'Pesquisar:'
+    end
+    object edtPesq: TEdit
+      Left = 198
+      Top = 4
+      Width = 213
+      Height = 21
+      CharCase = ecUpperCase
+      TabOrder = 8
+      OnChange = edtPesqChange
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 29
+    Width = 425
+    Height = 222
+    Align = alClient
+    DataSource = dtMod.dsModelo
+    Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 1
+    TitleFont.Color = clBlack
+    TitleFont.Height = 11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Style = []
+    TitleFont.Weight = 40
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DESCRICAO'
+        Title.Caption = 'Descri'#231#227'o'
+        Width = 250
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCMODELO'
+        Title.Caption = 'Modelo'
+        Visible = True
+      end>
+  end
+end

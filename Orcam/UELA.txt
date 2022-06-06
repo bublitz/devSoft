@@ -1,0 +1,177 @@
+ATENÇÃO: ESTE CONTRATO CONSTITUI UMA LICENÇA, NÃO UMA VENDA. ESTE PRODUTO É FORNECIDO DE ACORDO COM O CONTRATO DE LICENÇA ABAIXO E DEMAIS ADENDOS APLICÁVEIS ("LICENÇA"), OS QUAIS ESTABELECEM OS TERMOS E CONDIÇÕES SUJEITO AOS QUAIS V.SA. PODERÁ UTILIZAR O PRODUTO, BEM COMO LIMITAÇÕES DE GARANTIA E/OU RESPONSABILIDADE. ESTA LICENÇA É CONCEDIDA PELA COREL CORPORATION LIMITED PARA PRODUTOS ADQUIRIDOS FORA DO CANADÁ E PELA COREL CORPORATION PARA PRODUTOS ADQUIRIDOS NO CANADÁ. ESTA LICENÇA INCLUI O SEGUINTE:
+
+1. CONTRATO DE LICENÇA GERAL
+2. DIRETRIZES COREL PARA UTILIZAÇÃO DE "CLIPART" E "PROFESSIONAL PHOTO IMAGES"
+3. ADENDO PARA VERSÃO DE AVALIAÇÃO AO CONTRATO DE LICENÇA GERAL
+4. ADENDO PARA EDIÇÃO ACADÊMICA AO CONTRATO DE LICENÇA GERAL
+5. ADENDO PARA SDK AO CONTRATO DE LICENÇA GERAL
+6. ADENDO PARA VERSÃO BETA AO CONTRATO DE LICENÇA GERAL
+
+CONTRATO DE LICENÇA GERAL
+
+IMPORTANTE: LEIA ESTA LICENÇA COM ATENÇÃO ANTES DE UTILIZAR ESTE PRODUTO. INSTALAR, COPIAR OU DE QUALQUER OUTRA FORMA UTILIZAR ESTE PRODUTO INDICA QUE V.SA. LEU ESTA LICENÇA E CONCORDOU EM VINCULAR-SE A E CUMPRIR OS TERMOS E CONDIÇÕES AQUI CONTIDOS. CASO V.SA. NÃO CONCORDE COM OS TERMOS E CONDIÇÕES DESTA LICENÇA, DEVOLVA ESTE PRODUTO COMPLETO AO SERVIÇO COREL DE ATENDIMENTO AO CONSUMIDOR, EM 1600 CARLING AVENUE, OTTAWA, ONTÁRIO, CANADÁ, K1Z 8R7, NO PRAZO DE ATÉ 10 (DEZ) DIAS, CONTADO DA DATA DE AQUISIÇÃO DO MESMO, PARA RECEBER UM REEMBOLSO INTEGRAL. ESTE CONTRATO É A COMPROVAÇÃO DE SUA LICENÇA. FAVOR TRATÁ-LO COMO PROPRIEDADE VALIOSA. 
+
+A. LICENÇA: 
+A COREL ("Corel") fornece à V.Sa. meios físicos de armazenamento contendo um programa de computador, software, seu código, objetos incluindo interfaces de programas aplicativos ("APIs") dos mesmos, bem como todas as imagens, fotografias, modelos, animações, vídeo, áudio, música, texto e aplicativos ("applets") incorporados ao software, os materiais impressos que os acompanham, uma Licença e documentação computadorizada ("on-line") ou eletrônica (conjuntamente denominados "Produto") e lhe concede uma licença para utilizar o Produto de acordo com os termos e condições desta Licença. Qualquer código de software e materiais de suporte adicionais fornecidos à V.Sa. como parte dos serviços de suporte prestados pela Corel no tocante ao Produto serão considerados parte do Produto e estarão sujeitos aos termos e condições desta Licença. Os direitos autorais e todos os demais direitos relativos ao Produto permanecerão de titularidade da Corel ou de seus licenciantes. V.Sa. deverá reproduzir todos os avisos de direito
+s autorais ou outros avisos constantes do Produto em todas as cópias do mesmo efetuadas por V.Sa.. 
+
+B. V.SA. PODERÁ:
+1. instalar e utilizar uma cópia do Produto em um único computador, bem como efetuar e utilizar uma segunda cópia do Produto em um computador doméstico ou portátil, desde que tal cópia nunca esteja instalada na memória RAM do computador doméstico ou portátil e, simultaneamente, na memória RAM do computador principal. 
+2. armazenar ou instalar uma cópia do Produto em um dispositivo de armazenamento, tal como um servidor de rede, utilizado somente para instalar ou executar o Produto em outros computadores de V.Sa. em uma rede interna. No entanto, V.Sa. deverá adquirir e designar um computador, no qual o Produto será instalado ou executado a partir do dispositivo de armazenamento. 
+3. efetuar uma cópia do Produto para fins de arquivo ou salvaguarda.
+4. caso este Produto inclua "Clipart" e/ou "Photo Images", utilizar o "Clipart" e/ou "Photo Images" somente de acordo com os termos e condições estabelecidos nas Diretrizes Corel para Utilização de "Clipart" e "Professional Photo Images", abaixo.
+5. exceto no tocante à Edição Acadêmica deste Produto, a qual não poderá ser transferida (ver Adendo para Edição Acadêmica), transferir o Produto a terceiros, desde que V.Sa. ceda todos os seus direitos sob esta Licença, interrompa totalmente a utilização do Produto, apague ou destrua todas as cópias (incluindo a cópia no disco rígido) do Produto efetuadas para auxiliá-lo na utilização do mesmo e assegure que a pessoa à qual V.Sa. deseja transferir o Produto está de acordo com os termos e condições desta Licença.
+6. caso tenha adquirido este Produto como uma atualização de um produto Corel ou de produtos de outro fornecedor, continuar utilizando o seu produto atualizado em conjunto com este Produto. Caso V.Sa. transfira este Produto, V.Sa. deverá transferir o produto atualizado simultaneamente com a transferência deste Produto ou destruir o produto atualizado simultaneamente com a transferência deste Produto. Caso este Produto seja uma atualização de um produto Corel, doravante V.Sa. poderá utilizar o produto atualizado somente de acordo com os termos e condições desta Licença. 
+
+Caso este Produto inclua o "NetPerfect® ", V.Sa. poderá:
+
+7. utilizar o "NetPerfect" para gerenciar até 100 (cem) documentos. Caso V.Sa. deseje gerenciar mais de 100 (cem) documentos, V.Sa. deverá obter junto à Corel uma licença "NetPerfect" adicional.
+
+Caso este Produto inclua o "Show On The Go(TM)", "Corel PRESENTS Runtime Player(TM)" ou uma característica similar que permita a criação de uma apresentação de slides "runtime", V.Sa. poderá:
+
+8. copiar e distribuir livremente os arquivos de programas "runtime", juntamente com os arquivos gráficos de apresentação de slides desenvolvidos com a utilização do Produto, desde que V.Sa.: (a) não utilize o logotipo, o nome ou as marcas da Corel ou de seus licenciantes, a não ser para indicar que os arquivos de apresentação de slides foram criados mediante utilização do "Corel® Presentations(TM)" ou de outro produto Corel; (b) inclua o aviso de direitos autorais de V.Sa. nos meios físicos contendo arquivos de programa de "runtime" e/ou em local visível dentro do arquivo de apresentação de slides de V.Sa.; e (c) indenize a Corel e seus licenciantes no tocante a quaisquer demandas ou ações decorrentes do uso e distribuição dos arquivos de programa "runtime" por V.Sa. como parte dos arquivos de apresentação de slides distribuídos por V.Sa.. V.Sa. será responsável por todo suporte técnico primário ao usuário final, no tocante a qualquer arquivo de programa "runtime" distribuído por V.Sa.. 
+
+Caso este Produto inclua o software "Envoy Driver", V.Sa. poderá:
+
+9. distribuir livremente o "Envoy Viewer" ("Runtime Viewer" ou "Distributable Viewer") juntamente com um arquivo "Envoy" desenvolvido mediante utilização do "Envoy Driver", desde que V.Sa.: (a) não utilize o logotipo, o nome ou as marcas da Corel ou seus licenciantes; (b) inclua um aviso de direitos autorais válido nos meios físicos contendo o "Viewer"; e (c) indenize a Corel e seus licenciantes no tocante a quaisquer demandas ou ações decorrentes da utilização ou distribuição, por V.Sa., do "Viewer" como parte do arquivo "Envoy" distribuído por V.Sa.. "Envoy Driver" é o "Driver" que possibilita à V.Sa. a criação de arquivos "Envoy" dentro de outros aplicativos. "Envoy Distributable Viewer" é o "viewer" que permite à V.Sa. visualizar e utilizar o arquivo "Envoy". "Envoy Runtime Viewer" é o "viewer" que, quando vinculado a um arquivo "Envoy", permite à V.Sa. visualizar o arquivo "Envoy". V.Sa. será responsável por todo o suporte técnico primário ao usuário final, no tocante a qualquer "Viewer" distribuído po
+r V.Sa.. 
+
+Caso este Produto contenha o software "Trellix", V.Sa. poderá:
+
+10. instalar e utilizar uma cópia do Programa em um único computador. O principal usuário do computador em que o Programa estiver instalado poderá instalar o programa para seu uso exclusivo em um único computador portátil. Não obstante o acima disposto, V.Sa. poderá duplicar ou efetuar cópias do arquivo "Viewers Setup.exe" e distribuir essas cópias para uso de terceiros, somente com o propósito de lhes possibilitar a visualização dos documentos "Trellix" criados por V.Sa.. O arquivo "Viewers Setup.exe" deverá permanecer inalterado, incluir o EULA contido no arquivo e conter todos os avisos legais relativos a referido arquivo. A Trellix Corporation e a Corel não assumem qualquer responsabilidade ou obrigação no tocante à distribuição de referidas cópias. V.Sa. poderá igualmente distribuir os arquivos "Trelligram" produzidos pelo programa criador "Trelligram", um componente do Programa, a terceiros, somente com o propósito de lhes possibilitar a visualização dos materiais de usuário contidos em referidos arqu
+ivos, desde que V.Sa. detenha os direitos ou permissão necessários para distribuir tais materiais. V.Sa. (e não a Corel ou a Trellix Corporation) será integralmente responsável pelo conteúdo de referidos materiais e pela adequação do Programa no tocante ao receptor de tais materiais.
+
+Caso este Produto inclua o "Corel WEB.SiteBuilder" no qual o "Perl Interpreter" esteja contido, V.Sa. poderá:
+
+11. distribuir livremente o "Perl Interpreter" contido no "Corel WEB.SiteBuilder", sujeito aos termos e condições do "GNU GENERAL PUBLIC LICENSE". V.Sa. poderá obter informações adicionais ao ler o arquivo "License.txt" no diretório "SiteBuilder\Per\docs\Perl".
+
+NOTA:	
+Os produtos Corel que fornecem recursos gráficos "PDF", "TIFF-LZW", "GIF", "Postscript-LZW" e/ou "LZW" utilizam tecnologia objeto da Patente dos Estados Unidos da América nº 4.558.302 e dos demais registros estrangeiros ("Patente Unisys"). A licença aqui concedida à V.Sa. permite a V.Sa. utilizar a Patente Unisys somente em conjunto com este Produto. O uso de qualquer outro produto ou o desempenho de qualquer outra atividade envolvendo a tecnologia de compressão/descompressão coberta pela Patente Unisys requer uma licença em separado da Unisys Corporation.
+
+C. V.SA. NÃO PODERÁ:
+1. utilizar o Produto ou efetuar cópias do mesmo, exceto se e de acordo com o permitido nesta Licença.
+2. traduzir, reverter a engenharia, descompilar ou desmontar o Produto, salvo na medida em que a restrição acima seja expressamente proibida pela legislação aplicável.
+3. alugar, arrendar, ceder ou transferir o Produto, exceto conforme estabelecido no Parágrafo B, acima.
+4. modificar o Produto ou incorporar total ou parcialmente o Produto em outro programa.
+5. redistribuir os arquivos de som ou fontes contidos no Produto.
+6. separar as partes componentes do Produto para utilizar em mais de um computador.
+
+Caso este Produto contenha plantas de casas em formato "bitmap" fornecidas pelo "Home Design Alternatives":
+
+7. V.Sa. não poderá utilizar as plantas de casas em formato "bitmap" fornecidas pelo "Home Design Alternatives" para qualquer outro propósito que não visualização.
+
+D. PRAZO DE VIGÊNCIA: 
+Esta Licença permanecerá em vigor somente enquanto V.Sa. estiver adequadamente cumprindo os termos e condições aqui inscritos, sendo certo que, a mesma será rescindida na hipótese de violação por V.Sa. de qualquer de referidos termos e condições, bem assim que, na hipótese de rescisão desta Licença, V.Sa. deverá destruir todas as cópias do Produto. As Limitações de Garantia e Responsabilidade estabelecidas abaixo permanecerão em vigor mesmo após a rescisão desta Licença.
+
+E. GARANTIA: 
+A COREL GARANTE QUE OS MEIOS FÍSICOS DE ARMAZENAMENTO DESTE PRODUTO ESTARÃO LIVRE DE DEFEITOS RELATIVOS A MATERIAL E MÃO-DE-OBRA, PELO PRAZO DE 90 (NOVENTA) DIAS, A CONTAR DA DATA DE AQUISIÇÃO DOS MESMOS. CASO SEJA DETECTADO QUALQUER DE TAIS DEFEITOS, DEVOLVA OS MEIOS FÍSICOS À COREL, JUNTO AO SERVIÇO COREL DE ATENDIMENTO AO CONSUMIDOR, EM 1600 CARLING AVENUE, OTTAWA, ONTÁRIO, CANADA, K1Z 8R7, E OS MESMOS SERÃO SUBSTITUÍDOS GRATUITAMENTE. A SUBSTITUIÇÃO DOS MEIOS FÍSICOS É O ÚNICO DIREITO DE V.SA. NO TOCANTE À GARANTIA SUPRA. ESTA GARANTIA CONCEDE A V.SA. DETERMINADOS DIREITOS. V.SA. PODERÁ TER DIREITOS ADICIONAIS, OS QUAIS PODEM VARIAR DE ACORDO COM A LEGISLAÇÃO LOCAL APLICÁVEL.
+
+F. LIMITAÇÃO DE GARANTIA E RESPONSABILIDADE: 
+COM EXCEÇÃO DA GARANTIA PREVISTA ACIMA, ESTE PRODUTO É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM QUAISQUER OUTRAS GARANTIAS OU CONDIÇÕES, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO A, GARANTIAS DE QUALIDADE PARA REVENDA, QUALIDADE SATISFATÓRIA, COMERCIALIZAÇÃO OU ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA OU, AINDA, GARANTIAS RESULTANTES DE LEIS, REGULAMENTOS, PRÁTICAS COMERCIAIS, ENTENDIMENTOS NEGOCIAIS OU OUTROS. V.SA. SERÁ EXCLUSIVAMENTE RESPONSÁVEL NO TOCANTE AOS RISCOS RELACIONADOS AOS RESULTADOS E AO DESEMPENHO DO PRODUTO. EM HIPÓTESE ALGUMA, A COREL, SEUS FORNECEDORES OU REVENDEDORES SERÃO RESPONSÁVEIS PERANTE V.SA. OU QUALQUER TERCEIRO (PESSOA FÍSICA OU JURÍDICA) POR QUALQUER DANO INCIDENTAL, ESPECIAL, CONSEQÜENCIAL OU QUALQUER OUTRO DANO INDIRETO, INCLUINDO, MAS NÃO SE LIMITANDO A, PERDA DE RECEITA, LUCROS CESSANTES, PERDA OU DESTRUIÇÃO DE DADOS OU OUTROS PREJUÍZOS ECONÔMICOS OU COMERCIAIS, AINDA QUE TENHAM SIDO AVISADOS SOBRE A POSSIBILIDADE DE OCORRÊNCIA DE TAIS DANOS E/OU QUE A OCOR
+RÊNCIA DOS MESMOS FOSSE PREVISÍVEL. A COREL TAMPOUCO SERÁ RESPONSÁVEL NO TOCANTE A RECLAMAÇÕES OU AÇÕES PROMOVIDAS POR TERCEIROS. EM HIPÓTESE ALGUMA A RESPONSABILIDADE TOTAL DA COREL, SEUS FORNECEDORES E REVENDEDORES PERANTE V.SA. EXCEDERÁ O VALOR PAGO POR V.SA. PELO PRODUTO. AS LIMITAÇÕES DE GARANTIA E RESPONSABILIDADE CONTIDAS NESTA SEÇÃO SERÃO APLICÁVEIS AINDA QUE O INADIMPLEMENTO E/OU VIOLAÇÃO ALEGADOS SEJAM RELATIVOS A UMA CONDIÇÃO OU DISPOSIÇÃO FUNDAMENTAL OU CONSTITUAM VIOLAÇÃO SIGNIFICATIVA. ALGUNS PAÍSES NÃO PERMITEM A EXCLUSÃO OU LIMITAÇÃO DE RESPONSABILIDADE POR DANOS CONSEQÜÊNCIAIS, INCIDENTAIS OU OUTROS DANOS INDIRETOS. PORTANTO, AS LIMITAÇÕES ACIMA PODERÃO NÃO SER APLICÁVEIS A V.SA..
+
+Caso este Produto inclua o software de reconhecimento de voz, a seguinte disposição constitui parte integrante da licença:
+
+V.SA. RECONHECE E ACEITA QUE O RECONHECIMENTO DE VOZ É UM PROCESSO ESTATÍSTICO, SENDO CERTO QUE OS ERROS DE RECONHECIMENTO SÃO INERENTES A REFERIDO PROCESSO E QUE OS APLICATIVOS DE RECONHECIMENTO DE VOZ DEVEM SER PROJETADOS PARA POSSIBILITAR ERROS NO PROCESSO DE RECONHECIMENTO. V.SA. RECONHECE E ACEITA QUE REFERIDOS ERROS SÃO INEVITÁVEIS, SENDO DE RESPONSABILIDADE DE V.SA. A CORREÇÃO DOS MESMOS ANTES DE UTILIZAR OS RESULTADOS DO RECONHECIMENTO.
+
+G. DIREITOS DO GOVERNO DOS ESTADOS UNIDOS: 
+Com relação a aquisição do Produto por ou para qualquer departamento ou órgão do Governo dos Estados Unidos ("Governo"), este Produto será considerado como "programa de computador comercial", conforme definido nas disposições aplicáveis do "Federal Acquisition Regulation" ("FAR") e respectivos suplementos, inclusive o Suplemento FAR do Departamento de Defesa ("DoD") ("DFARS"). O Produto foi integralmente desenvolvido com investimentos privados e nenhuma parte do Produto foi originalmente desenvolvida sob um contrato com o Governo. Caso o Produto seja fornecido para uso do DoD, o mesmo será entregue sujeito aos termos desta Licença e (i) de acordo com o DFARS 227.7202-1(a) e 227.7202-3(a) ou (ii) com direitos restritos de acordo com o DFARS 252-227-7013 (c)(1)(ii)(OCT 1988), conforme aplicável. Caso o Produto seja fornecido para uso de qualquer órgão do Governo que não o DoD, o mesmo será considerado como programa de computador de uso restrito entregue sujeito aos termos desta Licença  e do (i) FAR 12.212(a)
+, (ii) FAR 52.227-19 ou (iii) FAR 52.227-14(ALT III), conforme aplicável. O licenciante/fabricante é a Corel Corporation Limited, Europa House, 3rd Floor, Harcourt Street, Dublin 2, Irlanda.
+
+Caso este Produto inclua o software "Dragon NaturallySpeaking", a seguinte disposição aplica-se a referido software:
+
+H. DIREITOS RESTRITOS RELATIVOS AO SOFTWARE:
+ "DRAGON": Caso o Software seja licenciado por ou em nome de um departamento ou órgão do Governo dos Estados Unidos, tal governo reconhece e aceita que o Software será considerado "programa de computador comercial" e que, na ausência de um acordo escrito estabelecendo o contrário, os direitos do Governo em relação a referido Software ficarão restritos ao disposto nesta Licença, de acordo com o FAR 12.212(a) e/ou DFARS 227.7202-1(a), conforme aplicável.
+
+I. CONTROLES DE EXPORTAÇÃO: 
+Caso o Produto seja identificado como um produto cuja exportação é vedada (quer na caixa, nos meios físicos ou no processo de instalação), então, a  menos que V.Sa detenha autorização do Departamento de Comércio dos Estados Unidos ou de outra autoridade competente, conforme periodicamente estipulado, a seguinte disposição aplica-se a este Produto: RESSALVADA A EXPORTAÇÃO PARA O CANADÁ, PARA O USO NO CANADÁ, POR CIDADÃOS CANADENSES, O PROGRAMA NÃO PODERÁ SER EXPORTADO PARA FORA DOS ESTADOS UNIDOS OU PARA QUALQUER ENTIDADE ESTRANGEIRA OU "PESSOA ESTRANGEIRA", CONFORME DEFINIDO NOS REGULAMENTOS DO GOVERNO DOS ESTADOS UNIDOS, INCLUINDO, MAS NÃO SE LIMITANDO A, QUALQUER INDIVÍDUO QUE NÃO SEJA UM CIDADÃO, RESIDENTE OU COM PERMANÊNCIA LEGAL NOS ESTADOS UNIDOS. AO CONCORDAR COM OS TERMOS E CONDIÇÕES DESTA LICENÇA, V.SA. ESTARÁ GARANTINDO À COREL NÃO SER UMA "PESSOA ESTRANGEIRA" OU ESTAR SOB O CONTROLE DE UMA "PESSOA ESTRANGEIRA". 
+
+J. GERAL:  
+Esta Licença constitui a íntegra dos entendimentos entre as partes, substituindo qualquer outro acordo ou entendimento, verbais ou escritos, sendo certo que esta Licença somente poderá ser modificada mediante acordo escrito assinado entre as partes. Esta Licença será regida e interpretada de acordo com as leis da Província de Ontário, Canadá para produtos adquiridos no Canada e pelas leis da República da Irlanda para produtos adquiridos fora do Canadá, excluindo-se a legislação sobre eleição de legislação aplicável e a Convenção das Nações Unidas referente à Contratos para Venda Internacional de Bens e qualquer legislação correlata para aplicação de tal Convenção, se aplicável. Caso qualquer disposição desta Licença seja declarada inválida, ilegal ou inexeqüível por um Juízo competente, tal disposição será desconsiderada e as demais disposições permanecerão em pleno vigor e efeito. As partes solicitaram que esta Licença e todos os documentos aqui referidos fossem redigidos em inglês. 
+
+
+DIRETRIZES COREL PARA UTILIZAÇÃO DE 
+"CLIPART" E "PROFESSIONAL PHOTO IMAGES"
+
+Os produtos Corel contêm vários "cliparts" e imagens fotográficas (conjuntamente denominados "Imagens"), os quais são de propriedade da Corel ou licenciados de terceiros. Como usuário de produtos Corel, V.Sa. poderá utilizar, modificar e publicar as Imagens do modo que desejar, sujeito às restrições estabelecidas abaixo. Caso V.Sa. não esteja segura de que o uso pretendido por V.Sa. está de acordo com as Diretrizes estabelecidas abaixo, recomendamos que V.Sa. consulte seu advogado. A Corel não fornecerá à V.Sa. qualquer opinião acerca da conformidade do uso pretendido por V.Sa. com referidas Diretrizes. 
+
+V.SA. DEVERÁ:
+1. Incluir o seguinte aviso em local visível (i.e., em local onde avisos de propriedade similares tenham sido inseridos) no produto/publicação de V.Sa.:
+
+"Este produto/publicação inclui imagens do [inserir nome completo do produto Corel], as quais estão protegidas pelas leis de direitos autorais dos Estados Unidos, Canadá e demais países. Utilizado sob licença."
+
+V.SA. PODERÁ:
+1. incorporar quaisquer Imagens em sua própria obra original e publicá-las, exibi-las e distribuí-las em qualquer meio físico. No entanto, V.Sa. não poderá revender, sublicenciar ou de qualquer forma disponibilizar as Imagens para uso ou distribuição separada ou destacada de um produto ou página na Internet. Por exemplo, as Imagens poderão ser utilizadas como parte de um projeto de página na Internet, mas não poderão ser disponibilizadas para instalação separada ou em formato projetado ou planejado para armazenamento permanente ou reutilização por terceiros. Desta forma, os clientes poderão receber cópias das Imagens (incluindo arquivos digitais) como parte integrante de um produto de trabalho, porém não poderão receber as Imagens ou utilizar as Imagens separadamente ou como parte de qualquer outro produto. 
+
+V.SA. NÃO PODERÁ:
+1. criar obras escandalosas, obscenas, difamatórias ou imorais utilizando as Imagens e, tampouco, utilizar as Imagens para qualquer propósito proibido por lei.
+2. utilizar ou permitir o uso de qualquer Imagem ou qualquer de suas partes como marca (inclusive marca de serviço) ou reivindicar quaisquer direitos de propriedade sobre qualquer Imagem ou qualquer de suas partes.
+3. utilizar as Imagens em formato eletrônico, computadorizado ("on-line") ou em aplicativos de multimídia, salvo se atendidas todas as condições abaixo:
+   i)	as Imagens tenham sido inseridas com resolução básica não superior a 512 X 768;
+   ii)	as Imagens tenham sido incorporadas para visualização somente, sendo incluído um aviso nas Imagens ou nos produtos que as contenham, esclarecendo que as Imagens não poderão ser salvas ou descarregadas e deverão ser utilizadas somente para visualização;
+
+
+ADENDO PARA VERSÃO DE AVALIAÇÃO AO CONTRATO DE LICENÇA GERAL
+
+CASO ESTE PRODUTO SEJA IDENTIFICADO COMO UMA VERSÃO DE AVALIAÇÃO, A UTILIZAÇÃO DA VERSÃO DE AVALIAÇÃO DO PRODUTO POR V.SA. SERÁ REGIDA PELOS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL, CONFORME MODIFICADOS PELOS TERMOS E CONDIÇÕES DESTE ADENDO PARA VERSÃO DE AVALIAÇÃO. EM CASO DE CONFLITO ENTRE OS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL E OS DESTE ADENDO PARA VERSÃO DE AVALIAÇÃO, OS TERMOS E CONDIÇÕES DESTE ADENDO PREVALECERÃO.
+
+ESTE PRODUTO É APENAS UMA VERSÃO PARA AVALIAÇÃO DE 30 (TRINTA) DIAS E TORNAR-SE-Á INOPERANTE 30 (TRINTA) DIAS APÓS A INSTALAÇÃO. APÓS ESTA DATA, V.SA. NÃO PODERÁ ACESSAR QUALQUER DOS ARQUIVOS CRIADOS COM ESTA VERSÃO DE AVALIAÇÃO, A MENOS QUE V.SA. TENHA INSTALADO UMA VERSÃO DO PRODUTO LICENCIADA NO VAREJO ("VERSÃO RETAIL").
+
+ESTA VERSÃO DE AVALIAÇÃO TORNAR-SE-Á COMPLETAMENTE INOPERANTE EM EM 31 DE DEZEMBRO DE 2000, INDEPENDENTEMENTE DA DATA EM QUE FOI INSTALADA POR V.SA..
+
+ESTA VERSÃO DE AVALIAÇÃO CONTÉM UM NÚMERO LIMITADO DOS MÓDULOS PRINCIPAIS INCLUÍDOS NA VERSÃO RETAIL DO PRODUTO, SENDO ESSES OS ÚNICOS MÓDULOS QUE V.SA. PODERÁ INSTALAR. COMPONENTES E APLICATIVOS ADICIONAIS DA VERSÃO RETAIL DO PRODUTO NÃO ESTÃO INCLUÍDOS. TODAS AS REFERÊNCIAS A OUTROS APLICATIVOS, BIBILIOTECAS ADICIONAIS OU OUTROS CD-ROMS QUE POSSAM APARECER NESTA VERSÃO DE AVALIAÇÃO DO PRODUTO NÃO ESTÃO DISPONÍVEIS.
+
+SOB ESTE ADENDO É CONCEDIDA À V.SA. APENAS UMA LICENÇA PARA UTILIZAR A VERSÃO DE AVALIAÇÃO DO PRODUTO. REFERIDA LICENÇA VIGORARÁ PELO PERÍODO ESTABELECIDO ACIMA, APÓS O QUAL A LICENÇA DE USO DA VERSÃO DE AVALIAÇÃO DO PRODUTO CONCEDIDA A V.SA. EXPIRARÁ.
+
+QUALQUER TENTATIVA PARA CONTORNAR/EVITAR O MECANISMO DE BOMBA-RELÓGIO/TECNOLOGIA DE DATA DE TÉRMINO OU QUALQUER OUTRO MECANISMO CONTIDO NO SOFTWARE COM O PROPÓSITO DE LIMITAR A CAPACIDADE DE V.SA. UTILIZAR O SOFTWARE NO PERÍODO ESPECÍFICADO CONSTITUI UMA VIOLAÇÃO DESTA LICENÇA, BEM COMO RESULTARÁ NA RESCISÃO IMEDIATA DA LICENÇA DE V.SA. PARA UTILIZAR O SOFTWARE.
+
+
+ADENDO PARA EDIÇÃO ACADÊMICA AO CONTRATO DE LICENÇA GERAL
+
+CASO ESTE PRODUTO SEJA IDENTIFICADO COMO EDIÇÃO ACADÊMICA, A UTILIZAÇÃO DESTE PRODUTO POR V.SA. SERÁ REGIDA PELOS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL, CONFORME MODIFICADOS PELOS TERMOS E CONDIÇÕES DESTE ADENDO PARA EDIÇÃO ACADÊMICA. EM CASO DE CONFLITO ENTRE OS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL E OS DESTE ADENDO PARA EDIÇÃO ACADÊMICA, OS TERMOS E CONDIÇÕES DESTE ADENDO PREVALECERÃO.
+
+NÃO OBSTANTE QUALQUER DISPOSIÇÃO EM CONTRÁRIO CONTIDA NO CONTRATO DE LICENÇA GERAL, V.SA. NÃO PODERÁ TRANSFERIR OU CEDER O PRODUTO, QUALQUER DE SUAS CÓPIAS OU A LICENÇA DE USO CONCEDIDA A V.SA. PARA TERCEIROS.
+
+
+ADENDO PARA SDK AO CONTRATO DE LICENÇA GERAL
+
+CASO ESTE PRODUTO CONTENHA O "SOFTWARE DEVELOPER'S TOOLKIT" ("SDK"), A UTILIZAÇÃO POR V.SA. DO PROGRAMA SDK CONTIDO NESTE PRODUTO SERÁ REGIDA PELOS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL, CONFORME MODIFICADOS PELOS TERMOS E CONDIÇÕES DESTE ADENDO PARA SDK. EM CASO DE CONFLITO ENTRE OS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL E OS DESTE ADENDO PARA SDK, OS TERMOS DESTE ADENDO PREVALECERÃO.
+
+A intenção da Corel ao projetar o "Software Developer's Kit" foi torná-lo compatível com as outras versões do "Software Developer's Kit". No entanto, uma vez que o mesmo tem sido constantemente modificado e reorganizado, com acréscimo de determinadas funções e eliminação de outras em cada versão específica, a Corel não faz qualquer declaração e não oferece qualquer garantia no tocante à compatibilidade com outras versões ou produtos.
+
+V.Sa. será o único responsável no tocante à determinação da utilidade do "Software Developer's Kit" para os propósitos específicos de V.Sa.. O "Software Develop's Kit" é fornecido à desenvolvedores de softwares com a expectativa de que os mesmos sejam capazes de escrever e corrigir seus próprios programas. A Corel não assume quaisquer obrigações de fornecer suporte no tocante ao "Software Developer's Kit" ou com relação ao uso do mesmo. Qualquer pesquisa, desenvolvimento ou avaliações efetuados por V.Sa. serão efetuados por conta e risco de V.Sa..
+
+V.SA. PODERÁ:
+1. utilizar o SDK com o único propósito de desenvolver, fabricar, comercializar e fornecer suporte a um ou mais pacote(s) de aplicativos de software ("Programa Aplicativo").
+2. reproduzir e sublicenciar os arquivos de programa de computador incluídos na pasta "Redistributables" do SDK ("arquivos SDK"), desde que os arquivos estejam em formato executável e incorporados ao Programa Aplicativo desenvolvido por V.Sa.. Qualquer sublicença dos arquivos SDK será concedida somente para uso de tais arquivos no tocante a ou como parte de um Programa Aplicativo para qualquer suporte, serviço, atualizações ou outras assistências.
+
+V.SA. NÃO PODERÁ:
+1. remover ou alterar qualquer aviso de direitos autorais, marcas ou outros avisos de direitos de propriedade inseridos pela Corel no SDK ou em qualquer parte do mesmo.
+
+INDENIZAÇÃO: 
+V.Sa. obriga-se a indenizar e isentar a Corel de qualquer responsabilidade no tocante a todos e quaisquer custos, obrigações, reclamações e ações (incluindo com relação a despesas e honorários advocatícios razoáveis) oriundos ou decorrentes do uso, reprodução ou distribuição do Programa Aplicativo de V.Sa. e/ou da documentação correlata ou respectivo material de venda ou promocional.
+
+MARCAS E NOMES COMERCIAIS DA COREL:  
+V.Sa. não poderá fazer referência à Corel ou incluir quaisquer marcas da Corel em qualquer material, exceto com o exclusivo propósito de declarar que o Programa Aplicativo poderá ser utilizado juntamente com o produto de software Corel específico. Caso V.Sa. faça referência à Corel ou inclua as marcas em qualquer material ou embalagem de programa ou em qualquer material promocional ou de propaganda, o nome e as marcas da Corel devem estar acompanhados da seguinte declaração de isenção de responsabilidade, a ser impressa no rodapé da página, de maneira claramente legível e com fonte não inferior a dez pontos:
+
+"A Corel Corporation e a Corel Corporation Limited não fabricaram ou aprovaram este produto e, tampouco prestam qualquer serviço de suporte ou manutenção com relação ao mesmo."
+
+
+ADENDO PARA VERSÃO BETA AO CONTRATO DE LICENÇA GERAL
+
+CASO ESTE PRODUTO SEJA IDENTIFICADO COMO UMA VERSÃO BETA, A UTILIZAÇÃO DESTE PRODUTO POR V.SA. SERÁ REGIDA PELOS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL, CONFORME MODIFICADOS PELOS TERMOS E CONDIÇÕES DESTE ADENDO PARA VERSÃO BETA. EM CASO DE CONFLITO ENTRE OS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA GERAL E OS DESTE ADENDO PARA VERSÃO BETA, OS TERMOS E CONDIÇÕES DESTE ADENDO PREVALECERÃO. CASO V.SA. SEJA UM AUTORIZADO COREL PARA TESTES BETA E TENHA SIDO AUTORIZADO A TESTAR UMA VERSÃO BETA DE PRODUTO AINDA NÃO DISPONIBILIZADA AO PUBLICO PELA COREL, A UTILIZAÇÃO DA VERSÃO BETA DE PRODUTO POR V.SA. SERÁ REGIDA PELOS TERMOS E CONDIÇÕES DO CONTRATO DE LICENÇA PARA TESTES BETA CELEBRADO ENTRE A COREL E V.SA., SENDO CERTO QUE AS DISPOSIÇÕES ABAIXO NÃO SE APLICARÃO.
+
+CONCESSÃO DE LICENÇA: 
+A Corel concede à V.Sa. uma licença não-exclusiva para utilizar o Produto somente para propósitos de avaliação e teste por tempo limitado. Esta licença não concede a V.Sa. o direito a receber documentação impressa, suporte ou assistência por telefone. Embora a Corel tenha a intenção de distribuir uma versão comercial do Produto, a Corel reserva-se o direito de, a qualquer tempo, não disponibilizar uma versão comercial do Produto ou, se disponibilizar, alterar os preços, características, termos e condições de licença ou outras características da versão comercial.
+
+RESCISÃO: 
+A licença concedida sob este Adendo para Versão Beta expirará no prazo de 30 (trinta) dias após o lançamento da versão comercial do Produto. A licença será rescindida automaticamente caso V.Sa. deixe de observar as disposições aqui contidas. V.Sa. deverá destruir todas as cópias do Produto mediante término ou rescisão desta licença.
+
+GARANTIAS: 
+O USUÁRIO RECONHECE E ACEITA QUE ESTE PRODUTO É UM PRE-LANÇAMENTO, SENDO FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM QUALQUER GARANTIA. ESTE PRODUTO PODERÁ CONTER DEFEITOS ("BUGS"), ERROS E OUTROS PROBLEMAS QUE PODERÃO CAUSAR FALHAS NO SISTEMA, BEM COMO PODERÁ NÃO DESEMPENHAR TODAS AS FUNÇÕES PREVISTAS OU DECLARADAS, SENDO DE INTEIRA RESPONSABILIDADE DO USUÁRIO O USO DESTE PRODUTO. ESTA DISPOSIÇÃO SUBSTITUI TODAS AS GARANTIAS, EXPRESSAS OU IMPLÍCITAS, DECORRENTES DE CONTRATO, DE LEI OU DE QUALQUER OUTRA FORMA, INCLUINDO GARANTIAS E CONDIÇÕES IMPLÍCITAS DE COMERCIALIZAÇÃO, QUALIDADE PARA REVENDA, QUALIDADE SATISFATÓRIA OU ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA.
+
+
+
+
+
+

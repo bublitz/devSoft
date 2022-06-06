@@ -1,0 +1,116 @@
+object frmVeicSegurados: TfrmVeicSegurados
+  Left = 188
+  Top = 107
+  Width = 550
+  Height = 335
+  VertScrollBar.Range = 326
+  HorzScrollBar.Range = 541
+  ActiveControl = gridSegur
+  Caption = 'Ve'#237'culos Segurados'
+  Color = clBackground
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Label1: TLabel
+    Left = 9
+    Top = 5
+    Width = 37
+    Height = 13
+    Caption = 'Seguro:'
+  end
+  object DBEdit6: TDBEdit
+    Left = 50
+    Top = 2
+    Width = 288
+    Height = 21
+    TabStop = False
+    CharCase = ecUpperCase
+    Color = clButton
+    DataField = 'SEGURADORA'
+    DataSource = dtMod.dsSeguro
+    MaxLength = 50
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object gridSegur: TDBGrid
+    Left = 301
+    Top = 41
+    Width = 240
+    Height = 285
+    DataSource = dtMod.dsVeicSeguro
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+    TabOrder = 2
+    TitleFont.Color = clBlack
+    TitleFont.Height = 11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Style = []
+    TitleFont.Weight = 40
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DESCVEICULO'
+        Title.Caption = 'Ve'#237'culos Segurados'
+        Width = 200
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CODIGOVEICULO'
+        Visible = False
+      end>
+  end
+  object btnVai: TButton
+    Left = 261
+    Top = 118
+    Width = 29
+    Height = 25
+    Caption = '>'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = btnVaiClick
+  end
+  object btnVolta: TButton
+    Left = 261
+    Top = 188
+    Width = 29
+    Height = 25
+    Caption = '<'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = btnVoltaClick
+  end
+  object gridVeic: TDBGrid
+    Left = 10
+    Top = 41
+    Width = 240
+    Height = 285
+    DataSource = dtMod.dsVeicNaoSeg
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+    TabOrder = 5
+    TitleFont.Color = clBlack
+    TitleFont.Height = 11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Style = []
+    TitleFont.Weight = 40
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DESCVEICULO'
+        Title.Caption = 'Ve'#237'culos N'#227'o Segurados'
+        Width = 200
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CODIGOVEICULO'
+        Visible = False
+      end>
+  end
+end

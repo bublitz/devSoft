@@ -1,0 +1,91 @@
+<html>
+<head>
+
+<style type="text/css">
+  h3        {font-family:Arial;font-size:16pt;font-weight:bold;}	
+  td        {font-family:Arial;font-size:8pt;}
+  body      {font-family:Arial;font-size:12pt;}
+
+
+  A:link    {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:visited {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:active  {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:hover   {TEXT-DECORATION: underline}
+
+  .copyright{font-family:Arial;font-size:7pt;}
+
+</style>
+
+<base href="%basepath%">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+
+var btnZip = new Image();
+btnZip.src = "btnZip.jpg";
+var btnZip_O = new Image();
+btnZip_O.src = "btnZip_O.jpg";
+
+var btnHTMLHelpCreate = new Image();
+btnHTMLHelpCreate.src = "btnHTMLHelpCreate.jpg";
+var btnHTMLHelpCreate_O = new Image();
+btnHTMLHelpCreate_O.src = "btnHTMLHelpCreate_O.jpg";
+
+var btnHTMLHelpOpen = new Image();
+btnHTMLHelpOpen.src = "btnHTMLHelpOpen.jpg";
+var btnHTMLHelpOpen_O = new Image();
+btnHTMLHelpOpen_O.src = "btnHTMLHelpOpen_O.jpg";
+
+
+function overimg(imgName) {
+  if ( eval(imgName + "_O.complete") ) {
+    sStr=document.images[imgName].src;
+    if (sStr.indexOf('_D.jpg') < 1) {
+      document.images[imgName].src = eval(imgName + "_O.src");
+    }
+  }
+}
+
+function normalimg(imgName) {
+  if ( eval(imgName + ".complete") ) {
+    sStr=document.images[imgName].src;
+    if (sStr.indexOf('_D.jpg') < 1) {
+      document.images[imgName].src = eval(imgName + ".src");
+    }
+  }
+}
+
+// End script hiding -->
+</SCRIPT>
+
+
+
+
+</head>
+<body>
+
+<h3>Archive Task: %taskname%</h3>
+
+<a href="ap://__action__actTasksZip" onMouseOver="overimg('btnZip')" onMouseOut="normalimg('btnZip')"><img border="0" src="btnZip.jpg" align="middle" NAME="btnZip"></a>
+<a href="ap://__action__actTasksZip">Zip Task</a>
+
+<hr size="1" color="#3366cc">
+
+<a href="ap://__action__actTasksHTMLHelpCreate" onMouseOver="overimg('btnHTMLHelpCreate')" onMouseOut="normalimg('btnHTMLHelpCreate')"><img border="0" src="btnHTMLHelpCreate.jpg"  align="middle" name="btnHTMLHelpCreate"></a>
+<a href="ap://__action__actTasksHTMLHelpCreate">Create HTML Help</a><br><br>
+
+<a href="ap://__action__actTasksHTMLHelpOpen" onMouseOver="overimg('btnHTMLHelpOpen')" onMouseOut="normalimg('btnHTMLHelpOpen')"><img border="0" src="%image_btnHTMLHelpOpen%"  align="middle" name="btnHTMLHelpOpen"></a>
+<a href="ap://__action__actTasksHTMLHelpOpen">Open HTML Help File</a><br><br>
+
+<hr size="1" color="#3366cc">
+
+<table width="100%"><tr><td>
+<b>Note:</b> All archiving functions are performed by the FAR for WebZIP add-in application.
+WebZIP has detected that FAR is not installed on your system.  
+<a href="http://www.spidersoft.com/far/install.asp">Click here to install FAR.</a>
+</td></tr></table>
+
+</body>
+
+</html>

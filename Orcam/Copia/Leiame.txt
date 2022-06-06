@@ -1,0 +1,80 @@
+---------------------------------------------------------------------- 
+                           Drache Orçamentos 1.35
+Sistema Integrado de Orçamento, Planejamento e Acompanhamento de Obras
+                              Março de 2000 
+---------------------------------------------------------------------- 
+
+                   (c) Drache Informática, 1999, 2000.
+
+------------------------ 
+Como usar este documento 
+------------------------ 
+
+Para visualizar o 'Leiame.txt' na tela do 'Bloco de notas', maximize a 
+janela do 'Bloco de notas'. Para imprimir o 'Leiame.txt', abra-o no 
+'Bloco de notas' ou em outro processador de textos e depois use o 
+comando 'Imprimir' no menu 'Arquivo'. 
+
+
+-------- 
+CONTEÚDO 
+-------- 
+
+1. Configurações/Plataformas suportadas 
+2. Adquirindo uma versão completa
+3. Perguntas freqüentes 
+
+
+--------------------------------------- 
+1. Configurações/Plataformas suportadas 
+---------------------------------------
+
+O Drache Orçamentos é executado atualmente no Windows 95/98,
+Windows NT 4.0 e no Windows 2000.
+
+O Drache Orçamentos requer a seguinte configuração mínima: 
+- Um processador Pentium 100
+- 16 MB de RAM 
+- 50 MB de espaço livre em winchester
+
+Configuração Recomendada:
+- Um processador Pentium 200
+- 32 MB de RAM
+- 200 MB de espaço livre em winchester
+
+Obs.: Para instalar o software no Windows NT ou no Windows 2000,
+      é necessário que o usuário tenha direitos de Administrador.
+
+---------------------------------
+2. Adquirindo uma versão completa 
+---------------------------------
+
+O Drache Orçamentos pode ser adquirido diretamente da Drache 
+Informática (0xx65-9975-5183), por e-mail (drache@zipmail.com.br), 
+pela Home-Page (http://dracheinfo.tripod.com), ou por um de
+seus revendedores autorizados.
+
+No menu principal, selecione Registro dentro de Ajuda e siga as
+instruções.
+
+----------------------- 
+3. Perguntas freqüentes 
+----------------------- 
+
+P. O que diferencia a versão Demonstração da versão Completa?
+
+R. A versão de Demonstração as seguintes limitações:
+   - os relatórios não tem a opção de imprimir ativada, somente 
+     visualização;
+   - as tabelas do sistema (Insumos, Serviços e Orçamentos) só admitem
+     20 (vinte) registros/linhas.
+   - não está disponível o módulo de Acompanhamento.
+
+---------------------------------------------------------------------- 
+                                                    DRACHE INFORMÁTICA
+                                                  Divisão de Softwares
+
+
+                                                      (0xx65)9975-5183
+                                                    Jorge Luis Bublitz
+                                                Analista Desenvolvedor

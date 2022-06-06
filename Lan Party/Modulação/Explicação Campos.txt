@@ -1,0 +1,28 @@
+Tabela: ESTACAO
+Campo : ESTADO
+        Conteúdo: A = Ativa e disponível
+                  U = em Uso
+                  E = Expirada
+                  I = Indisponível (manutenção)
+
+-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-
+
+Tabela: MOVIMENTO
+Campo : TIPO
+        Conteúdo: A = Aberto 
+                  F = Fechado
+
+-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-
+
+Tabela: LOGCLIENTE
+campo : ACAO
+        Conteúdo: 1 = Inclusão
+                  2 = Alteração
+                  3 = Comprou Horas
+                  4 = Ganhou Bônus
+                  5 = Trocou Milhagens
+                  6 = Jogou
+
+-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-_-¯-
+
+                  

@@ -1,0 +1,17 @@
+no OnShow:
+  ShowWindow(Application.Handle, SW_HIDE);
+  SetWindowLong(Application.Handle, GWL_EXSTYLE,
+                GetWindowLong(Application.Handle, GWL_EXSTYLE) or WS_EX_TOOLWINDOW
+                and not WS_EX_APPWINDOW);
+
+no Desligar:
+  ExitWindowsEx(EWX_FORCE, EWX_POWEROFF);
+
+no Reiniciar:
+  ExitWindowsEx(EWX_FORCE, EWX_REBOOT);
+
+EWX_LOGOFF    0
+EWX_SHUTDOWN  1
+EWX_REBOOT    2
+EWX_FORCE     4
+EWX_POWEROFF  8

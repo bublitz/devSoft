@@ -1,0 +1,14 @@
+CONNECT "g:\ProjeTOS\Guardian 2.5\Dados\devsoft.GDB"
+USER "SYSDBA" PASSWORD "devkey";
+
+CREATE TABLE Desconto (
+       CodigoDesconto       INTEGER NOT NULL,
+       Horas                DOUBLE PRECISION,
+       Desconto             DOUBLE PRECISION,
+       PRIMARY KEY (CodigoDesconto)
+);
+
+CREATE UNIQUE INDEX XPKDesconto ON Desconto
+(
+       CodigoDesconto
+);

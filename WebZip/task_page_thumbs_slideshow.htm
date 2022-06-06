@@ -1,0 +1,221 @@
+<HTML>
+
+<HEAD>
+<TITLE></TITLE>
+<style>
+  TD {font: 8pt MS Sans Serif, Arial}
+</style>
+
+<script>
+
+var NUM_THUMBS = 3;
+
+var g_nFirst = 1;
+var g_nPrevious = 2;
+var g_nNext = 3;
+var g_nLast = 4;
+
+var rs;
+var tid;
+tid = 1;
+
+
+function ShowThumbs()
+{
+  if (!rs.EOF) {
+  Thumbnail1.displayFile(loc.value);
+  document.all.Thumbnail1.style.display = "";
+  document.all.Thumbnail1.title=loc.value;
+  document.all.info1.innerHTML='<a href="' + loc.value + '">' + loc.value + '</a>';
+  document.all.info1.style.width=document.all.Thumbnail1.clientWidth;
+  top.status = 'At Pos: ' + rs.AbsolutePosition;
+  }
+
+  if (!rs.EOF) {
+  rs.MoveNext();
+  Thumbnail2.displayFile(loc.value);
+  document.all.Thumbnail2.style.display = "";
+  document.all.Thumbnail2.title=loc.value;
+  document.all.info2.innerHTML='<a href="' + loc.value + '">' + loc.value + '</a>';
+  document.all.info2.style.width=document.all.Thumbnail2.clientWidth;
+  top.status = 'At Pos: ' + rs.AbsolutePosition;
+  }
+
+  if (!rs.EOF) {
+  rs.MoveNext();
+  Thumbnail3.displayFile(loc.value);
+  document.all.Thumbnail3.style.display = "";
+  document.all.Thumbnail3.title=loc.value;
+  document.all.info3.innerHTML='<a href="' + loc.value + '">' + loc.value + '</a>';
+  document.all.info3.style.width=document.all.Thumbnail3.clientWidth;
+  top.status = 'At Pos: ' + rs.AbsolutePosition;
+  }
+}
+
+function ADONavigate(nDirection)
+{
+  rs=task_page_thumbs.recordset;
+
+  if (task_page_thumbs == null)
+    {
+    return;
+    }
+
+    // cDirection indicates the direction to navigate
+	switch (nDirection)
+	{
+	case g_nFirst:
+		rs.MoveFirst();
+                ShowThumbs();
+                top.status = 'At Pos: ' + rs.AbsolutePosition;                  
+		break;
+	case g_nPrevious:
+		if ((! rs.BOF) & (rs.AbsolutePosition > NUM_THUMBS))
+		{
+		  rs.AbsolutePosition = (rs.AbsolutePosition - (2*NUM_THUMBS) + 1);
+                  ShowThumbs();
+		}
+		else
+		{ rs.MoveFirst();
+                  ShowThumbs();
+		}
+		break;
+	case g_nNext:
+		if (! rs.EOF)
+		{
+ 		  rs.MoveNext();
+                  ShowThumbs();                     
+		}
+		else
+		{
+		  top.status = 'At end of file';
+                                     
+		}
+		break;
+	case g_nLast:
+		rs.MoveLast();
+                rs.AbsolutePosition = rs.AbsolutePosition - NUM_THUMBS + 1;
+                ShowThumbs();
+                top.status = 'At Pos: ' + rs.AbsolutePosition;                  
+		break;
+	default:
+		alert("Invalid direction (" + nDirection + ")");
+	}
+}
+
+
+
+function goForward() {
+  Thumbnail1.style.filter = "revealTrans(duration=2, transition="+tid+")";
+  Thumbnail1.filters.revealTrans.Apply();
+
+  if (rs.absolutePosition != rs.recordCount) {
+    ADONavigate(g_nNext)
+    } 
+    else {
+      ADONavigate(g_nFirst)
+    }
+
+   
+//  if (rs.absolutePosition != rs.recordCount) {
+//     rs.MoveNext();
+//   } else {
+//     rs.MoveFirst();
+//  }
+
+  Thumbnail1.filters.revealTrans.Play();
+  //Status.innerHTML = "Showing Story "+rs.absolutePosition+" of "+rs.recordCount;
+  tid++;
+  if (tid > 23) tid = 1;
+  window.setTimeout("goForward()", 5000);
+}  
+
+
+function StartSlideShow() {
+  ADONavigate(g_nNext)
+  //Status.innerHTML = "Showing Story "+rs.absolutePosition+" of "+rs.recordCount;
+  window.setTimeout("goForward()", 5000);
+}
+
+
+</SCRIPT>
+
+
+
+</HEAD>
+
+<BODY aLink=#ffd700 bgColor=#ffffff leftMargin=0 topMargin=0 link=#ffd700 text=#000000 vLink=#ffd700 MARGINHEIGHT="0" MARGINWIDTH="0" onload=Init();>
+
+
+<table height=60 width=100% bgcolor="#ffd700">
+  <tr>
+    <td></td>
+    <td align=right>
+
+<!--  S p i d e r s o f t   B a n n e r  A d   -->
+<IFRAME id=ad width=100% height=60 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no style="display: none"></IFRAME>
+<!--  /S p i d e r s o f t   B a n n e r  A d   -->
+</td></tr>
+</table>
+
+
+
+<!-- D A T A   S O U R C E   O B J E C T -->
+<OBJECT id="task_page_thumbs" CLASSID="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83">
+	<PARAM NAME="DataURL" VALUE="../../temp/task_page_thumbs.txt">
+	<PARAM NAME="UseHeader" VALUE="True">
+        <PARAM NAME="TextQualifier" VALUE="&quot;">
+</OBJECT>
+<!-- /D A T A   S O U R C E   O B J E C T -->
+
+
+
+<table>
+  <tr>
+    <td>
+<object id=Thumbnail1 classid="clsid:1D2B4F40-1F10-11D1-9E88-00C04FDCAB92" style="display: none"></object>
+<div id=info1 style="font-family: arial; font-size: 7pt; width:200px; height: 30; background-color:#3366cc; z-index:1; overflow: hidden;"></div>
+</td><td>
+<object id=Thumbnail2 classid="clsid:1D2B4F40-1F10-11D1-9E88-00C04FDCAB92" style="display: none"></object>
+<div id=info2 style="font-family: arial; font-size: 7pt; width:200px; height: 30; background-color:#3366cc; z-index:1;  overflow: hidden;"></div>
+</td><td>
+<object id=Thumbnail3 classid="clsid:1D2B4F40-1F10-11D1-9E88-00C04FDCAB92" style="display: none"></object>
+<div id=info3 style="font-family: arial; font-size: 7pt; width:200px; height: 30; background-color:#3366cc; z-index:1;  overflow: hidden;"></div>
+</td></tr>
+</table>
+
+<hr>
+
+<input id=loc type=hidden DATASRC=#task_page_thumbs DATAFLD=LocalURL>
+
+
+<P>
+<INPUT TYPE=BUTTON VALUE="<<" TITLE="Move to the first record" onclick="ADONavigate(g_nFirst)">
+<INPUT TYPE=BUTTON VALUE=" < " TITLE="Move to the previous record" onclick="ADONavigate(g_nPrevious)">
+<INPUT TYPE=BUTTON VALUE=" > " TITLE="Move to the next record" onclick="ADONavigate(g_nNext)">
+<INPUT TYPE=BUTTON VALUE=">>" TITLE="Move to the last record" onclick="ADONavigate(g_nLast)">
+<INPUT TYPE=CHECKBOX VALUE=">>" TITLE="Move to the last record" onclick="ADONavigate(g_nLast)">
+
+</P>
+
+<SCRIPT FOR=id=Thumbnail1 EVENT=onclick>
+   alert("src=window, event=" + window.event.type);
+</SCRIPT>
+
+
+<script>
+function Init() {
+  ADONavigate(g_nFirst);
+  document.all.ad.src="http://www.spidersoft.com/ads/bwz468_60.htm"; 
+  document.all.ad.style.display="";
+  }
+</script>
+
+
+
+</BODY>
+</HTML>
+
+
+
+

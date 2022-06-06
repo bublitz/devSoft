@@ -1,0 +1,34 @@
+devSecurity
+-----------
+
+Composto por dois executáveis: Explore.exe e WinExplorer.exe
+                               -----------   ---------------
+
+Ambos na pasta do Windows.
+
+
+1. Explore.exe
+   ===========
+Este é configurado pelo Explore.ini, que é assim composto:
+
+-=Explore.ini=-
+[Application]
+RemotApp=\\Recepcao\devSoft\WinExplorer.exe
+LocalApp=c:\Windows\WinExplorer.exe
+IPServer=(ip do servidor)
+Logo=(arquivo BMP)
+
+-==-
+
+onde:
+
+RemotApp => caminho da aplicação para atualizar
+LocalApp => caminho da aplicação para executar
+
+
+2. WinExplorer.exe
+   ===============
+Este é o novo "Shell" do Windows. Muito parecido com o Windows 3.11.
+
+
+

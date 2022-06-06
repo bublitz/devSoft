@@ -1,0 +1,1 @@
+upx Guard3.exe

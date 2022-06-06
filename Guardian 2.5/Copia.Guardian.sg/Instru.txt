@@ -1,0 +1,6 @@
+1. Ligar todas as máquinas
+2. Liberar todas as máquinas no Guardian
+3. Em cada uma, dar Ctrl+Alt+Del e finalizar o Joystick.exe (Joystick)
+4. Copiar o Joystick.exe novo para a pasta C:\devSoft\Dados (Recepção)
+5. Na máquina da Recepção, executar o copia.bat que está em C:\devSoft\Dados
+6. Reiniciar as máquinas

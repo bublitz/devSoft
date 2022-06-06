@@ -1,0 +1,1 @@
+upx devBrows.exe

@@ -1,0 +1,427 @@
+object frmFechaSessao: TfrmFechaSessao
+  Left = 402
+  Top = 135
+  ActiveControl = CurrencyEdit1
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Guardian - Fechamento'
+  ClientHeight = 380
+  ClientWidth = 372
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Bevel8: TBevel
+    Left = 6
+    Top = 180
+    Width = 359
+    Height = 137
+    Style = bsRaised
+  end
+  object Bevel1: TBevel
+    Left = 6
+    Top = 7
+    Width = 359
+    Height = 168
+    Style = bsRaised
+  end
+  object lblDHFinal: TLabel
+    Left = 132
+    Top = 86
+    Width = 225
+    Height = 20
+    AutoSize = False
+    Caption = 'lblDHFinal'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 40
+    Top = 16
+    Width = 84
+    Height = 40
+    Alignment = taRightJustify
+    Caption = 'Data/Hora'#13#10'Inicial:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 26
+    Top = 192
+    Width = 170
+    Height = 18
+    Alignment = taRightJustify
+    Caption = '(+)Total Parcial:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 25
+    Top = 113
+    Width = 99
+    Height = 20
+    Alignment = taRightJustify
+    Caption = 'Horas Total:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblHTotal: TLabel
+    Left = 133
+    Top = 113
+    Width = 225
+    Height = 20
+    AutoSize = False
+    Caption = 'lblHTotal'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Bevel2: TBevel
+    Left = 8
+    Top = 108
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object Bevel4: TBevel
+    Left = 8
+    Top = 218
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object Label15: TLabel
+    Left = 40
+    Top = 65
+    Width = 84
+    Height = 40
+    Alignment = taRightJustify
+    Caption = 'Data/Hora'#13#10'Final:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Bevel6: TBevel
+    Left = 8
+    Top = 59
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object lblTotalP: TLabel
+    Left = 205
+    Top = 192
+    Width = 150
+    Height = 20
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'lblTotalP'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 26
+    Top = 224
+    Width = 170
+    Height = 18
+    Alignment = taRightJustify
+    Caption = '(-)        Delay:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblDelay: TLabel
+    Left = 205
+    Top = 224
+    Width = 150
+    Height = 20
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'lblDelay'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Bevel5: TBevel
+    Left = 8
+    Top = 249
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object Label16: TLabel
+    Left = 26
+    Top = 255
+    Width = 170
+    Height = 18
+    Alignment = taRightJustify
+    Caption = '(-)     Desconto:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Bevel7: TBevel
+    Left = 8
+    Top = 284
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object Label18: TLabel
+    Left = 26
+    Top = 289
+    Width = 170
+    Height = 18
+    Alignment = taRightJustify
+    Caption = '(=)Total a Pagar:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblTotal: TLabel
+    Left = 205
+    Top = 289
+    Width = 150
+    Height = 20
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'lblTotal'
+    Color = clTeal
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblDHInicial: TLabel
+    Left = 132
+    Top = 38
+    Width = 225
+    Height = 20
+    AutoSize = False
+    Caption = 'lblDHInicial'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 62
+    Top = 328
+    Width = 101
+    Height = 41
+    Caption = '&Ok'
+    Flat = True
+    Glyph.Data = {
+      52050000424D5205000000000000420000002800000024000000120000000100
+      1000030000001005000000000000000000000000000000000000007C0000E003
+      00001F0000000042004200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      004200420042004200420042004200420042004200420042004200420042FF7F
+      0042004200420042004200420042004200420042004200420042004200420042
+      1000100000420042004200420042004200420042004200420042004200420042
+      0042004210421042FF7F00420042004200420042004200420042004200420042
+      0042004200421000000200021000004200420042004200420042004200420042
+      004200420042004200421042004200421042FF7F004200420042004200420042
+      0042004200420042004200421000000200020002000210000042004200420042
+      00420042004200420042004200420042104200420042004200421042FF7F0042
+      0042004200420042004200420042004200421000000200020002000200020002
+      1000004200420042004200420042004200420042004210420042004200420042
+      004200421042FF7F004200420042004200420042004200421000000200020002
+      E00300020002000200021000004200420042004200420042004200421042FF7F
+      004200421042FF7F0042004200421042FF7F0042004200420042004200420042
+      000200020002E0030042E0030002000200021000004200420042004200420042
+      004200421042FF7F0042104200421042FF7F004200421042FF7F004200420042
+      0042004200420042E0030002E003004200420042E00300020002000210000042
+      0042004200420042004200421042FF7F10420042004200421042FF7F00420042
+      1042FF7F0042004200420042004200420042E00300420042004200420042E003
+      0002000200021000004200420042004200420042004210420042004200420042
+      00421042FF7F004200421042FF7F004200420042004200420042004200420042
+      0042004200420042E00300020002000210000042004200420042004200420042
+      0042004200420042004200421042FF7F004200421042FF7F0042004200420042
+      004200420042004200420042004200420042E003000200020002100000420042
+      004200420042004200420042004200420042004200421042FF7F004200421042
+      FF7F0042004200420042004200420042004200420042004200420042E0030002
+      0002000210000042004200420042004200420042004200420042004200420042
+      1042FF7F004200421042FF7F0042004200420042004200420042004200420042
+      004200420042E003000200020002100000420042004200420042004200420042
+      004200420042004200421042FF7F004200421042FF7F00420042004200420042
+      00420042004200420042004200420042E0030002000210000042004200420042
+      00420042004200420042004200420042004200421042FF7F00421042FF7F0042
+      0042004200420042004200420042004200420042004200420042E00300020002
+      0042004200420042004200420042004200420042004200420042004200421042
+      FF7F104200420042004200420042004200420042004200420042004200420042
+      00420042E0030042004200420042004200420042004200420042004200420042
+      0042004200420042104200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      00420042004200420042004200420042004200420042}
+    NumGlyphs = 2
+    OnClick = SpeedButton1Click
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 203
+    Top = 328
+    Width = 101
+    Height = 41
+    Caption = '&Cancela'
+    Flat = True
+    Glyph.Data = {
+      52050000424D5205000000000000420000002800000024000000120000000100
+      1000030000001005000000000000000000000000000000000000007C0000E003
+      00001F0000000042004200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004210421042004200420042
+      00420042004200420042004200420042004200420042004200420042FF7F0042
+      00420042004200420042004200420042004200420042004200420042007C0040
+      0040104200420042004200420042007C10420042004200420042004200420042
+      004210421042FF7F004200420042004200420042FF7F00420042004200420042
+      00420042007C0040004000401042004200420042007C00400040104200420042
+      00420042004200421042FF7F00421042FF7F004200420042FF7F10421042FF7F
+      004200420042004200420042007C004000400040004010420042007C00400040
+      004000401042004200420042004200421042FF7F004200421042FF7F0042FF7F
+      1042004200421042FF7F004200420042004200420042007C0040004000400040
+      1042004000400040004000401042004200420042004200421042FF7F00420042
+      00421042FF7F104200420042004200421042FF7F004200420042004200420042
+      007C004000400040004000400040004000401042004200420042004200420042
+      00421042FF7F00420042004210420042004200420042FF7F1042004200420042
+      00420042004200420042007C0040004000400040004000401042004200420042
+      0042004200420042004200421042FF7F004200420042004200420042FF7F1042
+      0042004200420042004200420042004200420042004000400040004000401042
+      004200420042004200420042004200420042004200421042FF7F004200420042
+      00420042104200420042004200420042004200420042004200420042007C0040
+      0040004000401042004200420042004200420042004200420042004200420042
+      1042FF7F00420042004210420042004200420042004200420042004200420042
+      0042007C00400040004000400040104200420042004200420042004200420042
+      0042004200420042104200420042004200421042FF7F00420042004200420042
+      0042004200420042007C00400040004010420040004000401042004200420042
+      00420042004200420042004200421042004200420042004200421042FF7F0042
+      0042004200420042004200420042007C00400040004010420042007C00400040
+      004010420042004200420042004200420042004210420042004200421042FF7F
+      004200421042FF7F0042004200420042004200420042007C0040004010420042
+      00420042007C00400040004010420042004200420042004200421042FF7F0042
+      0042104200421042FF7F004200421042FF7F0042004200420042004200420042
+      007C004000420042004200420042007C00400040004000420042004200420042
+      00421042FF7FFF7F10420042004200421042FF7F004200421042FF7F00420042
+      004200420042004200420042004200420042004200420042007C0040007C0042
+      00420042004200420042004210421042004200420042004200421042FF7FFF7F
+      FF7F104200420042004200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      0042004210421042104200420042004200420042004200420042004200420042
+      0042004200420042004200420042004200420042004200420042004200420042
+      00420042004200420042004200420042004200420042}
+    NumGlyphs = 2
+    OnClick = SpeedButton2Click
+  end
+  object Bevel3: TBevel
+    Left = 8
+    Top = 141
+    Width = 355
+    Height = 11
+    Shape = bsTopLine
+  end
+  object Label1: TLabel
+    Left = 73
+    Top = 150
+    Width = 51
+    Height = 20
+    Alignment = taRightJustify
+    Caption = 'Sócio:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblSocio: TLabel
+    Left = 133
+    Top = 150
+    Width = 225
+    Height = 20
+    AutoSize = False
+    Caption = 'lblSocio'
+    Color = clHighlight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object CurrencyEdit1: TCurrencyEdit
+    Left = 204
+    Top = 255
+    Width = 150
+    Height = 21
+    AutoSize = False
+    DisplayFormat = ',#0.00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnChange = CurrencyEdit1Change
+  end
+end

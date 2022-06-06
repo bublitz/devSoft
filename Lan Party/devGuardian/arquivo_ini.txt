@@ -1,0 +1,19 @@
+Conteúdo do arquivo devsoft.ini:
+================================
+
+[DBLocal]
+Path='caminho completo (sem nome) do devsoft.gdb (terminado por "\" ou "/")'
+
+
+[DBRemoto]
+IP='endereco ip do servidor remoto'
+Path='caminho completo (sem nome) do devsoft.gdb (terminado por "\" ou "/")'
+
+[Params]
+Logo='caminho completo (com nome) do arquivo de logo marca'
+Port='nº da porta de comunicação com as estações'
+
+[Sounds]
+Expirou='path + nome do arquivo WAV que toca quando expira o tempo de um associado'
+Caixa='path + nome do arquivo WAV que toca quando fecha uma estação'
+       se ñ tiver path => path da aplicação

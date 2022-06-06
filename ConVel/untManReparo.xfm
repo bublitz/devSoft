@@ -1,0 +1,233 @@
+object frmManReparo: TfrmManReparo
+  Left = 284
+  Top = 305
+  Width = 593
+  Height = 375
+  VertScrollBar.Range = 33
+  ActiveControl = cboxVeic
+  BorderIcons = [biSystemMenu]
+  Caption = 'Reparo'
+  Color = clBackground
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Panel1: TPanel
+    Left = 0
+    Top = 33
+    Width = 593
+    Height = 342
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    Visible = False
+    object ToolBar1: TToolBar
+      Left = 0
+      Top = 0
+      Width = 593
+      Height = 29
+      ButtonHeight = 23
+      Caption = 'ToolBar1'
+      Images = dtMod.ImageList1
+      TabOrder = 0
+      object ToolButton1: TToolButton
+        Left = 1
+        Top = 4
+        Width = 8
+        Height = 23
+        Style = tbsSeparator
+        Caption = 'ToolButton1'
+      end
+      object btnIncluir: TToolButton
+        Left = 9
+        Top = 4
+        Height = 23
+        Cursor = crHandPoint
+        Hint = 'Incluir'
+        Caption = 'btnIncluir'
+        ImageIndex = 0
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btnIncluirClick
+      end
+      object btnAlterar: TToolButton
+        Left = 32
+        Top = 4
+        Height = 23
+        Cursor = crHandPoint
+        Hint = 'Alterar'
+        Caption = 'btnAlterar'
+        ImageIndex = 1
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btnAlterarClick
+      end
+      object ToolButton4: TToolButton
+        Left = 55
+        Top = 4
+        Width = 8
+        Height = 23
+        Style = tbsSeparator
+        Caption = 'ToolButton4'
+        ImageIndex = 2
+      end
+      object btnExcluir: TToolButton
+        Left = 63
+        Top = 4
+        Height = 23
+        Cursor = crHandPoint
+        Hint = 'Excluir'
+        Caption = 'btnExcluir'
+        ImageIndex = 2
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btnExcluirClick
+      end
+      object btnAtualizar: TToolButton
+        Left = 86
+        Top = 4
+        Height = 23
+        Cursor = crHandPoint
+        Hint = 'Atualizar'
+        Caption = 'btnAtualizar'
+        ImageIndex = 3
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btnAtualizarClick
+      end
+      object ToolButton7: TToolButton
+        Left = 109
+        Top = 4
+        Width = 40
+        Height = 23
+        Style = tbsSeparator
+        Caption = 'ToolButton7'
+        ImageIndex = 4
+      end
+      object Label1: TLabel
+        Left = 149
+        Top = 4
+        Width = 75
+        Height = 13
+        Align = alCustom
+        Caption = 'Pesquisar Data:'
+      end
+      object edtPesq: TEdit
+        Left = 224
+        Top = 4
+        Width = 83
+        Height = 21
+        CharCase = ecUpperCase
+        TabOrder = 8
+        OnChange = edtPesqChange
+      end
+    end
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 29
+      Width = 593
+      Height = 313
+      Align = alClient
+      DataSource = dtMod.dsReparo
+      Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 1
+      TitleFont.Color = clBlack
+      TitleFont.Height = 11
+      TitleFont.Name = 'MS Shell Dlg'
+      TitleFont.Pitch = fpVariable
+      TitleFont.Style = []
+      TitleFont.Weight = 40
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'DATA'
+          Title.Caption = 'Data'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DESCREPARO'
+          Title.Caption = 'Reparo'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'HODOMETRO'
+          Title.Caption = 'Hod'#244'metro'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NOTAFISCAL'
+          Title.Caption = 'Nota Fiscal'
+          Width = 100
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'VALORMAO'
+          Title.Alignment = taRightJustify
+          Title.Caption = 'M'#227'o de Obra'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'VALORMAT'
+          Title.Alignment = taRightJustify
+          Title.Caption = 'Materiais'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'VALORTOTAL'
+          Title.Alignment = taRightJustify
+          Title.Caption = 'Total'
+          Visible = True
+        end>
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 593
+    Height = 33
+    Align = alTop
+    Alignment = taLeftJustify
+    Caption = '   Ve'#237'culo:'
+    TabOrder = 1
+    object btnBusca: TSpeedButton
+      Left = 381
+      Top = 6
+      Width = 23
+      Height = 22
+      Cursor = crHandPoint
+      Glyph.Data = {
+        7A010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000010000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        333333333333333333FF33333333333330003FF3FFFFF3333777003000003333
+        300077F777773F333777E00BFBFB033333337773333F7F33333FE0BFBF000333
+        330077F3337773F33377E0FBFBFBF033330077F3333FF7FFF377E0BFBF000000
+        333377F3337777773F3FE0FBFBFBFBFB039977F33FFFFFFF7377E0BF00000000
+        339977FF777777773377000BFB03333333337773FF733333333F333000333333
+        3300333777333333337733333333333333003333333333333377333333333333
+        333333333333333333FF33333333333330003333333333333777333333333333
+        3000333333333333377733333333333333333333333333333333}
+      NumGlyphs = 2
+      OnClick = btnBuscaClick
+    end
+    object cboxVeic: TComboBox
+      Left = 52
+      Top = 7
+      Width = 325
+      Height = 21
+      ItemHeight = 15
+      TabOrder = 0
+      OnChange = cboxVeicChange
+      OnClick = cboxVeicChange
+    end
+  end
+end

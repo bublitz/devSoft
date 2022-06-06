@@ -1,0 +1,6 @@
+select v.CODIGOVEICULO,
+       sum(a.LITROS)
+from VEICULO v
+left join ABASTECIMENTO a
+on v.CODIGOVEICULO = a.CODIGOVEICULO
+group by v.CODIGOVEICULO

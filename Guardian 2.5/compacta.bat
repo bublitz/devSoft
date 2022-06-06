@@ -1,0 +1,1 @@
+upx Guardian.exe

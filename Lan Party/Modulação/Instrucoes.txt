@@ -1,0 +1,24 @@
+Na instalação, executar Script que:
+
+1. Cria o Banco
+2. Cria Tabelas e Relacionamentos
+3. Cria os GENERATOR's
+
+4. Insere os seguintes dados:
+
+   => Grupo
+      -> 0 = Horas de Jogo
+
+   => Produtos
+      -> 0 = Abertura Estacao
+      -> 1 = Fechamento Estacao
+
+   => ValorHoras
+      -> Criar todos os dias da semana (1=Domingo, 2=Segunda, ... ) 
+
+   => Automacao_E_Mail
+      -> Criar codigo 0 = e-mail de Milhagem
+
+   
+   => Loja
+      -> Codigo da Loja no Script, bem como o Nome e o CNPJ

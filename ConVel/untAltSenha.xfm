@@ -1,0 +1,83 @@
+object frmAltSenha: TfrmAltSenha
+  Left = 315
+  Top = 234
+  Width = 263
+  Height = 140
+  VertScrollBar.Range = 132
+  HorzScrollBar.Range = 247
+  ActiveControl = Edit1
+  BorderIcons = [biSystemMenu]
+  Caption = 'Alterar Senha'
+  Color = clBackground
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Label1: TLabel
+    Left = 6
+    Top = 8
+    Width = 61
+    Height = 13
+    Caption = 'Senha Atual:'
+  end
+  object Edit1: TEdit
+    Left = 74
+    Top = 4
+    Width = 173
+    Height = 21
+    EchoMode = emPassword
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 4
+    Top = 42
+    Width = 63
+    Height = 13
+    Caption = 'Nova Senha:'
+  end
+  object Edit2: TEdit
+    Left = 74
+    Top = 38
+    Width = 173
+    Height = 21
+    EchoMode = emPassword
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 23
+    Top = 76
+    Width = 44
+    Height = 13
+    Caption = 'Confirma:'
+  end
+  object Edit3: TEdit
+    Left = 74
+    Top = 72
+    Width = 173
+    Height = 21
+    EchoMode = emPassword
+    TabOrder = 5
+  end
+  object OKButton: TButton
+    Left = 74
+    Top = 107
+    Width = 75
+    Height = 25
+    Cursor = crHandPoint
+    Caption = '&OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 6
+  end
+  object CancelButton: TButton
+    Left = 172
+    Top = 107
+    Width = 75
+    Height = 25
+    Cursor = crHandPoint
+    Cancel = True
+    Caption = 'Cancela'
+    ModalResult = 2
+    TabOrder = 7
+  end
+end

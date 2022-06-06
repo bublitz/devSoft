@@ -1,0 +1,438 @@
+<HTML>
+<HEAD><TITLE>WebZIP Task Summary</TITLE>
+
+<!-- COOKIE CODE -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function Get_Cookie(name) {
+    var start = document.cookie.indexOf(name+"=");
+    var len = start+name.length+1;
+    if ((!start) && (name != document.cookie.substring(0,name.length))) return null;
+    if (start == -1) return null;
+    var end = document.cookie.indexOf(";",len);
+    if (end == -1) end = document.cookie.length;
+    return unescape(document.cookie.substring(len,end));
+}
+ 
+function Set_Cookie(name,value,expires,path,domain,secure) {
+   path = "/";
+
+    document.cookie = name + "=" +escape(value) +
+        ( (expires) ? ";expires=" + expires.toGMTString() : "") +
+        ( (path) ? ";path=" + path : "") + 
+        ( (domain) ? ";domain=" + domain : "") +
+        ( (secure) ? ";secure" : "");
+}
+ 
+var today = new Date();
+var expires = new Date(today.getTime() + (56 * 86400000));
+ 
+//function set() {
+//  if (document.taskform.Email.value==''){
+//    window.alert('Email is empty');
+//  } else if (document.taskform.Password.value==''){
+//    window.alert('Password is empty');
+//  } else {
+
+//    Set_Cookie("userid", document.taskform.Email.value,expires);
+//    Set_Cookie("password", document.taskform.Password.value,expires);
+//  }
+//}
+
+//function get() {
+
+//    if (Get_Cookie("userid") != null) {
+//      document.taskform.Email.value = Get_Cookie("userid");
+//      document.taskform.Password.value = Get_Cookie("password");
+//    }
+//}
+
+
+//-->
+</SCRIPT>
+<!-- /COOKIE CODE -->
+
+
+
+
+<SCRIPT LANGUAGE="Javascript">
+function submitFormButton(strFileName){
+  set();  //set cookie
+  document.taskform.action = strFileName;
+  document.taskform.submit();
+}
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript">
+
+function Launch(win) {
+  str=win;
+  var r=parseInt(Math.random() * 1000000);
+  var name = "LaunchWindow" + r;
+  window.name=name;
+  WizardWin = window.open(str,'Wizard','resizable=no,width=410,height=410,screenX=150,left=150,screenY=150,top=150,status=no,location=no,toolbar=no');
+  if (WizardWin.focus) {
+    WizardWin.focus();
+  }
+}
+
+
+</SCRIPT>
+
+
+
+<STYLE TYPE="text/css">
+<!--
+  .heading{font-family:Arial;font-size:16pt;font-weight:bold;}	
+  .copyright{font-family:Arial;font-size:7pt;}
+
+	TD.clsSummary {
+		vertical-align:top;
+		background-color:#FFFFFF;
+		padding:1px;
+                font-size:8pt;
+                font-family:Arial;
+	}
+
+	BODY {
+                font-size:8pt;
+                font-family:Arial;
+	}
+
+  td{font-family:Arial;font-size:8pt;}
+
+
+  A:link    {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:visited {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:active  {COLOR: #0000ff; TEXT-DECORATION: none}
+  A:hover   {TEXT-DECORATION: underline}
+
+
+-->
+</STYLE>
+<script language="Javascript" id=code>
+ function doSort(col) {
+  if (tasks.SortColumn == col){
+    tasks.SortAscending = (! tasks.SortAscending);
+  }
+  else{
+    tasks.SortAscending = true;
+    tasks.SortColumn = col;
+  }
+  tasks.Reset();
+ }
+</script>
+
+</HEAD>
+
+<BODY TOPMARGIN=0 LEFTMARGIN=10 BGCOLOR="#FFFFFF" VLINK="#808080"  onload=SetGraph()>
+
+<OBJECT id="task_summary" CLASSID="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83">
+	<PARAM NAME="DataURL" VALUE="task_summary.txt">
+	<PARAM NAME="UseHeader" VALUE="True">
+        <PARAM NAME="TextQualifier" VALUE="&quot;">
+</OBJECT>
+
+<input id=DPages type=hidden datasrc="#task_summary" datafld="PagesDownloadedPct">
+<input id=QPages type=hidden datasrc="#task_summary" datafld="PagesQueuedPct">
+<input id=EPages type=hidden datasrc="#task_summary" datafld="PagesErrorPct">
+
+<input id=DVPages type=hidden datasrc="#task_summary" datafld="PagesDownloaded">
+<input id=QVPages type=hidden datasrc="#task_summary" datafld="PagesQueued">
+<input id=EVPages type=hidden datasrc="#task_summary" datafld="PagesError">
+<input id=TVPages type=hidden datasrc="#task_summary" datafld="PagesTotal">
+
+<input id=DMedia type=hidden datasrc="#task_summary" datafld="MediaDownloadedPct">
+<input id=QMedia type=hidden datasrc="#task_summary" datafld="MediaQueuedPct">
+<input id=EMedia type=hidden datasrc="#task_summary" datafld="MediaErrorPct">
+
+<input id=DVMedia type=hidden datasrc="#task_summary" datafld="MediaDownloaded">
+<input id=QVMedia type=hidden datasrc="#task_summary" datafld="MediaQueued">
+<input id=EVMedia type=hidden datasrc="#task_summary" datafld="MediaError">
+<input id=TVMedia type=hidden datasrc="#task_summary" datafld="MediaTotal">
+
+
+<input id=TErrors type=hidden datasrc="#task_summary" datafld="ErrorsTotal">
+<input id=TErrorsPct type=hidden datasrc="#task_summary" datafld="ErrorsPct">
+
+<input id=PageLoc type=hidden datasrc="#task_summary" datafld="PageLocation">
+<input id=MediaLoc type=hidden datasrc="#task_summary" datafld="MediaLocation">
+<input id=Depth type=hidden datasrc="#task_summary" datafld="Depth">
+
+
+
+
+
+<table width="100%" cellspacing="0" cellpading="0" border=0 >
+<tr>
+<td class="clsSummary"><SPAN class=heading datasrc="#task_summary" datafld="TaskName"></SPAN>
+<hr width="100%" size="1">
+</td>
+</tr>
+</table>
+
+
+
+
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+
+<table cellpadding="2" cellspacing="0" bgcolor="f0f0f0">
+<tr><td>Last Run:</td><td><span class=stdtext datasrc="#task_summary" datafld="LastRun"></span></td></tr>
+<tr><td>Next Run:</td><td><span class=stdtext datasrc="#task_summary" datafld="NextRun"></span></td></tr>
+<tr><td>Total Files:</td><td><SPAN datasrc="#task_summary" datafld="TotalFiles"></SPAN></td></tr>
+<tr><td>Size:</td><td><SPAN datasrc="#task_summary" datafld="TotalBytes"></SPAN>&nbsp;bytes</td></tr>
+<td>Status:</td><td><SPAN datasrc="#task_summary" datafld="Status"></SPAN></td></tr>
+</table>
+
+
+
+<!-- c h a r t -->
+<table border="0" cellspacing="5" cellpadding="0" width="120">
+<tr>
+
+<td width="40" valign="bottom">
+<table border="0" width="40" cellspacing="1" cellpadding="0">
+<tr>
+<td width="40" valign="bottom"><hr id=hrPages width="40" size="40" color="#0000ff" noshade></td>
+</tr>
+</table>
+</td>
+
+<td width="40" valign="bottom">
+<table border="0" width="40" cellspacing="1" cellpadding="0">
+<tr>
+<td width="40" valign="bottom"><hr id=hrMedia width="40" size="40" color="#009933" noshade></td>
+</tr>
+</table>
+</td>
+
+<td width="40" valign="bottom">
+<table border="0" width="40" cellspacing="1" cellpadding="0">
+<tr>
+<td width="40" valign="bottom"><hr id=hrErrors width="40" size="40" color="#ff0000" noshade></td>
+</tr>
+</table>
+</td>
+
+</tr>
+
+<tr>
+<td width="40"><a href="task_report.htm?show=html">Pages</a><br><SPAN datasrc="#task_summary" datafld="PagesDownloaded"></SPAN>/<SPAN datasrc="#task_summary" datafld="PagesTotal"></SPAN></td>
+<td width="40"><a href="task_report.htm?show=media">Media</a><br><SPAN datasrc="#task_summary" datafld="MediaDownloaded"></SPAN>/<SPAN datasrc="#task_summary" datafld="MediaTotal"></SPAN></td>
+<td width="40"><a href="task_report.htm?show=errors">Errors</a><br><SPAN datasrc="#task_summary" datafld="ErrorsTotal"></SPAN>/<SPAN datasrc="#task_summary" datafld="TotalFiles"></SPAN></td>
+</tr>
+</table>
+<!-- / c h a r t  -->
+
+</td>
+
+
+<td width="10"></td>
+<td width="1" bgcolor="#000000"><img src="" width="1"></td>
+<td width="5"><img src="" width="5"></td>
+
+
+<td valign="top">
+<!--  s u m m a r y   s e c t i o n  -->
+<table cellspacing="5" cellpadding="0"  border=0>
+<tr><td>Category: </td><td><SPAN datasrc="#task_summary" datafld="TaskName"></SPAN></td></tr>
+<tr><td>Title: </td><td><SPAN datasrc="#task_summary" datafld="Title"></SPAN></td></tr>
+<tr><td>URL: </td><td><a datasrc="#task_summary" datafld="URL"><SPAN datasrc="#task_summary" datafld="URL"></SPAN></a></td></tr>
+<tr><td>Local URL: </td><td><a datasrc="#task_summary" datafld="LocalURL"><span class=stdtext datasrc="#task_summary" datafld="Title"></span></a></td></tr>
+<tr><td>Save-to Folder:&nbsp;&nbsp; </td><td><a datasrc="#task_summary" datafld="Destination"><span class=stdtext datasrc="#task_summary" datafld="Destination"></span></a></td></tr>
+</table>
+<!-- / s u m m a r y   s e c t i o n  -->
+</td>
+
+</tr>
+</table>
+
+
+
+<!--
+
+<hr width="100%" size="1">
+
+<span style="font: bold; font-size:12pt;">Publish Task</span>
+
+-->
+
+
+<script language="JAVASCRIPT">
+<!--
+
+  sStr=window.location.href;
+  if (sStr.indexOf('noads=') > 0) {
+    nloc = sStr.indexOf('noads=') + 6;
+    sNoAds = sStr.substring(nloc);
+  } 
+  else {
+    sNoAds = '';
+  }
+
+if (navigator.onLine) {
+  if (sNoAds != 'YES') {
+    document.write("<!-- Spidersoft WebZIP Ad Banner Insert -->");
+    document.write("<TABLE width=100% border=0 cellpadding=0 cellspacing=0>");
+    document.write("<TR>");
+    document.write("<TD>");
+    document.write("<IFRAME id=Ad width=100% height=60 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></IFRAME>");
+    document.write("</TD>");
+    document.write("</TR>");
+    document.write("</TABLE>");
+    document.write("<!-- End of Spidersoft WebZIP Ad Banner Insert-->");
+  }
+} 
+
+//-->
+</script>
+
+
+
+<!-- P U B L I S H  T A S K  -->
+
+<!--
+
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=10>&nbsp;</td>
+<td bgcolor=#f8f8f8>Publish this Task to the 1CCC Database</td>
+</tr>
+</table>
+
+
+<table cellpadding=3 cellspacing=0 border=0>
+<tr>
+<td width=30>&nbsp;</td>
+
+<FORM NAME=taskform method="post">
+<INPUT type=hidden datasrc="#task_summary" datafld="TaskName" maxLength=35 name=task_name size=25>
+<INPUT type=hidden datasrc="#task_summary" datafld="Category" maxLength=35 name=category size=25>
+<INPUT type=hidden datasrc="#task_summary" datafld="Title" maxLength=100 name=title size=60>
+<INPUT type=hidden datasrc="#task_summary" datafld="URL" maxLength=40 name=url size=35>
+<INPUT type=hidden datasrc="#task_summary" datafld="LastRun" maxLength=40 name=date size=35>
+<INPUT type=hidden datasrc="#task_summary" datafld="TotalBytes" maxLength=20 name=size size=10>
+<INPUT type=hidden datasrc="#task_summary" datafld="PagesDownloaded" maxLength=30 name=no_pages size="20">
+<INPUT type=hidden datasrc="#task_summary" datafld="MediaDownloaded" maxLength=30 name=no_media size="20">
+<INPUT type=hidden datasrc="#task_summary" datafld="ErrorsTotal" maxLength=40 name=no_errors size=40>
+<INPUT type=hidden datasrc="#task_summary" datafld="FileTypes" maxLength=30 name=file_types size="20">
+<INPUT type=hidden datasrc="#task_summary" datafld="Depth" maxLength=20 name=depth size="20">
+<INPUT type=hidden datasrc="#task_summary" datafld="AggressiveParser" maxLength=20 name=aggressive_parser size="20">
+<INPUT type=hidden datasrc="#task_summary" datafld="Keywords" name="keywords">
+<INPUT type=hidden datasrc="#task_summary" datafld="URLFilterInclude" name="URLFilterInclude">
+<INPUT type=hidden datasrc="#task_summary" datafld="URLFilterExclude" name="URLFilterExclude">
+<INPUT type=hidden datasrc="#task_summary" datafld="URLs" name="urls">
+<INPUT type=hidden datasrc="#task_summary" datafld="Description" name="description">
+<INPUT type=hidden datasrc="#task_summary" datafld="PageLocation" name=page_location>
+<INPUT type=hidden datasrc="#task_summary" datafld="MediaLocation" name=media_location>
+<INPUT type=hidden datasrc="#task_summary" datafld="ConvertFollowedLinks" name=ConvertFollowedLinks>
+<INPUT type=hidden datasrc="#task_summary" datafld="ConvertUnfollowedLinks" name=ConvertUnfollowedLinks>
+<INPUT type="hidden" name="mode" value="login">
+<tr><td></td><td>Email: </td><td><input type=text name="Email" style='border: 1 solid #000000; font-size: 9px; font-family: arial;'></td></tr>
+<tr><td></td><td>Password: </td><td><input type=password name="Password" style='border: 1 solid #000000; font-size: 9px; font-family: arial;'></td></tr>
+<tr><td></td><td></td><td><A HREF="javascript:Launch('http://www.spidersoft.com/1ccc/forgot_password.htm')">Forgot your password?</a></td></tr>
+<tr><td></td><td></td><td>
+<INPUT type="button" value="Show all my Tasks" style='font-size: 12px;' onClick="javascript:submitFormButton('http://www.spidersoft.com/1ccc/tasklist.asp')">
+<INPUT type="button" value="Publish" style='font-size: 12px;' onClick="javascript:submitFormButton('http://www.spidersoft.com/1ccc/tasksubmission.asp')">
+</td></tr>
+<tr><td></td><td></td><td>New Users: <A HREF="javascript:Launch('http://www.spidersoft.com/1ccc/new_publisher.htm')">Click here</a></form></td></tr>
+</table>
+
+-->
+
+<!--  / P U B L I S H  T A S K  -->
+
+
+<hr width="100%" size="1">
+
+
+
+<!--  D O W N L O A D   M E T H O D   D E T A I L S  -->
+<table bgcolor="#f8f8f8" cellpadding="10" border=0>
+<tr>
+<td>
+<P style="font: bold; font-size:12pt;">Download Method</p>
+The following file types will be downloaded: <br><span style="font: bold" datasrc="#task_summary" datafld="FileTypes"></span>.<br><br>
+Pages will be downloaded from: <span id=clsploc style="font: bold"></span>.<br>
+
+Media files will be downloaded from: <span id=clsmloc style="font: bold"></span><br>
+
+WebZIP will download pages <span id=clsDepth style="font: bold"></span>&nbsp;deep from the start page.
+</td>
+</tr>
+</table>
+<!-- / D O W N L O A D   M E T H O D   D E T A I L S  -->
+
+
+
+
+
+<script language="javascript">
+
+function SetGraph(){
+  nPages = TVPages.value * 1;
+  nMedia = TVMedia.value * 1;
+  nTotalFiles = nPages + nMedia
+
+  if (nTotalFiles > 0) {
+    hrPages.size=DVPages.value / nTotalFiles * 100;
+    hrPages.title='Pages Downloaded : ' +  DVPages.value + '/'  + TVPages.value + ' -> ' + DPages.value + '%';
+
+    hrMedia.size=DVMedia.value / nTotalFiles * 100;
+    hrMedia.title='Media Downloaded : ' +  DVMedia.value + '/'  + TVMedia.value + ' -> ' + DMedia.value + '%';
+
+    hrErrors.size=TErrors.value / nTotalFiles * 100;
+    hrErrors.title='Errors : ' +  TErrors.value + '/'  + nTotalFiles + ' -> ' + TErrorsPct.value + '%';
+  } 
+  else {
+    hrPages.size = 0;
+    hrPages.title = 'Pages Downloaded : 0';
+ 
+    hrMedia.size = 0;
+    hrMedia.title = 'Media Downloaded : 0';
+
+    hrErrors.size = 0;
+    hrErrors.title = 'Errors : 0';
+ 
+  }
+
+  if (PageLoc.value == 0) { document.body.all('clsploc').innerText = "within the current directory";}
+  else if (PageLoc.value == 1) { document.body.all('clsploc').innerText = "within the current site";}
+  else if (PageLoc.value == 2) { document.body.all('clsploc').innerText ="anywhere";}
+
+  if (MediaLoc.value == 0) { document.body.all('clsmloc').innerText = "within the current directory";}
+  else if (MediaLoc.value == 1) { document.body.all('clsmloc').innerText = "within the current site";}
+  else if (MediaLoc.value == 2) { document.body.all('clsmloc').innerText ="anywhere";}
+
+  if (Depth.value == -1) { document.body.all('clsDepth').innerText = "all levels";}
+  else if (Depth.value == 0) { document.body.all('clsmloc').innerText = "current page";}
+  else { document.body.all('clsDepth').innerText ="current page + " + Depth.value;}
+
+  if(document.body.all.Ad) {
+    document.body.all.Ad.src = 'http://www.spidersoft.com/ads/wzreports468x60.htm';
+  }
+
+  return;
+}
+
+</script>
+
+<!-- PAGE_FOOTER -->
+<BR>
+<BR>
+<BR>
+<p class=copyright>&copy; 2000 Spidersoft. All rights reserved.</p>
+<!-- /PAGE_FOOTER -->
+
+<script>
+  //get login cookie info
+//  get();
+</script>
+
+
+</BODY>
+</HTML>

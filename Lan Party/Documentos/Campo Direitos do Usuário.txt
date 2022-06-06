@@ -1,0 +1,42 @@
+1º Caracter: Nível de Acesso
+0=Master
+1=Administrador
+2=Usuário Avançado
+3=Usuário Padrão
+
+2º ao 7º Caracter - se tem acesso aos Módulos
+2=devGuardian
+3=devAdm
+4=devEstoque
+5=devFinanceiro
+6=devReport
+7=devGraphic
+
+8º e 9º caracter - devGuardian
+8=Lançamentos no Caixa
+9=Liberar Estações - Manutenção
+
+10º ao 31º caracter - devAdm
+10=Estações
+11=   Excluir
+12=Usuários
+13=   Excluir
+14=Log do Sistema
+15=Clientes
+16=   Limite
+17=   Conta Corrente
+18=Horas Antecipadas
+19=   Excluir
+20=Milhagem
+21=   Excluir
+22=Bônus
+23=   Excluir
+24=Preços
+25=   Excluir
+26=Promoções/Panfletos
+27=   Excluir
+28=E-Mail Automatizado
+29=   Excluir
+30=Backup
+31=Restore
+
