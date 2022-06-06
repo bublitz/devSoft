@@ -1,2 +1,2 @@
 # devSoft
-Fontes Delphi 7 do Sistema de Controle de Lan House
+Fontes Delphi 7 dos Sistemas de Controle de Veículos, de Controle Financeiro e de Controle de Lan House
