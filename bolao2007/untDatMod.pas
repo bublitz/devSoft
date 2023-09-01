@@ -591,7 +591,7 @@ begin
 end;
 
 {
-User=bolao;Password=jl230302;Database=d:/firebird/databases/bolao/bolao.fdb;DataSource=firebird.insidesign.com.br;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0
+User=***;Password=***;Database=d:/firebird/databases/bolao/bolao.fdb;DataSource=firebird.insidesign.com.br;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0
 User=sysdba;Password=masterkey;Database=C:\Inetpub\wwwroot\Bolao2006\Banco\COPADOMUNDO.FDB;DataSource=localhost;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0
 }
 
@@ -654,7 +654,7 @@ begin
 end;
 
 {
-	<add key="FbCon1.ConnectionString" value="User=bolao;Password=jl230302;Database=d:/firebird/databases/bolao/bolao.fdb;DataSource=firebird.insidesign.com.br;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0" />
+	<add key="FbCon1.ConnectionString" value="User=***;Password=***;Database=*bolao.fdb;DataSource=firebird.insidesign.com.br;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0" />
 	<add key="FbCon.ConnectionString" value="User=sysdba;Password=masterkey;Database=C:\Inetpub\wwwroot\Bolao2006\Banco\COPADOMUNDO.FDB;DataSource=localhost;Port=3050;Dialect=3;Charset=WIN1252;Role=;Connection lifetime=10;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0" />
 }
 
