@@ -59,11 +59,11 @@
       <LocationID>Borland.Studio.FTP</LocationID>
       <Borland.Studio.FTP>
         <Active>1</Active>
-        <Server>ftp.bolao.fot.br</Server>
+        <Server>ftp.bolao.***.br</Server>
         <Port>21</Port>
         <Folder>/web</Folder>
-        <UserName>bolao</UserName>
-        <Password>jl230302</Password>
+        <UserName>***</UserName>
+        <Password>***</Password>
         <PassiveMode>0</PassiveMode>
         <AnonymousLogin>0</AnonymousLogin>
       </Borland.Studio.FTP>
