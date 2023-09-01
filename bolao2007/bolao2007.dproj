@@ -1,0 +1,197 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ddd0a9f5-9c20-4b0d-9ffe-0ef713a7583f}</ProjectGuid>
+    <MainSource>bolao2007.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_EnabledPackages>true</DCC_EnabledPackages>
+    <DCC_UsePackage>"""C:\Arquivos de programas\Firebird.Net Provider v2.5.1\FirebirdSql.Data.FirebirdClient.dll""";"""C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin\MagicAjax.dll""";C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Design.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</DCC_UsePackage>
+    <DCC_DCCCompiler>DCCIL</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>bin\bolao2007.dll</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_ExeOutput>bin</DCC_ExeOutput>
+    <DCC_UnitSearchPath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7</DCC_UnitSearchPath>
+    <DCC_ResourcePath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7</DCC_ResourcePath>
+    <DCC_IncludePath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_ExeOutput>bin</DCC_ExeOutput>
+    <DCC_UnitSearchPath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7;C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Program Files (x86)\magicajax\bin;C:\Program Files (x86)\Firebird.Net Provider v2.5.1;C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin;C:\Arquivos de programas\Firebird.Net Provider v2.5.1</DCC_UnitSearchPath>
+    <DCC_ResourcePath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7;C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Program Files (x86)\magicajax\bin;C:\Program Files (x86)\Firebird.Net Provider v2.5.1;C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin;C:\Arquivos de programas\Firebird.Net Provider v2.5.1</DCC_ResourcePath>
+    <DCC_IncludePath>c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7;C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Program Files (x86)\magicajax\bin;C:\Program Files (x86)\Firebird.Net Provider v2.5.1;C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin;C:\Arquivos de programas\Firebird.Net Provider v2.5.1</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_Platform>x86</DCC_Platform>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>DelphiDotNet.Personality</Borland.Personality>
+    <Borland.ProjectType>AspProject</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><DelphiDotNet.Personality><Parameters><Parameters Name="HostApplication">http://localhost/bolao2007/index.aspx</Parameters><Parameters Name="Launcher">"C:\Arquivos de programas\Internet Explorer\IEXPLORE.EXE"</Parameters><Parameters Name="UseLauncher">True</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1046</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Options><Options Name="AspNetUseHostServer">True</Options><Options Name="AspNetLaunchBrowser">True</Options><Options Name="AspNetStartPage">index.aspx</Options><Options Name="AspNetHostServer">Cassini</Options><Options Name="AspNetCassiniPortIndex">0</Options><Options Name="AspNetCassiniStartup">ProjectRun</Options><Options Name="AspNetIISVirtualDirectory">bolao2007</Options><Options Name="AspNetHTTPAddress"></Options><Options Name="AspNetCassiniHTTPAddress"></Options></Options><Source><Source Name="MainSource">bolao2007.dpr</Source></Source></DelphiDotNet.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll">
+      <AssemblyName>system.data</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Design.dll">
+      <AssemblyName>System.Design</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Design.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Design.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll">
+      <AssemblyName>system</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll">
+      <AssemblyName>system.drawing</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll">
+      <AssemblyName>system.web</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll">
+      <AssemblyName>system.xml</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin\MagicAjax.dll">
+      <AssemblyName>MagicAjax</AssemblyName>
+      <Version>0.3.0.0</Version>
+      <HintPath>C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin\MagicAjax.dll</HintPath>
+      <AssemblyTag>C:\Arquivos de programas\CodeGear\RAD Studio\5.0\magicajax\bin\MagicAjax.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="C:\Arquivos de programas\Firebird.Net Provider v2.5.1\FirebirdSql.Data.FirebirdClient.dll">
+      <AssemblyName>FirebirdSql.Data.FirebirdClient</AssemblyName>
+      <Version>2.5.1.0</Version>
+      <HintPath>C:\Arquivos de programas\Firebird.Net Provider v2.5.1\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+      <AssemblyTag>C:\Arquivos de programas\Firebird.Net Provider v2.5.1\FirebirdSql.Data.FirebirdClient.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <DelphiCompile Include="bolao2007.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.pas</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="untDatMod.resx">
+      <DependentUpon>untDatMod.pas</DependentUpon>
+    </EmbeddedResource>
+    <DCCReference Include="admin.pas">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <Form>admin.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="apostas.pas">
+      <DependentUpon>apostas.aspx</DependentUpon>
+      <Form>apostas.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="cadastro.pas">
+      <DependentUpon>cadastro.aspx</DependentUpon>
+      <Form>cadastro.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="cadastro_ok.pas">
+      <DependentUpon>cadastro_ok.aspx</DependentUpon>
+      <Form>cadastro_ok.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="curiosidades.pas">
+      <DependentUpon>curiosidades.aspx</DependentUpon>
+      <Form>curiosidades.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="gerasenha.pas">
+      <DependentUpon>gerasenha.aspx</DependentUpon>
+      <Form>gerasenha.TWebForm1</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Global.pas">
+      <DependentUpon>Global.asax</DependentUpon>
+      <Form>Global.TGlobal</Form>
+      <DesignClass>System.Web.HttpApplication</DesignClass>
+    </DCCReference>
+    <DCCReference Include="index.pas">
+      <DependentUpon>index.aspx</DependentUpon>
+      <Form>index.TWebForm1</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="nova_tabela.pas">
+      <DependentUpon>nova_tabela.aspx</DependentUpon>
+      <Form>nova_tabela.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="recup_senha.pas">
+      <DependentUpon>recup_senha.aspx</DependentUpon>
+      <Form>recup_senha.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="regulamento.pas">
+      <DependentUpon>regulamento.aspx</DependentUpon>
+      <Form>regulamento.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="resultados.pas">
+      <DependentUpon>resultados.aspx</DependentUpon>
+      <Form>resultados.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <DCCReference Include="untDatMod.pas">
+      <Form>untDatMod.TDataModule</Form>
+      <DesignClass>System.ComponentModel.Component</DesignClass>
+    </DCCReference>
+    <DCCReference Include="WebForm2.pas">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <Form>WebForm2.TWebForm2</Form>
+      <DesignClass>System.Web.UI.Page</DesignClass>
+    </DCCReference>
+    <None Include="admin.aspx" />
+    <None Include="apostas.aspx" />
+    <None Include="ASPDeploy1.bdsdeploy" />
+    <None Include="cadastro.aspx" />
+    <None Include="cadastro_ok.aspx" />
+    <None Include="curiosidades.aspx" />
+    <None Include="DepLocal.bdsdeploy" />
+    <None Include="gerasenha.aspx" />
+    <None Include="Global.asax" />
+    <None Include="index.aspx" />
+    <None Include="nova_tabela.aspx" />
+    <None Include="recup_senha.aspx" />
+    <None Include="regulamento.aspx" />
+    <None Include="resultados.aspx" />
+    <None Include="Web.config" />
+    <None Include="WebForm2.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

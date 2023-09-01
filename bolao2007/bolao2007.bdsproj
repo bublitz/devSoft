@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">DelphiDotNet.Personality</Option>
+			<Option Name="ProjectType">AspProject</Option>
+			<Option Name="Version">2.0</Option>
+			<Option Name="GUID">{DDD0A9F5-9C20-4B0D-9FFE-0EF713A7583F}</Option>
+		</Option>
+	</PersonalityInfo>
+	<DelphiDotNet.Personality>
+		<Source>
+			<Source Name="MainSource">bolao2007.dpr</Source>
+		</Source>
+		<FileVersion>
+			<FileVersion Name="Version">7.0</FileVersion>
+		</FileVersion>
+		<Compiler>
+			<Compiler Name="A">0</Compiler>
+			<Compiler Name="B">0</Compiler>
+			<Compiler Name="C">1</Compiler>
+			<Compiler Name="D">1</Compiler>
+			<Compiler Name="E">0</Compiler>
+			<Compiler Name="F">0</Compiler>
+			<Compiler Name="G">1</Compiler>
+			<Compiler Name="H">1</Compiler>
+			<Compiler Name="I">1</Compiler>
+			<Compiler Name="J">0</Compiler>
+			<Compiler Name="K">0</Compiler>
+			<Compiler Name="L">1</Compiler>
+			<Compiler Name="M">0</Compiler>
+			<Compiler Name="N">1</Compiler>
+			<Compiler Name="O">1</Compiler>
+			<Compiler Name="P">1</Compiler>
+			<Compiler Name="Q">0</Compiler>
+			<Compiler Name="R">0</Compiler>
+			<Compiler Name="S">0</Compiler>
+			<Compiler Name="T">0</Compiler>
+			<Compiler Name="U">0</Compiler>
+			<Compiler Name="V">1</Compiler>
+			<Compiler Name="W">0</Compiler>
+			<Compiler Name="X">1</Compiler>
+			<Compiler Name="Y">1</Compiler>
+			<Compiler Name="Z">1</Compiler>
+			<Compiler Name="ShowHints">True</Compiler>
+			<Compiler Name="ShowWarnings">True</Compiler>
+			<Compiler Name="UnitAliases">WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</Compiler>
+			<Compiler Name="NamespacePrefix"></Compiler>
+			<Compiler Name="GenerateDocumentation">False</Compiler>
+			<Compiler Name="DefaultNamespace"></Compiler>
+			<Compiler Name="SymbolDeprecated">True</Compiler>
+			<Compiler Name="SymbolLibrary">True</Compiler>
+			<Compiler Name="SymbolPlatform">True</Compiler>
+			<Compiler Name="SymbolExperimental">True</Compiler>
+			<Compiler Name="UnitLibrary">True</Compiler>
+			<Compiler Name="UnitPlatform">True</Compiler>
+			<Compiler Name="UnitDeprecated">True</Compiler>
+			<Compiler Name="UnitExperimental">True</Compiler>
+			<Compiler Name="HResultCompat">True</Compiler>
+			<Compiler Name="HidingMember">True</Compiler>
+			<Compiler Name="HiddenVirtual">True</Compiler>
+			<Compiler Name="Garbage">True</Compiler>
+			<Compiler Name="BoundsError">True</Compiler>
+			<Compiler Name="ZeroNilCompat">True</Compiler>
+			<Compiler Name="StringConstTruncated">True</Compiler>
+			<Compiler Name="ForLoopVarVarPar">True</Compiler>
+			<Compiler Name="TypedConstVarPar">True</Compiler>
+			<Compiler Name="AsgToTypedConst">True</Compiler>
+			<Compiler Name="CaseLabelRange">True</Compiler>
+			<Compiler Name="ForVariable">True</Compiler>
+			<Compiler Name="ConstructingAbstract">True</Compiler>
+			<Compiler Name="ComparisonFalse">True</Compiler>
+			<Compiler Name="ComparisonTrue">True</Compiler>
+			<Compiler Name="ComparingSignedUnsigned">True</Compiler>
+			<Compiler Name="CombiningSignedUnsigned">True</Compiler>
+			<Compiler Name="UnsupportedConstruct">True</Compiler>
+			<Compiler Name="FileOpen">True</Compiler>
+			<Compiler Name="FileOpenUnitSrc">True</Compiler>
+			<Compiler Name="BadGlobalSymbol">True</Compiler>
+			<Compiler Name="DuplicateConstructorDestructor">True</Compiler>
+			<Compiler Name="InvalidDirective">True</Compiler>
+			<Compiler Name="PackageNoLink">True</Compiler>
+			<Compiler Name="PackageThreadVar">True</Compiler>
+			<Compiler Name="ImplicitImport">True</Compiler>
+			<Compiler Name="HPPEMITIgnored">True</Compiler>
+			<Compiler Name="NoRetVal">True</Compiler>
+			<Compiler Name="UseBeforeDef">True</Compiler>
+			<Compiler Name="ForLoopVarUndef">True</Compiler>
+			<Compiler Name="UnitNameMismatch">True</Compiler>
+			<Compiler Name="NoCFGFileFound">True</Compiler>
+			<Compiler Name="ImplicitVariants">True</Compiler>
+			<Compiler Name="UnicodeToLocale">True</Compiler>
+			<Compiler Name="LocaleToUnicode">True</Compiler>
+			<Compiler Name="ImagebaseMultiple">True</Compiler>
+			<Compiler Name="SuspiciousTypecast">True</Compiler>
+			<Compiler Name="PrivatePropAccessor">True</Compiler>
+			<Compiler Name="UnsafeType">True</Compiler>
+			<Compiler Name="UnsafeCode">True</Compiler>
+			<Compiler Name="UnsafeCast">True</Compiler>
+			<Compiler Name="OptionTruncated">True</Compiler>
+			<Compiler Name="WideCharReduced">True</Compiler>
+			<Compiler Name="DuplicatesIgnored">True</Compiler>
+			<Compiler Name="UnitInitSeq">True</Compiler>
+			<Compiler Name="LocalPInvoke">True</Compiler>
+			<Compiler Name="MessageDirective">True</Compiler>
+			<Compiler Name="CodePage"></Compiler>
+		</Compiler>
+		<Linker>
+			<Linker Name="MapFile">0</Linker>
+			<Linker Name="OutputObjs">0</Linker>
+			<Linker Name="GenerateHpps">False</Linker>
+			<Linker Name="ConsoleApp">1</Linker>
+			<Linker Name="DebugInfo">True</Linker>
+			<Linker Name="RemoteSymbols">False</Linker>
+			<Linker Name="GenerateDRC">False</Linker>
+			<Linker Name="MinStackSize">4096</Linker>
+			<Linker Name="MaxStackSize">1048576</Linker>
+			<Linker Name="ImageBase">4194304</Linker>
+			<Linker Name="ExeDescription"></Linker>
+		</Linker>
+		<Directories>
+			<Directories Name="OutputDir">bin</Directories>
+			<Directories Name="UnitOutputDir"></Directories>
+			<Directories Name="PackageDLLOutputDir"></Directories>
+			<Directories Name="PackageDCPOutputDir"></Directories>
+			<Directories Name="SearchPath">c:\windows\microsoft.net\framework\v1.1.4322;c:\arquivos de programas\magicajax\bin;c:\program files\firebirdnetprovider1.7;c:\program files\magicajax\bin;c:\arquivos de programas\firebirdnetprovider1.7</Directories>
+			<Directories Name="Packages">c:\program files\magicajax\bin\MagicAjax.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Design.dll;c:\arquivos de programas\firebirdnetprovider1.7\FirebirdSql.Data.Firebird.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.XML.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Web.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Drawing.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Data.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.dll</Directories>
+			<Directories Name="Conditionals"></Directories>
+			<Directories Name="DebugSourceDirs"></Directories>
+			<Directories Name="UsePackages">True</Directories>
+		</Directories>
+		<Parameters>
+			<Parameters Name="RunParams"></Parameters>
+			<Parameters Name="HostApplication">http://localhost/bolao2007/index.aspx</Parameters>
+			<Parameters Name="Launcher">"%ProgramFiles%\Internet Explorer\iexplore.exe"</Parameters>
+			<Parameters Name="UseLauncher">True</Parameters>
+			<Parameters Name="DebugCWD"></Parameters>
+			<Parameters Name="Debug Symbols Search Path"></Parameters>
+			<Parameters Name="LoadAllSymbols">True</Parameters>
+			<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+		</Parameters>
+		<Language>
+			<Language Name="ActiveLang"></Language>
+			<Language Name="ProjectLang">$00000000</Language>
+			<Language Name="RootDir"></Language>
+		</Language>
+		<VersionInfo>
+			<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+			<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+			<VersionInfo Name="MajorVer">1</VersionInfo>
+			<VersionInfo Name="MinorVer">0</VersionInfo>
+			<VersionInfo Name="Release">0</VersionInfo>
+			<VersionInfo Name="Build">0</VersionInfo>
+			<VersionInfo Name="Debug">False</VersionInfo>
+			<VersionInfo Name="PreRelease">False</VersionInfo>
+			<VersionInfo Name="Special">False</VersionInfo>
+			<VersionInfo Name="Private">False</VersionInfo>
+			<VersionInfo Name="DLL">False</VersionInfo>
+			<VersionInfo Name="Locale">1046</VersionInfo>
+			<VersionInfo Name="CodePage">1252</VersionInfo>
+		</VersionInfo>
+		<VersionInfoKeys>
+			<VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+			<VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+			<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+			<VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+			<VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+			<VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+			<VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+			<VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+			<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+			<VersionInfoKeys Name="Comments"></VersionInfoKeys>
+		</VersionInfoKeys>
+		<Options>
+			<Options Name="AspNetUseHostServer">True</Options>
+			<Options Name="AspNetLaunchBrowser">True</Options>
+			<Options Name="AspNetStartPage">index.aspx</Options>
+			<Options Name="AspNetHostServer">IIS</Options>
+			<Options Name="AspNetCassiniPortIndex">0</Options>
+			<Options Name="AspNetCassiniStartup">ProjectRun</Options>
+			<Options Name="AspNetIISVirtualDirectory">bolao2007</Options>
+			<Options Name="AspNetHTTPAddress"></Options>
+			<Options Name="AspNetCassiniHTTPAddress"></Options>
+		</Options>  
+    
+    
+    
+    
+    
+    
+    
+    <FileList>
+      <File FileName="Web.config" ContainerId="AspWebConfigContainer" ModuleName="Web"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System" AssemblyName="system" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.Data.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System.Data" AssemblyName="system.data" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.Drawing.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System.Drawing" AssemblyName="system.drawing" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.Web.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System.Web" AssemblyName="system.web" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.XML.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System.XML" AssemblyName="system.xml" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="Global.asax" ContainerId="AspMarkupContainer" ModuleName="Global"/>
+      <File FileName="index.aspx" ContainerId="AspMarkupContainer" ModuleName="index"/>
+      <File FileName="resultados.aspx" ContainerId="AspMarkupContainer" ModuleName="resultados"/>
+      <File FileName="c:\arquivos de programas\firebirdnetprovider1.7\FirebirdSql.Data.Firebird.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="FirebirdSql.Data.Firebird" AssemblyName="FirebirdSql.Data.Firebird" Version="1.7.1.0" LinkUnits="False"/>
+      <File FileName="untDatMod.resx" ContainerId="ResXCompiler" ModuleName="untDatMod" Parent="untDatMod.pas"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\System.Design.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="System.Design" AssemblyName="System.Design" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="regulamento.aspx" ContainerId="AspMarkupContainer" ModuleName="regulamento"/>
+      <File FileName="curiosidades.aspx" ContainerId="AspMarkupContainer" ModuleName="curiosidades"/>
+      <File FileName="apostas.aspx" ContainerId="AspMarkupContainer" ModuleName="apostas"/>
+      <File FileName="admin.aspx" ContainerId="AspMarkupContainer" ModuleName="admin"/>
+      <File FileName="admin.resx" ContainerId="ResXCompiler" ModuleName="admin" Parent="admin.pas"/>
+      <File FileName="WebForm2.aspx" ContainerId="AspMarkupContainer" ModuleName="WebForm2"/>
+      <File FileName="ASPDeploy1.bdsdeploy" ContainerId="DeployDocTool" ModuleName="ASPDeploy1"/>
+      <File FileName="cadastro.aspx" ContainerId="AspMarkupContainer" ModuleName="cadastro"/>
+      <File FileName="gerasenha.aspx" ContainerId="AspMarkupContainer" ModuleName="gerasenha"/>
+      <File FileName="nova_tabela.aspx" ContainerId="AspMarkupContainer" ModuleName="nova_tabela"/>
+      <File FileName="cadastro_ok.aspx" ContainerId="AspMarkupContainer" ModuleName="cadastro_ok"/>
+      <File FileName="c:\program files\magicajax\bin\MagicAjax.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="MagicAjax" AssemblyName="MagicAjax" Version="0.3.0.0" LinkUnits="False"/>
+      <File FileName="DepLocal.bdsdeploy" ContainerId="DeployDocTool" ModuleName="DepLocal"/>
+      <File FileName="recup_senha.aspx" ContainerId="AspMarkupContainer" ModuleName="recup_senha"/>
+      <File FileName="" ContainerId="" ModuleName="System.Reflection"/>
+      <File FileName="" ContainerId="" ModuleName="System.Runtime.CompilerServices"/>
+      <File FileName="Global.pas" ContainerId="" ModuleName="Global" Parent="Global.asax"/>
+      <File FileName="index.pas" ContainerId="" ModuleName="index" Parent="index.aspx"/>
+      <File FileName="resultados.pas" ContainerId="" ModuleName="resultados" Parent="resultados.aspx"/>
+      <File FileName="untDatMod.pas" ContainerId="" ModuleName="untDatMod"/>
+      <File FileName="regulamento.pas" ContainerId="" ModuleName="regulamento" Parent="regulamento.aspx"/>
+      <File FileName="curiosidades.pas" ContainerId="" ModuleName="curiosidades" Parent="curiosidades.aspx"/>
+      <File FileName="apostas.pas" ContainerId="" ModuleName="apostas" Parent="apostas.aspx"/>
+      <File FileName="admin.pas" ContainerId="" ModuleName="admin" Parent="admin.aspx"/>
+      <File FileName="WebForm2.pas" ContainerId="" ModuleName="WebForm2" Parent="WebForm2.aspx"/>
+      <File FileName="cadastro.pas" ContainerId="" ModuleName="cadastro" Parent="cadastro.aspx"/>
+      <File FileName="gerasenha.pas" ContainerId="" ModuleName="gerasenha" Parent="gerasenha.aspx"/>
+      <File FileName="nova_tabela.pas" ContainerId="" ModuleName="nova_tabela" Parent="nova_tabela.aspx"/>
+      <File FileName="cadastro_ok.pas" ContainerId="" ModuleName="cadastro_ok" Parent="cadastro_ok.aspx"/>
+      <File FileName="recup_senha.pas" ContainerId="" ModuleName="recup_senha" Parent="recup_senha.aspx"/>
+    </FileList>
+  </DelphiDotNet.Personality>
+</BorlandProject>

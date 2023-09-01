@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<DeployTarget>
+  <Title>Target1</Title>
+  <Active>0</Active>
+  <Options>
+    <LogFilename>DeployLog.txt</LogFilename>
+    <EnableLogging>0</EnableLogging>
+    <ShowIgnoredGroupsAndFiles>0</ShowIgnoredGroupsAndFiles>
+    <ShowAssemblyReferences>0</ShowAssemblyReferences>
+    <MaxScannedDirectories>200</MaxScannedDirectories>
+    <ScanHiddenDirectories>0</ScanHiddenDirectories>
+  </Options>
+  <Rules>
+    <Rule>
+      <Title>ASP.NET Markup Files</Title>
+      <Filter>*.aspx;*.ascx;*.asmx;*.asax;*.ashx</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>HTML Files</Title>
+      <Filter>*.html;*.htm;*.css;*.js</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Executables</Title>
+      <Filter>*.dll</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Config Files</Title>
+      <Filter>*.config</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Source Code Files</Title>
+      <Filter>*.cs;*.pas;*.rc;*.dfm;*.dpr;</Filter>
+      <Ignored>1</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Image Files</Title>
+      <Filter>*.jpg;*.bmp;*.dib;*.png;*.tiff;*.gif</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Other Files</Title>
+      <Filter>*.*</Filter>
+      <Ignored>1</Ignored>
+    </Rule>
+  </Rules>
+  <Locations>
+    <Location>
+      <LocationID>Borland.Studio.Directory</LocationID>
+      <Borland.Studio.Directory>
+        <Active>1</Active>
+        <Directory>C:\Documents and Settings\Jorge\Meus documentos\Site2007</Directory>
+      </Borland.Studio.Directory>
+    </Location>
+    <Location>
+      <LocationID>Borland.Studio.FTP</LocationID>
+      <Borland.Studio.FTP>
+        <Active>0</Active>
+        <Server></Server>
+        <Port>21</Port>
+        <Folder></Folder>
+        <UserName></UserName>
+        <PassiveMode>0</PassiveMode>
+        <AnonymousLogin>0</AnonymousLogin>
+      </Borland.Studio.FTP>
+    </Location>
+  </Locations>
+  <RenamedFiles/>
+  <IgnoredFiles/>
+  <ExternalFiles>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpdb225.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP DB2 Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.DB2.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP DB2 Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpint25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Interbase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Interbase.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Interbase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmsa25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MSAccess Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Msacc.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MSAccess Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmss25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP SQLServer Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Mssql.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP SQLServer Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmys25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MySQL Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Mysql.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MySQL Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpora25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Oracle Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Oracle.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Oracle Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpsyb25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Sybase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Sybase.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Sybase Provider</Description>
+    </ExternalFile>
+  </ExternalFiles>
+  <LocationHistories/>
+</DeployTarget>

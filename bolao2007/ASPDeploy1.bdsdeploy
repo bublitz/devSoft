@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<DeployTarget>
+  <Title>Target1</Title>
+  <Active>0</Active>
+  <Options>
+    <LogFilename>DeployLog.txt</LogFilename>
+    <EnableLogging>0</EnableLogging>
+    <ShowIgnoredGroupsAndFiles>0</ShowIgnoredGroupsAndFiles>
+    <ShowAssemblyReferences>0</ShowAssemblyReferences>
+    <MaxScannedDirectories>200</MaxScannedDirectories>
+    <ScanHiddenDirectories>0</ScanHiddenDirectories>
+  </Options>
+  <Rules>
+    <Rule>
+      <Title>ASP.NET Markup Files</Title>
+      <Filter>*.aspx;*.ascx;*.asmx;*.asax;*.ashx</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>HTML Files</Title>
+      <Filter>*.html;*.htm;*.css;*.js</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Executables</Title>
+      <Filter>*.dll</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Config Files</Title>
+      <Filter>*.config</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Source Code Files</Title>
+      <Filter>*.cs;*.pas;*.rc;*.dfm;*.dpr;</Filter>
+      <Ignored>1</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Image Files</Title>
+      <Filter>*.jpg;*.bmp;*.dib;*.png;*.tiff;*.gif</Filter>
+      <Ignored>0</Ignored>
+    </Rule>
+    <Rule>
+      <Title>Other Files</Title>
+      <Filter>*.*</Filter>
+      <Ignored>1</Ignored>
+    </Rule>
+  </Rules>
+  <Locations>
+    <Location>
+      <LocationID>Borland.Studio.Directory</LocationID>
+      <Borland.Studio.Directory>
+        <Active>0</Active>
+        <Directory></Directory>
+      </Borland.Studio.Directory>
+    </Location>
+    <Location>
+      <LocationID>Borland.Studio.FTP</LocationID>
+      <Borland.Studio.FTP>
+        <Active>1</Active>
+        <Server>ftp.bolao.fot.br</Server>
+        <Port>21</Port>
+        <Folder>/web</Folder>
+        <UserName>bolao</UserName>
+        <Password>jl230302</Password>
+        <PassiveMode>0</PassiveMode>
+        <AnonymousLogin>0</AnonymousLogin>
+      </Borland.Studio.FTP>
+    </Location>
+  </Locations>
+  <RenamedFiles/>
+  <IgnoredFiles/>
+  <ExternalFiles>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpdb225.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP DB2 Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.DB2.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP DB2 Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpint25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Interbase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Interbase.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Interbase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmsa25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MSAccess Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Msacc.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MSAccess Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmss25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP SQLServer Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Mssql.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP SQLServer Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpmys25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MySQL Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Mysql.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP MySQL Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpora25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Oracle Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Oracle.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Oracle Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>bdpsyb25.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Sybase Provider</Description>
+    </ExternalFile>
+    <ExternalFile>
+      <Subdirectory>bin</Subdirectory>
+      <Filename>Borland.Data.Sybase.dll</Filename>
+      <Active>0</Active>
+      <Description>BDP Sybase Provider</Description>
+    </ExternalFile>
+  </ExternalFiles>
+  <LocationHistories>
+    <LocationItem>
+      <LocationID>Borland.Studio.FTP</LocationID>
+      <LocationTitle>FTP://ftp.bolao.fot.br//web</LocationTitle>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>admin.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 15:37:00</DestCopiedDate>
+        <SourceCopiedDate>01/04/2007 14:20:54</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>apostas.aspx</DestFilename>
+        <DestCopiedDate>05/04/2007 02:25:00</DestCopiedDate>
+        <SourceCopiedDate>04/04/2007 19:56:18</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>curiosidades.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:48:00</DestCopiedDate>
+        <SourceCopiedDate>29/03/2007 18:19:46</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>regulamento.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:50:00</DestCopiedDate>
+        <SourceCopiedDate>29/03/2007 19:56:46</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>resultados.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:50:00</DestCopiedDate>
+        <SourceCopiedDate>29/03/2007 20:11:38</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>WebForm1.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:50:00</DestCopiedDate>
+        <SourceCopiedDate>23/03/2007 01:22:54</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>WebForm2.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:51:00</DestCopiedDate>
+        <SourceCopiedDate>22/03/2007 23:24:22</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>company_name.png</DestFilename>
+        <DestCopiedDate>23/03/2007 02:32:00</DestCopiedDate>
+        <SourceCopiedDate>05/03/2005 19:35:50</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>images</Subdirectory>
+        <DestFilename>bdelpow.jpg</DestFilename>
+        <DestCopiedDate>23/03/2007 02:32:00</DestCopiedDate>
+        <SourceCopiedDate>22/03/2007 18:01:58</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>images</Subdirectory>
+        <DestFilename>borland_delphi_powered.gif</DestFilename>
+        <DestCopiedDate>23/03/2007 02:33:00</DestCopiedDate>
+        <SourceCopiedDate>23/03/2007 01:15:56</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>images</Subdirectory>
+        <DestFilename>pbfblogo.jpg</DestFilename>
+        <DestCopiedDate>23/03/2007 02:33:00</DestCopiedDate>
+        <SourceCopiedDate>22/03/2007 17:58:18</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>images</Subdirectory>
+        <DestFilename>topo.jpg</DestFilename>
+        <DestCopiedDate>23/03/2007 02:33:00</DestCopiedDate>
+        <SourceCopiedDate>23/03/2007 01:10:08</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>0.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:33:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:19:38</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>1.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:19:54</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>2.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:20:06</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>3.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:20:24</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>4.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:21:32</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>5.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:21:04</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>6.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:34:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:20:56</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>7.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:35:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:20:36</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>8.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:35:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:20:44</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>9.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:35:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 03:21:22</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>fundo.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:35:00</DestCopiedDate>
+        <SourceCopiedDate>20/01/2006 11:17:24</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>numbers</Subdirectory>
+        <DestFilename>fundo2.JPG</DestFilename>
+        <DestCopiedDate>23/03/2007 02:35:00</DestCopiedDate>
+        <SourceCopiedDate>23/01/2006 12:40:04</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>index.aspx</DestFilename>
+        <DestCopiedDate>10/04/2007 14:28:00</DestCopiedDate>
+        <SourceCopiedDate>05/04/2007 14:07:52</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>bin</Subdirectory>
+        <DestFilename>bolao2007.dll</DestFilename>
+        <DestCopiedDate>10/04/2007 14:29:00</DestCopiedDate>
+        <SourceCopiedDate>10/04/2007 13:18:16</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>bin</Subdirectory>
+        <DestFilename>MagicAjax.dll</DestFilename>
+        <DestCopiedDate>01/04/2007 14:59:00</DestCopiedDate>
+        <SourceCopiedDate>10/02/2006 00:21:32</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory>images</Subdirectory>
+        <DestFilename>topo2.jpg</DestFilename>
+        <DestCopiedDate>01/04/2007 14:45:00</DestCopiedDate>
+        <SourceCopiedDate>22/03/2007 21:57:22</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>cadastro.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:46:00</DestCopiedDate>
+        <SourceCopiedDate>29/03/2007 19:43:24</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>cadastro_ok.aspx</DestFilename>
+        <DestCopiedDate>03/04/2007 12:41:00</DestCopiedDate>
+        <SourceCopiedDate>03/04/2007 11:27:06</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>gerasenha.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:48:00</DestCopiedDate>
+        <SourceCopiedDate>27/03/2007 01:55:52</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>Global.asax</DestFilename>
+        <DestCopiedDate>01/04/2007 14:49:00</DestCopiedDate>
+        <SourceCopiedDate>19/03/2007 16:05:12</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>nova_tabela.aspx</DestFilename>
+        <DestCopiedDate>01/04/2007 14:49:00</DestCopiedDate>
+        <SourceCopiedDate>29/03/2007 18:23:54</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>Web.config</DestFilename>
+        <DestCopiedDate>05/04/2007 14:50:00</DestCopiedDate>
+        <SourceCopiedDate>05/04/2007 13:42:58</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>contato.aspx</DestFilename>
+        <DestCopiedDate>03/04/2007 12:09:00</DestCopiedDate>
+        <SourceCopiedDate>13/04/2006 13:03:28</SourceCopiedDate>
+      </FileItem>
+      <FileItem>
+        <Subdirectory></Subdirectory>
+        <DestFilename>recup_senha.aspx</DestFilename>
+        <DestCopiedDate>03/04/2007 13:23:00</DestCopiedDate>
+        <SourceCopiedDate>03/04/2007 12:15:08</SourceCopiedDate>
+      </FileItem>
+    </LocationItem>
+  </LocationHistories>
+</DeployTarget>
