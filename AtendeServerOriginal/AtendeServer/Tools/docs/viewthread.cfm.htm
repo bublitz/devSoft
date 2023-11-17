@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>CodeGear (Borland): Delphi - method to Showmessage centred on Form?</title>
+
+
+
+
+
+
+
+
+	
+	<link rel="stylesheet" type="text/css" href="viewthread.cfm_arquivos/frame.css">
+	<link rel="stylesheet" type="text/css" href="viewthread.cfm_arquivos/main.css"><link rel="stylesheet" type="text/css" href="viewthread.cfm_arquivos/tgml-new.css">
+	<link rel="shortcut icon" href="http://www.tek-tips.com/favicon.ico" type="image/x-icon"><script src="viewthread.cfm_arquivos/scroll.js"></script>
+	<script language="javascript1.2" src="viewthread.cfm_arquivos/jsource.js" type="text/javascript"></script>
+	<style>
+	#scrollerContainer {
+	height:120px;
+	overflow:hidden;
+	margin-bottom: 3px;
+}
+</style>
+<script language="javascript">
+function gofaq(pid,fid) {
+	var theURL = "faqs.cfm?pid="+pid+"&fid="+fid; window.top.location.href=theURL;
+}
+function gothread(pid,qid) {
+	var theURL = "viewthread.cfm?qid="+qid;
+	window.top.location.href=theURL;
+}
+function goforum(pid) {
+	var theURL = "threadminder.cfm?pid="+pid;
+	window.top.location.href=theURL;
+}
+function golink(pid) {
+	var theURL = "links.cfm?pid="+pid;
+	window.top.location.href=theURL;
+}
+</script><link rel="stylesheet" type="text/css" href="viewthread.cfm_arquivos/printthread.css" media="print"><style type="text/css">
+.iTt{
+    FONT-FAMILY:       Verdana, Arial, Helvetica;
+    FONT-SIZE:         11px;
+    FONT-STYLE:        normal;
+    FONT-WEIGHT:       normal;
+    COLOR:             black;
+    BACKGROUND-COLOR:  lightyellow;
+    BORDER:            black 1px solid;
+    PADDING:           2px;
+}
+</style></head><body onload="doPopup();document.forms['pass'].Handle.focus();"><script type="text/javascript" src="viewthread.cfm_arquivos/al.htm"></script><script type="text/javascript" src="viewthread.cfm_arquivos/spit.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/chunks_002.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/chunks_003.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/chunks_004.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/chunks.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/func_200803072053.js"></script><script type="text/javascript" src="viewthread.cfm_arquivos/door.js"></script>
+
+
+<table id="header">
+	<tbody><tr valign="top">
+		<td width="213"><a href="http://www.tek-tips.com/" class="logo"><img src="viewthread.cfm_arquivos/logo.gif" alt="Tek-Tips Forums"></a></td>
+		<td align="center" valign="top"><div class="links"><div><a href="http://www.tek-tips.com/about.cfm">About Us</a> | <a onmouseover="window.status='Contact Us';return true;" onmouseout="window.status='';return true;" href="javascript:cont('')">Contact Us</a> | <a href="http://www.tecumsehgroup.com/administration.htm">Site Policies</a></div></div>
+		<div class="promo"><a href="http://www.tek-tips.com/supportus.cfm">Donate</a> | <a href="http://www.tek-tips.com/groups">Start A Group</a> | <a href="http://tek-tips.4jobs.com/" target="jobs">Jobs</a> | <a href="http://www.tek-tips.com/whitepapers/">Whitepapers</a><br></div>
+		<div class="banner"><a href="http://www.tek-tips.com/redir/redir.cfm?id=180" target="new" onmouseover="window.status='Send Out Your Resume Now!';  return true;" onmouseout="window.status=''; return true;"><img src="viewthread.cfm_arquivos/468x60-rds1.gif" alt="Send Out Your Resume Now!" title="Send Out Your Resume Now!" border="0"></a></div></td>
+	</tr>
+</tbody></table>
+
+<table id="main" style="table-layout: fixed;">
+	<tbody><tr valign="top">
+		<td id="leftcol" style="width: 185px ! important;" width="185"><div class="cont">
+			<div class="tagline">INTELLIGENT WORK FORUMS<br>FOR COMPUTER PROFESSIONALS</div>
+			
+
+
+
+<div class="wrapper">
+	<h4>Member Login</h4>
+	<div class="a"><div class="b"><div class="c">
+
+<form name="pass" id="pass" action="/passcheck.cfm" method="post">
+<input name="method" value="login" type="hidden">
+	<table>
+		<tbody><tr>
+			<td>HANDLE<br>
+			<input name="Handle" size="8" maxlength="20" style="width: 70px;" type="text"><br>
+			<input name="Pass" size="8" maxlength="20" style="width: 70px;" type="password"><br>
+			PASSWORD</td>
+			<td><input src="viewthread.cfm_arquivos/btn-login.gif" type="image"></td>
+		</tr>
+	</tbody></table>
+<input name="Remember" value="1" type="checkbox"><a href="javascript:rememberme()">Remember Me</a><br>
+<a href="javascript:popforgotpassword();">Forgot Password?</a>
+</form>
+
+
+	</div></div></div></div>
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+	<h4>Navigation</h4>
+	<div class="a"><div class="b"><div class="c">
+
+	<a href="http://www.tek-tips.com/register.cfm">Join Us!</a><br>
+	<a href="javascript:openindex(200,200,'http://www.tipmaster.com/includes/gsearchinfo.cfm?w=250&h=250')">Keyword Search</a><br>
+	<a href="http://www.tek-tips.com/threadarea.cfm">Browse Forums</a><br>
+	<a href="http://tek-tips.4jobs.com/" target="jobs">Jobs</a><br>
+	
+	<a href="http://www.tek-tips.com/groups">Start A Group</a><br>
+	<a href="javascript:openindex(600,550,'/pops/emailfriend.cfm?w=600&h=550')">Tell A Friend</a><br>
+	<a href="http://www.tek-tips.com/supportus.cfm">Donate</a><br><a href="http://www.tek-tips.com/whitepapers/">Whitepapers</a>
+
+	</div></div></div></div>
+
+		
+
+
+
+<div class="wrapper">
+	<h4>Come Join Us!</h4>
+	<div class="a"><div class="b"><div class="c">
+
+	<ul>
+		<li>Talk With Other Members</li>
+		<li>Be Notified Of Responses<br>To Your Posts</li>
+		<li>Keyword Search</li>
+		<li>Turn Off Ad Banners</li>
+		<li>One-Click Access To Your<br>Favorite Forums</li>
+		<li>Automated Signatures<br>On Your Posts</li>
+		<li>Best Of All, It's Free!</li>
+	</ul>
+	<hr size="2" width="80%">
+	<form action="/registermanager.cfm" method="post" name="Register">
+		<div style="text-align: right;">E-mail* <input name="email" size="8" maxlength="50" style="width: 85px;" type="text"><br>
+		Handle <input name="Handle" size="8" maxlength="20" style="width: 85px;" type="text"><br>
+		<select name="UserType">
+			<option value="Select A Type">Select A Type</option>
+			<option value="MIS">MIS</option>
+			<option value="IS/IT--Management">IS/IT--Management</option>
+			<option value="Programmer">Programmer</option>
+			<option value="ISP">ISP</option>
+			<option value="Instructor">Instructor</option>
+			<option value="Vendor">Vendor</option>
+			<option value="TechnicalUser">TechnicalUser</option>
+		</select><br>
+		Password <input name="pass" size="8" maxlength="10" style="width: 85px;" type="password"><br>
+Verify P'word <input name="pass2" size="8" maxlength="10" style="width: 85px;" type="password"></div>
+<div align="center">
+		<input src="viewthread.cfm_arquivos/btn-join.gif" type="image"></div>
+	</form>
+	<div style="font-size: 9px; margin-top: 6px;">*Tek-Tips's functionality depends on members receiving e-mail. By joining you are opting in to receive e-mail.</div>
+
+	</div></div></div></div>
+
+
+
+
+
+<div class="wrapper">
+	<h4>Partner With Us!</h4>
+	<div class="a"><div class="b"><div class="c">
+		
+	<b>"Best Of Breed" Forums Add Stickiness To Your Site</b><br>
+	<a href="http://www.tek-tips.com/affiliates/"><img src="viewthread.cfm_arquivos/partnerbtn120x60.gif" alt="Partner Button" height="60" width="120"></a><br>
+	(Download This Button Today!)
+
+	</div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+				
+					
+					
+					
+					
+
+	
+
+
+<div class="wrapper">
+	<h4>Member Feedback</h4>
+	<div class="a"><div class="b"><div class="c">
+"...Thank you for the best reply I've ever had to a forum question -
+it's extremely comprehensive and legible and answers my query
+thoroughly..." <div class="col" align="center"><a href="http://www.tek-tips.com/feedback.cfm"><b>More...</b></a></div>
+
+	</div></div></div></div>
+
+
+				
+				
+
+
+
+
+
+<div class="wrapper">
+	<h4>Geography</h4>
+	<div class="a"><div class="b"><div class="c">
+
+	Where in the world do Tek-Tips members come from?
+	<div class="col" align="center"><a href="http://www.tek-tips.com/geography.cfm"><b>Click Here To Find Out!</b></a></div>
+
+	</div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+				
+					
+					
+					
+					
+				
+
+<div class="wrapper">
+	<h4>Partners</h4>
+	<div class="a"><div class="b"><div class="c">
+
+	
+		<a href="http://www.planet-source-code.com/" target="Blank">Planet Source Code</a><br>
+	
+		<a href="http://www.tek-tips.com/" target="Blank">Tek-Tips Forums</a><br>
+	
+
+	</div></div></div></div>
+
+
+				
+				
+
+
+
+
+		</div></td>
+		
+		<td class="nonleft">
+		
+		<table style="width: 100%;" class="nonleft">
+			<tbody><tr>
+		<td id="pagetitle" colspan="2">
+			<div id="search" style="background-color: rgb(204, 204, 204); background-image: url(images/srchfrm-bg2.gif);"><div class="s">
+<table cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td style="width: 270px;" align="center" nowrap="nowrap" width="50%">
+		<form action="/forumsearch.cfm" method="get"><table>
+			<tbody><tr><td width="100"><input size="25" name="SearchString" class="frmsearch" type="text"></td><td style="padding-left: 3px;"><input name="sub" src="viewthread.cfm_arquivos/btn-search.gif" type="image"></td>
+			</tr>
+			<tr><td style="padding-top: 10px;" colspan="2"><input name="type" value="forum" id="srch1" checked="checked" type="radio"><label for="srch1"> Find A Forum</label> <input name="type" value="member" id="srch2" type="radio"><label for="srch2"> Find An Expert</label></td></tr></tbody></table></form>
+		</td>
+		<td align="center">
+
+	
+	
+	
+	
+			
+			
+			
+		
+	<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/custom" target="_blank">
+<table style="border-left: 2px solid rgb(153, 153, 153);" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td align="left" height="32" nowrap="nowrap" valign="top">
+<a href="http://www.google.com/"><img src="viewthread.cfm_arquivos/Logo_25wht.gif" alt="Google" align="middle" border="0"></a>
+</td>
+<td nowrap="nowrap">
+<input name="domains" value="tek-tips.com" type="hidden">
+<input name="q" size="23" maxlength="255" value="" type="text">
+<input name="sa" value="Search" type="submit">
+</td>
+</tr><tr style="padding-top: 0pt;">
+<td style="padding-top: 0pt;" nowrap="nowrap"><input name="sitesearch" value="" type="radio"> Web</td>
+<td><input name="sitesearch" value="tek-tips.com" checked="checked" type="radio"> Tek-Tips Forums</td>
+</tr></tbody></table>
+<input name="client" value="pub-8000425157908189" type="hidden">
+<input name="forid" value="1" type="hidden">
+<input name="channel" value="4770171969" type="hidden">
+<input name="ie" value="ISO-8859-1" type="hidden">
+<input name="oe" value="ISO-8859-1" type="hidden">
+<input name="safe" value="active" type="hidden">
+<input name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;" type="hidden">
+<input name="hl" value="en" type="hidden">
+</form>
+<!-- SiteSearch Google -->
+
+	</td></tr></tbody></table></div></div>
+			<div class="title">
+<div class="bcrumb"><a href="http://www.tek-tips.com/index.cfm" name="top">Home</a> &gt;
+<a href="http://www.tek-tips.com/threadarea.cfm">Forums</a> &gt; 
+<a href="http://www.tek-tips.com/threadcategory.cfm?lev2=4">Programmers</a> &gt; 
+<a href="http://www.tek-tips.com/threadforum.cfm?lev3=29">Development Tools</a> &gt;
+<a href="http://www.tek-tips.com/threadminder.cfm?pid=102&amp;page=5">CodeGear (Borland): Delphi Forum</a></div>
+<h1>method to Showmessage centred on Form?</h1>
+<div class="forumshortcut"><a href="javascript:openindex(450,450,'http://www.tipmaster.com/includes/refinfo.cfm?w=450&h=450')">thread102-1436729</a></div>
+</div>
+			
+<div id="tabs">
+<table class="b"><tbody><tr>
+	<td><a href="http://www.tek-tips.com/threadminder.cfm?pid=102" title="Forum Home Page" id="current">Forum</a></td>
+	<td><a href="http://www.tek-tips.com/search.cfm?pid=102" title="Keyword Search">Search</a></td>
+	<td><a href="http://www.tek-tips.com/faq.cfm?pid=102" title="Forum FAQs">FAQs</a></td>
+	<td><a href="http://www.tek-tips.com/links.cfm?pid=102" title="Links">Links</a></td>
+	<td><a href="http://tek-tips.4jobs.com/" target="jobs">Jobs</a></td>
+	<td><a href="http://www.tek-tips.com/whitepapers" style="width: 77px;">Whitepapers</a></td>
+</tr></tbody></table>
+
+</div>
+
+		</td>
+		</tr>
+		</tbody></table>
+		<table style="width: 100%;" class="nonleft">
+		<tbody><tr>
+		<td id="content" class="nonleft">
+
+
+
+
+
+
+
+
+
+
+
+<div class="tgml">
+<span name="intelliTxt" id="intelliTxt">
+
+
+
+<table class="post">
+	<tbody><tr bgcolor="#b5b5ff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<a href="http://www.tek-tips.com/userinfo.cfm?member=CADTenchy">CADTenchy</a> (TechnicalUser)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">20 Dec 07 10:53 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">I have a small app that pops up a Showmessage.<br>As
+this app will be run on stations with dual screens, and I don't know
+which screen they prefer it to be on, or where, is there a method to
+pop the Showmessage (or another box) centred on the main form's
+location, rather than spanning the join of the two screens?<br></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+
+	<div style="padding-top: 5px; padding-bottom: 5px; color: red; font-weight: bold;" class="plug" align="center">
+	
+	
+
+	
+			
+		
+
+	<b><font color="Red">Check Out Our Whitepaper Library. <a href="http://www.tek-tips.com/whitepapers/" target="jobs">Click Here</a>.</font></b></div>
+
+
+
+
+<table class="post">
+	<tbody><tr bgcolor="#dedeff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<a href="http://www.tek-tips.com/userinfo.cfm?member=whosrdaddy">whosrdaddy</a> (Vendor)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">20 Dec 07 11:26 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">make a popup screen based on a tform yourself.<br><br>in the FormCreate event you can alter the left property of your form:<br><br>// set form to the last available monitor<br>&nbsp;Left := Screen.Monitors[Screen.MonitorCount-1].Left+100;<br> <p class="sig">-----------------------------------------------------<br>&nbsp;What You See Is What You Get<br>Never underestimate tha powah of tha google!</p></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#f6f6f6"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=harebrain">harebrain</a> (MIS)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">20 Dec 07 17:57 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">Use MessageDlgPos.&nbsp;&nbsp;Base its coordinates on the main form's location.</div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#dedeff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=roo0047">roo0047</a> (Programmer)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">22 Dec 07 12:14 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">I
+too use dual monitors for developement.&nbsp;&nbsp;My solution is to
+set Form.Position to ScreenCenter, NOT DesktopCenter, which results in
+splitting both screens.&nbsp;&nbsp;ScreenCenter will center it on the
+default monitor.<br><br>A word of caution:<br>In your Windows
+Desktop&gt;Screen&gt;Properies, if you have monitor 2 on the left or if
+Monitor 1 is not the primary, beware of Delphi Form.Position =
+poDesigned - if you put a form on the left monitor.&nbsp;&nbsp;This
+will result in Form.Left being a negative number.&nbsp;&nbsp;Users
+without identical monitor configurations will not be able to see or
+close your form!<br><br>The only way to be sure if designing for dual
+monitors is to "Read Monitor.WorkAreaRect to learn the dimensions of
+the monitor, minus any space taken by task bars or tool bars.
+WorkAreaRect gives the dimensions of the work area in pixels, where
+(0,0) represents the top-left corner of the primary
+monitor."&nbsp;&nbsp;(from delphi help) <br><br>The short of it is you need to look at how the desktop is "currently" configured before making assumptions.<br><br>Applies
+to forms and dialogs.&nbsp;&nbsp;THere is much more you can do with
+other more basic properties of TMonitor and TScreen. <p class="sig">Roo<br>Delphi Rules!<br></p></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#f6f6f6"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<a href="http://www.tek-tips.com/userinfo.cfm?member=CADTenchy">CADTenchy</a> (TechnicalUser)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">22 Dec 07 15:22 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">Thanks all for replies.<br><br>Now I have the below code.<br>For the form calling it (main form) I have set the properties as so:<br><br>DefaultMonitor: dmPrimary<br>Position: psScreenCenter<br><br>With
+those settings, will code below be OK, regarding Roo's comments etc?
+(currently I'm working at home on laptop, with no dual screen test
+bed..)<br><br>Steve<br><br><div id="code"><h4>CODE</h4><div class="body">procedure TSDIAppForm.Button3Click(Sender: TObject);<br>Var<br>&nbsp;&nbsp;Sure, Xpos, Ypos: integer;<br>begin<br>&nbsp;&nbsp;Xpos := (SDIAppForm.Width Div 2) + SDIAppForm.Left - 120;<br>&nbsp;&nbsp;Ypos := (SDIAppForm.Height Div 2) + SDIAppForm.Top - 50;<br>&nbsp;&nbsp;Sure := MessageDlgPos('Are you sure?',mtCustom, [mbYes,mbCancel], 0, Xpos, Ypos);<br>end;</div></div></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#dedeff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=harebrain">harebrain</a> (MIS)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">22 Dec 07 21:07 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap"><blockquote><h4>Quote:</h4><div class="body">(currently I'm working at home on laptop, with no dual screen test bed..)</div></blockquote>Same here.&nbsp;&nbsp;Roo?</div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#f6f6f6"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=roo0047">roo0047</a> (Programmer)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">25 Dec 07 17:45 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">Yes - Tested on dual monitor with the following actual code:<div id="code"><h4>CODE</h4><div class="body">procedure TForm1.Button3Click(Sender: TObject);<br>//procedure TSDIAppForm.Button3Click(Sender: TObject);<br>Var<br>&nbsp;&nbsp;Sure, Xpos, Ypos: integer;<br>begin<br>&nbsp;&nbsp;Xpos := (Self{SDIAppForm}.Width Div 2) + Self{SDIAppForm}.Left - 120;<br>&nbsp;&nbsp;Ypos := (Self{SDIAppForm}.Height Div 2) + Self{SDIAppForm}.Top - 50;<br>&nbsp;&nbsp;Sure := MessageDlgPos('Are you sure?',mtCustom, [mbYes,mbCancel], 0, Xpos, Ypos);<br>end;<br></div></div>(Reason for changes should be obvious) Results:<br>I
+tried it with Form1.Position eq. to poDesigned, poScreenCenter and
+poDesktopCenter.&nbsp;&nbsp;Message was always visible and relative to
+Form1.&nbsp;&nbsp;Works! <p class="sig">Roo<br>Delphi Rules!<br></p></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#dedeff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=harebrain">harebrain</a> (MIS)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">27 Dec 07 9:17 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">Around-the-world collaboration:&nbsp;&nbsp;gotta love it!</div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#f6f6f6"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<a href="http://www.tek-tips.com/userinfo.cfm?member=CADTenchy">CADTenchy</a> (TechnicalUser)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">28 Dec 07 12:57 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">Cool, thanks Roo.<br><br>And yep can't beat a small community that spans, oh, the globe...<br><br></div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table>
+
+
+<table class="post">
+	<tbody><tr bgcolor="#dedeff"><td>
+		<table cellpadding="3" cellspacing="3">
+			<tbody><tr>
+				<td class="handle" style="padding: 3px;">
+					<img src="viewthread.cfm_arquivos/star.gif" alt="Helpful Member!"><a href="http://www.tek-tips.com/userinfo.cfm?member=roo0047">roo0047</a> (Programmer)</td>
+				<td class="date" style="padding: 3px;"><div title="Current Server Time: 18 Mar 08 12:55">30 Dec 07 12:04 </div></td>
+			</tr>
+		</tbody></table>
+		<table>
+			<tbody><tr>
+				<td class="tgml"><div class="wordwrap">And next the universe...<img src="viewthread.cfm_arquivos/915.jpg" border="0"> ...y'all!</div></td>
+			</tr>
+		</tbody></table>
+		
+	</td></tr>
+</tbody></table></span></div>
+
+<div style="margin-top: 2px;" align="center"><script type="text/javascript"><!--
+google_ad_client = "pub-8000425157908189";
+/* Bottom 468x60 Banner 20080314 */
+google_ad_slot = "6426232409";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript" src="viewthread.cfm_arquivos/show_ads.js">
+</script><iframe name="google_ads_frame" src="viewthread.cfm_arquivos/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="60" scrolling="no" width="468"></iframe></div>
+
+
+
+
+
+	
+	
+	
+		</td>
+
+		<td id="rightcol" style="width: 143px;" width="143"><div class="cont">
+
+			
+
+<div class="wrapper">
+	<h4>Whitepapers</h4>
+	<div class="a"><div class="b"><div class="c">
+
+<div id="whitepapers"><div><div id="scrollerContainer"><div class="list"><a href="http://www.tek-tips.com/whitepapers/#82">10 Hosted CRM Features That Will Help You Build Customer Loyalty</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#71">10 Questions to Ask Your Hosted IP PBX Provider</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#94">10 Reasons to Deploy Power-Over-Ethernet</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#72">5 Common VPN Security Mistakes</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#126">5 Ways ERP Can Help You Implement Lean</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#66">7 Essential Steps to Achieve, Measure and Prove Optimal Security Risk Reduction</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#98">Bandwidth Provider Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#51">Best Practices in Lifecycle Management: Comparing KACE, Altiris, LANDesk, and Microsoft SMS</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#48">Better security for more users - thawte's SGC SuperCert SSL certificates</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#26">Building Blocks of Transparent Web Security: Server-Gated Cryptography</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#11">Business Enablement  with On Demand  Vulnerability Management</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#88">Buying a Stackable Ethernet Switch Checklist</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#47">Certify your Software Integrity with thawte Code Signing</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#93">Checklist For Buying Power-Over-Ethernet</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#124">Compare IP PBX systems from leading vendors like Cisco, Nortel and Avaya</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#84">CRM Buyers Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#85">CRM Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#108">CRM Evaluation Guide: 100+ Questions CRM Consultants Get Paid to Ask</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#107">CRM Software: 5 Reasons to Optimize </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#109">CRM Solutions: What a Small Business Should Look For </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#44">CRM: On-Demand or On-Site? Choose the Right Deployment Option</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#125">Crystal Reports 2008</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#87">Data Management Buyer’s Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#86">Data Management Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#36">DEMO: Vulnerability Management &amp; Policy Compliance Overview</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#54">Don't Wait to Automate: Achieve Immediate Cost, Productivity, and Security Benefits by Automating IT</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#12">Dynamic Best Practices of Vulnerability Management</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#74">Email Security Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#123">Enterprise IP PBX Buyers Guide:  Features and Services That Matter</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#33">Exploring Exchange Compatible Appliance-Based Messaging - Tolly Group</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#118">Four Keys to Choosing Your Next Business Phone System </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#114">Gartner Magic Quadrant on enterprise Web 2.0</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#55">Got The Enterprise Software Blues? Appliances Come to the Rescue </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#79">Guide to Effective Remediation of Network Vulnerabilities and Policy Compliance</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#83">Hosted CRM Checklist</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#70">Hosted PBX Checklist</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#89">How To Manage Directory Services</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#28">How to Offer the Strongest SSL Encryption</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#116">IDC Analyst Connection report on wikis</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#68">Implementing or Upgrading SAP® Solutions? Don’t Forget the Data </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#73">Internet Security Trends for 2007</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#64">Introduction to crystalreports.com</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#61">IP PBX Systems: Compare the Top 7 Solutions</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#62">IP Phones: Compare the 5 Most Popular</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#17">Managing the Life Cycle of Encryption Keys with RSA* Key Manager</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#32">Maximizing the Business Benefits of Hosted and Managed Email and Email Security Services</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#52">Migration to the 2007 Microsoft Office System: A Roadmap for Success</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#30">Mirapoint RazorGate Security Appliance Technical Overview</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#81">NAC Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#13">On-Demand Security Audits and Vulnerability Management</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#56">Operationalizing Security &amp; Policy Compliance - A Unified Approach for IT, Audit and Operation Teams</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#115">Osterman Research - Why Web 2.0 is Critical to Your Business?</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#63">Pocket Guide to IP Telephony</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#91">Power-Over-Ethernet Buyer’s Guide </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#92">Power-Over-Ethernet Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#95">Premise PBX Checklist</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#65">Profitable Three-Screen Services:  Creating Value for Three-Screen Consumers</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#101">QualysGuard PCI Demo</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#43">Report Analysis: Lower TCO with 3rd Generation CRM</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#34">ROI: Incentive Comp Provides Measurable Results.</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#45">Running a Business on Commercial Open Source Software: The Benefits for your Sales Organization</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#42">Secure multiple servers</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#49">Secure your Apache Server - free trial</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#50">Secure your MS IIS Server - a How-To Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#117">Socialtext Wiki Technical Whitepaper</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#46">SSL - enabling a trusted digital future for all</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#29">SSL in High-Security Browsers</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#75">SSL VPN Products Comparison Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#80">SSL VPN vs. IPSec VPN</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#127">Strategies to Run A Lean Supply Chain</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#103">Strengthening Network Security with On Demand Vulnerability Management &amp; Policy Compliance</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#113">Switch to VOIP for All the Right Reasons</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#53">Taking the Leg-Work out of Systems Provisioning: Best Practices for Reducing Deployment Costs</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#120">Taming Telephony </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#121">Telephony Simplified </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#112">The 5 Must-Have Features of a CRM Solution </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#111">The ABCs of Choosing a CRM System  </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#31">The Changing Role of Email in the Government Sector - Grey Consulting</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#14">The Laws of Vulnerabilities: Six Axioms for Understanding Risk</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#106">The Need for Vulnerability Management</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#100">The Phone System Buyer's Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#41">The Value of Authentication: Learn about the three elements required to create trust on the Internet</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#128">The Visible Supply Chain: Ensuring End-to-End Optimization</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#110">Tips for Cost Effective Customer Retention Management </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#119">Top 5 Telephony Solutions </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#69">Top 5 Things to Know About Hosted PBX Solutions</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#129">Tuning ERP and the Supply Chain for Profitable Growth</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#67">Using QualysGuard to Meet SOX Compliance &amp; IT Control Objectives</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#104">VoIP Call Center Buyer's Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#105">VoIP Call Center Checklist</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#99">VoIP for Small Business Buyers Guide</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#60">VoIP for Small Business: Compare the Top 9 Vendors</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#27">What Every E-Business Should Know about SSL Security and Consumer Trust </a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#77">Wikinomics - Chapter 9 excerpt from Socialtext</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#102">Winning the PCI Compliance Battle: A Guide for Merchants and Member Service Providers</a></div><div class="list"><a href="http://www.tek-tips.com/whitepapers/#35">Worldwide Outbound Content Compliance 2005 – 2009 IDC</a></div></div></div></div>
+			<div class="list"><a href="http://www.tek-tips.com/whitepapers/" class="attention" target="jobs">(See All Whitepapers)</a></div>
+	</div></div></div></div>
+
+			
+<div class="wrapper">
+	<h4>Tek-Tips Jobs</h4>
+	<div class="a"><div class="b"><div class="c">
+
+			<div class="list"><a href="http://tek-tips.4jobs.com/" class="attention" target="jobs">Job Search</a></div>
+			<div class="list"><a href="http://tek-tips.4jobs.com/JS/Form/SignUpForm.asp" class="attention" target="jobs">Post Your Resume</a></div>
+			<div class="list"><a href="http://tek-tips.4jobs.com/MKT/Content/EMP/Default.asp" class="attention" target="jobs">Post A Job Opening</a></div>
+	</div></div></div></div>
+
+
+			
+				
+					
+						
+						
+							
+						
+						
+							
+
+<div class="wrapper">
+	<h4>Back To Forum</h4>
+	<div class="a"><div class="b"><div class="c">
+<a href="http://www.tek-tips.com/threadminder.cfm?pid=102" class="list">Back To CodeGear (Borland): Delphi</a>
+	</div></div></div></div>
+
+							
+					
+						
+						
+							
+						
+						
+							
+
+							
+					
+				
+			
+			<p align="center"><script type="text/javascript"><!--
+google_ad_client = "pub-8000425157908189";
+/* Tek-Tips Right Column 120x240 20080314 */
+google_ad_slot = "4594669494";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+<script type="text/javascript" src="viewthread.cfm_arquivos/show_ads.js">
+</script><iframe name="google_ads_frame" src="viewthread.cfm_arquivos/ads_002.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="240" scrolling="no" width="120"></iframe></p>
+		
+		</div><img src="viewthread.cfm_arquivos/inv.htm" height="1" width="143"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			
+				<div id="form">
+
+<div class="wrapper">
+	<h4>Start A New Thread</h4>
+	<div class="a"><div class="b"><div class="c">
+
+<h3>Posting in the Tek-Tips forums is a member-only feature.</h3>
+		<p align="center"><a href="http://www.tek-tips.com/register.cfm"><b>Click Here to join Tek-Tips</b></a> and talk with other members!</p>
+</div></div></div></div>
+
+<h5 align="center">Promoting, selling, recruiting and student posting<br>are not allowed in the forums.<br><a href="http://www.tek-tips.com/market.cfm">Posting Policies</a></h5>
+
+<hr width="50%">
+
+<table style="border: 1px solid black; background: rgb(255, 255, 255) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" align="center" width="540"><tbody><tr><td style="padding: 3px;">
+<h5 align="center">LINK TO THIS FORUM!</h5>
+
+<div style="font-size: 9px;">(Add Stickiness To Your Site By Linking To This Professionally Managed Technical Forum)</div>
+<div style="font-size: 11px;"><b>TITLE:</b> CodeGear (Borland): Delphi Forum at Tek-Tips</div>
+<div style="font-size: 11px;"><b>URL:</b> http://www.tek-tips.com/threadminder.cfm?pid=102</div>
+<div style="font-size: 11px;"><b>DESCRIPTION:</b> CodeGear (Borland):
+Delphi technical support forum and mutual help system for computer
+professionals. Selling and recruiting forbidden.</div>
+
+</td></tr></tbody></table>
+<br>&nbsp;
+
+	
+</div>
+			
+		</td>
+	</tr>
+	</tbody></table>
+	</td>
+	</tr>
+	<tr valign="top">
+		<td id="footer" colspan="2">
+		
+		
+			
+		
+		
+	
+		<hr>
+		
+		<p style="text-align: center; font-weight: bold;"><a href="http://www.tek-tips.com/groups" target="_blank" style="color: red;">Start A Group</a> | <a href="http://www.tecumsehgroup.com/opportunities.cfm" target="_blank" style="color: red;">Advertise With Us</a> | <a href="http://www.tecumsehgroup.com/opportunities.cfm" target="_blank" style="color: red;">E-mail Our Members</a> | <a href="http://www.tek-tips.com/supportus.cfm" style="color: red;">Donate</a> | <a href="javascript:openindex(600,400,'/pops/whitepaperinfo.cfm?w=500&h=400')" style="color: red;">Publish A Whitepaper</a></p>
+		<hr>
+		<p style="font-size: 10px;" align="center"> Copyright © 1998-2008 <a href="http://www.tecumsehgroup.com/">Tecumseh Group, Inc.</a>  All rights reserved.<br>Unauthorized reproduction or linking forbidden without express written permission.</p>
+		</td>
+	</tr>
+
+</tbody></table>
+
+
+
+
+	<div style="top: 110px; visibility: hidden;" id="dropin">
+
+<div align="right"><a href="#" onclick="dismissbox();return false">Close Box </a></div>
+
+<h1>Join Tek-Tips<sup>®</sup> Today!</h1>
+<p align="center">Join your peers on the Internet's largest technical computer professional community.<br>It's easy to <a href="http://www.tek-tips.com/register.cfm"><b>join</b></a> and it's free.</p>
+<p><b>Here's Why Members Love Tek-Tips Forums:</b></p>
+<ul>
+<li><img src="viewthread.cfm_arquivos/droplogo.gif" style="margin-right: 25px;" alt="Tek-Tips Forums" align="right" height="55" vspace="10" width="100">Talk To Other Members</li>
+<li>Notification Of Responses To Questions</li>
+<li>Favorite Forums One Click Access</li>
+<li>Keyword Search Of All Posts, And More...</li>
+</ul>
+<p align="center"><a href="http://www.tek-tips.com/register.cfm"><b>Register</b></a> now while it's still free!</p>
+<p align="center">Already a member?  <a href="javascript:dismissbox()"><b>Close</b></a> this window and log in.</p>
+<p align="center"><font size="3"><a href="http://www.tek-tips.com/register.cfm"><b>Join Us</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:dismissbox()"><b>Close</b></a></font></p>
+
+
+</div>
+
+	
+
+
+
+	
+
+<div id="vibrant">
+<!-- start Vibrant Media IntelliTXT Tooltip style sheet -->
+
+<!-- end Vibrant Media IntelliTXT style sheet -->
+<!-- start Vibrant Media IntelliTXT script section -->
+<script language="javascript" src="viewthread.cfm_arquivos/front.js"></script>
+<!-- end Vibrant Media IntelliTXT script section --></div>
+
+<script src="viewthread.cfm_arquivos/urchin.js" type="text/javascript"> 
+</script> 
+<script type="text/javascript"> 
+_uacct = "UA-1698869-2"; 
+try {urchinTracker(); 
+} catch(e) {} 
+</script>
+</body></html>

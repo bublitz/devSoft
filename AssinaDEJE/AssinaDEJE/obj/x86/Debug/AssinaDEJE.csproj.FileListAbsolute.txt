@@ -1,0 +1,37 @@
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe.config
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.Form1.resources
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.Properties.Resources.resources
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.pdb
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\itextsharp.dll
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.exe
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.pdb
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe.manifest
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.application
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.exe.manifest
+c:\documents and settings\administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.application
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe.config
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.exe
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.pdb
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe.manifest
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.application
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.exe
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\AssinaDEJE.pdb
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.Form1.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.Properties.Resources.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.exe.manifest
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Debug\AssinaDEJE.application
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Debug\itextsharp.dll

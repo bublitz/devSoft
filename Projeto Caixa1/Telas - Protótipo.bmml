@@ -1,0 +1,132 @@
+<mockup version="1.0" skin="sketch" measuredW="897" measuredH="602">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="11" y="16" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::iPhone" x="308" y="29" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::iPhone" x="605" y="29" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Title" x="37" y="119" w="230" h="-1" measuredW="151" measuredH="62" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Caixa%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::SearchBox" x="137" y="180" w="125" h="-1" measuredW="97" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cidade</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="41" y="179" w="-1" h="-1" measuredW="96" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Minha%20Cidade%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Paragraph" x="52" y="214" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>LIMITES%20DE%20GASTOS%0APrefeito%3A%20R%24%20xxx%2Cxx%0AM%E1x.%20Cabos%20Eleitorais%3A%20xx%0A%20%0AVereador%3A%20R%24%20xxx%2Cxx%0AM%E1x.%20Cabos%20Eleitorais%3A%20xxxx</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="49" y="354" w="-1" h="-1" measuredW="206" measuredH="28" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Selecionar%20Candidato/Partido</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::SearchBox" x="415" y="156" w="144" h="-1" measuredW="139" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>N%FAmero/Nome</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="338" y="155" w="-1" h="-1" measuredW="77" measuredH="25" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>N%FAm/Nome%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::RadioButton" x="339" y="132" w="-1" h="-1" measuredW="72" measuredH="18" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Prefeito</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::RadioButton" x="411" y="132" w="-1" h="-1" measuredW="77" measuredH="18" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Vereador</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::RadioButton" x="493" y="132" w="-1" h="-1" measuredW="66" measuredH="18" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Partido</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Paragraph" x="349" y="197" w="200" h="46" measuredW="200" measuredH="140" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Informa%E7%F5es%20atuais%0Ada%20campanha%20%28LinK%20TSE%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="360" y="354" w="-1" h="-1" measuredW="177" measuredH="28" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Informar%20Gasto%20Eleitoral</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Button" x="338" y="426" w="-1" h="-1" measuredW="221" measuredH="28" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Consultar%20Informa%E7%F5es%20Enviadas</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Button" x="630" y="169" w="104" h="-1" measuredW="118" measuredH="28" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Capturar%20Midia</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Button" x="734" y="169" w="118" h="-1" measuredW="128" measuredH="28" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Midia%20da%20Galeria</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Label" x="667" y="136" w="158" h="28" measuredW="158" measuredH="25" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Informar%20Gasto%20Eleitoral</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::SearchBox" x="640" y="207" w="212" h="-1" measuredW="140" measuredH="25" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tipo%20de%20Gasto</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="640" y="232" w="-1" h="-1" measuredW="71" measuredH="25" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Descri%E7%E3o%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::List" x="640" y="254" w="212" h="60" measuredW="100" measuredH="126" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Descri%E7%E3o%20preenchida%0Apelo%20eleitor/fiscal</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Label" x="640" y="314" w="-1" h="-1" measuredW="159" measuredH="25" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Identifica%E7%E3o%20%28opcional%29%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextInput" x="640" y="339" w="213" h="-1" measuredW="77" measuredH="29" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titulo/CPF</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Button" x="360" y="391" w="-1" h="-1" measuredW="177" measuredH="28" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enviar%20Gastos%20Pendentes</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="640" y="411" w="-1" h="-1" measuredW="103" measuredH="28" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enviar%20Agora</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="745" y="411" w="-1" h="-1" measuredW="105" measuredH="28" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enviar%20Depois</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::StickyNote" x="605" y="469" w="209" h="123" measuredW="109" measuredH="123" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ao%20clicar%20em%20Capturar%20Midia%2C%0Aser%E1%20solicitado%20a%20ativa%E7%E3o%20do%0AGPS%20do%20aparelho</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,49 @@
+<!--
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
+.delphi {
+  font-size: 80%;
+  font-family: "Courier New", Serif;
+  }
+.delphi .imp {
+  font-weight: bold; color: red;
+  }
+.delphi .kw1 {
+  color: #000000; font-weight: bold;
+  }
+.delphi .kw2 {
+  color: #000000; font-weight: bold;
+  }
+.delphi .kw3 {
+  color: #000000;
+  }
+.delphi .kw4 {
+  color: #000000;
+  }
+.delphi .co1 {
+  color: #008000; font-style: italic;
+  }
+.delphi .coMULTI {
+  color: #008000; font-style: italic;
+  }
+.delphi .br0 {
+  color: #000000;
+  }
+.delphi .st0 {
+  color: #ff0000;
+  }
+.delphi .nu0 {
+  color: #0000ff;
+  }
+.delphi .me1 {
+  color: #000000;
+  }
+.delphi .re0 {
+  color: #0000ff;
+  }
+.delphi .re1 {
+  color: #ff0000;
+  }
+.delphi .re2 {
+  color: #800080;
+  }
+-->

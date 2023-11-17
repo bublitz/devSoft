@@ -1,0 +1,6 @@
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\x64\Debug\AssinaDEJE.exe.config
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x64\Debug\AssinaDEJE.Form1.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x64\Debug\AssinaDEJE.Properties.Resources.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x64\Debug\ResGen.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x64\Debug\ResGen.write.1.tlog

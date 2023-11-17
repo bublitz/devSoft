@@ -1,0 +1,1108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en"><head><!-- BEGIN TEMPLATE: SHOWTHREAD --><title>dual monitors problem - Dev Archives</title>
+
+<meta name="description" content="dual monitors problem- Delphi. Visit Dev Archives to discuss dual monitors problem"><meta name="keywords" content="Delphi, dual, monitors, problem"><!-- BEGIN TEMPLATE: headinclude -->
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><!-- base href="http://archives.devshed.com/forums/" --><style type="text/css">
+<!--
+/* vBulletin 3 CSS For Style 'DevArchives' (styleid: 7) */
+body
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 0px;
+}
+a:link
+{
+	color: #000020;
+}
+a:visited
+{
+	color: #000020;
+}
+a:hover, a:active
+{
+	color: #FF4400;
+}
+.page
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+}
+.tcat
+{
+	background-color: #9999CC;
+	color: #000000;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding:4px;
+}
+.tcat a:link
+{
+	color: #000000;
+	text-decoration: none;
+}
+.tcat a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.thead
+{
+	background-color: #666699;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link
+{
+	color: #FFFFFF;
+}
+.thead a:visited
+{
+	color: #FFFFFF;
+}
+.thead a:hover, .thead a:active
+{
+	color: #FFFFFF;
+}
+.tfoot
+{
+	background-color: #666699;
+	color: #000000;
+}
+.tfoot a:link
+{
+	color: #000000;
+}
+.tfoot a:visited
+{
+	color: #000000;
+}
+.tfoot a:hover, .tfoot a:active
+{
+	color: #000000;
+}
+.alt1, .alt1Active
+{
+	background-color: #EBEBF5;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background-color: #F4F4F4;
+	color: #000000;
+}
+.wysiwyg
+{
+	background-color: #F5F5FF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background-color: #3E5C92;
+	color: #E0E0F6;
+}
+.fjdpth0
+{
+	background-color: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #E4E7F5 url(http://images.devshed.com/far/gradients/gradient_panel.gif) repeat-x top left;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #D5D8E5 url(http://images.devshed.com/far/gradients/gradient_panelsurround.gif) repeat-x top left;
+	color: #000000;
+}
+legend
+{
+	color: #22229C;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background-color: #738FBF;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+	background-color: #BBC7CE;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:visited
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background-color: #8A949E;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* ***** small padding on 'thead' elements ***** */
+td.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+
+A.network:link, A.network:visited, A.network:active { font-family: Verdana, Arial, Helvetica; font-size: 8pt; color: #000000; text-decoration: none;}
+  A.network:hover { color:#000000; text-decoration: underline;}
+
+ .newpill {
+text-decoration: none; color:#000000;
+font-family: Verdana,Arial,Helvetica; 
+font-size: 7pt;
+}
+
+.spacer 
+{
+line-height : 10px;
+}
+.overlink {
+  	 cursor:pointer; 
+  	 cursor:hand;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-weight: bold;
+}
+.title, A.title:link, A.title:visited, A.title:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 31px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+.smalltitle, A.smalltitle:link, A.smalltitle:visited, A.smalltitle:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+.art_title, A.art_title:link, A.art_title:visited, A.art_title:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	cursor:pointer; 
+	cursor:hand;
+}
+
+.showthreadh1
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin:0;
+  font-size: 14px;
+  font-weight: bold;	
+  display: inline;
+}
+.navbar2 {
+font-size: 11px;
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.navbar3 {
+margin-top:7px;
+}
+
+.boxAds, a.boxAds:link, a.boxAds:visited, a.boxAds:active, a.boxAds:hover{ 
+      background-color: #000066; 
+      font-weight: bold; 
+      font-size: 8pt; 
+      color: #FFFFCC; 
+      text-decoration : underline;
+}
+
+.tightline  {line-height: .5}
+.top {
+	cursor:pointer; cursor:hand;
+	text-decoration: underline; color:#000000;
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 10px;
+}
+
+.search {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #333333;
+        text-decoration: none;
+}
+.search2 {
+        font-family: Geneva, Arial, Helvetica, san-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.search3 {
+        font-family: Geneva, Arial, Helvetica, san-serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: #FFFFFF;
+}
+
+.footlink, .footlink:link, .footlink:visited, .footlink:hover, .footlink:active {
+	text-decoration: underline;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	cursor:pointer; 
+  	cursor:hand;
+}
+
+.foottxt {
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+}
+
+.newlinks {
+cursor:pointer; cursor:hand;
+text-decoration: underline; color:blue;
+font-family: Verdana,Arial,Helvetica; 
+font-size: 10px;
+}
+
+.blacklinks, .blacklinks:link, .blacklinks:visited, .blacklinks:hover, .blacklinks:active {
+	cursor:hand;
+	text-decoration: underline;
+	color:#000000;
+	cursor:pointer; 
+  	cursor:hand;
+}
+-->
+</style><script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var IMGDIR_MISC = "http://images.devshed.com/far/misc";
+// -->
+</script>
+<script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/vbulletin_global.js"></script>
+<script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/vbulletin_menu.js"></script>
+<script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/spellChecker.js"></script>
+<meta name="verify-v1" content="QnBv+OADLWvrKmdnMiRjmClE4zdJtP0Y+aLTEr//fII="><!-- END TEMPLATE: headinclude --><!-- BEGIN TEMPLATE: header -->
+
+
+ <script src="dual-monitors-problem-1741916_arquivos/urchin.js" type="text/javascript"> 
+ </script> 
+ <script type="text/javascript">
+ _uacct = "UA-290307-1";
+ urchinTracker();
+ </script>
+<link href="dual-monitors-problem-1741916_arquivos/styles.css" rel="stylesheet" type="text/css"><link rel="SHORTCUT ICON" href="http://archives.devshed.com/favicon.ico"><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+window.open(theURL,winName,features);
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+#topnavbox {	
+	clear: both;
+	text-align:center;
+	font-size: 0.8em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.topnavtxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: normal;
+    padding: 0;
+    margin: 0;
+color: #ffffff;\n}
+
+-->
+</style><style type="text/css"><!--.add2small { font-size: 11px; cursor:pointer;}.add2head { font-size: 11px; font-weight: bold;}--></style><style type="text/css">
+<!--
+  .tightline  {line-height: .5}
+
+.title_readon {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+A.title_readon:hover {
+  color:blue;
+  text-decoration: underline;
+}   
+
+-->
+</style><style type="text/css"><!-- .newlinks {cursor:pointer; cursor:hand;text-decoration: underline; color:blue;font-family: Verdana,Arial,Helvetica; font-size: 10px;}--></style><style type="text/css">
+<!--
+#botfooter {	
+	clear: both;
+	text-align:center;
+	font-size: 0.8em;
+	background-color:#f1f1f1;
+	font-family:Arial, Helvetica, sans-serif;
+        width: 100%;
+}
+.bottxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+A.botnetwork:link, A.botnetwork:visited, A.botnetwork:active { 
+  font-family: Verdana,Arial,Helvetica; 
+  font-size: 9px; 
+  color: #000000; 
+  text-decoration: none;
+}
+
+A.botnetwork:hover { 
+  color:blue; 
+  text-decoration: underline;
+}
+.botoverlink {
+  	 cursor:pointer; 
+  	 cursor:hand;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: underline;
+}
+-->
+</style><style type="text/css">.iTt{ FONT-FAMILY: Verdana, Arial, Helvetica; FONT-SIZE: 11px; FONT-STYLE: normal; FONT-WEIGHT: normal; COLOR: black; BACKGROUND-COLOR: lightyellow; BORDER: black 1px solid; PADDING: 2px;}</style></head><body leftmargin="0" topmargin="0" alink="#000000" link="#000000" vlink="#000000"><script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/al.htm"></script><script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/func_200803072053.js"></script><script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/door.js"></script><a name="top"></a><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="left"><table align="center" border="0" cellpadding="0" cellspacing="0" height="18" width="100%"><tbody><tr>  <td bgcolor="#003366" height="18" width="250"><img src="dual-monitors-problem-1741916_arquivos/image_01.gif" height="19" width="250"></td> <td height="19" width="17"><img src="dual-monitors-problem-1741916_arquivos/image_02.gif" height="19" width="17"></td> <td bgcolor="#c3ecfb" height="18" valign="top"><center>
+<div id="topnavbox" align="center">
+	<div class="topnavtxt">
+<script type="text/javascript" language="JavaScript">
+<!--
+function ttgo1(url)
+{
+	if (url.length > 1)
+	{
+		document.location.href = "http://" + url + "/";
+	}
+}
+
+function ttfstart1(name)
+{
+	document.write('<div style="display: inline; top: 0; padding:0; border: 0px;"><B>' + name + '</b> <form style="display: inline; margin: 0;" name="jumptt"><select style="font-size: 10px; font-family: Verdana, Arial;" name="menutt" onChange="javascript:ttgo(this.options[this.selectedIndex].value);">');
+	document.write('<option value="" selected> - Select - </option>');	
+}
+
+function ttfend1()
+{
+	document.write('</select></form></div>');
+}
+
+function ttfadd1(name, val)
+{
+	document.write('<option value="' + val + '">' + name + '</option>');
+}
+
+function ttspace1()
+{
+	document.write('&nbsp;&nbsp;&nbsp;');
+}
+
+ttfstart1('Tutorials:');
+ttfadd1('Dev Shed', 'www.devshed.com');
+ttfadd1('ASP Free', 'www.aspfree.com');
+ttfadd1('Dev Articles', 'www.devarticles.com');
+ttfadd1('Dev Hardware', 'www.devhardware.com');
+ttfadd1('SEO Chat', 'www.seochat.com');
+ttfadd1('Web Hosting', 'webhosting.devshed.com');
+ttfadd1('Codewalkers', 'www.codewalkers.com');
+ttfend1();
+
+ttspace1();
+
+ttfstart1('Resources:');
+ttfadd1('Scripts', 'www.scripts.com');
+ttfadd1('Tutorialized', 'www.tutorialized.com');
+ttfadd1('Dev Mechanic', 'tools.devshed.com');
+ttfadd1('iWatchIT', 'www.iwatchit.com');
+ttfadd1('IT Marketplace', 'www.itmarketplace.com');
+ttfadd1('igrep', 'www.igrep.com');
+ttfend1();
+
+ttspace1();
+
+ttfstart1('Forums:');
+ttfadd1('Dev Shed Forums', 'forums.devshed.com');
+ttfadd1('ASP Free Forums', 'forums.aspfree.com');
+ttfadd1('Dev Articles Forums', 'forums.devarticles.com');
+ttfadd1('Dev Hardware Forums', 'www.devhardware.com/forums');
+ttfadd1('SEO Chat Forums', 'forums.seochat.com');
+ttfadd1('Codewalkers Forums', 'forums.codewalkers.com');
+ttfadd1('Tutorialized Forums', 'forums.tutorialized.com');
+ttfadd1('Dev Archives Forums', 'archives.devshed.com/forums');
+ttfend1();
+//-->
+</script><div style="border: 0px none ; padding: 0pt; display: inline; top: 0pt;"><b>Tutorials:</b> <form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px; font-family: Verdana,Arial;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.devshed.com">Dev Shed</option><option value="www.aspfree.com">ASP Free</option><option value="www.devarticles.com">Dev Articles</option><option value="www.devhardware.com">Dev Hardware</option><option value="www.seochat.com">SEO Chat</option><option value="webhosting.devshed.com">Web Hosting</option><option value="www.codewalkers.com">Codewalkers</option></select></form></div>&nbsp;&nbsp;&nbsp;<div style="border: 0px none ; padding: 0pt; display: inline; top: 0pt;"><b>Resources:</b> <form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px; font-family: Verdana,Arial;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.scripts.com">Scripts</option><option value="www.tutorialized.com">Tutorialized</option><option value="tools.devshed.com">Dev Mechanic</option><option value="www.iwatchit.com">iWatchIT</option><option value="www.itmarketplace.com">IT Marketplace</option><option value="www.igrep.com">igrep</option></select></form></div>&nbsp;&nbsp;&nbsp;<div style="border: 0px none ; padding: 0pt; display: inline; top: 0pt;"><b>Forums:</b> <form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px; font-family: Verdana,Arial;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="forums.devshed.com">Dev Shed Forums</option><option value="forums.aspfree.com">ASP Free Forums</option><option value="forums.devarticles.com">Dev Articles Forums</option><option value="www.devhardware.com/forums">Dev Hardware Forums</option><option value="forums.seochat.com">SEO Chat Forums</option><option value="forums.codewalkers.com">Codewalkers Forums</option><option value="forums.tutorialized.com">Tutorialized Forums</option><option value="archives.devshed.com/forums">Dev Archives Forums</option></select></form></div>
+	</div>
+</div>
+</center></td></tr> </tbody></table> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td width="217"><img src="dual-monitors-problem-1741916_arquivos/image_04.gif" height="5"></td> <td width="217"><img src="dual-monitors-problem-1741916_arquivos/image_05.gif" height="5"></td> </tr> </tbody></table> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td rowspan="2" style="background-repeat: no-repeat;" background="dual-monitors-problem-1741916_arquivos/image_06.gif" height="56" width="594"><a rel="nofollow" ref="/forums/" class="title" title="Dev Archives Forums&#8482;"></a><table cellpadding="0" cellspacing="0"><tbody><tr><td class="title"><a rel="nofollow" href="http://archives.devshed.com/forums/" class="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <a rel="nofollow" href="http://archives.devshed.com/forums/" class="smalltitle" title="Delphi">Delphi</a></td></tr></tbody></table></td> <td height="27" width="406"><table cellpadding="0" cellspacing="0"><tbody><tr><td></td></tr></tbody></table></td> </tr><form method="post" action="http://archives.devshed.com/search_jump.php"></form> <tr> <td height="29"> <div align="right"> <!-- <a href="http://www.igrep.com"><img src="http://images.devshed.com/igrep/sites/igrep_small_header.gif" alt="igrep Developer Search " border="0" align="absbottom"></a> <input name="search" type="text" style="font-family: Verdana; color: #333333; font-size: 7pt" onfocus="if(this.value=='Search Here')this.value='';" onblur="if(this.value=='')this.value='Search Here';" value="Search Here" size="20"> <select style="FONT-SIZE: 7pt; COLOR: #333333; FONT-FAMILY: Verdana" name="where"> <option value="site" selected>Dev Archives Forums</option> <option value="network">SEARCH NETWORK</option> </select> <input align="middle" type="submit" class="form" border="0" name="submit"  value="GO!" alt="Search Now!"> --> </div></td> </tr> </tbody></table> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr valign="middle"> <td bgcolor="#58a9a9" width="152"><img src="dual-monitors-problem-1741916_arquivos/image_09.gif" height="20" width="152"></td> <td bgcolor="#58a9a9" width="40"><img src="dual-monitors-problem-1741916_arquivos/image_10.gif" height="20" width="19"></td> <td bgcolor="#58a9a9"><table border="0" cellpadding="0" cellspacing="0" width="832"> <tbody><tr>  <td class="txtwhite" bgcolor="#58a9a9" valign="middle"><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/">Forums</a><span class="foottxt">: »</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/register.php?action=signup">Register</a><span class="foottxt">&nbsp;«&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/usercp.php">User CP</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/dev-archives-gaming-center-208/">Games</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/calendar.php">Calendar</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/memberlist.php">Members</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/forum-rules-guidelines-203/">FAQs</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/sitemap/">Sitemap</a><span class="foottxt">&nbsp;|&nbsp;</span><span class="footlink" onclick="window.location='http://www.developershed.com/esupport/'">Support</span><span class="foottxt">&nbsp;|&nbsp;</span><a rel="nofollow" href="http://archives.devshed.com/forums/rss/"><img src="dual-monitors-problem-1741916_arquivos/rss_large.gif" align="absmiddle" border="0" height="17" vspace="0" width="36"></a> </td> <td bgcolor="#58a9a9"><div align="right"> <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%"> <form method="post" action="http://archives.devshed.com/search_jump.php"></form> <tbody><tr>  <td> <div align="right">  <input name="search" style="font-family: Verdana; color: rgb(51, 51, 51); font-size: 7pt;" onfocus="if(this.value=='Search Here')this.value='';" onblur="if(this.value=='')this.value='Search Here';" value="Search Here" size="10" type="text"> <input name="types:list" value="articles" type="hidden"> <input name="batch_size:integer" value="10" type="hidden"> <input name="s" value="" type="hidden"> <input name="searchdate" value="-1" type="hidden"> <input name="action" value="simplesearch" type="hidden"> </div></td> <td><select style="font-size: 7pt; color: rgb(51, 51, 51); font-family: Verdana;" name="where"> <option value="network">Search Network</option> <option value="advanced">Advanced Forums</option> </select></td> <td> <input class="form" name="submit" value="GO!" alt="Search Now!" align="middle" border="0" type="submit"> </td> </tr> </tbody></table><b></b> </div></td> </tr> </tbody></table></td> </tr> <tr> <td colspan="4" bgcolor="#000000" height="1"><img src="dual-monitors-problem-1741916_arquivos/spacer.gif" height="1" width="1"></td> </tr> </tbody></table> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr>  <td bgcolor="#9999cc" valign="top" width="16">&nbsp;</td> <td class="txt" bgcolor="#9999cc" width="136"><input name="s" value="" type="hidden"> <input name="do" value="login" type="hidden"> <input name="forceredirect" value="1" type="hidden"> <input name="vb_login_md5password" type="hidden"> <table border="0" cellpadding="0" cellspacing="0" width="136"> <form action="/forums/login.php" method="post" onsubmit="md5hash(vb_login_password,vb_login_md5password)"></form><script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/vbulletin_md5.js"></script>
+ <tbody><tr> <td class="form" height="15"><font color="#ffffff"><b>User Name:</b></font></td> </tr> <tr> <td><input class="form" name="vb_login_username" id="navbar_username" size="12" accesskey="u" tabindex="1" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" type="text"></td> </tr> <tr> <td class="form"><font color="#ffffff"><b>Password:</b></font></td> </tr> <tr> <td><input class="form" name="vb_login_password" size="12" accesskey="p" tabindex="2" type="password"> <input class="form" value="Log in" tabindex="4" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" type="submit"></td> </tr> <tr> <td><label for="cb_cookieuser_navbar"><input name="cookieuser" value="1" tabindex="3" id="cb_cookieuser_navbar" accesskey="c" checked="checked" type="checkbox"></label> <span class="form"><font color="#ffffff"><b>Remember me</b></font></span></td> </tr>  </tbody></table></td> <td background="dual-monitors-problem-1741916_arquivos/bckg_purple.gif" valign="top" width="728"> <div align="left"><a rel="nofollow" href="http://zeus.developershed.com/shonuff.php?blackbird=4761&amp;zoneid=250&amp;source=&amp;dest=http%3A%2F%2Fwww.webbuyersguide.com%2F%3F%26kc%3DDevShed0108%26src%3DDevShed0108+" target="_blank"><img src="dual-monitors-problem-1741916_arquivos/728x90_5.gif" alt="Web Buyers Guide" title="Web Buyers Guide" border="0" height="90" width="728"></a><div id="beacon_4761" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="dual-monitors-problem-1741916_arquivos/adlog.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div></div></td> <td background="dual-monitors-problem-1741916_arquivos/bckg_purple.gif" valign="top">&nbsp;</td> </tr> <tr bgcolor="#666699">  <td height="8"><img src="dual-monitors-problem-1741916_arquivos/spacer.gif" height="8" width="8"></td> <td height="8"><img src="dual-monitors-problem-1741916_arquivos/spacer.gif" height="8" width="8"></td> <td bgcolor="#666699" height="8"><img src="dual-monitors-problem-1741916_arquivos/spacer.gif" height="8" width="8"></td> <td height="8"><img src="dual-monitors-problem-1741916_arquivos/spacer.gif" height="8" width="8"></td> </tr> </tbody></table></td></tr></tbody></table></div><table bgcolor="" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr> <td width="100%">
+<!-- END TEMPLATE: header --><!-- BEGIN TEMPLATE: navbar -->
+<table align="center" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table class="tborder" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="alt1" width="100%"> <table align="left" border="0" cellpadding="0" cellspacing="0"> <tbody><tr valign="bottom"><td>  <a rel="nofollow" href="#" onclick="history.back(1)"><img title="Go Back" src="dual-monitors-problem-1741916_arquivos/navbits_start.gif" alt="Go Back" border="0" height="15" width="15"></a></td> <td>&nbsp;</td> <td width="100%"><span class="navbar"><a rel="nofollow" href="http://archives.devshed.com/forums/" accesskey="1">Web Development Archives</a> <!-- BEGIN TEMPLATE: navbar_link -->
+ &gt;&nbsp;<a class="normalfont" href="http://archives.devshed.com/forums/mailing-lists-91/">Mailing Lists</a>
+<!-- END TEMPLATE: navbar_link --><!-- BEGIN TEMPLATE: navbar_link -->
+ &gt;&nbsp;<a class="normalfont" href="http://archives.devshed.com/forums/delphi-111/">Delphi</a>
+<!-- END TEMPLATE: navbar_link --></span></td> </tr> <tr> <td class="navbar" style="font-size: 10pt; padding-top: 1px;" colspan="3"><a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html"><img title="Reload this Page" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/navbits_finallink.gif" alt="Reload this Page" border="0" height="15" width="30"></a> <h1 class="showthreadh1"><!-- BEGIN TEMPLATE: navbar_link -->
+ dual monitors problem
+<!-- END TEMPLATE: navbar_link --></h1>  <div class="navbar2">Discuss <b>dual monitors problem</b> in the Delphi forum on Dev Archives. <br><i>dual monitors problem</i>
+Delphi list covers using Delphi in applications (C++, Word, Excel,
+PDAs) as well as information and tips on coding and compiling.</div></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td></td></tr></tbody></table></td></tr></tbody></table>
+<!-- END TEMPLATE: navbar --><a name="poststop" id="poststop"></a><br>  <table style="margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="bottom"><td class="smallfont" width="120"><a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;noquote=1&amp;p=5620608"><img title="Reply" src="dual-monitors-problem-1741916_arquivos/reply.gif" alt="Reply" border="0"></a></td><td></td> <td><center></center></td> <td align="center" width="20%"><script language="JavaScript" type="text/javascript">
+<!--
+var addtoMethod=1;
+var AddURL = document.location.href;
+var AddTitle = escape(document.title);
+-->
+</script>
+<script language="JavaScript" src="dual-monitors-problem-1741916_arquivos/add2.js" type="text/javascript"></script>
+<table class="tborder" align="center" border="0" cellpadding="6" cellspacing="1" width="660"> <tbody><tr>  <td class="thead" id="currentPost" align="left"><div class="normal">Add This Thread To: </div></td> <td class="alt1" id="currentPost" align="left">&nbsp;<span class="add2small" title="Add this page to Delicious" onclick="addto(2)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Delicious.gif" align="absmiddle" border="0" height="16" width="16">  <u>Del.icio.us</u></span>&nbsp;<span class="add2small" title="Add this page to Digg" onclick="addto(3)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Digg.gif" align="absmiddle" border="0" height="16" width="16">  <u>Digg</u></span>&nbsp;<span class="add2small" title="Add this page to Google" onclick="addto(5)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Google.gif" align="absmiddle" border="0" height="16" width="16">  <u>Google</u></span>&nbsp;<span class="add2small" title="Add this page to Spurl" onclick="addto(8)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Spurl.gif" align="absmiddle" border="0" height="16" width="16">  <u>Spurl</u></span>&nbsp;<span class="add2small" title="Add this page to Blink" onclick="addto(1)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Blink.gif" align="absmiddle" border="0" height="16" width="16">  <u>Blink</u></span>&nbsp;<span class="add2small" title="Add this page to Furl" onclick="addto(4)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Furl.gif" align="absmiddle" border="0" height="16" width="16">  <u>Furl</u></span>&nbsp;<span class="add2small" title="Add this page to Simpy" onclick="addto(6)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Simpy.gif" align="absmiddle" border="0" height="16" width="16">  <u>Simpy</u></span> &nbsp;<span class="add2small" title="Add this page to Yahoo! MyWeb" onclick="addto(7)"><img src="dual-monitors-problem-1741916_arquivos/AddTo_Yahoo.gif" align="absmiddle" border="0" height="16" width="16">  <u>Y! MyWeb</u></span>&nbsp;  </td> </tr></tbody></table></td> </tr></tbody></table><table class="tborder" style="border-bottom-width: 0px;" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="tcat" width="100%"> <div class="smallfont"><strong>«</strong> <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html?goto=nextoldest">Previous Thread</a> | <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html?goto=nextnewest">Next Thread</a> <strong>»</strong>   &nbsp; </div> </td> <td style="cursor: pointer;" class="vbmenu_control" id="threadtools"> <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html#threadtools">Thread Tools</a><script type="text/javascript"> vbmenu_register("threadtools"); </script><img src="dual-monitors-problem-1741916_arquivos/menu_open.gif" alt="" border="0">
+ </td>  <td style="cursor: pointer;" class="vbmenu_control" id="threadsearch"> <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html#threadsearch">Search this Thread</a><script type="text/javascript"> vbmenu_register("threadsearch"); </script><img src="dual-monitors-problem-1741916_arquivos/menu_open.gif" alt="" border="0">
+ </td>    <td style="cursor: pointer;" class="vbmenu_control" id="displaymodes"> <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html#displaymodes">Display Modes</a><script type="text/javascript"> vbmenu_register("displaymodes"); </script><img src="dual-monitors-problem-1741916_arquivos/menu_open.gif" alt="" border="0">
+ </td> </tr></tbody></table><!-- BEGIN TEMPLATE: spacer_close -->
+   
+<!-- END TEMPLATE: spacer_close --><div id="posts"> <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;"> <div style="padding: 0px 0px 6px;"> <table class="tborder" id="ad12321" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"> <tbody><tr> <td class="thead" id="currentPost"> <div class="normal" style="float: right;"> &nbsp; </div> <div class="normal"> <a name="ad12321"><img title="Unread" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_new.gif" alt="Unread" border="0"></a>Web Development Archives Sponsor: </div> </td> </tr> <tr> <td class="alt1"><b>Registry Booster 2</b><br>How many errors does your computer have?  You no longer need to guess... this <b><a rel="nofollow" target="_blank" href="http://zeus.developershed.com/shonuff.php?blackbird=4343&amp;zoneid=417&amp;source=&amp;dest=http%3A%2F%2Fsend.onenetworkdirect.net%2Fz%2F5344%2FCD61378%2F&amp;ismap=">free stability scan</a></b> will give you a complete diagnosis and deep scan of your registry for errors and conflicts.<div id="beacon_4343" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="dual-monitors-problem-1741916_arquivos/adlog_003.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div> <div></div> </td> </tr> </tbody></table> </div> </div>  </div> </div><!-- BEGIN TEMPLATE: postbit -->
+ <!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --> <div style="padding: 0px 0px 6px;">   <table class="tborder" id="post5620608" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="thead"> <div class="normal" style="float: right;"> &nbsp;       #<a rel="nofollow" href="http://archives.devshed.com/forums/showpost.php?p=5620608&amp;postcount=1" target="new"><strong>1</strong></a> &nbsp;      </div> <div class="normal"> <a name="post5620608"><img title="Old" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_old.gif" alt="Old" border="0"></a>  January 19th, 2006, 10:07 PM   </div> </td></tr><tr> <td class="alt2" style="padding: 0px;"> <table border="0" cellpadding="0" cellspacing="6" width="100%"> <tbody><tr>  <td nowrap="nowrap"> <div id="postmenu_5620608">  Ross Levis  </div>  <div class="smallfont">Guest</div> <div align="left"><img title="Dev Archives Newbie (0 - 499 posts)" src="dual-monitors-problem-1741916_arquivos/darch_forums.gif" alt="Dev Archives Newbie (0 - 499 posts)" border="0"></div>  </td> <td width="100%">&nbsp;</td> <td nowrap="nowrap" valign="top"> <div class="smallfont">   <div> Posts: n/a &nbsp; <br>Time spent in forums: <br>Reputation Power:  </div> <div>      </div> <div>   </div> </div> </td> </tr>   </tbody></table> </td></tr><tr> <td class="alt1">  <div class="smallfont">  <strong>dual monitors problem</strong> </div> <hr style="color: rgb(255, 255, 255);" size="1">   <span name="intelliTxt" id="intelliTxt">  <div>A user with dual monitors contacted me today asking why my app will not <br>
+load up on his right monitor.  The program stores the window position <br>
+and size when it's closed.<br>
+<br>
+If the user moves the window so it is seen on both monitors, then this <br>
+works fine when reloaded.  But if he moves it 100% into the right <br>
+monitor then it reloads on the left monitor.<br>
+<br>
+I can't test this here as I only have 1 monitor.<br>
+<br>
+I noticed that my main form DefaultMonitor property was set to <br>
+dmActiveForm which I thought may be the cause.  It should perhaps be set <br>
+to dmDesktop, but then I read in the D7 help<br>
+<br>
+"Note: DefaultMonitor has no effect if the application does not have a <br>
+main form."<br>
+<br>
+It is the main form that is loading on the wrong monitor, and therefore <br>
+it does not have a main form itself, so in theory changing this option <br>
+will not have any impact on my problem.<br>
+<br>
+So any ideas what the problem could be?<br>
+<br>
+I'm storing the window position using GetWindowPlacement so the original <br>
+non-maximized coordinates are stored.  Does this API function perhaps <br>
+relate the window position based on the current monitor rather than the <br>
+left monitor?<br>
+<br>
+Thanks,<br>
+Ross. <br>
+<br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+</div> </span>  <div></div>    <hr style="color: rgb(255, 255, 255);" size="1"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td align="left" valign="middle">   </td> <td align="right" height="40" valign="middle"> <div align="right">    <a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;p=5620608"><img title="Reply With Quote" src="dual-monitors-problem-1741916_arquivos/reply_small.gif" alt="Reply With Quote" border="0" height="22" width="70"></a>   </div>  </td> </tr> </tbody></table>  </td></tr></tbody></table><div class="vbmenu_popup" id="postmenu_5620608_menu" style="display: none;"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Ross Levis</td> </tr>  <tr><td class="vbmenu_option"><a rel="nofollow" href="javascript:void(window.open('http://archives.devshed.com/forums/rpg.php?userid=', '', 'toolbar=no,scrollbars=no,resizable=no,width=300,height=320'));">View Extended RPG Stats</a></td></tr> <tr><td class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/battle.php?do=newbattle&amp;user=Ross%20Levis">Challenge This User To Battle</a></td></tr> <!--  -->       </tbody></table></div> </div> <!-- BEGIN TEMPLATE: spacer_close -->
+ </div>  </div></div>
+<!-- END TEMPLATE: spacer_close -->
+<!-- END TEMPLATE: postbit --><!-- BEGIN TEMPLATE: postbit -->
+ <!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --> <div style="padding: 0px 0px 6px;">   <table class="tborder" id="post5620611" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="thead"> <div class="normal" style="float: right;"> &nbsp;       #<a rel="nofollow" href="http://archives.devshed.com/forums/showpost.php?p=5620611&amp;postcount=2" target="new"><strong>2</strong></a> &nbsp;      </div> <div class="normal"> <a name="post5620611"><img title="Old" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_old.gif" alt="Old" border="0"></a>  January 19th, 2006, 10:07 PM   </div> </td></tr><tr> <td class="alt2" style="padding: 0px;"> <table border="0" cellpadding="0" cellspacing="6" width="100%"> <tbody><tr>  <td nowrap="nowrap"> <div id="postmenu_5620611">  Jason Nelson  </div>  <div class="smallfont">Guest</div> <div align="left"><img title="Dev Archives Newbie (0 - 499 posts)" src="dual-monitors-problem-1741916_arquivos/darch_forums.gif" alt="Dev Archives Newbie (0 - 499 posts)" border="0"></div>  </td> <td width="100%">&nbsp;</td> <td nowrap="nowrap" valign="top"> <div class="smallfont">   <div> Posts: n/a &nbsp; <br>Time spent in forums: <br>Reputation Power:  </div> <div>      </div> <div>   </div> </div> </td> </tr>   </tbody></table> </td></tr><tr> <td class="alt1">  <div class="smallfont">  <strong>dual monitors problem</strong> </div> <hr style="color: rgb(255, 255, 255);" size="1">   <span name="intelliTxt" id="intelliTxt">  <div>You can look at screen.monitors[idx] to get the coordinates of each monitor. <br>
+Cycle through the monitor coordinates and make sure the form is in a <br>
+respectible position on a visible monitor.<br>
+<br>
+Keep in mind that monitors placed to the left of a primary monitor can <br>
+actually have NEGATIVE coordinates.  Many apps, including the Delphi 2005 <br>
+IDE do not work properly in negative coordinates.  The Delphi 2005 IDE just <br>
+plain freezes up if you move certain windows/palletes to a negative window. <br>
+Photoshop even has problems.<br>
+<br>
+<br>
+<br>
+  Message  <br>
+From: "Ross Levis" &lt;ross (AT) stationplaylist (DOT) com&gt;<br>
+To: "Delphi Discussion List" &lt;delphi (AT) elists (DOT) org&gt;<br>
+Sent: Thursday, January 19, 2006 1:26 AM<br>
+Subject: dual monitors problem<br>
+<br>
+<font color="blue"><br>
+&gt;A user with dual monitors contacted me today asking why my app will not</font><br>
+load up on his right monitor.  The program stores the window position<br>
+and size when it's closed.<font color="blue"><br>
+&gt;</font><br>
+If the user moves the window so it is seen on both monitors, then this<br>
+works fine when reloaded.  But if he moves it 100% into the right<br>
+monitor then it reloads on the left monitor.<font color="blue"><br>
+&gt;</font><br>
+I can't test this here as I only have 1 monitor.<font color="blue"><br>
+&gt;</font><br>
+I noticed that my main form DefaultMonitor property was set to<br>
+dmActiveForm which I thought may be the cause.  It should perhaps be set<br>
+to dmDesktop, but then I read in the D7 help<font color="blue"><br>
+&gt;</font><br>
+"Note: DefaultMonitor has no effect if the application does not have a<br>
+main form."<font color="blue"><br>
+&gt;</font><br>
+It is the main form that is loading on the wrong monitor, and therefore<br>
+it does not have a main form itself, so in theory changing this option<br>
+will not have any impact on my problem.<font color="blue"><br>
+&gt;</font><br>
+So any ideas what the problem could be?<font color="blue"><br>
+&gt;</font><br>
+I'm storing the window position using GetWindowPlacement so the original<br>
+non-maximized coordinates are stored.  Does this API function perhaps<br>
+relate the window position based on the current monitor rather than the<br>
+left monitor?<font color="blue"><br>
+&gt;</font><br>
+Thanks,<br>
+Ross.<font color="blue"><br>
+&gt;</font><br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+<br>
+<br>
+<br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+</div> </span>  <div></div>    <hr style="color: rgb(255, 255, 255);" size="1"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td align="left" valign="middle">   </td> <td align="right" height="40" valign="middle"> <div align="right">    <a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;p=5620611"><img title="Reply With Quote" src="dual-monitors-problem-1741916_arquivos/reply_small.gif" alt="Reply With Quote" border="0" height="22" width="70"></a>   </div>  </td> </tr> </tbody></table>  </td></tr></tbody></table><div class="vbmenu_popup" id="postmenu_5620611_menu" style="display: none;"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Jason Nelson</td> </tr>  <tr><td class="vbmenu_option"><a rel="nofollow" href="javascript:void(window.open('http://archives.devshed.com/forums/rpg.php?userid=', '', 'toolbar=no,scrollbars=no,resizable=no,width=300,height=320'));">View Extended RPG Stats</a></td></tr> <tr><td class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/battle.php?do=newbattle&amp;user=Jason%20Nelson">Challenge This User To Battle</a></td></tr> <!--  -->       </tbody></table></div> </div> <!-- BEGIN TEMPLATE: spacer_close -->
+ </div>  </div></div>
+<!-- END TEMPLATE: spacer_close -->
+<!-- END TEMPLATE: postbit --><!-- BEGIN TEMPLATE: postbit -->
+ <!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --> <div style="padding: 0px 0px 6px;">   <table class="tborder" id="post5620613" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="thead"> <div class="normal" style="float: right;"> &nbsp;       #<a rel="nofollow" href="http://archives.devshed.com/forums/showpost.php?p=5620613&amp;postcount=3" target="new"><strong>3</strong></a> &nbsp;      </div> <div class="normal"> <a name="post5620613"><img title="Old" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_old.gif" alt="Old" border="0"></a>  January 19th, 2006, 10:07 PM   </div> </td></tr><tr> <td class="alt2" style="padding: 0px;"> <table border="0" cellpadding="0" cellspacing="6" width="100%"> <tbody><tr>  <td nowrap="nowrap"> <div id="postmenu_5620613">  Chris Stebbing  </div>  <div class="smallfont">Guest</div> <div align="left"><img title="Dev Archives Newbie (0 - 499 posts)" src="dual-monitors-problem-1741916_arquivos/darch_forums.gif" alt="Dev Archives Newbie (0 - 499 posts)" border="0"></div>  </td> <td width="100%">&nbsp;</td> <td nowrap="nowrap" valign="top"> <div class="smallfont">   <div> Posts: n/a &nbsp; <br>Time spent in forums: <br>Reputation Power:  </div> <div>      </div> <div>   </div> </div> </td> </tr>   </tbody></table> </td></tr><tr> <td class="alt1">  <div class="smallfont">  <strong>dual monitors problem</strong> </div> <hr style="color: rgb(255, 255, 255);" size="1">   <span name="intelliTxt" id="intelliTxt">  <div>At 06:26 PM 19/01/2006, Ross Levis wrote:<font color="blue"><br>
+&gt;A user with dual monitors contacted me today asking why my app will not<br>
+&gt;load up on his right monitor.  The program stores the window position<br>
+&gt;and size when it's closed.<br>
+&gt;<br>
+&gt;If the user moves the window so it is seen on both monitors, then this<br>
+&gt;works fine when reloaded.  But if he moves it 100% into the right<br>
+&gt;monitor then it reloads on the left monitor.</font><br>
+<br>
+Hi Ross,<br>
+<br>
+Sorry I don't know the exact answer to your problem, but I use the <br>
+Jedi FormStorage components and they work fine when using dual <br>
+monitors.  Perhaps this could provide a workaround for you.<br>
+<br>
+Cheers,<br>
+Chris.<br>
+<br>
+<br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+</div> </span>  <div></div>    <hr style="color: rgb(255, 255, 255);" size="1"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td align="left" valign="middle">   </td> <td align="right" height="40" valign="middle"> <div align="right">    <a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;p=5620613"><img title="Reply With Quote" src="dual-monitors-problem-1741916_arquivos/reply_small.gif" alt="Reply With Quote" border="0" height="22" width="70"></a>   </div>  </td> </tr> </tbody></table>  </td></tr></tbody></table><div class="vbmenu_popup" id="postmenu_5620613_menu" style="display: none;"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Chris Stebbing</td> </tr>  <tr><td class="vbmenu_option"><a rel="nofollow" href="javascript:void(window.open('http://archives.devshed.com/forums/rpg.php?userid=', '', 'toolbar=no,scrollbars=no,resizable=no,width=300,height=320'));">View Extended RPG Stats</a></td></tr> <tr><td class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/battle.php?do=newbattle&amp;user=Chris%20Stebbing">Challenge This User To Battle</a></td></tr> <!--  -->       </tbody></table></div> </div> <!-- BEGIN TEMPLATE: spacer_close -->
+ </div>  </div></div>
+<!-- END TEMPLATE: spacer_close -->
+<!-- END TEMPLATE: postbit --><!-- BEGIN TEMPLATE: postbit -->
+ <!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --> <div style="padding: 0px 0px 6px;">   <table class="tborder" id="post5620629" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="thead"> <div class="normal" style="float: right;"> &nbsp;       #<a rel="nofollow" href="http://archives.devshed.com/forums/showpost.php?p=5620629&amp;postcount=4" target="new"><strong>4</strong></a> &nbsp;      </div> <div class="normal"> <a name="post5620629"><img title="Old" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_old.gif" alt="Old" border="0"></a>  January 19th, 2006, 10:07 PM   </div> </td></tr><tr> <td class="alt2" style="padding: 0px;"> <table border="0" cellpadding="0" cellspacing="6" width="100%"> <tbody><tr>  <td nowrap="nowrap"> <div id="postmenu_5620629">  Chris Stebbing  </div>  <div class="smallfont">Guest</div> <div align="left"><img title="Dev Archives Newbie (0 - 499 posts)" src="dual-monitors-problem-1741916_arquivos/darch_forums.gif" alt="Dev Archives Newbie (0 - 499 posts)" border="0"></div>  </td> <td width="100%">&nbsp;</td> <td nowrap="nowrap" valign="top"> <div class="smallfont">   <div> Posts: n/a &nbsp; <br>Time spent in forums: <br>Reputation Power:  </div> <div>      </div> <div>   </div> </div> </td> </tr>   </tbody></table> </td></tr><tr> <td class="alt1">  <div class="smallfont">  <strong>dual monitors problem</strong> </div> <hr style="color: rgb(255, 255, 255);" size="1">   <span name="intelliTxt" id="intelliTxt">  <div>At 07:26 PM 19/01/2006, Jason Nelson wrote:<font color="blue"><br>
+&gt;You can look at screen.monitors[idx] to get the coordinates of each monitor.<br>
+&gt;Cycle through the monitor coordinates and make sure the form is in a<br>
+&gt;respectible position on a visible monitor.<br>
+&gt;<br>
+&gt;Keep in mind that monitors placed to the left of a primary monitor can<br>
+&gt;actually have NEGATIVE coordinates.  Many apps, including the Delphi 2005<br>
+&gt;IDE do not work properly in negative coordinates.  The Delphi 2005 IDE just<br>
+&gt;plain freezes up if you move certain windows/palletes to a negative window.<br>
+&gt;Photoshop even has problems.<br>
+&gt;<br>
+&gt;</font><br>
+<br>
+Hi Jason,<br>
+<br>
+I haven't experienced anything like this.  I have many apps on my <br>
+"left" monitor, and have the Delphi 2005 object inspector there as <br>
+well.  When using Delphi 3 I often have the entire application on the <br>
+left hand monitor, and the RxFormStorage (D3) works a treat, same as <br>
+the newer Jedi component (D2005).  Which windows/palletes are you referring to?<br>
+<br>
+Cheers,<br>
+Chris.<br>
+<br>
+<br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+</div> </span>  <div></div>    <hr style="color: rgb(255, 255, 255);" size="1"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td align="left" valign="middle">   </td> <td align="right" height="40" valign="middle"> <div align="right">    <a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;p=5620629"><img title="Reply With Quote" src="dual-monitors-problem-1741916_arquivos/reply_small.gif" alt="Reply With Quote" border="0" height="22" width="70"></a>   </div>  </td> </tr> </tbody></table>  </td></tr></tbody></table><div class="vbmenu_popup" id="postmenu_5620629_menu" style="display: none;"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Chris Stebbing</td> </tr>  <tr><td class="vbmenu_option"><a rel="nofollow" href="javascript:void(window.open('http://archives.devshed.com/forums/rpg.php?userid=', '', 'toolbar=no,scrollbars=no,resizable=no,width=300,height=320'));">View Extended RPG Stats</a></td></tr> <tr><td class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/battle.php?do=newbattle&amp;user=Chris%20Stebbing">Challenge This User To Battle</a></td></tr> <!--  -->       </tbody></table></div> </div> <!-- BEGIN TEMPLATE: spacer_close -->
+ </div>  </div></div>
+<!-- END TEMPLATE: spacer_close -->
+<!-- END TEMPLATE: postbit --><!-- BEGIN TEMPLATE: postbit -->
+ <!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --> <div style="padding: 0px 0px 6px;">  <table class="tborder" id="post5624223" align="center" border="0" cellpadding="6" cellspacing="1" width="100%"><tbody><tr> <td class="thead"> <div class="normal" style="float: right;"> &nbsp;       #<a rel="nofollow" href="http://archives.devshed.com/forums/showpost.php?p=5624223&amp;postcount=5" target="new"><strong>5</strong></a> &nbsp;      </div> <div class="normal"> <a name="post5624223"><img title="Old" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/post_old.gif" alt="Old" border="0"></a>  January 20th, 2006, 08:09 PM   </div> </td></tr><tr> <td class="alt2" style="padding: 0px;"> <table border="0" cellpadding="0" cellspacing="6" width="100%"> <tbody><tr>  <td nowrap="nowrap"> <div id="postmenu_5624223">  Ross Levis  </div>  <div class="smallfont">Guest</div> <div align="left"><img title="Dev Archives Newbie (0 - 499 posts)" src="dual-monitors-problem-1741916_arquivos/darch_forums.gif" alt="Dev Archives Newbie (0 - 499 posts)" border="0"></div>  </td> <td width="100%">&nbsp;</td> <td nowrap="nowrap" valign="top"> <div class="smallfont">   <div> Posts: n/a &nbsp; <br>Time spent in forums: <br>Reputation Power:  </div> <div>      </div> <div>   </div> </div> </td> </tr>   </tbody></table> </td></tr><tr> <td class="alt1">  <div class="smallfont">  <strong>dual monitors problem</strong> </div> <hr style="color: rgb(255, 255, 255);" size="1">   <span name="intelliTxt" id="intelliTxt">  <div>Jason Nelson wrote:<br>
+You can look at screen.monitors[idx] to get the coordinates of each <br>
+monitor.<br>
+Cycle through the monitor coordinates and make sure the form is in a<br>
+respectible position on a visible monitor.<br>
+<br>
+<br>
+Is this really necessary?  Do I need to store the monitor number along <br>
+with the coordinates?  I would have thought a window moved to the right <br>
+monitor would have a high Form.Left property which is being stored in <br>
+the registry, and this would then restore the window to the right <br>
+monitor when Left is set back to the same value.<br>
+<br>
+This does not seem to be happening.  All other applications this user <br>
+runs can start on the right monitor, and some of these apps are very <br>
+basic software which I doubt has any specific support for dual monitors. <br>
+There must be something I'm missing or it's a bug in D7?<br>
+<br>
+Thanks,<br>
+Ross.<br>
+<br>
+<br>
+Delphi mailing list -Delphi (AT) elists (DOT) org<br>
+</div> </span>  <div></div>    <hr style="color: rgb(255, 255, 255);" size="1"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr> <td align="left" valign="middle">   </td> <td align="right" height="40" valign="middle"> <div align="right">    <a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;p=5624223"><img title="Reply With Quote" src="dual-monitors-problem-1741916_arquivos/reply_small.gif" alt="Reply With Quote" border="0" height="22" width="70"></a>   </div>  </td> </tr> </tbody></table>  </td></tr></tbody></table><div class="vbmenu_popup" id="postmenu_5624223_menu" style="display: none;"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Ross Levis</td> </tr>  <tr><td class="vbmenu_option"><a rel="nofollow" href="javascript:void(window.open('http://archives.devshed.com/forums/rpg.php?userid=', '', 'toolbar=no,scrollbars=no,resizable=no,width=300,height=320'));">View Extended RPG Stats</a></td></tr> <tr><td class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/battle.php?do=newbattle&amp;user=Ross%20Levis">Challenge This User To Battle</a></td></tr> <!--  -->       </tbody></table></div> </div> <!-- BEGIN TEMPLATE: spacer_close -->
+ </div>  </div></div>
+<!-- END TEMPLATE: spacer_close -->
+<!-- END TEMPLATE: postbit --></div><!-- BEGIN TEMPLATE: spacer_open -->
+ <div align="center"> <div class="page" style="width: 100%; text-align: left;"> <div style="padding: 0px 25px;">
+<!-- END TEMPLATE: spacer_open --><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top">  <td class="smallfont"><a rel="nofollow" href="http://archives.devshed.com/forums/newreply.php?do=newreply&amp;noquote=1&amp;p=5624223"><img title="Reply" src="dual-monitors-problem-1741916_arquivos/reply.gif" alt="Reply" border="0"></a></td>   </tr></tbody></table><br><table cellpadding="0" width="100%"> <tbody><tr>  <td>  <font size="-1"> <b>Viewing:</b> <b>   <a rel="nofollow" href="http://archives.devshed.com/forums/">   Web Development Archives</a> <!-- BEGIN TEMPLATE: navbar_link -->
+ &gt;&nbsp;<a class="normalfont" href="http://archives.devshed.com/forums/mailing-lists-91/">Mailing Lists</a>
+<!-- END TEMPLATE: navbar_link --><!-- BEGIN TEMPLATE: navbar_link -->
+ &gt;&nbsp;<a class="normalfont" href="http://archives.devshed.com/forums/delphi-111/">Delphi</a>
+<!-- END TEMPLATE: navbar_link --> &gt; <!-- BEGIN TEMPLATE: navbar_link -->
+ dual monitors problem
+<!-- END TEMPLATE: navbar_link --></b></font>  </td> </tr></tbody></table><br><div class="smallfont" align="center"> <strong>«</strong> <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html?goto=nextoldest">Previous Thread</a> | <a rel="nofollow" href="http://archives.devshed.com/forums/delphi-111/dual-monitors-problem-1741916.html?goto=nextnewest">Next Thread</a> <strong>»</strong></div><br><br><div class="vbmenu_popup" id="threadtools_menu" style="display: none; position: absolute; left: 0px; top: 0px;"><form action="postings.php" method="post" name="threadadminform"> <table border="0" cellpadding="4" cellspacing="1" width=""> <tbody><tr> <td class="thead">Thread Tools<a name="threadtools">&nbsp;</a></td> </tr> <tr> <td style="cursor: default;" class="vbmenu_option"><img title="Email this Page" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/sendtofriend.gif" alt="Email this Page"> <a rel="nofollow" href="http://archives.devshed.com/forums/sendmessage.php?do=sendtofriend&amp;t=1741916">Email this Page</a></td> </tr>    </tbody></table></form></div><div class="vbmenu_popup" id="displaymodes_menu" style="display: none; position: absolute; left: 0px; top: 0px;"> <table border="0" cellpadding="4" cellspacing="1" width=""> <tbody><tr> <td class="thead">Display Modes<a name="displaymodes">&nbsp;</a></td> </tr> <tr>  <td style="cursor: default;" class="vbmenu_option" title=""><img title="Linear Mode" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/mode_linear.gif" alt="Linear Mode"> <strong>Linear Mode</strong></td>  </tr> <tr>  <td style="cursor: default;" class="vbmenu_option"><img title="Hybrid Mode" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/mode_hybrid.gif" alt="Hybrid Mode"> <a rel="nofollow" href="http://archives.devshed.com/forums/showthread.php?mode=hybrid&amp;t=1741916">Switch to Hybrid Mode</a></td>  </tr> <tr>  <td style="cursor: default;" class="vbmenu_option"><img title="Threaded Mode" class="inlineimg" src="dual-monitors-problem-1741916_arquivos/mode_threaded.gif" alt="Threaded Mode"> <a rel="nofollow" href="http://archives.devshed.com/forums/showthread.php?p=5620608&amp;mode=threaded#post5620608">Switch to Threaded Mode</a></td>  </tr> </tbody></table></div><div class="vbmenu_popup" id="threadsearch_menu" style="display: none; position: absolute; left: 0px; top: 0px;"><form action="search.php" method="post"> <table border="0" cellpadding="4" cellspacing="1" width=""> <tbody><tr> <td class="thead">Search this Thread<a name="threadsearch">&nbsp;</a></td> </tr> <tr> <td style="cursor: default;" class="vbmenu_option" title=""> <input name="s" value="" type="hidden"> <input name="do" value="process" type="hidden"> <input name="searchthread" value="1" type="hidden"> <input name="showposts" value="1" type="hidden"> <input name="searchthreadid" value="1741916" type="hidden"> <input class="bginput" name="query" size="20" type="text"><!-- BEGIN TEMPLATE: gobutton -->
+<input class="button" value="Go" type="submit">
+<!-- END TEMPLATE: gobutton --><br> </td> </tr> <tr> <td style="cursor: default;" class="vbmenu_option"><a rel="nofollow" href="http://archives.devshed.com/forums/search.php">Advanced Search</a></td> </tr> </tbody></table></form></div><div class="vbmenu_popup" id="threadrating_menu" style="display: none;"><form action="threadrate.php" method="post"> <table border="0" cellpadding="4" cellspacing="1"> <tbody><tr> <td class="thead">Rate This Thread<a name="threadrating">&nbsp;</a></td> </tr>  <tr> <td>You have already rated this thread</td> </tr>  </tbody></table></form></div><br><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="bottom"> <td class="smallfont" align="left"> <!-- BEGIN TEMPLATE: forumrules -->
+<table class="tborder" border="0" cellpadding="6" cellspacing="1" width="180"><thead><tr> <td class="thead"> <a rel="nofollow" style="float: right;" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="dual-monitors-problem-1741916_arquivos/collapse_thead.gif" alt="" border="0"></a> Posting Rules </td></tr></thead><tbody id="collapseobj_forumrules" style=""><tr> <td class="alt1" nowrap="nowrap"><div class="smallfont">  <div>You <strong>may not</strong> post new threads</div> <div>You <strong>may not</strong> post replies</div> <div>You <strong>may not</strong> post attachments</div> <div>You <strong>may not</strong> edit your posts</div> <hr>  <div><a href="http://archives.devshed.com/forums/misc.php?do=bbcode" target="_blank">vB code</a> is <strong>On</strong></div> <div><a href="http://archives.devshed.com/forums/misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>Off</strong></div> <div><a href="http://archives.devshed.com/forums/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></div> <div>HTML code is <strong>Off</strong></div> </div></td></tr></tbody></table>
+<!-- END TEMPLATE: forumrules --> </td> <td class="smallfont" align="right"> <table border="0" cellpadding="0" cellspacing="0">  <tbody><tr> <td> <!-- BEGIN TEMPLATE: forumjump -->
+<div class="smallfont" style="text-align: left; white-space: nowrap;"><a rel="nofollow" href="http://archives.devshed.com/forums/Warn.php?do=ViewMyWarnings">View Your Warnings</a> | <a rel="nofollow" href="http://archives.devshed.com/forums/search.php?do=getnew">New Posts</a> | <a rel="nofollow" href="http://archives.devshed.com/forums/#latest_threads_table">Latest Threads</a> | <a rel="nofollow" href="http://archives.devshed.com/forums/#shoutbox_location">Shoutbox</a><br> <form action="forumdisplay.php" method="get"> <input name="s" value="" type="hidden"> <input name="daysprune" value="" type="hidden"> <strong>Forum Jump</strong><br> <select name="f" onchange="this.form.submit();"> <optgroup label="Site Areas"> <option value="-1">Please select one</option> <option value="cp">User Control Panel</option> <option value="pm">Private Messages</option> <option value="subs">Subscriptions</option> <option value="wol">Who's Online</option> <option value="search">Search Forums</option> <option value="home">Forums Home</option> <option value="-1">--------------------</option> </optgroup> <optgroup label="Forums"> <!-- BEGIN TEMPLATE: option -->
+<option value="91" class="fjdpth0"> Mailing Lists</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="120" class="fjdpth1">&nbsp; &nbsp;  Samba</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="122" class="fjdpth1">&nbsp; &nbsp;  Python</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="92" class="fjdpth1">&nbsp; &nbsp;  Apache</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="93" class="fjdpth1">&nbsp; &nbsp;  BSD</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="94" class="fjdpth1">&nbsp; &nbsp;  Development</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="96" class="fjdpth1">&nbsp; &nbsp;  KDE</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="97" class="fjdpth1">&nbsp; &nbsp;  Linux</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="98" class="fjdpth1">&nbsp; &nbsp;  Mozilla</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="99" class="fjdpth1">&nbsp; &nbsp;  MYSQL</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="111" class="fjsel" selected="selected">&nbsp; &nbsp;  Delphi</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="100" class="fjdpth1">&nbsp; &nbsp;  Networking</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="102" class="fjdpth1">&nbsp; &nbsp;  Perl</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="104" class="fjdpth1">&nbsp; &nbsp;  Security</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="105" class="fjdpth1">&nbsp; &nbsp;  Standards</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="106" class="fjdpth1">&nbsp; &nbsp;  Unix</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="107" class="fjdpth1">&nbsp; &nbsp;  Windows</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="108" class="fjdpth1">&nbsp; &nbsp;  PHP</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="116" class="fjdpth1">&nbsp; &nbsp;  Linux Security</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="118" class="fjdpth1">&nbsp; &nbsp;  Java</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="123" class="fjdpth1">&nbsp; &nbsp;  XML</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="119" class="fjdpth1">&nbsp; &nbsp;  PHP - Windows</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="124" class="fjdpth1">&nbsp; &nbsp;  Databases</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="125" class="fjdpth1">&nbsp; &nbsp;  DSM</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="206" class="fjdpth1">&nbsp; &nbsp;  .Net</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="126" class="fjdpth0"> FAQs</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="130" class="fjdpth1">&nbsp; &nbsp;  Compression</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="134" class="fjdpth1">&nbsp; &nbsp;  C/C++</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="138" class="fjdpth1">&nbsp; &nbsp;  WWW</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="128" class="fjdpth1">&nbsp; &nbsp;  Computer Virus</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="127" class="fjdpth1">&nbsp; &nbsp;  MS DOS</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="129" class="fjdpth1">&nbsp; &nbsp;  Compilers</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="133" class="fjdpth1">&nbsp; &nbsp;  Security</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="131" class="fjdpth1">&nbsp; &nbsp;  Research</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="132" class="fjdpth1">&nbsp; &nbsp;  Programming</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="135" class="fjdpth1">&nbsp; &nbsp;  Unix/Linux</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="136" class="fjdpth1">&nbsp; &nbsp;  Hardware</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="137" class="fjdpth1">&nbsp; &nbsp;  Windows</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="139" class="fjdpth1">&nbsp; &nbsp;  Databases</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="202" class="fjdpth0"> Forum Information</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="204" class="fjdpth1">&nbsp; &nbsp;  Forum Announcements</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="203" class="fjdpth1">&nbsp; &nbsp;  Forum Rules/Guidelines</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="208" class="fjdpth1">&nbsp; &nbsp;  Dev Archives Gaming Center</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="209" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Go to the Dev Archives Battle Arena</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="210" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Go to the Dev Archives Arcade Games</option>
+<!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
+<option value="211" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Go to the Legend of the Green Dragon</option>
+<!-- END TEMPLATE: option --> </optgroup> </select><!-- BEGIN TEMPLATE: gobutton -->
+<input class="button" value="Go" type="submit">
+<!-- END TEMPLATE: gobutton --> </form></div>
+<!-- END TEMPLATE: forumjump --> </td> </tr>  </tbody></table> </td></tr></tbody></table><br><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td> <table align="left" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr> 
+          <td bgcolor="#ffffff"> <table style="border: 1px solid black;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr> 
+                <td align="left">
+                  <table class="art_title" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr> 
+                      <td width="34"><a rel="nofollow" href="http://www.devshed.com/white-papers/"><img title="White Papers" src="dual-monitors-problem-1741916_arquivos/dsblog.gif" alt="White Papers" border="0" height="24" width="34"></a></td>
+                      <td valign="bottom"><a rel="nofollow" href="http://www.devshed.com/white-papers/"><b><font color="#000000" size="4">Free IT Downloads!</font></b></a></td>
+                    </tr>
+                  </tbody></table>
+                  </td>
+              </tr><tr> 
+                <td bgcolor="#ffffff"> <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                    <tbody><tr> 
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td valign="top">
+
+<div class="tightline">&nbsp;</div>
+<span class="contentpaneopen" id="articlebox"><a class="title_readon" href="http://www.webbuyersguide.com/bguide/whitepaper/brief.asp_Q_wpId_E_NzUxMg_A_src_E_devshed">Accelerating Network-Based Backup</a><br>One
+of the greatest IT challenges today is protecting the vast amounts of
+data stored throughout an organization. Wide-area data services (WDS),
+an integrated approach to WAN optimization, can accelerate
+network-based backup by 5x and can reduce bandwidth use by 95%.
+Download this white paper now to find out how.</span><br><div class="tightline">&nbsp;</div>
+<span class="contentpaneopen" id="articlebox"><a class="title_readon" href="http://www.webbuyersguide.com/bguide/whitepaper/brief.asp_Q_wpId_E_MTA0MDY_A_src_E_devshed">Application Problem Resolution in a J2EE Environment</a><br>This
+paper outlines the most common J2EE application problems and discusses
+how the BMC AppSight Application Problem Resolution System automates
+the problem resolution process in J2EE environments.</span><br><div class="tightline">&nbsp;</div>
+<span class="contentpaneopen" id="articlebox"><a class="title_readon" href="http://www.webbuyersguide.com/bguide/whitepaper/brief.asp_Q_wpId_E_MzY1Ng_A_src_E_devshed">Desktop Management: Getting It Right</a><br>Increased
+compliance needs, rise in security threats and the growing number of
+desktops and remote workers within organizations make it crucial to
+provide solid desktop management. Read this white paper for more on
+achieving efficient desktop management.</span><br><div class="tightline">&nbsp;</div>
+<span class="contentpaneopen" id="articlebox"><a class="title_readon" href="http://www.webbuyersguide.com/bguide/whitepaper/brief.asp_Q_wpId_E_OTUwNw_A_src_E_devshed">IBM Tiered Storage Management Reduces Costs and Complexity</a><br>This
+technology brief discusses how when deployed together in the same
+environment, IBM TotalStorage Productivity Center, IBM System Storage
+SAN Volume Controller and IBM Tivoli Storage Manager deliver the core
+technologies needed to help customers tier their storage based on
+classes of service.</span><br><div class="tightline">&nbsp;</div>
+<span class="contentpaneopen" id="articlebox"><a class="title_readon" href="http://www.webbuyersguide.com/bguide/whitepaper/brief.asp_Q_wpId_E_MTA3NzM_A_src_E_devshed">If Letterman Did Data Retention... Yes, there would be a Top Ten List</a><br>Download
+this solution guide to better manage the vast number of variables, laws
+and opinions related to what data should be kept and what should be
+trashed.</span><br><div class="tightline">&nbsp;</div>
+</td>
+  </tr>
+</tbody></table> 
+                        <table bgcolor="#000066" border="0" cellpadding="2" cellspacing="1" width="100%">
+                          <tbody><tr> 
+                            <td bgcolor="000066"> <center>
+                                <font face="Verdana,Arial,Helvetica" size="1"><b> 
+                                <div align="center"><span class="articletop" id="articlebox"><a rel="nofollow" href="http://www.devshed.com/white-papers/"><span style="font-size: 12px; color: rgb(255, 255, 204); text-decoration: none;"><b><u>More 
+                                  Free IT Downloads!</u></b></span></a></span></div>
+                                </b></font> </center></td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                  </tbody></table></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+<br><!-- BEGIN TEMPLATE: footer -->
+        <script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+window.open(theURL,winName,features);
+}
+//-->
+</script>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody><tr>  <td height="20" valign="top" width="16"><img src="dual-monitors-problem-1741916_arquivos/image_06_002.gif" height="20" width="19"></td><td> <table bgcolor="#58a9a9" border="0" cellpadding="0" cellspacing="0" width="100%"> <form method="post" action="http://archives.devshed.com/forums/search.php"></form> <tbody><tr bgcolor="#58a9a9">  <td bgcolor="#58a9a9" height="22" valign="middle" width="68%"><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/">Forums</a><span class="foottxt">: »</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/register.php?action=signup">Register</a><span class="foottxt">&nbsp;«&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/usercp.php">User CP</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/dev-archives-gaming-center-208/">Games</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/calendar.php">Calendar</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/memberlist.php">Members</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/forum-rules-guidelines-203/">FAQs</a><span class="foottxt">&nbsp;|&nbsp;</span><a class="footlink" rel="nofollow" href="http://archives.devshed.com/forums/sitemap/">Sitemap</a><span class="foottxt">&nbsp;|&nbsp;</span><span class="footlink" onclick="window.location='http://www.developershed.com/esupport/'">Support</span><span class="foottxt">&nbsp;|&nbsp;</span><a rel="nofollow" href="http://archives.devshed.com/forums/rss/"><img src="dual-monitors-problem-1741916_arquivos/rss_large.gif" align="absmiddle" border="0" height="17" vspace="0" width="36"></a> </td> <td valign="middle"><div align="right"> <table align="right" border="0" cellpadding="0" cellspacing="0">  <tbody><tr>  <td width="209">   <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%"> <form method="post" action="http://archives.devshed.com/search_jump.php"></form> <tbody><tr>  <td>&nbsp;&nbsp;</td> <td width="209"> <div align="right">  <input name="search" style="font-family: Verdana; color: rgb(51, 51, 51); font-size: 7pt;" onfocus="if(this.value=='Search Here')this.value='';" onblur="if(this.value=='')this.value='Search Here';" value="Search Here" size="20" type="text"> <input name="types:list" value="articles" type="hidden"> <input name="batch_size:integer" value="10" type="hidden"> <input name="s" value="" type="hidden"> <input name="searchdate" value="-1" type="hidden"> <input name="action" value="simplesearch" type="hidden"> </div></td> <td width="117"><select style="font-size: 7pt; color: rgb(51, 51, 51); font-family: Verdana;" name="where"> <option value="site" selected="selected">Dev Archives Forums</option> <option value="network">SEARCH NETWORK</option> </select></td> <td width="33"> <input class="form" name="submit" value="GO!" alt="Search Now!" align="middle" border="0" type="submit"> </td> </tr>  </tbody></table></td> <td>&nbsp;</td> </tr> </tbody></table></div></td> </tr></tbody></table></td></tr> </tbody></table>    <br><table border="0" cellpadding="2" cellspacing="0" width="100%"> <tbody><tr>  <td width="50%"><div align="center"><script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/jsct.js" language="JavaScript"></script><table style="border: 2px solid rgb(186, 188, 198); width: 300px; height: 250px; background-color: rgb(255, 255, 255); border-collapse: collapse;" xmlns:ibn="urn:industrybrains.com:linkserver" cellspacing="0"><tbody><tr><td style="padding: 6px 4px; font-family: Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 0); text-align: left; background-color: rgb(239, 238, 213);" colspan="2">       MARKETPLACE (Sponsored Links)      </td></tr><tr><td style="padding: 1px;"></td><td style="border: 0px solid rgb(24, 77, 49); padding: 3px;"><div><a style="font-family: Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; text-decoration: underline; color: rgb(0, 0, 0);" target="_new" href="http://links.industrybrains.com/click?sid=360&amp;rqctid=4194&amp;pos=1&amp;lid=479378&amp;cid=134781&amp;pr=2&amp;tstamp=20080318125440&amp;url=http://www.timesys.com/forms/campaign.php%3fid%3d7010000000090MJ%26placement%3dIndustry_Brains_Content_Webinar_Ad%26target%3dhttp://www.timesys.com/services/webinars.htm">Free Embedded Linux Webinars</a></div><div style="font-family: Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 0);">5 free embedded Linux webinars from Timesys. Topic...        </div></td></tr><tr><td style="padding: 1px;"></td><td style="border: 0px solid rgb(24, 77, 49); padding: 3px;"><div><a style="font-family: Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; text-decoration: underline; color: rgb(0, 0, 0);" target="_new" href="http://links.industrybrains.com/click?sid=360&amp;rqctid=4194&amp;pos=2&amp;lid=486583&amp;cid=135090&amp;pr=2&amp;tstamp=20080318125440&amp;url=http://www.webhostgem.com">Exchange and SharePoint Hosting Plans</a></div><div style="font-family: Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 0);">Get your employees online with Exchange e-mail, ca...        </div></td></tr><tr><td style="padding: 1px;"></td><td style="border: 0px solid rgb(24, 77, 49); padding: 3px;"><div><a style="font-family: Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; text-decoration: underline; color: rgb(0, 0, 0);" target="_new" href="http://links.industrybrains.com/click?sid=360&amp;rqctid=4194&amp;pos=3&amp;lid=0&amp;cid=0&amp;pr=2&amp;bid=73c91d9ebaaf9c73465bb9d1c2d3dd74&amp;bfid=2&amp;tstamp=20080318125440&amp;url=http://c.enhance.com/m%3fe1%3ddAII2QnFJletWNMBR02MwldoetOm3gDvjVA1ZZogsvX2HcxDChm41gCuxSJaSR4caxkdKa4vIgECtUV33lQrlpXelz4NcjOcxCRvYDdjz2ZFUZxPOwwAvN1AN4tLoSe2MkOPTQppyG0IuT1S5frkKlTDPHjVs2YmlHqlruHrZKPoSmqoIoVKOmQb1VUhLGAcTHk5RojlUuFDfqrqhhGIMOzRExICHinsppK1xdxACI2c1cr5soJpYaPu3o42Vjgo2JLqmnxbUYuHppjCzmlxhz3xMCeZBNKxhbNZYnhlMfbJ52w1OtDWHUimE4fDDNTVxR0dbT0PrPn21dbTdUrMwyUTIrCOuyyLsx0VuYtmweobNXrbJPaq2Onyqz1Ow0T5XYmipErCMoGMFWtYaVZAuYkYsamdrOy33agabfELXEozgcMvkYXD1emBxvAktjwVJoIrlXgvBM4GwIHABFmcAaKalgUhZFCytjD4S2i0gJaEZzhYSkimq5Lyyrxo5fAVMqGqf3GolriwJ3yqEcVnUwVbKJGwk3qQebPxM0fFBv3dJyRSc5MYdzuTTzuBwGlvmCvSaCSm3p0lbnFSwLA1Bsikd0ZaYxgRSUdeBPWCoN41xydClMhEfNc1mtOdphwaGfbGttiLAncFMsukBeRU2DJMVNKsF1fWMMzjoTgMHoZpaXAGHPyRP4IaxdukioCrjDCuquiFPcJCiV5zbyaQwmdwGH23RgmFodyYrF1eCfdHp0uFjXPz24SCkK24V1iQyy1uZDNUzqZBpeVBlnMFsLswKOcenZJXRy2YzcufproOeq142lUA%26h%3dWUbSW2hVdz1nzYDgA%26b%3d2142207">Top Music Downloads Sites</a></div><div style="font-family: Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 0);">Top 3 Music Download Sites Reviewed. Unlimited, Le...        </div></td></tr><tr><td style="padding: 0.2em; font-family: Arial,Helvetica,sans-serif; font-style: italic; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 51, 102); text-align: right;" colspan="2"><a href="http://www.industrybrains.com/" style="font-family: Verdana,Arial,Helvetica,sans-serif; font-style: italic; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 170);">          Buy a Link Now         </a></td></tr></tbody></table><a href="http://shlinks.industrybrains.com/sh?sid=360&amp;a=4468f46e971656cf3c4227e57d3929cfb0fa315541840e360388b14547c80c67"></a><div id="beacon_4041" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="dual-monitors-problem-1741916_arquivos/adlog_002.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div></div></td> <td width="50%"><div align="center"><script type="text/javascript"><!--
+google_ad_client = "pub-9228008079178347";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+google_ad_region = "devshed1";
+//--></script>
+<script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/show_ads.js">
+</script><iframe name="google_ads_frame" src="dual-monitors-problem-1741916_arquivos/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="250" scrolling="no" width="300"></iframe><div id="beacon_1315" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="dual-monitors-problem-1741916_arquivos/adlog_004.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div></div></td> </tr></tbody></table><br><br>    <script type="text/javascript">
+<!--
+// Main vBulletin Javascript Initialization
+vBulletin_init();
+//-->
+</script>
+
+<div id="botfooter" align="center"><div class="bottxt"></div><div class="bottxt"></div><table class="contentpaneopen" border="0" cellpadding="3" cellspacing="0" width="100%"><tbody><tr><td width="50"></td><script type="text/javascript" language="JavaScript">
+<!--
+function ttgo(url)
+{
+if (url.length > 1)
+{
+document.location.href = "http://" + url + "/";
+}
+}
+function ttfstart(name)
+{
+document.write('<td width=\'125\'><div style="display: inline;"><b>' + name + '</b></div></td><td width=\'40\'><div style="display: inline;"><form style="display: inline; margin: 0;" name="jumptt"><select style="font-size: 10px;" name="menutt" onChange="javascript:ttgo(this.options[this.selectedIndex].value);">');
+document.write('<option value="" selected> - Select - </option>'); 
+}
+function ttfend()
+{
+document.write('</select></form></div></td>');
+}
+function ttfadd(name, val)
+{
+document.write('<option value="' + val + '">' + name + '</option>');
+}
+function ttspace()
+{
+document.write('&nbsp;&nbsp;&nbsp;');
+}
+ttfstart('Developer&nbsp;Tutorials:');
+ttfadd('Dev Shed', 'www.devshed.com');
+ttfadd('ASP Free', 'www.aspfree.com');
+ttfadd('Dev Articles', 'www.devarticles.com');
+ttfadd('Dev Hardware', 'www.devhardware.com');
+ttfadd('SEO Chat', 'www.seochat.com');
+ttfadd('Web Hosting', 'webhosting.devshed.com');
+ttfadd('Codewalkers', 'www.codewalkers.com');
+ttfend();
+//ttspace();
+ttfstart('Developer&nbsp;Resources:');
+ttfadd('Scripts', 'www.scripts.com');
+ttfadd('Tutorialized', 'www.tutorialized.com');
+ttfadd('Dev Mechanic', 'tools.devshed.com');
+ttfadd('iWatchIT', 'www.iwatchit.com');
+ttfadd('IT Marketplace', 'www.itmarketplace.com');
+ttfadd('igrep', 'www.igrep.com');
+ttfend();
+//ttspace();
+ttfstart('Developer&nbsp;Forums:');
+ttfadd('Dev Shed Forums', 'forums.devshed.com');
+ttfadd('ASP Free Forums', 'forums.aspfree.com');
+ttfadd('Dev Articles Forums', 'forums.devarticles.com');
+ttfadd('Dev Hardware Forums', 'www.devhardware.com/forums');
+ttfadd('SEO Chat Forums', 'forums.seochat.com');
+ttfadd('Codewalkers Forums', 'forums.codewalkers.com');
+ttfadd('Tutorialized Forums', 'forums.tutorialized.com');
+ttfadd('Dev Archives Forums', 'archives.devshed.com/forums');
+ttfend();
+//-->
+</script><td width="125"><div style="display: inline;"><b>Developer&nbsp;Tutorials:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.devshed.com">Dev Shed</option><option value="www.aspfree.com">ASP Free</option><option value="www.devarticles.com">Dev Articles</option><option value="www.devhardware.com">Dev Hardware</option><option value="www.seochat.com">SEO Chat</option><option value="webhosting.devshed.com">Web Hosting</option><option value="www.codewalkers.com">Codewalkers</option></select></form></div></td><td width="125"><div style="display: inline;"><b>Developer&nbsp;Resources:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.scripts.com">Scripts</option><option value="www.tutorialized.com">Tutorialized</option><option value="tools.devshed.com">Dev Mechanic</option><option value="www.iwatchit.com">iWatchIT</option><option value="www.itmarketplace.com">IT Marketplace</option><option value="www.igrep.com">igrep</option></select></form></div></td><td width="125"><div style="display: inline;"><b>Developer&nbsp;Forums:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="forums.devshed.com">Dev Shed Forums</option><option value="forums.aspfree.com">ASP Free Forums</option><option value="forums.devarticles.com">Dev Articles Forums</option><option value="www.devhardware.com/forums">Dev Hardware Forums</option><option value="forums.seochat.com">SEO Chat Forums</option><option value="forums.codewalkers.com">Codewalkers Forums</option><option value="forums.tutorialized.com">Tutorialized Forums</option><option value="archives.devshed.com/forums">Dev Archives Forums</option></select></form></div></td>
+</tr><tr><td width="50"></td>
+<script type="text/javascript" language="JavaScript">
+<!--
+function ttgo(url)
+{
+if (url.length > 1)
+{
+document.location.href = "http://" + url + "/";
+}
+}
+function ttfstart(name)
+{
+document.write('<td width=\'125\'><div style="display: inline;"><b>' + name + '</b></div></td><td width=\'40\'><div style="display: inline;"><form style="display: inline; margin: 0;" name="jumptt"><select style="font-size: 10px;" name="menutt" onChange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected> - Select - </option>'); 
+}
+function ttfend()
+{
+document.write('</select></form></div></td>');
+}
+function ttfadd(name, val)
+{
+document.write('<option value="' + val + '">' + name + '</option>');
+}
+function ttspace()
+{
+document.write('&nbsp;&nbsp;&nbsp;');
+}
+ttfstart('IT Professionals:');
+ttfadd('Baseline', 'www.baselinemag.com');
+ttfadd('Careers', 'careers.eweek.com');
+ttfadd('CIO Insight', 'www.cioinsight.com');
+ttfadd('eWeek', 'www.eweek.com');
+ttfadd('Networking', 'networking.eweek.com');
+ttfadd('Publish', 'www.publish.com');
+ttfadd('Security IT Hub', 'security.ithub.com');
+ttfadd('Web Buyers Guide', 'www.webbuyersguide.com');
+ttfend();
+//ttspace();
+ttfstart('IT Marketing:');
+ttfadd('Channel Insider', 'www.channelinsider.com');
+ttfadd('eSeminars', 'www.eseminarslive.com');
+ttfadd('Mid-market', 'midmarket.eweek.com');
+ttfadd('Strategic Partner', 'esp.eweek.com');
+ttfend();
+//ttspace();
+ttfstart('Open&nbsp;Source&nbsp;/&nbsp;Microsoft:');
+ttfadd('Desktoplinux', 'www.desktoplinux.com');
+ttfadd('DeviceForge', 'www.deviceforge.com');
+ttfadd('DevSource', 'www.devsource.com');
+ttfadd('LinuxDevices', 'www.linuxdevices.com');
+ttfadd('Linux Watch', 'www.linux-watch.com');
+ttfadd('Microsoft Watch', 'www.microsoft-watch.com');
+ttfadd('PDF Zone', 'www.pdfzone.com');
+ttfadd('Windows for Devices', 'www.windowsfordevices.com');
+ttfend();
+//-->
+</script><td width="125"><div style="display: inline;"><b>IT Professionals:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.baselinemag.com">Baseline</option><option value="careers.eweek.com">Careers</option><option value="www.cioinsight.com">CIO Insight</option><option value="www.eweek.com">eWeek</option><option value="networking.eweek.com">Networking</option><option value="www.publish.com">Publish</option><option value="security.ithub.com">Security IT Hub</option><option value="www.webbuyersguide.com">Web Buyers Guide</option></select></form></div></td><td width="125"><div style="display: inline;"><b>IT Marketing:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.channelinsider.com">Channel Insider</option><option value="www.eseminarslive.com">eSeminars</option><option value="midmarket.eweek.com">Mid-market</option><option value="esp.eweek.com">Strategic Partner</option></select></form></div></td><td width="125"><div style="display: inline;"><b>Open&nbsp;Source&nbsp;/&nbsp;Microsoft:</b></div></td><td width="40"><div style="display: inline;"><form style="margin: 0pt; display: inline;" name="jumptt"><select style="font-size: 10px;" name="menutt" onchange="javascript:ttgo(this.options[this.selectedIndex].value);"><option value="" selected="selected"> - Select - </option><option value="www.desktoplinux.com">Desktoplinux</option><option value="www.deviceforge.com">DeviceForge</option><option value="www.devsource.com">DevSource</option><option value="www.linuxdevices.com">LinuxDevices</option><option value="www.linux-watch.com">Linux Watch</option><option value="www.microsoft-watch.com">Microsoft Watch</option><option value="www.pdfzone.com">PDF Zone</option><option value="www.windowsfordevices.com">Windows for Devices</option></select></form></div></td><td width="50"></td></tr></tbody></table><br>
+<span class="bottxt">© 2003-2008 by <a href="http://www.developershed.com/"><font color="blue">Developer Shed</font></a>. All rights reserved. DS Cluster 5 hosted by <span class="botoverlink" onclick="window.location='http://www.hostway.com'"><font color="blue">Hostway</font></span>.&nbsp;</span>
+	</div>
+</div>
+</div> <script type="text/javascript" src="dual-monitors-problem-1741916_arquivos/front.js"></script>
+
+<!-- END TEMPLATE: footer --><div style="display: none;">   </div><!-- END TEMPLATE: SHOWTHREAD --></div></body></html>

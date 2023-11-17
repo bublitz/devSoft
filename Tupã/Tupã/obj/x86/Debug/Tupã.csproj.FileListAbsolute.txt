@@ -1,0 +1,9 @@
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\bin\Debug\Tupã.exe
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\bin\Debug\Tupã.pdb
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\Tupã.frmMain.resources
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\Tupã.Properties.Resources.resources
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\Tupã.exe
+c:\users\bublitz\documents\visual studio 2010\Projects\Tupã\Tupã\obj\x86\Debug\Tupã.pdb

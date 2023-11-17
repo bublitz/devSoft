@@ -1,0 +1,44 @@
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe.config
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe.manifest
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.application
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.XmlSerializers.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.pdb
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\itextsharp.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.Form1.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.Properties.Resources.resources
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.exe.manifest
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.application
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.exe
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.pdb
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.XmlSerializers.dll
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe.config
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe.manifest
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.application
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.exe
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.XmlSerializers.dll
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\AssinaDEJE.pdb
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\Oracle.DataAccess.dll
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\System.Data.DataSetExtensions.dll
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.Form1.resources
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.Properties.Resources.resources
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.TrustInfo.xml
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.exe.manifest
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.application
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.exe
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.pdb
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.XmlSerializers.dll
+C:\Documents and Settings\Administrador\meus documentos\visual studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\System.Data.OracleClient.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\System.Data.DataSetExtensions.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\System.Data.OracleClient.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\obj\x86\Release\AssinaDEJE.TrustInfo.xml
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\Bublitz.dll
+C:\Users\Bublitz\Documents\Visual Studio 2010\Projects\AssinaDEJE\AssinaDEJE\bin\Release\Bublitz.pdb
